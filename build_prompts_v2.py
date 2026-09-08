@@ -1,23 +1,20 @@
 #!/usr/bin/env python3
 """
-build_prompts_v2.py — Sinh bộ prompt MỚI cho toàn bộ 78 lá tarot theo công thức
-đã chốt qua 10 vòng lặp trên lá The Star:
+build_prompts_v2.py — Bộ prompt MỚI cho toàn bộ 78 lá tarot theo công thức
+đã chốt qua các vòng lặp trên lá The Star:
 
   1. Frameless, edge-to-edge, KHÔNG số / KHÔNG số La Mã — chỉ tên lá bài
      chữ serif vàng cổ điển dưới đáy (template update_no_num.py).
-  2. Art style + contour rendering + chữ title: reference major_08_strength.png
-     (viền contour đậm, specular streak dọc curve, rim light vàng ấm).
-  3. Chi tiết tiếp giáp trang phục–cơ thể: căng dây, mép vải ôm curve,
-     bóng đổ dưới mép vải, nếp tụ ở nút dây hông.
-  4. Vải ướt sũng kiểu test_card_17_the_star.png: tone sẫm ngậm nước,
-     sheen bóng, nếp ướt dán sát, giọt nước đọng trên vải.
-  5. Trang phục: micro string bikini swimwear (opaque, không see-through),
-     màu theo group; pose S-curve contrapposto; biểu cảm má hồng + cat eyeliner.
+  2. Art style + contour rendering + chữ title: reference major_08_strength.png.
+  3. Chi tiết tiếp giáp trang phục–cơ thể (strap tension, mép vải, bóng đổ...).
+  4. Vải ướt sũng kiểu test_card_17_the_star.png (opaque, không see-through).
+  5. Swimwear micro string bikini theo group; pose S-curve; biểu cảm manhwa.
+  6. BACKGROUND_MODE:
+       - "modern"  : bối cảnh streamer penthouse hiện đại (RGB/neon, monitor,
+                     hologram, city bokeh) — mapping sẵn cho 8 lá + fallback.
+       - "classic" : bối cảnh cổ điển theo scene gốc đã sanitize.
 
-Output: thư mục riêng biệt prompts_frameless_v2/
-  - prompts_frameless_v2/<slug>.md   : prompt đầy đủ từng lá
-  - prompts_frameless_v2/all_prompts.json : bản machine-readable
-  - prompts_frameless_v2/README.md   : tài liệu công thức
+Output: prompts_frameless_v2/ (<slug>.md, all_prompts.json, README.md).
 Không ghi đè cards.json.
 """
 import json
@@ -25,6 +22,7 @@ import os
 import re
 
 OUT_DIR = "prompts_frameless_v2"
+BACKGROUND_MODE = "modern"  # "modern" | "classic"
 
 GROUP_OUTFIT = {
     "major": "pearl-white",
@@ -34,6 +32,54 @@ GROUP_OUTFIT = {
     "pentacles": "bronze-gold",
 }
 
+# Bối cảnh streamer hiện đại (kế thừa update_modern_manhwa.py, đã sanitize)
+MODERN_SCENES = {
+    "00-fool": "a playful 19-year-old blonde streamer sitting casually barefoot on the edge of a "
+               "high-rise luxury balcony railing overlooking a glowing cyberpunk morning cityscape, "
+               "holding a glowing digital white rose, a cute white Pomeranian puppy sitting beside "
+               "her gaming chair, skin and bikini still dewy from the rooftop jacuzzi",
+    "01-magician": "a charismatic 22-year-old streamer at her multi-monitor streaming desk, one hand "
+                   "raising a glowing wand-shaped stream mic to the sky and the other pointing down "
+                   "to the desk, exactly four holographic suit icons floating above the desk: one "
+                   "flaming wand mic, one glowing water cup, one crystal cyber blade, one golden "
+                   "crypto coin, a garden of black roses in LED vases behind her",
+    "02-priestess": "a serene 23-year-old streamer sitting gracefully on a sleek obsidian gaming chair "
+                    "between two tall RGB light bars (one black, one white), a glowing holographic "
+                    "crescent moon beneath her bare feet, a glowing digital tablet of secret lore "
+                    "resting in her lap, a pomegranate hologram shimmering beside her",
+    "03-empress": "a luxurious 24-year-old streamer reclining in a plush velvet recliner in a modern "
+                  "sunlit penthouse garden room, golden sunlight streaming through floor-to-ceiling "
+                  "windows, holding a golden smartphone scepter, surrounded by lush indoor plants and "
+                  "fresh fruits, a heart-shaped shield of Venus emblem glowing on the wall",
+    "04-emperor": "a dominant 25-year-old streamer seated with poised posture in an executive leather "
+                  "gaming throne with ram-horn headrest designs, RGB volcanic-red ambient backlighting, "
+                  "glowing PC setup, holding a golden ankh stylus, ram-head sculptures on the desk, "
+                  "barren mountain mural behind",
+    "15-devil": "a seductive succubus streamer in a dark red-neon gaming room, curved black horns and "
+                "dark wings, sitting back on a leather gaming seat with arms behind head, loose golden "
+                "chain links draped across the desk, glowing crimson pentagram RGB on wall",
+    "17-the-star": "a serene star-goddess streamer sitting in a black gaming chair with arms raised "
+                   "behind her head, dual curved monitors displaying glowing star constellations, "
+                   "pouring two streams of digital light from golden decanters onto a desktop water "
+                   "feature, giant holographic eight-pointed star glowing above",
+    "21-world": "a graceful streamer posing at the center of a circular RGB ring-light laurel arch in "
+                "a panoramic high-rise penthouse studio overlooking a 360-degree night skyline, holding "
+                "two glowing stylus wands, four pet avatar screens at the four corners",
+}
+
+MODERN_FALLBACK = ("the card's symbolism re-staged in a modern luxury penthouse streamer studio: "
+                   "{emblem} rendered as a glowing holographic emblem above her, PC monitors and RGB "
+                   "neon ambient lighting, the suit objects arranged on her streaming desk, night city "
+                   "skyline bokeh through floor-to-ceiling windows")
+
+DEPTH_MODERN = ("DEPTH & LIGHT: layered neon RGB ambient lighting, glowing monitor and hologram "
+                "reflections on wet skin, cinematic warm-cool contrast, night city bokeh through "
+                "floor-to-ceiling windows, faint golden sparkles in the air.")
+
+DEPTH_CLASSIC = ("DEPTH & LIGHT: layered atmospheric background receding into mist per the scene, "
+                 "glowing ambient reflections on wet skin and water, cinematic warm-cool contrast, "
+                 "faint golden sparkles in the air.")
+
 
 def sanitize_scene(scene: str) -> str:
     """Đổi mô tả nude/semi-nude/see-through của spec cũ thành trang phục swimwear ướt."""
@@ -41,7 +87,6 @@ def sanitize_scene(scene: str) -> str:
     s = s.replace("a nude woman", "a woman in a soaking-wet micro string bikini")
     s = s.replace("nude woman", "woman in a soaking-wet micro string bikini")
     s = s.replace("nude", "swimwear-clad")
-    # Các cụm lộ liễu / xuyên thấu còn sót sau vòng replace thô
     EXTRA = [
         ("draped only in a transparent silk veil so fine it clings and reveals her bare body beneath, "
          "the veil slipping from one shoulder and streaming behind her",
@@ -62,13 +107,13 @@ def sanitize_scene(scene: str) -> str:
     ]
     for old, new in EXTRA:
         s = s.replace(old, new)
-    # Quy tắc tổng quát: mọi cụm "draped only in ..." (vải mỏng che thân) -> swimwear + sash
     s = re.sub(r"draped only in [^,.]*", "wearing a soaking-wet micro string bikini with a glowing silk sash", s)
     s = s.replace("her bare back and the curve of one breast veiled and revealed by the golden lantern light",
                   "her wet skin glowing in the golden lantern light")
     s = s.replace("flowing transparent silk", "flowing silk robes")
     s = s.replace("transparent silk", "opaque silk")
     s = s.replace("sheer white silk gauze", "opaque white silk sash")
+    s = s.replace("sheer opaque silk", "flowing opaque silk")
     EXTRA2 = [
         ("a length of sheer silk sliding fully off one shoulder to bare one breast and one hip",
          "an opaque silk sash sliding off one shoulder"),
@@ -84,7 +129,6 @@ def sanitize_scene(scene: str) -> str:
         s = s.replace(old, new)
     s = re.sub(r"veils and reveals her [a-z ]*form", "drapes her swimwear-clad figure", s)
     s = re.sub(r"so sheer and transparent that[^,]*", "fully opaque", s)
-    s = s.replace("sheer opaque silk", "flowing opaque silk")
     EXTRA3 = [
         ("draped in sheer black silk upon a dark pedestal",
          "wearing a soaking-wet black micro string bikini with a black silk sash upon a dark pedestal"),
@@ -109,23 +153,24 @@ ART STYLE (match reference 1): Korean manhwa webtoon rendering — crisp clean l
 
 GARMENT-TO-BODY DETAIL: thin strap tension lines pressing gently into shoulders and hips, fabric edges precisely tracing the underbust curve and hip crest, subtle soft skin swell over each bikini edge, delicate cast-shadow lines under the fabric rims, small tension folds in the wet fabric following the body topography, side-tie ribbon knots pulling the hip line with tiny gathers, specular highlights along every seam and strap.
 
-WET FABRIC (match reference 2): soaking-wet {outfit} micro string bikini — waterlogged darkened tone with a glossy wet sheen, fabric fully opaque, clinging like a second skin with zero loose folds, plastered wet wrinkles, water droplets beading on the fabric surface, tiny drips falling from the fabric edges; whole body wet with droplets and thin rivulets, wet gleaming hair strands.
+WET FABRIC (match reference 2): soaking-wet {outfit} micro string bikini — waterlogged darkened tone with a glossy wet sheen, fabric fully opaque, clinging like a second skin with zero loose folds, plastered wet wrinkles, water droplets beading on the fabric surface, tiny drips falling from the fabric edges; whole body wet with droplets and thin rivulets, wet gleaming hair strands; she has just stepped out of the penthouse jacuzzi so the wet look reads naturally in the modern interior.
 
 FIGURE: {char_spec} Pose: graceful S-curve contrapposto where the scene allows (hip popped, back slightly arched, one knee softly bent, barefoot); blushing cheeks, cat eyeliner, softly parted lips with a confident gentle smile.
 
 SCENE & SYMBOLISM: {scene}. Tarot emblem integrated naturally: {emblem}. {count_lock}
 
-DEPTH & LIGHT: layered atmospheric background receding into mist per the scene, glowing ambient reflections on wet skin and water, cinematic warm-cool contrast, faint golden sparkles in the air.
+{depth}
 
 At the bottom, centered: the title "{title}" in antique-gold serif lettering matching reference 1. No numbers, no Roman numerals, no other text, no frame, no border, no banner, no watermark, no signature. Masterpiece manhwa illustration, portrait 7:12."""
 
-MD_TEMPLATE = """# {title} ({n}) — Frameless Wet-Manhwa v2
+MD_TEMPLATE = """# {title} ({n}) — Frameless Wet-Manhwa v2 · mode {mode}
 
 - **Slug:** `{slug}` | **Group:** {group}
 - **Emblem:** {emblem}
 - **Reference style/contour/lettering:** `major_08_strength.png`
 - **Reference wet fabric/swimwear:** `test_card_17_the_star.png`
 - **Outfit:** soaking-wet {outfit} micro string bikini (opaque swimwear, no see-through)
+- **Background mode:** {mode}
 
 ## Prompt
 
@@ -134,12 +179,12 @@ MD_TEMPLATE = """# {title} ({n}) — Frameless Wet-Manhwa v2
 ```
 """
 
-README = """# prompts_frameless_v2 — Bộ prompt công thức The Star (v10) áp dụng toàn bộ 78 lá
+README = """# prompts_frameless_v2 — Bộ prompt công thức The Star áp dụng toàn bộ 78 lá
 
 Thư mục riêng biệt chứa prompt MỚI cho toàn bộ bộ bài, sinh bởi `build_prompts_v2.py`
 từ `cards.json`, KHÔNG ghi đè dữ liệu gốc.
 
-## Công thức (chốt qua 10 vòng lặp trên lá The Star)
+## Công thức cốt lõi
 
 1. **Frameless no-num** (template `update_no_num.py`): illustration tràn viền,
    không khung/không banner/không số La Mã; chỉ tên lá bài chữ serif vàng cổ điển dưới đáy.
@@ -149,12 +194,20 @@ từ `cards.json`, KHÔNG ghi đè dữ liệu gốc.
 3. **Garment-to-body detail**: vết căng dây trên da, mép vải ôm underbust/hip crest,
    bóng đổ dưới mép vải, nếp tụ ở nút dây hông, highlight dọc đường may/dây đeo.
 4. **Wet fabric reference `test_card_17_the_star.png`**: vải ướt sũng tone sẫm ngậm nước,
-   sheen bóng mờ, nếp ướt dán sát như da thứ hai, giọt nước đọng và rỉ từ mép vải;
-   toàn thân ướt, tóc ướt bóng.
+   sheen bóng, nếp ướt dán sát như da thứ hai, giọt nước đọng và rỉ từ mép vải;
+   toàn thân ướt, tóc ướt bóng; justify bởi "vừa bước khỏi jacuzzi penthouse".
 5. **Trang phục & pose**: micro string bikini swimwear opaque (màu theo group),
    pose S-curve contrapposto, má hồng + cat eyeliner + môi hé nụ cười tự tin.
-6. **An toàn nội dung**: mọi mô tả nude/semi-nude của spec cũ được thay bằng
-   trang phục swimwear ướt; không see-through, không pose lộ liễu.
+6. **An toàn nội dung**: mọi mô tả nude/semi-nude/see-through của spec cũ được thay bằng
+   trang phục swimwear ướt opaque; không pose lộ liễu.
+
+## Background mode
+
+- `BACKGROUND_MODE = "modern"` (hiện tại): bối cảnh streamer penthouse hiện đại —
+  RGB/neon, multi-monitor, hologram, gaming throne, city bokeh; mapping sẵn cho
+  8 lá (fool, magician, priestess, empress, emperor, devil, star, world) + fallback
+  penthouse studio cho các lá còn lại.
+- `BACKGROUND_MODE = "classic"`: bối cảnh cổ điển theo scene gốc đã sanitize.
 
 ## Màu trang phục theo group
 
@@ -204,13 +257,20 @@ def main():
         slug = c["slug"]
         title = c["title"]
         outfit = GROUP_OUTFIT.get(c["group"], "pearl-white")
+        if BACKGROUND_MODE == "modern":
+            scene = MODERN_SCENES.get(slug, MODERN_FALLBACK.format(emblem=c["emblem"]))
+            depth = DEPTH_MODERN
+        else:
+            scene = sanitize_scene(c["scene"])
+            depth = DEPTH_CLASSIC
         prompt = PROMPT_TEMPLATE.format(
             title=title,
             outfit=outfit,
             char_spec=build_char_spec(c),
-            scene=sanitize_scene(c["scene"]),
+            scene=scene,
             emblem=c["emblem"],
             count_lock=c.get("count_lock", ""),
+            depth=depth,
         )
         all_prompts[slug] = prompt
         md = MD_TEMPLATE.format(
@@ -220,6 +280,7 @@ def main():
             group=c["group"],
             emblem=c["emblem"],
             outfit=outfit,
+            mode=BACKGROUND_MODE,
             prompt=prompt,
         )
         with open(os.path.join(OUT_DIR, f"{slug}.md"), "w", encoding="utf-8") as f:
@@ -231,7 +292,7 @@ def main():
     with open(os.path.join(OUT_DIR, "README.md"), "w", encoding="utf-8") as f:
         f.write(README)
 
-    print(f"Wrote {len(all_prompts)} card prompts + all_prompts.json + README.md into {OUT_DIR}/")
+    print(f"Wrote {len(all_prompts)} card prompts (mode={BACKGROUND_MODE}) into {OUT_DIR}/")
 
 
 if __name__ == "__main__":

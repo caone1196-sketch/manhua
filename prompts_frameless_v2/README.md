@@ -1,9 +1,9 @@
-# prompts_frameless_v2 — Bộ prompt công thức The Star (v10) áp dụng toàn bộ 78 lá
+# prompts_frameless_v2 — Bộ prompt công thức The Star áp dụng toàn bộ 78 lá
 
 Thư mục riêng biệt chứa prompt MỚI cho toàn bộ bộ bài, sinh bởi `build_prompts_v2.py`
 từ `cards.json`, KHÔNG ghi đè dữ liệu gốc.
 
-## Công thức (chốt qua 10 vòng lặp trên lá The Star)
+## Công thức cốt lõi
 
 1. **Frameless no-num** (template `update_no_num.py`): illustration tràn viền,
    không khung/không banner/không số La Mã; chỉ tên lá bài chữ serif vàng cổ điển dưới đáy.
@@ -13,12 +13,20 @@ từ `cards.json`, KHÔNG ghi đè dữ liệu gốc.
 3. **Garment-to-body detail**: vết căng dây trên da, mép vải ôm underbust/hip crest,
    bóng đổ dưới mép vải, nếp tụ ở nút dây hông, highlight dọc đường may/dây đeo.
 4. **Wet fabric reference `test_card_17_the_star.png`**: vải ướt sũng tone sẫm ngậm nước,
-   sheen bóng mờ, nếp ướt dán sát như da thứ hai, giọt nước đọng và rỉ từ mép vải;
-   toàn thân ướt, tóc ướt bóng.
+   sheen bóng, nếp ướt dán sát như da thứ hai, giọt nước đọng và rỉ từ mép vải;
+   toàn thân ướt, tóc ướt bóng; justify bởi "vừa bước khỏi jacuzzi penthouse".
 5. **Trang phục & pose**: micro string bikini swimwear opaque (màu theo group),
    pose S-curve contrapposto, má hồng + cat eyeliner + môi hé nụ cười tự tin.
-6. **An toàn nội dung**: mọi mô tả nude/semi-nude của spec cũ được thay bằng
-   trang phục swimwear ướt; không see-through, không pose lộ liễu.
+6. **An toàn nội dung**: mọi mô tả nude/semi-nude/see-through của spec cũ được thay bằng
+   trang phục swimwear ướt opaque; không pose lộ liễu.
+
+## Background mode
+
+- `BACKGROUND_MODE = "modern"` (hiện tại): bối cảnh streamer penthouse hiện đại —
+  RGB/neon, multi-monitor, hologram, gaming throne, city bokeh; mapping sẵn cho
+  8 lá (fool, magician, priestess, empress, emperor, devil, star, world) + fallback
+  penthouse studio cho các lá còn lại.
+- `BACKGROUND_MODE = "classic"`: bối cảnh cổ điển theo scene gốc đã sanitize.
 
 ## Màu trang phục theo group
 

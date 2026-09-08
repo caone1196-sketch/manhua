@@ -1,10 +1,11 @@
-# EIGHT OF SWORDS (8) — Frameless Wet-Manhwa v2
+# EIGHT OF SWORDS (8) — Frameless Wet-Manhwa v2 · mode modern
 
 - **Slug:** `swords-08` | **Group:** swords
 - **Emblem:** eight swords in a ring
 - **Reference style/contour/lettering:** `major_08_strength.png`
 - **Reference wet fabric/swimwear:** `test_card_17_the_star.png`
 - **Outfit:** soaking-wet silver-white micro string bikini (opaque swimwear, no see-through)
+- **Background mode:** modern
 
 ## Prompt
 
@@ -17,16 +18,16 @@ ART STYLE (match reference 1): Korean manhwa webtoon rendering — crisp clean l
 
 GARMENT-TO-BODY DETAIL: thin strap tension lines pressing gently into shoulders and hips, fabric edges precisely tracing the underbust curve and hip crest, subtle soft skin swell over each bikini edge, delicate cast-shadow lines under the fabric rims, small tension folds in the wet fabric following the body topography, side-tie ribbon knots pulling the hip line with tiny gathers, specular highlights along every seam and strap.
 
-WET FABRIC (match reference 2): soaking-wet silver-white micro string bikini — waterlogged darkened tone with a glossy wet sheen, fabric fully opaque, clinging like a second skin with zero loose folds, plastered wet wrinkles, water droplets beading on the fabric surface, tiny drips falling from the fabric edges; whole body wet with droplets and thin rivulets, wet gleaming hair strands.
+WET FABRIC (match reference 2): soaking-wet silver-white micro string bikini — waterlogged darkened tone with a glossy wet sheen, fabric fully opaque, clinging like a second skin with zero loose folds, plastered wet wrinkles, water droplets beading on the fabric surface, tiny drips falling from the fabric edges; whole body wet with droplets and thin rivulets, wet gleaming hair strands; she has just stepped out of the penthouse jacuzzi so the wet look reads naturally in the modern interior.
 
 FIGURE: 20 years old, build: **A** mảnh mong manh, dáng co lại, hair: dark brown hair bound loosely with a crimson ribbon, eyes: fear-bright hazel, doe, viền nước mắt, skin: fair with glossy wet highlights, signature: vết bớt đỏ nhạt hình dải lụa trên mắt cá phải, aura: hoàng hôn, dây thắt, lưỡi kiếm. Pose: graceful S-curve contrapposto where the scene allows (hip popped, back slightly arched, one knee softly bent, barefoot); blushing cheeks, cat eyeliner, softly parted lips with a confident gentle smile.
 
-SCENE & SYMBOLISM: a blindfolded woman in a flowing gown loosened from one shoulder and loosely bound, standing in a ring of eight swords, a fortress on the cliff behind. Tarot emblem integrated naturally: eight swords in a ring. COUNT LOCK — EXACTLY 8 SWORDS (hard constraint; count before you draw).
+SCENE & SYMBOLISM: the card's symbolism re-staged in a modern luxury penthouse streamer studio: eight swords in a ring rendered as a glowing holographic emblem above her, PC monitors and RGB neon ambient lighting, the suit objects arranged on her streaming desk, night city skyline bokeh through floor-to-ceiling windows. Tarot emblem integrated naturally: eight swords in a ring. COUNT LOCK — EXACTLY 8 SWORDS (hard constraint; count before you draw).
 The scene contains exactly 8 swords — not 7, not 9.
 Placement is locked: eight swords planted in one open ring around her — THREE in front of her with two gaps between them, ONE at her left side, ONE at her right side, THREE behind her with two gaps between them; 3 + 1 + 1 + 3 = 8. Walk the ring and count the eight gaps of bare ground between neighbours: 1, 2, 3, 4, 5, 6, 7, 8. THIS CARD HAS ALREADY FAILED ONCE BY SHOWING NINE SWORDS: the usual mistake is adding one extra sword to the group behind her. Keep the group behind her at exactly THREE.
 Every one of the 8 must be fully visible: nothing occluded by a body, limb, cloth, cloud or another object, nothing fused, broken, cropped by the golden frame, or half-hidden behind a figure. Keep them at one consistent size, shape, material and color so they read as a single countable set, with a clear gap of background between each one. Place no other swords anywhere else on the card — not in the frame, not in the background, not held by a figure, not as decoration. The emblem in the top medallion is a separate heraldic motif and does NOT count toward the 8. Before finishing, count them: 1 to 8. If the total is not 8, redraw.
 
-DEPTH & LIGHT: layered atmospheric background receding into mist per the scene, glowing ambient reflections on wet skin and water, cinematic warm-cool contrast, faint golden sparkles in the air.
+DEPTH & LIGHT: layered neon RGB ambient lighting, glowing monitor and hologram reflections on wet skin, cinematic warm-cool contrast, night city bokeh through floor-to-ceiling windows, faint golden sparkles in the air.
 
 At the bottom, centered: the title "EIGHT OF SWORDS" in antique-gold serif lettering matching reference 1. No numbers, no Roman numerals, no other text, no frame, no border, no banner, no watermark, no signature. Masterpiece manhwa illustration, portrait 7:12.
 ```

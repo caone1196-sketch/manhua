@@ -1,10 +1,11 @@
-# THE TOWER (XVI) — Frameless Wet-Manhwa v2
+# THE TOWER (XVI) — Frameless Wet-Manhwa v2 · mode modern
 
 - **Slug:** `16-tower` | **Group:** major
 - **Emblem:** a jagged lightning bolt
 - **Reference style/contour/lettering:** `major_08_strength.png`
 - **Reference wet fabric/swimwear:** `test_card_17_the_star.png`
 - **Outfit:** soaking-wet pearl-white micro string bikini (opaque swimwear, no see-through)
+- **Background mode:** modern
 
 ## Prompt
 
@@ -17,13 +18,13 @@ ART STYLE (match reference 1): Korean manhwa webtoon rendering — crisp clean l
 
 GARMENT-TO-BODY DETAIL: thin strap tension lines pressing gently into shoulders and hips, fabric edges precisely tracing the underbust curve and hip crest, subtle soft skin swell over each bikini edge, delicate cast-shadow lines under the fabric rims, small tension folds in the wet fabric following the body topography, side-tie ribbon knots pulling the hip line with tiny gathers, specular highlights along every seam and strap.
 
-WET FABRIC (match reference 2): soaking-wet pearl-white micro string bikini — waterlogged darkened tone with a glossy wet sheen, fabric fully opaque, clinging like a second skin with zero loose folds, plastered wet wrinkles, water droplets beading on the fabric surface, tiny drips falling from the fabric edges; whole body wet with droplets and thin rivulets, wet gleaming hair strands.
+WET FABRIC (match reference 2): soaking-wet pearl-white micro string bikini — waterlogged darkened tone with a glossy wet sheen, fabric fully opaque, clinging like a second skin with zero loose folds, plastered wet wrinkles, water droplets beading on the fabric surface, tiny drips falling from the fabric edges; whole body wet with droplets and thin rivulets, wet gleaming hair strands; she has just stepped out of the penthouse jacuzzi so the wet look reads naturally in the modern interior.
 
 FIGURE: 20 years old, build: **B** săn, dẻo, thân hình nhào lộn, hair: storm-dark chestnut hair blown dynamically backward by lightning winds, eyes: slate-grey, round, mở to kinh ngạc giữa cú rơi, skin: fair with glossy wet highlights, signature: sẹo trắng mảnh trên xương đòn trái, aura: sấm, gió giật, đá vụn. Pose: graceful S-curve contrapposto where the scene allows (hip popped, back slightly arched, one knee softly bent, barefoot); blushing cheeks, cat eyeliner, softly parted lips with a confident gentle smile.
 
-SCENE & SYMBOLISM: a tall stone tower struck by a jagged bolt of lightning, its golden crown toppling in flames, two graceful young women falling through the storm and ash, their bodies illuminated by the brilliant flash. Tarot emblem integrated naturally: a jagged lightning bolt. COUNT LOCK: This card contains NO loose suit objects in the scene. Do not add random floating or decorative cups, swords, wands, or pentacles.
+SCENE & SYMBOLISM: the card's symbolism re-staged in a modern luxury penthouse streamer studio: a jagged lightning bolt rendered as a glowing holographic emblem above her, PC monitors and RGB neon ambient lighting, the suit objects arranged on her streaming desk, night city skyline bokeh through floor-to-ceiling windows. Tarot emblem integrated naturally: a jagged lightning bolt. COUNT LOCK: This card contains NO loose suit objects in the scene. Do not add random floating or decorative cups, swords, wands, or pentacles.
 
-DEPTH & LIGHT: layered atmospheric background receding into mist per the scene, glowing ambient reflections on wet skin and water, cinematic warm-cool contrast, faint golden sparkles in the air.
+DEPTH & LIGHT: layered neon RGB ambient lighting, glowing monitor and hologram reflections on wet skin, cinematic warm-cool contrast, night city bokeh through floor-to-ceiling windows, faint golden sparkles in the air.
 
 At the bottom, centered: the title "THE TOWER" in antique-gold serif lettering matching reference 1. No numbers, no Roman numerals, no other text, no frame, no border, no banner, no watermark, no signature. Masterpiece manhwa illustration, portrait 7:12.
 ```

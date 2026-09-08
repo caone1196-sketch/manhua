@@ -1,10 +1,11 @@
-# THE MAGICIAN (I) — Frameless Wet-Manhwa v2
+# THE MAGICIAN (I) — Frameless Wet-Manhwa v2 · mode modern
 
 - **Slug:** `01-magician` | **Group:** major
 - **Emblem:** an infinity symbol
 - **Reference style/contour/lettering:** `major_08_strength.png`
 - **Reference wet fabric/swimwear:** `test_card_17_the_star.png`
 - **Outfit:** soaking-wet pearl-white micro string bikini (opaque swimwear, no see-through)
+- **Background mode:** modern
 
 ## Prompt
 
@@ -17,16 +18,16 @@ ART STYLE (match reference 1): Korean manhwa webtoon rendering — crisp clean l
 
 GARMENT-TO-BODY DETAIL: thin strap tension lines pressing gently into shoulders and hips, fabric edges precisely tracing the underbust curve and hip crest, subtle soft skin swell over each bikini edge, delicate cast-shadow lines under the fabric rims, small tension folds in the wet fabric following the body topography, side-tie ribbon knots pulling the hip line with tiny gathers, specular highlights along every seam and strap.
 
-WET FABRIC (match reference 2): soaking-wet pearl-white micro string bikini — waterlogged darkened tone with a glossy wet sheen, fabric fully opaque, clinging like a second skin with zero loose folds, plastered wet wrinkles, water droplets beading on the fabric surface, tiny drips falling from the fabric edges; whole body wet with droplets and thin rivulets, wet gleaming hair strands.
+WET FABRIC (match reference 2): soaking-wet pearl-white micro string bikini — waterlogged darkened tone with a glossy wet sheen, fabric fully opaque, clinging like a second skin with zero loose folds, plastered wet wrinkles, water droplets beading on the fabric surface, tiny drips falling from the fabric edges; whole body wet with droplets and thin rivulets, wet gleaming hair strands; she has just stepped out of the penthouse jacuzzi so the wet look reads naturally in the modern interior.
 
 FIGURE: 22 years old, build: **B** cao, dài, thanh thoát, tư thế chỉ huy, hair: jet-black straight hair falling past her waist like a sleek silk curtain, center-parted, eyes: pale violet, almond sắc, hooded, ánh nhìn xuyên thấu, skin: porcelain with glossy wet highlights, signature: sẹo bạc mảnh dọc ngón trỏ tay phải, aura: tĩnh điện, mực đen, bạc lạnh. Pose: graceful S-curve contrapposto where the scene allows (hip popped, back slightly arched, one knee softly bent, barefoot); blushing cheeks, cat eyeliner, softly parted lips with a confident gentle smile.
 
-SCENE & SYMBOLISM: a swimwear-clad young woman magician, soaking-wet micro string bikini with a length of silk slung low across her hips, one hand raising a wand to the sky and the other pointing down to the earth, the altar table before her laid with a cup, a sword, a wand and a pentacle, a garden of black roses behind her. Tarot emblem integrated naturally: an infinity symbol. COUNT LOCK — EXACTLY 4 SUIT OBJECTS ON THE ALTAR (hard constraint; count before you draw).
+SCENE & SYMBOLISM: a charismatic 22-year-old streamer at her multi-monitor streaming desk, one hand raising a glowing wand-shaped stream mic to the sky and the other pointing down to the desk, exactly four holographic suit icons floating above the desk: one flaming wand mic, one glowing water cup, one crystal cyber blade, one golden crypto coin, a garden of black roses in LED vases behind her. Tarot emblem integrated naturally: an infinity symbol. COUNT LOCK — EXACTLY 4 SUIT OBJECTS ON THE ALTAR (hard constraint; count before you draw).
 The scene contains exactly 4 suit objects on the altar — not 3, not 5.
 Placement is locked: exactly four objects, one of each: one cup, one sword, one wand, one coin — all four resting on the altar table, all four wholly visible, no duplicates, nothing else on the table.
 Every one of the 4 must be fully visible: nothing occluded by a body, limb, cloth, cloud or another object, nothing fused, broken, cropped by the golden frame, or half-hidden behind a figure. Keep them at one consistent size, shape, material and color so they read as a single countable set, with a clear gap of background between each one. Place no other suit objects on the altar anywhere else on the card — not in the frame, not in the background, not held by a figure, not as decoration. The emblem in the top medallion is a separate heraldic motif and does NOT count toward the 4. Before finishing, count them: 1 to 4. If the total is not 4, redraw.
 
-DEPTH & LIGHT: layered atmospheric background receding into mist per the scene, glowing ambient reflections on wet skin and water, cinematic warm-cool contrast, faint golden sparkles in the air.
+DEPTH & LIGHT: layered neon RGB ambient lighting, glowing monitor and hologram reflections on wet skin, cinematic warm-cool contrast, night city bokeh through floor-to-ceiling windows, faint golden sparkles in the air.
 
 At the bottom, centered: the title "THE MAGICIAN" in antique-gold serif lettering matching reference 1. No numbers, no Roman numerals, no other text, no frame, no border, no banner, no watermark, no signature. Masterpiece manhwa illustration, portrait 7:12.
 ```

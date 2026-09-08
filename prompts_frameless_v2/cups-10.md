@@ -1,10 +1,11 @@
-# TEN OF CUPS (10) — Frameless Wet-Manhwa v2
+# TEN OF CUPS (10) — Frameless Wet-Manhwa v2 · mode modern
 
 - **Slug:** `cups-10` | **Group:** cups
 - **Emblem:** ten chalices under a rainbow
 - **Reference style/contour/lettering:** `major_08_strength.png`
 - **Reference wet fabric/swimwear:** `test_card_17_the_star.png`
 - **Outfit:** soaking-wet aqua-pearl micro string bikini (opaque swimwear, no see-through)
+- **Background mode:** modern
 
 ## Prompt
 
@@ -17,16 +18,16 @@ ART STYLE (match reference 1): Korean manhwa webtoon rendering — crisp clean l
 
 GARMENT-TO-BODY DETAIL: thin strap tension lines pressing gently into shoulders and hips, fabric edges precisely tracing the underbust curve and hip crest, subtle soft skin swell over each bikini edge, delicate cast-shadow lines under the fabric rims, small tension folds in the wet fabric following the body topography, side-tie ribbon knots pulling the hip line with tiny gathers, specular highlights along every seam and strap.
 
-WET FABRIC (match reference 2): soaking-wet aqua-pearl micro string bikini — waterlogged darkened tone with a glossy wet sheen, fabric fully opaque, clinging like a second skin with zero loose folds, plastered wet wrinkles, water droplets beading on the fabric surface, tiny drips falling from the fabric edges; whole body wet with droplets and thin rivulets, wet gleaming hair strands.
+WET FABRIC (match reference 2): soaking-wet aqua-pearl micro string bikini — waterlogged darkened tone with a glossy wet sheen, fabric fully opaque, clinging like a second skin with zero loose folds, plastered wet wrinkles, water droplets beading on the fabric surface, tiny drips falling from the fabric edges; whole body wet with droplets and thin rivulets, wet gleaming hair strands; she has just stepped out of the penthouse jacuzzi so the wet look reads naturally in the modern interior.
 
 FIGURE: 22 years old, build: **C** thanh-mềm, dáng mẹ trẻ đầy ân cần, hair: warm hazel-brown hair cascading in silky ripples, eyes: hazel mềm, warm, dịu dàng, skin: warm peach with glossy wet highlights, signature: bớt hình trái tim mờ trên hông trái, aura: tổ ấm, cầu vồng, tiếng trẻ. Pose: graceful S-curve contrapposto where the scene allows (hip popped, back slightly arched, one knee softly bent, barefoot); blushing cheeks, cat eyeliner, softly parted lips with a confident gentle smile.
 
-SCENE & SYMBOLISM: a blissful couple embracing in a meadow, she in slipping silk with one bare shoulder and the long line of her back to the light, his arms around her waist, ten chalices along a rainbow arc, a cottage and dancing children beyond. Tarot emblem integrated naturally: ten chalices under a rainbow. COUNT LOCK — EXACTLY 10 CHALICES (hard constraint; count before you draw).
+SCENE & SYMBOLISM: the card's symbolism re-staged in a modern luxury penthouse streamer studio: ten chalices under a rainbow rendered as a glowing holographic emblem above her, PC monitors and RGB neon ambient lighting, the suit objects arranged on her streaming desk, night city skyline bokeh through floor-to-ceiling windows. Tarot emblem integrated naturally: ten chalices under a rainbow. COUNT LOCK — EXACTLY 10 CHALICES (hard constraint; count before you draw).
 The scene contains exactly 10 chalices — not 9, not 11.
 Placement is locked: exactly ten chalices along ONE rainbow arc — 4 on the left half, 4 on the right half, 2 at the apex — 4 + 4 + 2 = 10; evenly spaced against open sky, all ten bowls countable.
 Every one of the 10 must be fully visible: nothing occluded by a body, limb, cloth, cloud or another object, nothing fused, broken, cropped by the golden frame, or half-hidden behind a figure. Keep them at one consistent size, shape, material and color so they read as a single countable set, with a clear gap of background between each one. Place no other chalices anywhere else on the card — not in the frame, not in the background, not held by a figure, not as decoration. The emblem in the top medallion is a separate heraldic motif and does NOT count toward the 10. Before finishing, count them: 1 to 10. If the total is not 10, redraw.
 
-DEPTH & LIGHT: layered atmospheric background receding into mist per the scene, glowing ambient reflections on wet skin and water, cinematic warm-cool contrast, faint golden sparkles in the air.
+DEPTH & LIGHT: layered neon RGB ambient lighting, glowing monitor and hologram reflections on wet skin, cinematic warm-cool contrast, night city bokeh through floor-to-ceiling windows, faint golden sparkles in the air.
 
 At the bottom, centered: the title "TEN OF CUPS" in antique-gold serif lettering matching reference 1. No numbers, no Roman numerals, no other text, no frame, no border, no banner, no watermark, no signature. Masterpiece manhwa illustration, portrait 7:12.
 ```
