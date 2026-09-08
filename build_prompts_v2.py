@@ -560,6 +560,7 @@ ARMOR_PHRASES = [
     ("dark hair streaming wildly back from beneath an open winged helmet",
      "dark hair streaming wildly back, pinned with a slim silver wing hairpin"),
     ("braided under an oak-leaf crested helmet", "braided loosely with a small oak-leaf pin"),
+    ("flowing behind an ornate gothic helm", "flowing loose behind her"),
     ("xăm nhỏ hình mũ giáp cánh trên vai trái", "xăm nhỏ hình đôi cánh bạc trên vai trái"),
     # classic scenes
     ("a graceful 22-year-old female knight in winged silver armor riding a calm white steed "
@@ -942,7 +943,7 @@ def main():
         # Kiểm tra giáp: chỉ quét phần mô tả (bỏ qua câu NO ARMOR chủ đích trong template)
         ban = "NO ARMOR ANYWHERE ON THE FIGURE"
         scan = prompt.split(ban)[0] + prompt.split(ban)[-1][prompt.split(ban)[-1].find("\n"):]
-        if re.search(r"armou?r|helmet|breastplate|gauntlet|chainmail|giáp", scan, re.I):
+        if re.search(r"armou?r|helmet|\bhelms?\b|breastplate|gauntlet|chainmail|giáp", scan, re.I):
             armor_hits += 1
             print(f"[WARN] Vẫn còn từ giáp trong phần mô tả: {slug}")
 
