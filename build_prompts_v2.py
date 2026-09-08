@@ -120,15 +120,20 @@ POSE_OVERRIDES = {
                "relaxed hand cradles its flaming mane — the beast's eyes half-closed in total "
                "docile trust, mouth softly closed, completely tamed by her tenderness, "
                "exactly one lion and no other animals in the scene",
-    # Justice (phương án 4 — Cold Water Verdict): nằm nửa chìm trong bồn đôi dưới tường nước
-    "11-justice": "reclining back inside one of the shallow twin basins, half-submerged, the "
-               "vertical sheet of falling water cascading in a glowing curtain just behind "
-               "her head; her wet dark hair fans out over the basin rim, one arm draped "
-               "along the rim behind her head, the other resting the slim crystal blade FLAT "
-               "along the basin edge beside her hip; her knees break the water surface in a "
-               "bent alluring line, water rivulets and foam tracing her body; a small golden "
-               "balance scale rests balanced on the marble edge above her head, two pans "
-               "level, her gaze level and unblinking up at the viewer",
+    # Justice (phương án 4 — Cold Water Verdict, gợi cảm hơn): nằm cong sâu trong bồn đôi
+    "11-justice": "reclining deep and languid inside one of the shallow twin basins, "
+               "half-submerged in a sensuous S-line — spine arched so her chest lifts out "
+               "of the water toward the viewer, head tipped far back over the basin rim "
+               "with her throat bared and lips softly parted, half-lidded grey-green eyes "
+               "gazing up at the viewer through wet lashes; one arm stretched languidly "
+               "overhead along the rim, fingertips playing in the glowing falling-water "
+               "curtain behind her, the other resting the slim crystal blade FLAT along "
+               "the basin edge beside her hip; one knee rises slowly out of the water with "
+               "her foot braced against the inner rim, the other leg extended long beneath "
+               "the surface, hips tilted toward the viewer; her wet dark hair fans wide "
+               "over the basin rim, water rivulets, foam and droplets tracing every curve "
+               "of her body; a small golden balance scale rests balanced on the marble "
+               "edge above her head, two pans level",
     # Temperance: hai chalice rót dòng nước mỏng — nhìn lại qua vai
     "14-temperance": "standing in graceful contrapposto between the two basins, one arm raised "
                "high tipping a golden chalice so a single THIN unbroken stream of water pours "
