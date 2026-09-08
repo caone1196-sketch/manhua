@@ -87,6 +87,17 @@ POSE_OVERRIDES = {
                "swaying in a soft alluring S-curve, water droplets still dripping from her "
                "fingertips and wet hair, while her white Pomeranian puppy trots faithfully "
                "behind her along the pool rim",
+    # The Hierophant: nữ tư tế đứng giữa, 2 người hầu quỳ 2 bên dâng lễ
+    "05-hierophant": "standing tall and serene at the center on the low marble step platform "
+               "before the carved stone tub like a high priestess at her altar — weight shifted "
+               "onto one leg, hip softly popped into an S-curve, one arm raised in a graceful "
+               "blessing over her attendants, the other hand resting light on her hip, chin "
+               "lifted with gentle authority, water droplets still trailing down her arms; "
+               "EXACTLY TWO kneeling handmaidens flank her on the wet marble floor — one on her "
+               "left offering up a folded white towel on a small brass tray, one on her right "
+               "swinging a smoking golden censer whose incense curls into the steam, both adult "
+               "women in simple modest white linen spa-attendant wraps with hair in low buns, "
+               "heads bowed reverently toward her, no other people in the scene",
 }
 
 # ---------------------------------------------------------------------------
@@ -131,8 +142,10 @@ BATHROOM_STYLES = {
         "rolling low, a golden ankh stylus in her hand"),
     "05-hierophant": ("Byzantine gilded chapel bath",
         "a wise 24-year-old streamer in a Byzantine chapel bathroom: a gold-leaf mosaic dome ceiling, "
-        "twin green-marble columns, a carved stone tub, warm candle-toned sconces, two crossed golden "
-        "keys glowing on the mosaic wall above the tub"),
+        "twin green-marble columns flanking a low marble step platform before the carved stone tub so "
+        "it reads like an altar, warm candle-toned sconces, two crossed golden keys glowing on the "
+        "mosaic wall above the tub, and exactly two kneeling handmaidens in modest white linen "
+        "attendant wraps — one at each side of the platform, heads bowed toward her"),
     "06-lovers": ("Rose-petal twin-tub spa",
         "a romantic 21-year-old streamer in a couples' spa bathroom: two copper clawfoot tubs side by "
         "side on rose-quartz tile, fresh red rose petals floating on the water, an apple coiled by a "
