@@ -4,7 +4,7 @@
 - **Emblem:** an infinity symbol
 - **Reference style/contour/lettering:** `major_08_strength.png`
 - **Reference wet fabric/swimwear:** `test_card_17_the_star.png`
-- **Outfit:** soaking-wet midnight-black micro string bikini with fine gold chain straps (opaque swimwear, no see-through)
+- **Outfit:** soaking-wet midnight-black micro string bikini with fine gold chain straps (opaque swimwear)
 - **Pose nghệ thuật:** standing arabesque-like balance — weight on one leg, the other extended back resting on the tub rim, arms held in a high-low axis line like a dancer
 - **Background mode:** bathroom
 
