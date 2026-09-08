@@ -595,6 +595,8 @@ def strip_armor(text: str) -> str:
         s = s.replace(old, new)
     for old, new in GARMENT_PHRASES:
         s = s.replace(old, new)
+    for old, new in MULTIFIGURE_PHRASES:
+        s = s.replace(old, new)
     for rx, new in ARMOR_REGEXPS:
         s = rx.sub(new, s)
     return s.strip()
@@ -607,6 +609,22 @@ GARMENT_PHRASES = [
     ("unbound and draping over cloaked shoulders", "unbound and draping over her bare shoulders"),
     ("deep brown hair tucked under a travel cloak", "deep brown hair tucked behind her ears with a small brass pin"),
     ("gathered softly in a misty veil", "gathered softly with a thin pearl hairpin"),
+]
+
+# Spec đa nhân vật (bản gốc tarot cổ điển: 3 thiếu nữ, người tình...)
+# → viết lại thành MỘT người nhưng giữ tinh thần biểu tượng của lá
+MULTIFIGURE_PHRASES = [
+    # cups-03 (Three of Cups — 3 maidens → 1 nàng mang 3 sắc màu + 3 bông hoa)
+    ("**C** ba dáng hài hòa: mảnh · trung bình mềm · tròn trịa mềm",
+     "**C** dáng mềm mại cân đối, eo thon, đường cong hài hòa"),
+    ("rich chocolate-brown, golden-blonde, and copper hair among the three maidens",
+     "rich chocolate-brown hair with golden-blonde and copper highlights woven through loose waves"),
+    ("ba đôi mắt khác nhau: chocolate doe · amber almond · copper-green cat",
+     "chocolate doe eyes with a warm amber-copper glint"),
+    ("warm peach · honey · fair", "warm peach"),
+    ("mỗi cô cài một bông: hồng · tím · cúc", "ba bông hoa cài tóc: hồng · tím · cúc"),
+    # cups-02 (Two of Cups — bỏ ám chỉ người thứ hai, giữ ánh mắt giao hòa)
+    ("say mê nhìn người kia", "say mê hướng về phía trước, ánh mắt giao hòa"),
 ]
 
 # Bối cảnh streamer hiện đại (kế thừa update_modern_manhwa.py, đã sanitize)
@@ -793,7 +811,7 @@ def bathroom_count_lock(c, slug):
     layout = BATHROOM_LAYOUTS.get(slug)
     if not layout:
         layout = cnt.get("layout", f"exactly {n} {obj}, all fully visible")
-    obj_upper = obj.upper() if n > 1 else obj
+    obj_upper = obj.upper()
     lines = [
         f"COUNT LOCK — EXACTLY {n} {obj_upper} (hard constraint; count before you draw).",
         f"The scene contains exactly {n} {obj} — not {n - 1}, not {n + 1}.",
