@@ -22,6 +22,7 @@ Không ghi đè cards.json.
 """
 import json
 import os
+import re
 
 OUT_DIR = "prompts_frameless_v2"
 
@@ -35,11 +36,68 @@ GROUP_OUTFIT = {
 
 
 def sanitize_scene(scene: str) -> str:
-    """Đổi mô tả nude/semi-nude của spec cũ thành trang phục swimwear ướt."""
+    """Đổi mô tả nude/semi-nude/see-through của spec cũ thành trang phục swimwear ướt."""
     s = scene.replace("semi-nude", "in a soaking-wet micro string bikini")
     s = s.replace("a nude woman", "a woman in a soaking-wet micro string bikini")
     s = s.replace("nude woman", "woman in a soaking-wet micro string bikini")
     s = s.replace("nude", "swimwear-clad")
+    # Các cụm lộ liễu / xuyên thấu còn sót sau vòng replace thô
+    EXTRA = [
+        ("draped only in a transparent silk veil so fine it clings and reveals her bare body beneath, "
+         "the veil slipping from one shoulder and streaming behind her",
+         "wearing a soaking-wet micro string bikini with a fine opaque silk sash slipping from one "
+         "shoulder and streaming behind her"),
+        ("bare torso with a length of silk slung low across her hips",
+         "soaking-wet micro string bikini with a length of silk slung low across her hips"),
+        ("one breast bared, ", ""),
+        ("one breast bared", ""),
+        ("reveals her bare body", "gleams over her soaking-wet micro string bikini"),
+        ("transparent silk veil", "opaque silk sash"),
+        ("bare shoulders and the soft line of her breasts veiled only by a drift of sheer gauze",
+         "bare shoulders, her soaking-wet micro string bikini accented by a drift of opaque silk gauze over one arm"),
+        ("draped only in a diaphanous opaque silk sash so fine it clings to her soft curves and glows "
+         "with warm light against her skin, the gossamer fabric slipping from one shoulder",
+         "wearing a soaking-wet micro string bikini with a silk sash glowing with warm light, "
+         "slipping from one shoulder"),
+    ]
+    for old, new in EXTRA:
+        s = s.replace(old, new)
+    # Quy tắc tổng quát: mọi cụm "draped only in ..." (vải mỏng che thân) -> swimwear + sash
+    s = re.sub(r"draped only in [^,.]*", "wearing a soaking-wet micro string bikini with a glowing silk sash", s)
+    s = s.replace("her bare back and the curve of one breast veiled and revealed by the golden lantern light",
+                  "her wet skin glowing in the golden lantern light")
+    s = s.replace("flowing transparent silk", "flowing silk robes")
+    s = s.replace("transparent silk", "opaque silk")
+    s = s.replace("sheer white silk gauze", "opaque white silk sash")
+    EXTRA2 = [
+        ("a length of sheer silk sliding fully off one shoulder to bare one breast and one hip",
+         "an opaque silk sash sliding off one shoulder"),
+        ("draped in sheer black silk that veils and reveals her bare form",
+         "wearing a soaking-wet black micro string bikini with a flowing black silk sash"),
+        ("her bare torso turned toward the light", "her wet glossy torso turned toward the light"),
+        ("one arm across her breast", "one arm across her chest"),
+        ("wearing a gown of antique WHITE SILK GAUZE so sheer and transparent that the light shines "
+         "through it and the long line of her body reads clearly beneath",
+         "wearing a fully opaque gown of antique white silk glowing softly in the sea light"),
+    ]
+    for old, new in EXTRA2:
+        s = s.replace(old, new)
+    s = re.sub(r"veils and reveals her [a-z ]*form", "drapes her swimwear-clad figure", s)
+    s = re.sub(r"so sheer and transparent that[^,]*", "fully opaque", s)
+    s = s.replace("sheer opaque silk", "flowing opaque silk")
+    EXTRA3 = [
+        ("draped in sheer black silk upon a dark pedestal",
+         "wearing a soaking-wet black micro string bikini with a black silk sash upon a dark pedestal"),
+        ("in a sheer flowing gown that clings to breast and hip",
+         "in a flowing fully opaque gown that clings to her curves"),
+        ("in a very thin veil of antique silk gauze, almost transparent, her shoulders bare",
+         "in an opaque antique silk gown, her shoulders bare"),
+        ("whose body is wrapped in a single sheet of TRANSPARENT antique silk gauze, one shoulder "
+         "and the curve of her breast left bare",
+         "wearing an opaque antique silk gown with one shoulder bare"),
+    ]
+    for old, new in EXTRA3:
+        s = s.replace(old, new)
     return s
 
 
@@ -51,7 +109,7 @@ ART STYLE (match reference 1): Korean manhwa webtoon rendering — crisp clean l
 
 GARMENT-TO-BODY DETAIL: thin strap tension lines pressing gently into shoulders and hips, fabric edges precisely tracing the underbust curve and hip crest, subtle soft skin swell over each bikini edge, delicate cast-shadow lines under the fabric rims, small tension folds in the wet fabric following the body topography, side-tie ribbon knots pulling the hip line with tiny gathers, specular highlights along every seam and strap.
 
-WET FABRIC (match reference 2): soaking-wet {outfit} micro string bikini — waterlogged darkened tone with translucent glossy sheen, clinging like a second skin with zero loose folds, plastered wet wrinkles, water droplets beading on the fabric surface, tiny drips falling from the fabric edges; whole body wet with droplets and thin rivulets, wet gleaming hair strands.
+WET FABRIC (match reference 2): soaking-wet {outfit} micro string bikini — waterlogged darkened tone with a glossy wet sheen, fabric fully opaque, clinging like a second skin with zero loose folds, plastered wet wrinkles, water droplets beading on the fabric surface, tiny drips falling from the fabric edges; whole body wet with droplets and thin rivulets, wet gleaming hair strands.
 
 FIGURE: {char_spec} Pose: graceful S-curve contrapposto where the scene allows (hip popped, back slightly arched, one knee softly bent, barefoot); blushing cheeks, cat eyeliner, softly parted lips with a confident gentle smile.
 
