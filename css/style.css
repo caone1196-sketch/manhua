@@ -1,0 +1,270 @@
+:root {
+  --bg: #0e0d12;
+  --bg-soft: #16141d;
+  --card: #1c1926;
+  --card-hover: #232030;
+  --text: #ece9f4;
+  --text-dim: #9b95ad;
+  --accent: #c9a3ff;
+  --accent-2: #8b5cf6;
+  --ring: rgba(201, 163, 255, 0.35);
+  --shadow: 0 18px 50px rgba(0, 0, 0, 0.55);
+  --radius: 18px;
+}
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+html { scroll-behavior: smooth; }
+
+body {
+  background:
+    radial-gradient(1100px 500px at 85% -10%, rgba(139, 92, 246, 0.16), transparent 60%),
+    radial-gradient(900px 480px at -10% 20%, rgba(201, 163, 255, 0.08), transparent 55%),
+    var(--bg);
+  color: var(--text);
+  font-family: "Be Vietnam Pro", system-ui, -apple-system, sans-serif;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* ---------- Header ---------- */
+.site-header {
+  padding: 52px 24px 20px;
+  text-align: center;
+}
+
+.logo {
+  font-size: clamp(2rem, 5vw, 3.2rem);
+  font-weight: 800;
+  letter-spacing: 0.14em;
+  background: linear-gradient(92deg, #fff 10%, var(--accent) 55%, var(--accent-2) 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.logo span {
+  -webkit-text-fill-color: var(--accent-2);
+  opacity: 0.8;
+}
+
+.tagline {
+  margin-top: 8px;
+  color: var(--text-dim);
+  font-size: 0.95rem;
+  font-weight: 300;
+  letter-spacing: 0.06em;
+}
+
+/* ---------- Layout ---------- */
+.container {
+  width: min(1200px, 100% - 48px);
+  margin: 0 auto;
+  flex: 1;
+  padding: 28px 0 60px;
+}
+
+.toolbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  flex-wrap: wrap;
+  margin-bottom: 22px;
+}
+
+.filter-group { display: flex; gap: 8px; flex-wrap: wrap; }
+
+.chip {
+  appearance: none;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  background: var(--bg-soft);
+  color: var(--text-dim);
+  font: inherit;
+  font-size: 0.85rem;
+  padding: 8px 18px;
+  border-radius: 999px;
+  cursor: pointer;
+  transition: all 0.22s ease;
+}
+
+.chip:hover { color: var(--text); border-color: var(--ring); }
+
+.chip.is-active {
+  color: #14101f;
+  background: linear-gradient(90deg, var(--accent), #e6d5ff);
+  border-color: transparent;
+  font-weight: 600;
+  box-shadow: 0 6px 18px rgba(139, 92, 246, 0.35);
+}
+
+.count-label { color: var(--text-dim); font-size: 0.85rem; }
+
+/* ---------- Grid ---------- */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
+  gap: 20px;
+}
+
+.card {
+  position: relative;
+  background: var(--card);
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  border-radius: var(--radius);
+  overflow: hidden;
+  cursor: zoom-in;
+  transform: translateY(0);
+  transition: transform 0.28s ease, box-shadow 0.28s ease, border-color 0.28s ease;
+  outline: none;
+}
+
+.card:hover, .card:focus-visible {
+  transform: translateY(-6px);
+  border-color: var(--ring);
+  box-shadow: var(--shadow), 0 0 0 1px var(--ring);
+}
+
+.card:focus-visible { box-shadow: 0 0 0 3px var(--ring); }
+
+.card .thumb {
+  display: block;
+  width: 100%;
+  aspect-ratio: 3 / 4;
+  object-fit: cover;
+  object-position: center top;
+  transition: transform 0.45s ease;
+}
+
+.card:hover .thumb { transform: scale(1.05); }
+
+.card .overlay {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 16px;
+  background: linear-gradient(to top, rgba(10, 8, 16, 0.92) 0%, rgba(10, 8, 16, 0.25) 45%, transparent 70%);
+  opacity: 0;
+  transition: opacity 0.28s ease;
+}
+
+.card:hover .overlay, .card:focus-visible .overlay { opacity: 1; }
+
+.card .title { font-weight: 600; font-size: 1rem; }
+
+.card .meta { color: var(--text-dim); font-size: 0.8rem; margin-top: 4px; }
+
+.card .index-badge {
+  position: absolute;
+  top: 12px;
+  left: 12px;
+  background: rgba(14, 12, 20, 0.7);
+  backdrop-filter: blur(6px);
+  color: var(--accent);
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  padding: 5px 11px;
+  border-radius: 999px;
+  border: 1px solid rgba(201, 163, 255, 0.25);
+}
+
+.empty-note {
+  text-align: center;
+  color: var(--text-dim);
+  padding: 60px 0;
+}
+
+/* ---------- Lightbox ---------- */
+.lightbox {
+  position: fixed;
+  inset: 0;
+  z-index: 50;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(8, 6, 12, 0.92);
+  backdrop-filter: blur(14px);
+  animation: fade-in 0.22s ease;
+}
+
+.lightbox[hidden] { display: none; }
+
+@keyframes fade-in { from { opacity: 0; } to { opacity: 1; } }
+
+.lb-stage {
+  max-width: min(92vw, 1400px);
+  max-height: 88vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 14px;
+}
+
+.lb-stage img {
+  max-width: 100%;
+  max-height: 78vh;
+  object-fit: contain;
+  border-radius: 14px;
+  box-shadow: var(--shadow);
+  user-select: none;
+  -webkit-user-drag: none;
+}
+
+.lb-caption {
+  color: var(--text-dim);
+  font-size: 0.9rem;
+  letter-spacing: 0.04em;
+}
+
+.lb-btn {
+  position: fixed;
+  appearance: none;
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  background: rgba(28, 25, 38, 0.65);
+  color: var(--text);
+  cursor: pointer;
+  border-radius: 999px;
+  display: grid;
+  place-items: center;
+  transition: all 0.2s ease;
+  z-index: 60;
+}
+
+.lb-btn:hover { background: var(--card-hover); border-color: var(--ring); color: var(--accent); }
+
+.lb-close { top: 22px; right: 26px; width: 46px; height: 46px; font-size: 1.15rem; }
+.lb-prev, .lb-next { top: 50%; transform: translateY(-50%); width: 54px; height: 84px; font-size: 2.4rem; font-weight: 300; }
+.lb-prev { left: 22px; }
+.lb-next { right: 22px; }
+
+.lb-counter {
+  position: fixed;
+  bottom: 22px;
+  left: 50%;
+  transform: translateX(-50%);
+  color: var(--text-dim);
+  font-size: 0.85rem;
+  letter-spacing: 0.12em;
+}
+
+/* ---------- Footer ---------- */
+.site-footer {
+  text-align: center;
+  padding: 26px;
+  color: var(--text-dim);
+  font-size: 0.8rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+/* ---------- Responsive ---------- */
+@media (max-width: 640px) {
+  .grid { grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); gap: 12px; }
+  .lb-prev { left: 10px; }
+  .lb-next { right: 10px; }
+  .lb-prev, .lb-next { width: 42px; height: 68px; }
+  .container { width: calc(100% - 28px); }
+}

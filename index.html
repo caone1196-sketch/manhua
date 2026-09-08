@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Manhua Gallery</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@300;400;600;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>📖</text></svg>" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="header-inner">
+      <h1 class="logo">MANHUA<span>·</span>GALLERY</h1>
+      <p class="tagline">Bộ sưu tập truyện &amp; artwork</p>
+    </div>
+  </header>
+
+  <main class="container">
+    <div class="toolbar">
+      <div class="filter-group" role="tablist" aria-label="Lọc ảnh">
+        <button class="chip is-active" data-filter="all" role="tab">Tất cả</button>
+        <button class="chip" data-filter="portrait" role="tab">Dọc</button>
+        <button class="chip" data-filter="landscape" role="tab">Ngang</button>
+      </div>
+      <span class="count-label" id="countLabel"></span>
+    </div>
+
+    <section class="grid" id="gallery" aria-label="Danh sách ảnh"></section>
+
+    <p class="empty-note" id="emptyNote" hidden>Không có ảnh nào phù hợp bộ lọc.</p>
+  </main>
+
+  <footer class="site-footer">
+    <p>Manhua Gallery — xem ảnh trực tiếp, bấm để phóng to.</p>
+  </footer>
+
+  <!-- Lightbox -->
+  <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Xem ảnh phóng to" hidden>
+    <button class="lb-btn lb-close" id="lbClose" aria-label="Đóng (Esc)">✕</button>
+    <button class="lb-btn lb-prev" id="lbPrev" aria-label="Ảnh trước (←)">‹</button>
+    <figure class="lb-stage">
+      <img id="lbImage" src="" alt="" />
+      <figcaption class="lb-caption" id="lbCaption"></figcaption>
+    </figure>
+    <button class="lb-btn lb-next" id="lbNext" aria-label="Ảnh sau (→)">›</button>
+    <div class="lb-counter" id="lbCounter"></div>
+  </div>
+
+  <script src="js/app.js"></script>
+</body>
+</html>
