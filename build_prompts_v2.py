@@ -82,10 +82,11 @@ POSE_OVERRIDES = {
     "00-fool": "walking barefoot along the wet stone coping of the rooftop infinity pool, near "
                "the very END of the pool edge without noticing — her eyes fixed dreamily on the "
                "white rose cupped in both hands before her chest, chin dipped, a soft absorbed "
-               "smile, completely unaware how close the stone coping is to running out; one heel "
-               "hovering mid-step over the last stretch of stone, hips swaying in a soft "
-               "alluring S-curve, water droplets still dripping from her fingertips and wet hair, "
-               "while her white Pomeranian puppy trots faithfully behind her along the pool rim",
+               "smile, completely unaware that only two or three flagstones of coping remain in "
+               "front of her before the stone simply stops; one heel hovering mid-step, hips "
+               "swaying in a soft alluring S-curve, water droplets still dripping from her "
+               "fingertips and wet hair, while her white Pomeranian puppy trots faithfully "
+               "behind her along the pool rim",
 }
 
 # ---------------------------------------------------------------------------
@@ -96,13 +97,17 @@ POSE_OVERRIDES = {
 BATHROOM_STYLES = {
     # ------------------------- MAJOR ARCANA (22) -------------------------
     "00-fool": ("Rooftop infinity pool sunrise",
-        "a playful 19-year-old streamer on a high-rise rooftop infinity pool at sunrise: the pool "
-        "water merging seamlessly with the glowing cyberpunk sunrise skyline beyond the edge, the "
-        "long wet stone pool coping reaching its FINAL stretch — only a few steps of stone left "
-        "before the infinity edge spills into open air above the city, steam curling off the warm "
-        "water, skyline lights reflecting in the calm pool surface, a cute white Pomeranian puppy "
-        "trotting faithfully behind her along the pool rim, a single fresh white rose cupped in "
-        "her hands as she gazes at it, oblivious"),
+        "a playful 19-year-old streamer on a high-rise rooftop infinity pool at sunrise, shown "
+        "from a three-quarter side angle that reveals BOTH her rose-gazing face AND the path "
+        "ahead of her: the wet stone coping runs diagonally through the frame and VISIBLY "
+        "TERMINATES in front of her walking direction — only two or three flat flagstones left, "
+        "then the stone stops abruptly and BEYOND IT LIES ONLY OPEN AIR: no floor, no ledge, "
+        "just a thin sheet of pool water spilling over the infinity edge and a sheer glass "
+        "tower facade dropping vertically away, with the tiny glowing sunrise city and clouds "
+        "FAR BELOW filling the empty space directly ahead of her feet; behind her the calm pool "
+        "surface reflects the cyberpunk sunrise skyline, steam curling off the warm water, and "
+        "a cute white Pomeranian puppy trots faithfully after her along the pool rim; the "
+        "vertical drop must read clearly as a cliff-like void she is about to step into"),
     "01-magician": ("Marble vanity mirror wall",
         "a charismatic 22-year-old streamer in a marble magician's bathroom: a long double "
         "vanity beneath a floor-to-ceiling backlit mirror wall, warm brass fixtures, exactly "
