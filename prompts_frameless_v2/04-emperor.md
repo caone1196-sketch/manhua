@@ -30,5 +30,7 @@ DEPTH & LIGHT: soft steam and light-shaft layers diffusing the bathroom's accent
 
 NO ARMOR ANYWHERE ON THE FIGURE — strictly no helmet, no breastplate, no gauntlets, no chainmail, no pauldrons, no metal plates, no knight costume pieces; she wears only the soaking-wet swimwear described above.
 
+ANATOMY & QUALITY LOCK: perfect anatomy — exactly two arms and two legs, exactly five fingers on each hand, natural joint bends, symmetrical face, correct limb count, no extra or fused limbs, no deformed hands, clean crisp lineart; the pose is drawn like a master manhwa figure study.
+
 At the bottom, centered: the title "THE EMPEROR" in antique-gold serif lettering matching reference 1. No numbers, no Roman numerals, no other text, no frame, no border, no banner, no watermark, no signature. Masterpiece manhwa illustration, portrait 7:12.
 ```
