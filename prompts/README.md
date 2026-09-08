@@ -1,52 +1,45 @@
-# Prompts — Bộ 78 lá bài Tarot
+# Prompts — Bộ 78 lá bài Tarot (phiên bản bám đúng ảnh The Star)
 
-Prompt cho đủ 78 lá bài, viết theo đúng **phong cách lá mẫu The Star** (`images/the-star.png`).
+Tất cả prompt được viết **dựa trên bức ảnh The Star thực tế** (`images/the-star.png`), không còn thành phần tự bịa môi trường.
 
-## Cấu trúc thư mục
+## Phân tích ảnh mẫu The Star (chỉ tham chiếu duy nhất)
+
+| Yếu tố | Mô tả đúng từ ảnh |
+|---|---|
+| Kỹ thuật | Soft anime airbrushed, bán-realistic, linework mảnh chi tiết cao |
+| Ánh sáng | Luminous cinematic glow — ánh sao lạnh xanh-teal phủ toàn cảnh, điểm vàng ấm từ bình/ chữ |
+| Da & vải | Glossy highlights mềm, **giọt nước long lanh** trên da và vải |
+| Bầu trời | Indigo đậm chuyển teal gần đường chân trời, **mật sao dày**, sao 4 cánh lấp lánh (sparkle), trăng lưỡi liềm mảnh |
+| Trung tâm | **Sao 8 cánh khổng lồ, lõi trắng-xanh phát sáng** (biểu tượng lá), 7 sao nhỏ xung quanh |
+| Cảnh | **Suối/rạch trong vắt** chạy từ xa về gần, gợn nước phát sáng; **bờ cỏ xanh tươi** rải **hoa dại trắng & tím**; đồi & cây tối ở xa |
+| Nhân vật | Gái trẻ, tóc thẳng dài, gương mặt tinh tế trầm tĩnh, trang phục voan mỏng |
+| Bố cục | Dọc full-bleed, **chữ gold serif trang trí ở trên cùng giữa trời**, KHÔNG khung viền, KHÔNG chữ khác |
+
+## Quy tắc viết lại 78 lá
+
+1. **Style block cuối mỗi prompt là như nhau 100%** — trích từ ảnh mẫu (kỹ thuật + bầu trời + bố cục + chữ). Không thay đổi.
+2. **Thế giới chung**: đêm sao, suối, bờ cỏ, hoa dại trắng-tím, trăng — đúng như ảnh mẫu. Không còn hoàng hôn/rạng đông/giờ vàng tự bịa.
+3. **Biểu tượng từng lá**: Major = đúng icon cổ điển (sao, trăng tròn, tháp, bánh xe, mặt trời...) đặt trong thế giới trên. Minor = **số lượng vật của bộ** (gậy nở hoa, chén, kiếm, đồng xu vàng) xuất hiện đúng số của bậc bài, nằm tự nhiên trong cảnh.
+4. **Nhân vật**: mỗi lá một nhân vật riêng (tóc, tuổi, vóc dáng, phụ kiện, khí chất). Court cards (Page/Knight/Queen/King) mỗi bộ là 4 nhân vật cố định.
+5. **Trang phục**: cùng chất liệu/gia (voan mỏng, lụa, vải dệt hoa văn, điểm gold) nhưng **khác màu & kiểu dáng** từng lá.
+6. **6 lá đã sinh** (The Star, Fool, Magician, High Priestess, Empress, Emperor) — prompt mô tả **đúng ảnh thực tế** đã tạo, dùng làm chuẩn đối chiếu.
+
+## Cấu trúc
 
 ```
 prompts/
-├── README.md            # file này — DNA phong cách + cách dùng
-├── 01-major-arcana.md   # 22 lá Major Arcana (0 – XXI)
-├── 02-minor-wands.md    # 14 lá Wands ⚡ (Lửa)
-├── 03-minor-cups.md     # 14 lá Cups 🏆 (Nước)
-├── 04-minor-swords.md   # 14 lá Swords ⚔️ (Không khí)
-└── 05-minor-pentacles.md# 14 lá Pentacles 🪙 (Đất)
+├── README.md             # file này
+├── 01-major-arcana.md    # 22 lá (0–XXI)
+├── 02-minor-wands.md     # 14 lá ⚡ gậy nở hoa phát sáng ấm
+├── 03-minor-cups.md      # 14 lá 🏆 chén vàng — hợp nhất với cảnh nước
+├── 04-minor-swords.md    # 14 lá ⚔️ kiếm thép ánh cyan
+└── 05-minor-pentacles.md # 14 lá 🪙 đồng xu vàng to
 ```
-
-Mỗi lá là **một đoạn prompt hoàn chỉnh, copy-paste sẵn** — bao gồm cảnh + nhân vật + hoa văn bài + style chung.
-
-## DNA phong cách (tách từ lá mẫu The Star)
-
-| Thành phần | Chuẩn |
-|---|---|
-| Kỹ thuật vẽ | Soft anime airbrushed, linework tinh tế, chi tiết cao |
-| Ánh sáng | Luminous cinematic glow, ánh sáng môi trường (sao/trăng/mặt trời/nắng) |
-| Da/vải | Soft glossy highlights (chấm sáng nhẹ da, vải, nước) |
-| Bảng màu tổng thể | Deep indigo + teal/silver, điểm nhấn vàng gold |
-| Nhân vật | Người trưởng thành, duyên dáng, khuôn mặt tinh tế, biểu cảm trầm/mong ước |
-| Bố cục | Dọc full-bleed (tỉ lệ 70×120mm), tên bài ở trên cùng, KHÔNG khung viền, KHÔNG chữ khác |
-| Chữ | Ornamental gold serif, phát sáng nhẹ, ở giữa bầu trời |
-
-## Môi trường theo từng bộ (Minor Arcana)
-
-| Bộ | Yếu tố | Môi trường trong prompt |
-|---|---|---|
-| Major Arcana | Thiên thể | Đêm sao indigo + ánh sao vàng |
-| Wands | Lửa | Hoàng hôn cam-hồng, tàn lửa, đom đóm |
-| Cups | Nước | Cảnh nước xanh-teal, mưa nhẹ, trăng, sương |
-| Swords | Không khí | Trời bạc-xanh cyan, mây mỏng gió, bão tan thành rạng đông |
-| Pentacles | Đất | Rừng xanh-vàng giờ vàng, nắng xuyên lá, hoa dại |
-
-## Nhân vật
-
-Mỗi lá có nhân vật **đặc trưng riêng**: màu tóc, kiểu tóc, độ tuổi (đều trưởng thành), vóc dáng, trang phục, phụ kiện và khí chất riêng — xem chi tiết trong từng file. Cùng một nhân vật có thể xuất hiện ở nhiều lá (VD: Queen/Knight/King của mỗi bộ là một nhân vật cố định xuyên suốt bộ đó).
 
 ## Cách dùng
 
-1. Copy prompt của lá cần tạo (mỗi lá nằm ngay dưới heading `##`).
-2. Dán vào trình sinh ảnh (tỉ lệ dọc, gợi ý 3:5 hoặc 70:120).
-3. Nếu muốn giữ đúng tỉ lệ chuẩn tarot để dùng trong **Tarot Studio**: xuất dọc, vào tab *Thiết kế bài* → chọn *Giữ nguyên tỉ lệ* (ảnh đã có sẵn tên bài, bỏ trống ô "Tên bài" trong studio).
-4. Muốn đổi tên bài sang tiếng Việt: thay chữ trong `title '...'` ở cuối prompt.
+- Copy nguyên khối prompt (nằm dưới heading `##`) vào trình sinh ảnh, tỉ lệ dọc ~3:5.
+- Muốn tên tiếng Việt: thay chữ trong `title '...'` ở cuối prompt.
+- Ảnh sinh ra đã có sẵn tên bài — khi ghép trong Tarot Studio, bỏ trống ô "Tên bài".
 
-> Ghi chú: prompt viết bằng tiếng Anh để model hiểu chính xác nhất. Các lá mẫu đã sinh: The Star (XVII) — xem `images/the-star.png`.
+> Lá mẫu chuẩn: `images/the-star.png`. Nếu một prompt sinh ra lệch style, hãy thêm câu: "same exact art style, lighting and sky as the reference image" ở đầu prompt.
