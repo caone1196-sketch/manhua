@@ -98,6 +98,17 @@ POSE_OVERRIDES = {
                "swinging a smoking golden censer whose incense curls into the steam, both adult "
                "women in simple modest white linen spa-attendant wraps with hair in low buns, "
                "heads bowed reverently toward her, no other people in the scene",
+    # The Lovers: 2 nhân vật — hai người yêu trong đôi bồn đồng, tay đan nhau trên khay táo
+    "06-lovers": "reclining back in the LEFT copper clawfoot tub amid the floating rose petals, "
+               "one arm draped over the rolled copper rim, her whole body arched in a soft "
+               "alluring curve toward her lover, gazing at her with adoring half-lidded eyes "
+               "(liếc nghiêng say đắm về phía người kia); her lover — a second young woman with "
+               "soft honey-blonde loose waves, sea-green almond eyes and light golden skin — "
+               "sits upright against the rim of the RIGHT clawfoot tub, leaning in over the "
+               "water toward her, their hands reaching out and fingers gently interlocking in "
+               "the air just above the marble tray with the apple coiled by a silver serpent, "
+               "foreheads nearly touching, both in matching soaking-wet pearl-white micro "
+               "string bikinis, EXACTLY TWO women in the scene — never one, never three",
 }
 
 # ---------------------------------------------------------------------------
@@ -147,9 +158,11 @@ BATHROOM_STYLES = {
         "mosaic wall above the tub, and exactly two kneeling handmaidens in modest white linen "
         "attendant wraps — one at each side of the platform, heads bowed toward her"),
     "06-lovers": ("Rose-petal twin-tub spa",
-        "a romantic 21-year-old streamer in a couples' spa bathroom: two copper clawfoot tubs side by "
-        "side on rose-quartz tile, fresh red rose petals floating on the water, an apple coiled by a "
-        "silver serpent on a marble tray between the tubs, soft blush lantern light"),
+        "a romantic 21-year-old streamer and her lover — exactly two young women together — in a "
+        "couples' spa bathroom: two copper clawfoot tubs side by side on rose-quartz tile, one "
+        "woman in each tub turning toward each other, fresh red rose petals floating on the "
+        "water, an apple coiled by a silver serpent on a marble tray between the tubs beneath "
+        "their interlocked hands, soft blush lantern light"),
     "07-chariot": ("Motorsport penthouse bath",
         "a heroic 22-year-old streamer in a motorsport penthouse bathroom: black-and-white checkered "
         "marble floor, carbon-fiber vanity, a canopy shower with two chrome sphinx-shaped fixtures, a "
