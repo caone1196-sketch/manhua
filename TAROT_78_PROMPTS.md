@@ -1,0 +1,1245 @@
+# 🔮 BỘ PROMPTS 78 LÁ BÀI TAROT THEO PHONG CÁCH MANHWA (NGUỒN ẢNH: CAPTURE3.PNG)
+
+> **Tài liệu tạo ảnh AI chuyên sâu:** Bộ 78 lá bài Tarot chuẩn Rider-Waite-Smith được chuyển thể nghệ thuật sang phong cách **Korean Adult Manhwa / Webtoon Digital Art** (dựa trên nguồn phong cách từ ảnh `Capture3.PNG`: nhân vật quyến rũ, nét vẽ sắc nét, bóng đổ mềm mại, da bắt sáng bóng bẩy, trang phục đan dây/ren cách điệu, ánh sáng tương phản rực rỡ và khung viền bài Tarot ma thuật).
+
+---
+
+## 🎨 1. PHÂN TÍCH & GIẢI MÃ PHONG CÁCH GỐC (STYLE DECODING TỪ CAPTURE3.PNG)
+
+| Thành phần thị giác | Đặc điểm phân tích từ Capture3.PNG | Ứng dụng vào bộ bài Tarot |
+| :--- | :--- | :--- |
+| **Nét vẽ & Thể loại (Art Style)** | Korean Modern Webtoon / Adult Manhwa illustration (Toptoon, Lezhin style). | Đường nét viền rõ nét (crisp clean lineart), kết hợp gradient shading và cell shading mượt mà. |
+| **Nhân vật & Biểu cảm (Character & Expression)** | Nữ chính tóc vàng quyến rũ, mắt xếch kẻ eyeliner quyến rũ, má ửng hồng (blush), bờ môi hé mở gợi cảm, thần thái cuốn hút. | Giữ nguyên phong thái mê hoặc, tự tin, đa dạng hóa theo tính chất từng lá bài (hoàng gia, bí ẩn, kiêu hãnh, cuồng nhiệt). |
+| **Trang phục & Phụ kiện (Outfit & Accessories)** | Đồ lót/dây đai harness trắng tinh tế, vòng cổ choker, tất đùi viền ren (thigh-high stockings). | Cách điệu trang phục truyền thống của Tarot thành các thiết kế hiện đại, quyến rũ với chất liệu lụa, voan trong suốt, dây harness và kim loại vàng/bạc. |
+| **Ánh sáng & Màu sắc (Lighting & Palette)** | Ánh sáng mềm kết hợp viền sáng (rim lighting), điểm nhấn phản chiếu bóng (specular highlights), hào quang phát sáng nhẹ. | Phối màu rực rỡ theo 4 nguyên tố: Lửa (Đỏ cam vàng - Gậy), Nước (Xanh dương ngọc - Cốc), Khí (Bạc tím lam - Kiếm), Đất (Vàng kim xanh lục - Tiền). |
+| **Bố cục khung bài (Tarot Card Framing)** | Tỷ lệ dọc chuẩn bài Tarot (2:3 hoặc 9:16), trọng tâm nhân vật nổi bật. | Bổ sung khung viền hoa văn vàng ma thuật (ornate golden filigree tarot border), biểu tượng chiêm tinh và tên lá bài. |
+
+---
+
+## ⚙️ 2. HƯỚNG DẪN SỬ DỤNG VỚI CÁC CÔNG CỤ AI
+
+### A. Midjourney (v6.1 / Niji 6)
+- **Tỷ lệ khung hình:** `--ar 2:3` hoặc `--ar 9:16`
+- **Phong cách:** `--v 6.1 --style raw --stylize 250`
+- **Sử dụng ảnh mẫu Capture3 làm nguồn tham chiếu (Style Reference / Image Prompt):**
+  - Đưa link ảnh `Capture3.PNG` lên Discord hoặc dùng URL:
+  - Cú pháp: `[Link_Ảnh_Capture3] [Nội dung prompt lá bài] --sref [Link_Ảnh_Capture3] --sw 150 --ar 2:3 --v 6.1`
+
+### B. Stable Diffusion (SDXL / NovelAI / SeaArt / Civitai Webtoon Checkpoints)
+- **Model đề xuất:** Các Checkpoint/LoRA Webtoon như *Animagine XL*, *Pony Diffusion V6*, *AOM3*, *Webtoon manhwa LoRA*.
+- **Cấu trúc Prompt:** `masterpiece, best quality, manhwa art, korean webtoon style, [Prompt chi tiết của lá bài], volumetric lighting, ray tracing`
+- **Negative Prompt chung đề xuất:**
+  `low quality, worst quality, bad anatomy, deformed hands, extra limbs, bad proportions, blurry, watermark, signature, text, mutation, deformed eyes`
+- **Sampling & Steps:** DPM++ 2M Karras, 28-35 steps, CFG Scale: 6.5 - 7.5.
+
+---
+
+## 🌟 3. DANH SÁCH PROMPTS CHI TIẾT 78 LÁ BÀI TAROT
+
+
+---
+
+## 🔮 PHẦN I: MAJOR ARCANA (BỘ ẨN CHÍNH - 22 LÁ)
+
+### 🎴 0. The Fool (Chàng Khờ / Kẻ Ngây Thơ)
+
+- **Ý nghĩa cốt lõi:** Khởi đầu mới, sự tự do, ngây thơ mạo hiểm, bước nhảy của niềm tin.
+- **Ý tưởng tạo hình:** Cô nàng tóc vàng manhwa quyến rũ trong bộ trang phục bohemian xẻ tà phóng khoáng đan dây trắng, bước đi vô tư bên bờ vực pha lê phát sáng, tay cầm đóa hồng trắng phát quang, một chú cáo nhỏ trắng tuyết quấn quýt bên chân, ánh bình minh vàng rực chiếu xuyên qua vách núi.
+
+#### 🚀 Midjourney Prompt:
+```text
+Tarot card of 'The Fool', manhwa adult webtoon art style, gorgeous playful blonde maiden with long wavy hair, flirtatious smile, blushing cheeks, wearing white translucent strapped harness bohemian crop top and sheer flowing ribbons, standing fearlessly on the edge of a glowing crystal cliff, holding a luminescent white rose, a cute magical white fox jumping joyfully at her feet, ethereal morning sunlight, floating glowing feather particles, ornate glowing gold tarot border, high gloss cell shading, masterpiece, sharp focus, vibrant pastel colors --ar 2:3 --v 6.1 --style raw
+```
+
+#### 🎨 Stable Diffusion / NovelAI Tags:
+```text
+masterpiece, best quality, manhwa art, korean webtoon style, 1girl, the fool tarot card, blonde hair, seductive smile, blush, open shoulders, white strappy harness, sheer crop top, standing on crystal cliff edge, holding luminous white rose, magical white fox familiar, sunrise, lens flare, glowing particles, intricate ornate tarot border, specular skin highlights, highly detailed, vibrant colors, ray tracing
+```
+
+### 🎴 I. The Magician (Pháp Sư / Nhà Ảo Thuật)
+
+- **Ý nghĩa cốt lõi:** Ý chí, sức mạnh sáng tạo, sự tự tin, làm chủ 4 nguyên tố để biến ước mơ thành hiện thực.
+- **Ý tưởng tạo hình:** Nữ pháp sư kiêm streamer quyền lực đứng trước bàn tế lễ công nghệ ma thuật, một tay chỉ lên bầu trời đầy sao, một tay hướng xuống mặt đất. Phía trước trôi nổi 4 bảo vật phát sáng: Cây trượng lửa, Chiếc cốc nước thánh, Thanh gươm lôi điện và Đồng tiền vàng. Vòng vô cực (Infinity) phát sáng vàng rực trên đầu.
+
+#### 🚀 Midjourney Prompt:
+```text
+Tarot card of 'The Magician', Korean manhwa adult webtoon aesthetic, alluring blonde sorceress with confident smirking expression, winged eyeliner, wearing a crimson silk robe over a delicate white bondage harness lingerie, glowing infinity halo hovering above her head, standing before an altar with floating glowing elemental relics: flaming wand, glowing chalice, electric sword, golden pentacle, one hand raised to the cosmos and one pointing to the earth, mystical rune circles, dynamic volumetric lighting, glossy finish, intricate gold filigree card frame --ar 2:3 --v 6.1 --style raw
+```
+
+#### 🎨 Stable Diffusion / NovelAI Tags:
+```text
+masterpiece, best quality, manhwa art, korean webtoon style, 1girl, the magician tarot card, seductive blonde, smirking, infinity symbol glowing over head, crimson robe, white strappy harness lingerie, choker, floating glowing elemental items, flaming wand, holy grail cup, crystal sword, gold pentacle, magical circle, neon arcane lighting, tarot card framing, glossy specular skin, high detail
+```
+
+### 🎴 II. The High Priestess (Nữ Đại Tư Tế)
+
+- **Ý nghĩa cốt lõi:** Trực giác, bí mật huyền bí, tiềm thức, sự thông thái tĩnh lặng.
+- **Ý tưởng tạo hình:** Nữ tư tế huyền bí ngồi giữa hai cột trụ Boaz (đen) và Jachin (trắng). Khăn voan mỏng manh che hờ hững gương mặt kiêu kỳ quyến rũ, vương miện sừng mặt trăng, tà áo lụa xanh biển xẻ cao để lộ đường cong cơ thể, chân đạp lên vầng trăng khuyết phát sáng, tay ôm cuốn cuộn bí thuật TORA rực sáng.
+
+#### 🚀 Midjourney Prompt:
+```text
+Tarot card of 'The High Priestess', top-tier Korean webtoon manhwa style, mysterious voluptuous priestess seated between two massive marble pillars (one obsidian black, one pure ivory white), wearing translucent sapphire silk veil and revealing white strappy ritual vestment, lunar horned crown on her head, crescent moon glowing beneath her bare feet, holding a glowing arcane parchment scroll on her lap, pomegranate pattern tapestry background, mystical bioluminescent mist, dreamy soft glow, ornate gothic tarot border --ar 2:3 --v 6.1 --style raw
+```
+
+#### 🎨 Stable Diffusion / NovelAI Tags:
+```text
+masterpiece, best quality, manhwa art, korean webtoon style, 1girl, the high priestess tarot card, beautiful mystical blonde, veil, lunar crown, seated between black and white pillars, crescent moon under feet, sheer blue and white ritual lingerie dress, straps, holding glowing secret scroll, pomegranates, ethereal misty atmosphere, soft neon glow, tarot card border, detailed eyes, glossy skin
+```
+
+### 🎴 III. The Empress (Hoàng Hậu / Nữ Hoàng)
+
+- **Ý nghĩa cốt lõi:** Sự sinh sôi, dồi dào, sắc đẹp, khoái lạc trần thế và tình mẫu tử thiên nhiên.
+- **Ý tưởng tạo hình:** Nữ hoàng tuyệt mỹ đầy đặn lộng lẫy ngả người thư thái trên ngai vàng phủ nhung đỏ giữa khu vườn hoa trái sum sê và cánh đồng lúa mì vàng óng. Nàng đội vương miện 12 ngôi sao, khoác áo choàng lụa hồng phấn đính ngọc trai, tay cầm quyền trượng quả cầu vàng, thần thái kiêu hãnh và ngập tràn khoái lạc quyến rũ.
+
+#### 🚀 Midjourney Prompt:
+```text
+Tarot card of 'The Empress', Korean adult manhwa art style, hyper-alluring voluptuous queen reclining sensually on plush crimson velvet cushions in a lush paradisiacal garden, wearing an opulent pearl-draped translucent silk robe, crown of twelve sparkling stars, holding a golden orb scepter, golden wheat field and flowing waterfall in background, ripe pomegranates and blooming roses around her, warm sunbeam lighting, glossy specular highlights, ornate golden tarot border --ar 2:3 --v 6.1 --style raw
+```
+
+#### 🎨 Stable Diffusion / NovelAI Tags:
+```text
+masterpiece, best quality, manhwa art, korean webtoon style, 1girl, the empress tarot card, voluptuous blonde queen, seductive expression, crown of 12 stars, pearl necklace, translucent silk robe, lounging on velvet cushions, golden wheat field, blooming roses, flowing water, golden scepter, warm heavenly lighting, lush abundance, tarot frame, glossy skin, ultra detailed
+```
+
+### 🎴 IV. The Emperor (Hoàng Đế)
+
+- **Ý nghĩa cốt lõi:** Quyền lực, trật tự, kỷ luật, sự thống trị và bảo vệ vững chắc.
+- **Ý tưởng tạo hình:** Hoàng đế uy quyền ngồi trên ngai đá chạm khắc bốn đầu cừu đực dũng mãnh. Thân hình cường tráng uy nghiêm trong bộ chiến giáp mạ vàng cách tân kết hợp áo choàng nhung đỏ thẫm, tay cầm quyền trượng Ankh vàng ròng, ánh mắt sắc lẹm áp đảo đầy sức hút, hậu cảnh là những dãy núi lửa rực lửa kiên cố.
+
+#### 🚀 Midjourney Prompt:
+```text
+Tarot card of 'The Emperor', Korean manhwa webtoon style, dominant handsome masculine emperor seated firmly on a grand monolithic stone throne carved with four ram heads, wearing stylized sleek golden plate armor and a heavy crimson velvet mantle with fur trim, holding an Ankh golden scepter and globe, fiery volcanic mountains in background, smoke and ember particles, intense piercing gaze, dramatic rim lighting, majestic gold ornate tarot border --ar 2:3 --v 6.1 --style raw
+```
+
+#### 🎨 Stable Diffusion / NovelAI Tags:
+```text
+masterpiece, best quality, manhwa art, korean webtoon style, 1boy, the emperor tarot card, dominant handsome king, sharp jawline, short blonde hair, golden armor, crimson cloak, seated on ram-carved stone throne, holding golden ankh scepter, volcanic red background, glowing embers, cinematic lighting, majestic aura, ornate tarot frame, hyper detailed
+```
+
+### 🎴 V. The Hierophant (Giáo Hoàng / Đại Giáo Chủ)
+
+- **Ý nghĩa cốt lõi:** Truyền thống, trí tuệ tâm linh, giáo điều, người chỉ dẫn tinh thần.
+- **Ý tưởng tạo hình:** Đại giáo chủ quyến rũ ngồi giữa hai cây cột thánh đường nguy nga, đội mũ giáo hoàng ba tầng nạm ngọc, tay cầm cây gậy thánh giá ba nhánh, hai tín đồ quỳ dưới chân tiếp nhận phước lành. Cửa sổ kính màu Gothic phía sau chiếu rọi những luồng ánh sáng thánh thiện xuyên qua sương khói trầm hương.
+
+#### 🚀 Midjourney Prompt:
+```text
+Tarot card of 'The Hierophant', Korean webtoon adult manhwa aesthetic, charismatic alluring pontiff seated on an ornate papal throne between sacred temple columns, wearing a high-slit ceremonial white and gold cassock with intricate embroidery, triple papal tiara crown, holding a triple-cross golden staff, two devout acolytes kneeling at her feet, magnificent stained-glass cathedral window background, incense smoke, divine shafts of light, ornate card frame --ar 2:3 --v 6.1 --style raw
+```
+
+#### 🎨 Stable Diffusion / NovelAI Tags:
+```text
+masterpiece, best quality, manhwa art, korean webtoon style, 1girl, the hierophant tarot card, sacred blonde priestess, papal tiara, holy triple cross staff, white and gold vestments, high slit, ornate cathedral interior, kneeling disciples, stained glass lighting, incense smoke, sacred atmosphere, tarot border, glossy skin highlights
+```
+
+### 🎴 VI. The Lovers (Tình Nhân)
+
+- **Ý nghĩa cốt lõi:** Tình yêu say đắm, sự hòa hợp tâm hồn và thể xác, lựa chọn định mệnh.
+- **Ý tưởng tạo hình:** Cặp đôi nam nữ manhwa tuyệt đẹp ôm ấp say đắm dưới đôi cánh thiên thần rực sáng của Tổng lãnh thiên thần Raphael. Phía sau cô gái là Cây Tri Thức quấn con rắn quyến rũ, phía sau chàng trai là Cây Sự Sống rực lửa, bầu không khí tràn ngập đam mê, ánh sáng hồng tím và cánh hoa bồng bềnh.
+
+#### 🚀 Midjourney Prompt:
+```text
+Tarot card of 'The Lovers', adult Korean manhwa aesthetic, an intensely gorgeous couple embracing sensually under the massive radiant purple and gold wings of an angel hovering above, the voluptuous blonde woman stands near the Tree of Knowledge with a coiled mystical serpent, the handsome muscular man stands near the Tree of Flames, passionate eye contact, sheer draped fabrics, blooming flowers, divine ethereal glow, romantic anime manhwa illustration, ornate tarot border --ar 2:3 --v 6.1 --style raw
+```
+
+#### 🎨 Stable Diffusion / NovelAI Tags:
+```text
+masterpiece, best quality, manhwa art, korean webtoon style, 1girl, 1boy, couple, the lovers tarot card, passionate embrace, blonde girl in seductive sheer lingerie, handsome man, angel wings overhead, tree of knowledge with snake, blooming apple blossoms, magical romantic lighting, glowing hearts particles, tarot frame, ultra detailed, glossy skin
+```
+
+### 🎴 VII. The Chariot (Cỗ Xe Chiến Thắng)
+
+- **Ý nghĩa cốt lõi:** Ý chí sắt đá, chiến thắng, kiểm soát các xung lực đối lập để tiến lên.
+- **Ý tưởng tạo hình:** Nữ chiến binh tóc vàng kiêu hãnh điều khiển cỗ xe chiến xa lộng lẫy được kéo bởi hai linh thú nhân sư (Sphinx) tương phản: một đen tuyền và một trắng tinh khôi. Nàng mặc bộ giáp chiến kết hợp dây đai quyến rũ, tay cầm trượng ngôi sao, vòm xe đính đầy sao đêm, tiến về phía trước với khí thế bất khả chiến bại.
+
+#### 🚀 Midjourney Prompt:
+```text
+Tarot card of 'The Chariot', high-end Korean manhwa art style, fiercely confident blonde heroine piloting an ornate celestial chariot pulled by two mystical glowing sphinxes (one obsidian black, one pearl white), wearing sleek modern battle harness armor and a starry canopy cape, holding a glowing star-tipped wand, ancient citadel walls in background, dynamic forward motion, particle trails, epic cinematic lighting, ornate tarot card frame --ar 2:3 --v 6.1 --style raw
+```
+
+#### 🎨 Stable Diffusion / NovelAI Tags:
+```text
+masterpiece, best quality, manhwa art, korean webtoon style, 1girl, the chariot tarot card, confident blonde warrior, battle harness, starry cape, driving ornate golden chariot, two sphinx beasts (one black, one white), starry sky, motion blur, dynamic angle, determined alluring expression, cinematic rim light, tarot border, masterpiece
+```
+
+### 🎴 VIII. Strength (Sức Mạnh)
+
+- **Ý nghĩa cốt lõi:** Sức mạnh nội tâm, lòng dũng cảm, sự dịu dàng thuần hóa bản năng hoang dã.
+- **Ý tưởng tạo hình:** Nàng thiếu nữ manhwa quyến rũ trong bộ váy lụa trắng đan dây nhẹ nhàng vuốt ve và mở hàm của một chú sư tử thần thoại khổng lồ một cách hoàn toàn dễ dàng. Vòng vô cực phát sáng trên đầu nàng, vòng hoa hồng quấn quanh eo và cổ sư tử, ánh hoàng hôn dịu dàng tràn ngập năng lượng kiên định.
+
+#### 🚀 Midjourney Prompt:
+```text
+Tarot card of 'Strength', Korean webtoon manhwa style, graceful voluptuous blonde maiden gently stroking the head and jaws of a majestic glowing golden lion, wearing a sheer white dress with floral harness straps, a glowing infinity symbol above her head, chain of wild roses linking her to the tamed beast, serene mountain landscape at sunset, warm golden hour aura, tender yet dominant expression, glossy skin, ornate gold tarot border --ar 2:3 --v 6.1 --style raw
+```
+
+#### 🎨 Stable Diffusion / NovelAI Tags:
+```text
+masterpiece, best quality, manhwa art, korean webtoon style, 1girl, strength tarot card, gentle blonde beauty, white dress with straps, infinity symbol glowing over head, taming a giant golden lion, flower garland, peaceful sunset, serene dominant smile, soft volumetric lighting, tarot card frame, high quality, highly detailed
+```
+
+### 🎴 IX. The Hermit (Ẩn Sĩ)
+
+- **Ý nghĩa cốt lõi:** Chiêm nghiệm nội tâm, tìm kiếm chân lý, sự tĩnh lặng đơn độc và trí tuệ soi đường.
+- **Ý tưởng tạo hình:** Người ẩn sĩ đơn độc đứng trên đỉnh núi tuyết phủ đầy sao giữa đêm tối, khoác áo choàng trùm đầu màu xám bạc để lộ vẻ đẹp bí ẩn quyến rũ, một tay giơ cao chiếc đèn lồng phát sáng chứa ngôi sao sáu cánh rực rỡ, một tay cầm cây gậy chống bằng gỗ cổ thụ, bông tuyết lấp lánh rơi xung quanh.
+
+#### 🚀 Midjourney Prompt:
+```text
+Tarot card of 'The Hermit', Korean manhwa aesthetic, mysterious blonde hermit standing solitary on a snowy mountain peak under a midnight starlit sky, wearing a hooded silver-grey cloak draped over delicate inner lingerie, holding high an antique lantern containing a brilliant glowing six-pointed star of wisdom, wooden staff in other hand, swirling snow flakes, deep mystical indigo and gold lighting, introspective seductive gaze, ornate tarot frame --ar 2:3 --v 6.1 --style raw
+```
+
+#### 🎨 Stable Diffusion / NovelAI Tags:
+```text
+masterpiece, best quality, manhwa art, korean webtoon style, 1girl, the hermit tarot card, solitary blonde beauty, hooded cloak, holding glowing lantern with 6-pointed star, staff, standing on snowy mountain summit, starry night sky, aurora borealis, quiet atmosphere, mystical glow, ornate tarot border, detailed face and eyes
+```
+
+### 🎴 X. Wheel of Fortune (Bánh Xe Số Phận)
+
+- **Ý nghĩa cốt lõi:** Định mệnh, sự xoay vần của thời cuộc, cơ hội, nghiệp quả và chu kỳ mới.
+- **Ý tưởng tạo hình:** Bánh xe định mệnh khổng lồ bằng vàng chạm khắc các ký hiệu giả kim và chữ cái huyền bí quay cuồng giữa những đám mây ngũ sắc. Trên đỉnh bánh xe là một nàng nhân sư gợi cảm cầm gươm, hai bên là rắn thần Typhon và thần Anubis, bốn góc là bốn sinh vật thiên thần (người, đại bàng, sư tử, bò tót) đọc sách thánh.
+
+#### 🚀 Midjourney Prompt:
+```text
+Tarot card of 'Wheel of Fortune', manhwa webtoon adult digital art, colossal ornate golden wheel of destiny rotating amidst cosmic celestial clouds, engraved with glowing alchemical glyphs and Hebrew letters, an alluring golden-haired sphinx perched atop holding a sword, mystical snake and Anubis clinging to the wheel, four winged celestial maidens in the corners holding glowing books, cosmic nebula background, dynamic kaleidoscope lighting, ornate tarot card border --ar 2:3 --v 6.1 --style raw
+```
+
+#### 🎨 Stable Diffusion / NovelAI Tags:
+```text
+masterpiece, best quality, manhwa art, korean webtoon style, wheel of fortune tarot card, giant rotating golden clockwork wheel, glowing runes, sphinx on top, cosmic nebula, floating clouds, mystical maidens, destiny, fate, vibrant magical energy, tarot card frame, ultra detailed, cinematic lighting
+```
+
+### 🎴 XI. Justice (Công Lý)
+
+- **Ý nghĩa cốt lõi:** Sự công bằng, sự thật, trách nhiệm, cán cân phán xét khách quan.
+- **Ý tưởng tạo hình:** Nữ thần Công Lý uy nghiêm ngồi giữa hai cột trụ đền thờ bằng đá cẩm thạch. Nàng mặc lễ phục màu đỏ tươi xẻ tà quyến rũ, tay phải giơ cao thanh kiếm hai lưỡi sắc bén thẳng đứng, tay trái cầm chiếc cân vàng cân bằng hoàn hảo, ánh mắt sắc bén thấu suốt tâm can.
+
+#### 🚀 Midjourney Prompt:
+```text
+Tarot card of 'Justice', Korean adult manhwa art style, stately beautiful judge seated between two classical marble pillars before a purple veil, wearing a high-slit scarlet gown with gold harness trim, holding an upright double-edged broadsword in her right hand and balanced golden scales in her left, crown on blonde hair, piercing discerning gaze, clean geometric lighting, crisp cell shading, glossy specular highlights, ornate gold tarot border --ar 2:3 --v 6.1 --style raw
+```
+
+#### 🎨 Stable Diffusion / NovelAI Tags:
+```text
+masterpiece, best quality, manhwa art, korean webtoon style, 1girl, justice tarot card, gorgeous blonde judge, crown, scarlet dress with gold straps, holding upright double-edged sword and golden scale, seated between pillars, purple backdrop, stern seductive expression, sharp eyes, cinematic lighting, tarot frame, ultra detailed
+```
+
+### 🎴 XII. The Hanged Man (Kẻ Treo Ngược)
+
+- **Ý nghĩa cốt lõi:** Sự hy sinh tự nguyện, góc nhìn mới, sự buông bỏ để giác ngộ.
+- **Ý tưởng tạo hình:** Một nhân vật manhwa tuyệt mỹ bị treo ngược bằng một chân trên cây gỗ chữ T còn đâm chồi xanh tươi. Dù bị trói bằng dây đai lụa trắng, gương mặt nàng lại vô cùng thanh thản, an nhiên, vầng hào quang rực sáng quanh đầu như một vị thánh, mái tóc vàng óng xõa buông xuống đất như dòng thác.
+
+#### 🚀 Midjourney Prompt:
+```text
+Tarot card of 'The Hanged Man', Korean webtoon aesthetic, beautiful slender blonde suspended upside-down by one ankle from a living wooden T-cross tree with green sprouts, other leg bent behind, wearing stylish white bondage ribbons and harness lingerie, serene euphoric facial expression, golden halo radiating brightly around her head, long blonde hair cascading downward, soft mystical atmospheric lighting, ornate tarot card frame --ar 2:3 --v 6.1 --style raw
+```
+
+#### 🎨 Stable Diffusion / NovelAI Tags:
+```text
+masterpiece, best quality, manhwa art, korean webtoon style, 1girl, the hanged man tarot card, blonde girl hanging upside down by one foot from wooden cross, peaceful serene expression, white ribbon straps harness, flowing long hair downward, bright golden halo around head, living tree branches, spiritual enlightenment, ethereal light, tarot border, high quality
+```
+
+### 🎴 XIII. Death (Thần Chết / Sự Tái Sinh)
+
+- **Ý nghĩa cốt lõi:** Sự kết thúc tất yếu, sự chuyển hóa sâu sắc, khởi đầu mới từ đống tro tàn.
+- **Ý tưởng tạo hình:** Nữ kỵ sĩ Tử Thần quyến rũ trong bộ giáp đen tuyền bóng bẩy cách điệu, cưỡi trên lưng con tuấn mã bạch mã mắt phát sáng. Nàng cầm lá cờ đen thêu đóa hồng trắng huyền bí (Mystic Rose). Phía xa là hai tòa tháp nơi mặt trời tái sinh đang nhô lên giữa dòng sông bất tận.
+
+#### 🚀 Midjourney Prompt:
+```text
+Tarot card of 'Death', Korean adult manhwa art style, breathtaking gothic blonde reaper knight riding a magnificent white armored steed, wearing dark ornate lacquered armor over sheer black lace harness, carrying a black standard banner embroidered with a glowing mystic white rose, sunrise breaking between two distant gothic towers across a misty river, dramatic moody contrast, atmospheric fog and glowing particles, ornate dark gold tarot border --ar 2:3 --v 6.1 --style raw
+```
+
+#### 🎨 Stable Diffusion / NovelAI Tags:
+```text
+masterpiece, best quality, manhwa art, korean webtoon style, 1girl, death tarot card, gothic reaper blonde knight, black sleek armor, riding white warhorse, holding black banner with white rose, two towers and rising sun in background, mystical river, rebirth, moody dramatic lighting, dark fantasy, ornate tarot frame
+```
+
+### 🎴 XIV. Temperance (Sự Tiết Chế / Cân Bằng)
+
+- **Ý nghĩa cốt lõi:** Sự điều hòa, kiên nhẫn, hợp nhất năng lượng đối cực để tạo ra sự hài hòa.
+- **Ý tưởng tạo hình:** Nữ thiên thần có đôi cánh rực lửa đứng một chân trên mặt nước trong vắt, một chân trên bờ đất nở đầy hoa diên vĩ. Nàng rót dòng nước phát quang ma thuật chảy liên tục từ chiếc cốc vàng này sang chiếc cốc vàng khác mà không rơi một giọt. Phía xa là con đường mòn dẫn lên đỉnh núi có vương miện mặt trời chói lọi.
+
+#### 🚀 Midjourney Prompt:
+```text
+Tarot card of 'Temperance', Korean manhwa digital art, angelic blonde maiden with glowing crimson-feathered wings, wearing a translucent white gown with golden solar triangle emblem on the chest, carefully pouring a radiant stream of glowing liquid between two golden chalices, one foot in crystal clear pond water and one on land with blooming irises, path leading to a glowing crown over distant mountains, serene divine aura, ornate tarot border --ar 2:3 --v 6.1 --style raw
+```
+
+#### 🎨 Stable Diffusion / NovelAI Tags:
+```text
+masterpiece, best quality, manhwa art, korean webtoon style, 1girl, temperance tarot card, angel with glowing wings, white sheer dress, pouring glowing blue liquid between two golden goblets, one foot in water one on ground, blooming yellow irises, mountain path, divine sunlight, peaceful harmony, tarot card frame, highly detailed
+```
+
+### 🎴 XV. The Devil (Ác Quỷ / Dục Vọng)
+
+- **Ý nghĩa cốt lõi:** Sự cám dỗ, dục vọng thể xác, sự giam cầm tự nguyện trong khoái lạc và vật chất.
+- **Ý tưởng tạo hình:** Nữ chúa quỷ quyến rũ bậc nhất với đôi sừng cong hắc ám và đôi cánh dơi gai góc ngồi trên bệ đá tế lễ. Trên trán nàng có ngôi sao năm cánh ngược phát sáng đỏ rực. Nàng giữ hai sợi dây xích vàng lỏng lẻo trói vào cổ hai người nô lệ tuân phục dưới chân. Nàng cầm ngọn đuốc lửa địa ngục, nở nụ cười quyến rũ đầy mê hoặc.
+
+#### 🚀 Midjourney Prompt:
+```text
+Tarot card of 'The Devil', adult Korean manhwa style, hyper-seductive succubus demon queen with curved obsidian horns and bat wings, seated on a stone altar, wearing black leather bondage harness and choker collar, an inverted pentagram glowing crimson on her forehead, holding a burning upside-down torch, loose golden chains in her hands leading to kneeling human devotees, seductive smirk, hypnotic glowing red eyes, smoky dark underworld ambience, ornate gold tarot border --ar 2:3 --v 6.1 --style raw
+```
+
+#### 🎨 Stable Diffusion / NovelAI Tags:
+```text
+masterpiece, best quality, manhwa art, korean webtoon style, 1girl, the devil tarot card, succubus demon queen, curved horns, bat wings, inverted pentagram, black leather harness lingerie, choker, holding flaming torch, holding chains, dark sensual underworld, glowing embers, seductive smirk, intense red eyes, tarot frame, masterpiece
+```
+
+### 🎴 XVI. The Tower (Tòa Tháp / Sụp Đổ Bất Ngờ)
+
+- **Ý nghĩa cốt lõi:** Sự sụp đổ bất ngờ của cấu trúc cũ, giải phóng khỏi ảo tưởng, cơn địa chấn thanh lọc.
+- **Ý tưởng tạo hình:** Tòa tháp khổng lồ xây trên đỉnh núi đá bị một tia sét thần thánh đánh trúng đỉnh chóp, làm vỡ tung vương miện vàng và bốc cháy dữ dội. Hai nhân vật manhwa trong trang phục rách tả tơi rơi tự do giữa không trung trong cơn giông bão, những đốm lửa và tia chớp xanh chói lòa thắp sáng bầu trời đêm đầy kịch tính.
+
+#### 🚀 Midjourney Prompt:
+```text
+Tarot card of 'The Tower', dynamic Korean manhwa webtoon style, a colossal stone tower citadel atop a mountain struck by a violent bolt of lightning, golden crown blown off the blazing top in flames, two stylish figures falling through the stormy sky amidst shower of golden sparks and debris, dramatic downward perspective, torrential rain, electrifying blue and orange contrast, chaotic high impact energy, ornate tarot card frame --ar 2:3 --v 6.1 --style raw
+```
+
+#### 🎨 Stable Diffusion / NovelAI Tags:
+```text
+masterpiece, best quality, manhwa art, korean webtoon style, the tower tarot card, giant stone tower struck by lightning, fire and explosion from top, falling figures, thunderstorm, dramatic stormy sky, flying sparks, high energy, destruction and revelation, cinematic dynamic angle, tarot border, detailed
+```
+
+### 🎴 XVII. The Star (Ngôi Sao / Hy Vọng)
+
+- **Ý nghĩa cốt lõi:** Niềm hy vọng rực rỡ, sự chữa lành, cảm hứng sáng tạo và vẻ đẹp tinh khôi.
+- **Ý tưởng tạo hình:** Thiếu nữ tóc vàng manhwa tuyệt trần với làn da tỏa sáng quỳ bên hồ nước tĩnh lặng dưới bầu trời đêm ngập tràn sao. Nàng cầm hai bình gốm vàng, một bình rót vào làn nước làm dâng lên những làn sóng ánh sáng, một bình rót xuống bãi cỏ xanh tươi. Trên bầu trời là một ngôi sao tám cánh khổng lồ lấp lánh cùng bảy ngôi sao nhỏ.
+
+#### 🚀 Midjourney Prompt:
+```text
+Tarot card of 'The Star', Korean adult manhwa art style, breathtaking radiant blonde maiden kneeling beside a luminous pool at night, draped in sheer sparkling chiffon ribbons, pouring shimmering water from two golden urns into the pool and onto lush fertile grass, a giant glowing eight-pointed star flanked by seven smaller stars illuminating the tranquil starry sky, sacred ibis bird on a tree branch, serene peaceful euphoric expression, bioluminescent reflections, ornate gold tarot border --ar 2:3 --v 6.1 --style raw
+```
+
+#### 🎨 Stable Diffusion / NovelAI Tags:
+```text
+masterpiece, best quality, manhwa art, korean webtoon style, 1girl, the star tarot card, gorgeous nude blonde maiden, sheer translucent ribbons, pouring water from two golden urns, glowing crystal lake, starry night sky with giant 8-pointed star, sacred bird in background, serene blissful expression, bioluminescence, glossy skin, tarot frame, ultra detailed
+```
+
+### 🎴 XVIII. The Moon (Mặt Trăng / Ảo Ảnh)
+
+- **Ý nghĩa cốt lõi:** Ảo giác, nỗi sợ vô thức, giấc mơ kỳ ảo và sự mê hoặc đầy bí ẩn.
+- **Ý tưởng tạo hình:** Mặt trăng tròn đầy vẻ mặt trầm ngâm tỏa ánh sáng tím bạc huyền ảo xuống một cảnh quan siêu thực. Hai con sói huyền bí đứng hú về phía mặt trăng bên một con đường mòn ngoằn ngoèo giữa hai tòa tháp đá. Dưới đầm nước sâu, một con tôm hùm/thủy quái thần bí đang trồi lên mặt nước.
+
+#### 🚀 Midjourney Prompt:
+```text
+Tarot card of 'The Moon', Korean manhwa aesthetic, an ethereal mysterious blonde enchantress with lunar veil floating above a surreal moonlit landscape, giant glowing full moon with subtle serene face shining silver rays, two mystical spectral wolves howling beside a winding stone path between two gothic stone towers, a glowing mystical lobster emerging from deep dark waters, dreamy purple and cyan mist, hypnotic atmospheric glow, ornate tarot card frame --ar 2:3 --v 6.1 --style raw
+```
+
+#### 🎨 Stable Diffusion / NovelAI Tags:
+```text
+masterpiece, best quality, manhwa art, korean webtoon style, the moon tarot card, mysterious moon goddess, full moon in night sky, two wolves howling, two stone towers, winding path, mystical creature emerging from water, surreal purple and teal lighting, dreamlike foggy atmosphere, eerie beautiful, ornate tarot frame
+```
+
+### 🎴 XIX. The Sun (Mặt Trời / Hân Hoan)
+
+- **Ý nghĩa cốt lõi:** Niềm vui thuần khiết, thành công rực rỡ, năng lượng dồi dào, sự tỏa sáng.
+- **Ý tưởng tạo hình:** Nàng thiếu nữ manhwa rạng rỡ với nụ cười tươi tắn cưỡi trên lưng chú bạch mã dũng mãnh, vẫy dải cờ đỏ rực rỡ. Phía sau là bức tường đá phủ đầy hoa hướng dương nở rộ dưới ánh mặt trời vàng óng với khuôn mặt cười ấm áp, tỏa ra những tia sáng tràn ngập sức sống.
+
+#### 🚀 Midjourney Prompt:
+```text
+Tarot card of 'The Sun', Korean adult manhwa art style, ecstatic joyful blonde beauty with radiant smile riding a gentle pure white horse, wearing a flower crown of sunflowers and light summer ribbons, holding a billowing crimson silk flag, a giant smiling golden sun radiating warm beams in a bright azure sky, wall of giant blooming sunflowers behind, overflowing vitality and happiness, warm golden hour lighting, glossy skin highlights, ornate golden tarot border --ar 2:3 --v 6.1 --style raw
+```
+
+#### 🎨 Stable Diffusion / NovelAI Tags:
+```text
+masterpiece, best quality, manhwa art, korean webtoon style, 1girl, the sun tarot card, cheerful blonde girl, sunny smile, flower crown, riding white horse, holding red silk banner, wall of sunflowers, giant golden sun with rays, bright blue sky, warm vibrant lighting, joyful euphoric vibe, tarot card frame, high quality
+```
+
+### 🎴 XX. Judgement (Phán Xét / Thức Tỉnh)
+
+- **Ý nghĩa cốt lõi:** Sự thức tỉnh tâm linh, tái sinh từ cõi mê, lời kêu gọi định mệnh.
+- **Ý tưởng tạo hình:** Đại thiên thần Gabriel với đôi cánh hoàng kim khổng lồ xuất hiện giữa những tầng mây rực rỡ, thổi chiếc kèn trumpet vàng thắt cờ chữ thập đỏ. Bên dưới, những người đẹp manhwa thức tỉnh, vươn tay từ những chiếc quan tài đá phủ rêu phong hướng về phía bầu trời trong trạng thái hân hoan tái sinh.
+
+#### 🚀 Midjourney Prompt:
+```text
+Tarot card of 'Judgement', Korean webtoon manhwa style, majestic archangel with colossal shimmering golden wings emerging from breaking storm clouds, blowing a golden trumpet with a red cross banner, below beautiful slender reborn maidens rise from stone tombs with outstretched arms, bathed in holy divine light, cosmic aura, sense of profound spiritual awakening and renewal, cinematic scale, glossy finish, ornate gold tarot border --ar 2:3 --v 6.1 --style raw
+```
+
+#### 🎨 Stable Diffusion / NovelAI Tags:
+```text
+masterpiece, best quality, manhwa art, korean webtoon style, judgement tarot card, archangel blowing golden trumpet in clouds, divine ray of light, resurrected beautiful figures rising from stone sarcophagi, spiritual awakening, cosmic golden clouds, epic lighting, holy aura, tarot card frame, ultra detailed
+```
+
+### 🎴 XXI. The World (Thế Giới / Đại Viên Mãn)
+
+- **Ý nghĩa cốt lõi:** Sự hoàn thành trọn vẹn, thành tựu tối thượng, hợp nhất vũ trụ, khởi đầu chu kỳ mới.
+- **Ý tưởng tạo hình:** Nữ thần vũ trụ manhwa tuyệt trần đang uyển chuyển khiêu vũ ở trung tâm của một vòng nguyệt quế khổng lồ kết bằng cành nguyệt quế xanh và ruy băng đỏ. Hai tay nàng cầm hai cây gậy phép thuật phát sáng. Bốn góc bức tranh là bốn linh thú hộ vệ của vũ trụ (thiên thần, đại bàng, sư tử, bò mộng) ngự trên những đám mây ngũ sắc.
+
+#### 🚀 Midjourney Prompt:
+```text
+Tarot card of 'The World', pinnacle Korean manhwa digital art, magnificent naked blonde goddess dancing gracefully inside a giant glowing laurel wreath bound with red silk ribbons, draped lightly with purple celestial scarf, holding two glowing crystal wands in her hands, flanked in the four corners by mystical glowing avatars: angel, eagle, winged lion, and winged bull floating in clouds, cosmic starfield background, ultimate perfection and triumph, soft bloom lighting, ornate gold tarot border --ar 2:3 --v 6.1 --style raw
+```
+
+#### 🎨 Stable Diffusion / NovelAI Tags:
+```text
+masterpiece, best quality, manhwa art, korean webtoon style, 1girl, the world tarot card, dancing goddess inside giant green laurel wreath with red ribbons, holding two wands, purple scarf, four celestial creatures in four corners, cosmic space background, triumph, completion, perfection, divine lighting, tarot card frame, masterpiece
+```
+
+
+---
+
+## 🔥 PHẦN II: SUIT OF WANDS (BỘ GẬY - NGUYÊN TỐ LỬA / ĐAM MÊ - 14 LÁ)
+
+### 🎴 Ace. Ace of Wands (Ace of Wands / Át Gậy)
+
+- **Ý nghĩa cốt lõi:** Ngọn lửa cảm hứng mới, năng lượng sáng tạo bùng nổ, đam mê rực cháy.
+- **Ý tưởng tạo hình:** Một bàn tay ngọc ngà thanh tú vươn ra từ đám mây phát sáng, nắm chặt một cây trượng gỗ sống đang đâm chồi nảy lộc và bùng cháy ngọn lửa ma thuật màu cam đỏ. Những chiếc lá xanh lơ lửng như những đốm lửa ma mị, phía xa là lâu đài tráng lệ trên đồi núi.
+
+#### 🚀 Midjourney Prompt:
+```text
+Tarot card of 'Ace of Wands', Korean manhwa art style, a delicate feminine hand emerging from glowing ethereal clouds, grasping a living wooden staff sprouting fresh green leaves and bursting with fiery magical flames and sparks, floating glowing leaf embers, panoramic castle and rolling green hills below, vibrant orange and gold lighting, high contrast, crisp lines, ornate gold tarot border --ar 2:3 --v 6.1 --style raw
+```
+
+#### 🎨 Stable Diffusion / NovelAI Tags:
+```text
+masterpiece, best quality, manhwa art, korean webtoon style, ace of wands tarot card, glowing hand emerging from clouds holding sprouting flaming wooden wand, fire sparks, magical green leaves floating, distant castle landscape, dynamic warm lighting, tarot frame
+```
+
+### 🎴 2. Two of Wands (Two of Wands / Hai Gậy)
+
+- **Ý nghĩa cốt lõi:** Lập kế hoạch dài hạn, tham vọng mở rộng chân trời, đứng trước ngưỡng cửa quyền lực.
+- **Ý tưởng tạo hình:** Cô gái manhwa quyền lực đứng trên ban công lâu đài nhìn ra biển khơi bao la, tay phải cầm quả địa cầu mini phát sáng, tay trái tựa vào một cây trượng cắm trên tường thành, bên cạnh là cây trượng thứ hai.
+
+#### 🚀 Midjourney Prompt:
+```text
+Tarot card of 'Two of Wands', Korean webtoon manhwa style, ambitious blonde noblewoman standing on a stone castle parapet overlooking a vast ocean and sunset horizon, wearing a tailored crimson velvet robe and modern harness accents, holding a miniature glowing celestial globe in one hand and grasping a tall wooden staff affixed to the wall, confident visionary expression, warm dusk lighting, ornate tarot card frame --ar 2:3 --v 6.1 --style raw
+```
+
+#### 🎨 Stable Diffusion / NovelAI Tags:
+```text
+masterpiece, best quality, manhwa art, korean webtoon style, 1girl, two of wands tarot card, blonde noble woman, castle rooftop balcony, holding glowing globe, standing beside two tall staves, looking at ocean horizon, sunset, visionary ambition, rich colors, tarot frame
+```
+
+### 🎴 3. Three of Wands (Three of Wands / Ba Gậy)
+
+- **Ý nghĩa cốt lõi:** Mở rộng cơ hội, con tàu hy vọng trở về, sự tự tin vào tương lai phía trước.
+- **Ý tưởng tạo hình:** Nàng thủ lĩnh quyến rũ đứng trên mỏm đá cao nhìn ra biển cả lấp lánh nơi những đoàn thuyền buồm vàng đang cập bến, ba cây trượng cắm vững chắc sau lưng nàng.
+
+#### 🚀 Midjourney Prompt:
+```text
+Tarot card of 'Three of Wands', Korean adult manhwa style, stylish blonde explorer standing at the edge of a golden sea cliff watching golden merchant ships sailing on the sparkling water below, back half-turned showing alluring curves, three tall flowering wands planted in the ground, glowing golden sunset, optimistic proud stance, crisp webtoon lineart, ornate gold tarot border --ar 2:3 --v 6.1 --style raw
+```
+
+#### 🎨 Stable Diffusion / NovelAI Tags:
+```text
+masterpiece, best quality, manhwa art, korean webtoon style, 1girl, three of wands tarot card, blonde adventurer, cliff overlooking ocean, sailing ships in sea, three wands planted in ground, golden hour, visionary exploration, detailed back view, tarot card frame
+```
+
+### 🎴 4. Four of Wands (Four of Wands / Bốn Gậy)
+
+- **Ý nghĩa cốt lõi:** Ăn mừng chiến thắng, hạnh phúc gia đình, sự viên mãn và hòa nhập.
+- **Ý tưởng tạo hình:** Hai cô nàng manhwa xinh đẹp trong trang phục dạ hội trắng xẻ tà nâng bó hoa hoa quả tươi vui nhảy múa dưới một cổng vòm kết bằng bốn cây trượng phủ đầy hoa tươi và chùm nho, phía xa là tòa lâu đài ấm cúng.
+
+#### 🚀 Midjourney Prompt:
+```text
+Tarot card of 'Four of Wands', Korean manhwa aesthetic, two joyful beautiful maidens in festive white strappy dresses raising floral bouquets in celebration, standing beneath an arbor constructed of four tall wands draped with garlands of flowers and grapes, welcoming grand manor house in background, cheerful celebratory atmosphere, confetti and golden sunlight, ornate tarot border --ar 2:3 --v 6.1 --style raw
+```
+
+#### 🎨 Stable Diffusion / NovelAI Tags:
+```text
+masterpiece, best quality, manhwa art, korean webtoon style, 2girls, four of wands tarot card, joyful party celebration, white festive lingerie dresses, holding flower garlands, four flower-adorned staves forming an arch, manor castle backdrop, bright sunlight, happy smiles, tarot frame
+```
+
+### 🎴 5. Five of Wands (Five of Wands / Năm Gậy)
+
+- **Ý nghĩa cốt lõi:** Sự cạnh tranh, xung đột gay gắt, thử thách rèn luyện bản lĩnh.
+- **Ý tưởng tạo hình:** Năm đấu sĩ trẻ manhwa quyến rũ đang so tài kịch liệt, các cây trượng ma thuật phát ra tia lửa nhiều màu sắc khi va chạm vào nhau trong một trận tập trận sôi nổi.
+
+#### 🚀 Midjourney Prompt:
+```text
+Tarot card of 'Five of Wands', dynamic Korean manhwa style, five athletic stylish warriors playfully and fiercely clashing glowing wooden staves in a dynamic arena, colorful magical sparks exploding on impact, dynamic motion lines, energetic poses, flying embers, high octane battle training, crisp anime webtoon art, ornate gold tarot border --ar 2:3 --v 6.1 --style raw
+```
+
+#### 🎨 Stable Diffusion / NovelAI Tags:
+```text
+masterpiece, best quality, manhwa art, korean webtoon style, five of wands tarot card, group fighting, clashing wooden staves, colorful sparks, dynamic action poses, competitive battle, glowing effects, anime webtoon style, ornate tarot frame
+```
+
+### 🎴 6. Six of Wands (Six of Wands / Sáu Gậy)
+
+- **Ý nghĩa cốt lõi:** Chiến thắng vinh quang, được công chúng tán dương, sự kiêu hãnh.
+- **Ý tưởng tạo hình:** Nữ tướng quân tóc vàng kiêu kỳ đội vòng nguyệt quế cưỡi ngựa trắng diễu hành qua đám đông đang tung hoa reo hò, tay cầm cây trượng thắt vòng hoa chiến thắng.
+
+#### 🚀 Midjourney Prompt:
+```text
+Tarot card of 'Six of Wands', Korean webtoon adult manhwa style, victorious blonde heroine wearing a laurel wreath and ornate white battle harness, riding a decorated white stallion through cheering crowds throwing rose petals, holding upright a tall wand topped with a laurel crown, proud triumphant expression, bright celebratory sunlight, ornate tarot card frame --ar 2:3 --v 6.1 --style raw
+```
+
+#### 🎨 Stable Diffusion / NovelAI Tags:
+```text
+masterpiece, best quality, manhwa art, korean webtoon style, 1girl, six of wands tarot card, triumphant blonde heroine on white horse, wearing laurel wreath, holding wand with laurel garland, cheering crowd, flying petals, victorious smile, bright sunlight, ornate tarot frame
+```
+
+### 🎴 7. Seven of Wands (Seven of Wands / Bảy Gậy)
+
+- **Ý nghĩa cốt lõi:** Bảo vệ lập trường, kiên cường chống lại áp lực và thử thách từ nhiều phía.
+- **Ý tưởng tạo hình:** Nữ chiến binh manhwa dũng cảm đứng trên đỉnh đồi dốc một tay cầm trượng nghênh chiến quyết liệt trước sáu cây trượng từ phía dưới đang chĩa lên, ánh mắt đầy thách thức và kiên định.
+
+#### 🚀 Midjourney Prompt:
+```text
+Tarot card of 'Seven of Wands', Korean manhwa digital art, fierce defiant blonde maiden standing on a steep rocky hill, wielding a sturdy wooden staff to fiercely defend herself against six aggressive staves thrusting upward from below, intense determined gaze, battle-damaged stylish harness top, dramatic low angle, smoky sunset background, ornate gold tarot border --ar 2:3 --v 6.1 --style raw
+```
+
+#### 🎨 Stable Diffusion / NovelAI Tags:
+```text
+masterpiece, best quality, manhwa art, korean webtoon style, 1girl, seven of wands tarot card, defiant fighter girl, standing on hill, holding staff defensively, fighting against 6 staves below, determined fierce eyes, wind blowing hair, dramatic lighting, tarot frame
+```
+
+### 🎴 8. Eight of Wands (Eight of Wands / Tám Gậy)
+
+- **Ý nghĩa cốt lõi:** Tốc độ nhanh chóng, thông điệp bất ngờ, sự tiến triển vượt bậc không gì cản nổi.
+- **Ý tưởng tạo hình:** Tám cây trượng phép phát sáng lao vun vút song song qua bầu trời xanh thẳm phía trên thung lũng xanh mướt và dòng sông uốn lượn, để lại vệt năng lượng lấp lánh.
+
+#### 🚀 Midjourney Prompt:
+```text
+Tarot card of 'Eight of Wands', Korean manhwa aesthetic, eight glowing magical wooden wands flying rapidly in parallel through a clear azure sky, trailing bright streaks of golden light and magic sparks, soaring over a picturesque river valley and distant castle, speed lines, swift momentum, pristine digital illustration, ornate gold tarot border --ar 2:3 --v 6.1 --style raw
+```
+
+#### 🎨 Stable Diffusion / NovelAI Tags:
+```text
+masterpiece, best quality, manhwa art, korean webtoon style, eight of wands tarot card, eight glowing staves flying swiftly in air, light trails, blue sky, green valley and river below, fast speed motion blur, magical sparks, tarot card frame
+```
+
+### 🎴 9. Nine of Wands (Nine of Wands / Chín Gậy)
+
+- **Ý nghĩa cốt lõi:** Sức bền, sự cảnh giác cao độ, đứng vững trước thử thách cuối cùng.
+- **Ý tưởng tạo hình:** Nàng vệ binh gợi cảm quấn băng cứu thương quanh trán và tay, tựa vào một cây trượng lớn với ánh mắt cảnh giác, phía sau là hàng rào phòng thủ kiên cố gồm tám cây trượng cắm thẳng hàng.
+
+#### 🚀 Midjourney Prompt:
+```text
+Tarot card of 'Nine of Wands', Korean adult manhwa style, resilient seductive blonde warrior maiden with bandages wrapped around her head and arm, leaning guardedly against a large wooden staff, standing before a defensive palisade of eight tall wands behind her, watchful cautious expression, dusk twilight sky, battle-worn sheer vestment, glossy skin highlights, ornate tarot card frame --ar 2:3 --v 6.1 --style raw
+```
+
+#### 🎨 Stable Diffusion / NovelAI Tags:
+```text
+masterpiece, best quality, manhwa art, korean webtoon style, 1girl, nine of wands tarot card, battle-worn blonde beauty, bandages, holding heavy staff, eight staves standing behind like a wall, cautious alert eyes, twilight background, sexy resilient pose, tarot frame
+```
+
+### 🎴 10. Ten of Wands (Ten of Wands / Mười Gậy)
+
+- **Ý nghĩa cốt lõi:** Gánh nặng quá tải, sự tận tụy chịu đựng, chuẩn bị đến đích.
+- **Ý tưởng tạo hình:** Cô gái manhwa dốc sức ôm trọn mười cây trượng nặng trĩu tiến về phía tòa lâu đài rực rỡ ở đằng xa, thể hiện sự nỗ lực kiên cường vượt qua gánh nặng.
+
+#### 🚀 Midjourney Prompt:
+```text
+Tarot card of 'Ten of Wands', Korean manhwa webtoon style, a determined exhausted blonde maiden carrying a massive heavy bundle of ten long wooden staves in her arms, struggling uphill towards a glowing estate in the distance, back and shoulders strained showing alluring form, golden sunset rays, dramatic perseverance, crisp lines, ornate gold tarot border --ar 2:3 --v 6.1 --style raw
+```
+
+#### 🎨 Stable Diffusion / NovelAI Tags:
+```text
+masterpiece, best quality, manhwa art, korean webtoon style, 1girl, ten of wands tarot card, carrying bundle of 10 heavy wands, walking uphill towards distant manor, exhausted but determined, sunset lighting, perseverance, tarot card frame
+```
+
+### 🎴 Page. Page of Wands (Page of Wands / Tiểu Thư Gậy)
+
+- **Ý nghĩa cốt lõi:** Nhiệt huyết trẻ tuổi, tin tức hào hứng, sự khám phá và tò mò.
+- **Ý tưởng tạo hình:** Nàng thiếu nữ tinh nghịch đội mũ lông vũ, mặc áo tunic xẻ sâu cá tính, đứng giữa sa mạc ngắm nhìn chồi non đang đâm rực lửa trên đầu cây trượng.
+
+#### 🚀 Midjourney Prompt:
+```text
+Tarot card of 'Page of Wands', Korean webtoon adult manhwa style, playful energetic blonde maiden wearing a stylish feather-trimmed beret and a revealing crop-top tunic, enthusiastically holding up a tall budding wand with fiery leaves, desert landscape with distant pyramids, bright warm sunlight, curious flirtatious smile, glossy skin, ornate gold tarot border --ar 2:3 --v 6.1 --style raw
+```
+
+#### 🎨 Stable Diffusion / NovelAI Tags:
+```text
+masterpiece, best quality, manhwa art, korean webtoon style, 1girl, page of wands tarot card, cheerful young blonde, feather hat, stylish crop top tunic, holding budding staff, desert pyramids backdrop, enthusiastic smile, bright sun, tarot card frame
+```
+
+### 🎴 Knight. Knight of Wands (Knight of Wands / Hiệp Sĩ Gậy)
+
+- **Ý nghĩa cốt lõi:** Hành động quyết liệt, đam mê bốc lửa, sự liều lĩnh và phiêu lưu.
+- **Ý tưởng tạo hình:** Hiệp sĩ bốc lửa cưỡi ngựa chiến bờm lửa phi nước đại qua sa mạc cát bỏng, khoác áo choàng thêu kỳ giông lửa (salamander), vung cao cây trượng rực lửa.
+
+#### 🚀 Midjourney Prompt:
+```text
+Tarot card of 'Knight of Wands', Korean manhwa art style, dashing fierce knight in golden armor with salamander-patterned flame cloak, riding a fiery rearing warhorse at full gallop, brandishing a flaming staff in hand, blazing desert dunes in background, smoke and heat haze, intense dynamic action, ornate gold tarot border --ar 2:3 --v 6.1 --style raw
+```
+
+#### 🎨 Stable Diffusion / NovelAI Tags:
+```text
+masterpiece, best quality, manhwa art, korean webtoon style, knight of wands tarot card, handsome knight, golden armor, flame cape, rearing horse galloping, wielding flaming wand, desert heatwave, dynamic epic action, fiery aura, tarot frame
+```
+
+### 🎴 Queen. Queen of Wands (Queen of Wands / Nữ Hoàng Gậy)
+
+- **Ý nghĩa cốt lõi:** Sự tự tin quyến rũ, sức hút mê hoặc, lòng nhiệt thành và hào phóng.
+- **Ý tưởng tạo hình:** Nữ hoàng manhwa tóc vàng nóng bỏng ngồi trên ngai vàng chạm khắc sư tử, tay cầm đóa hoa hướng dương và cây trượng rực sáng, một chú mèo đen huyền bí ngồi dưới chân, thần thái quyến rũ chết người.
+
+#### 🚀 Midjourney Prompt:
+```text
+Tarot card of 'Queen of Wands', adult Korean manhwa aesthetic, stunningly attractive blonde queen seated on an ornate throne carved with lions and sunflowers, wearing a revealing golden-yellow silk gown with white strappy lingerie underlay, holding a radiant sunflower in one hand and a flowering staff in the other, a sleek black cat resting at her feet, charismatic sultry smile, warm dramatic lighting, ornate tarot frame --ar 2:3 --v 6.1 --style raw
+```
+
+#### 🎨 Stable Diffusion / NovelAI Tags:
+```text
+masterpiece, best quality, manhwa art, korean webtoon style, 1girl, queen of wands tarot card, gorgeous blonde queen, golden dress with straps, seated on lion throne, holding sunflower and wand, black cat at feet, seductive confident smirk, warm ambient glow, tarot border, masterpiece
+```
+
+### 🎴 King. King of Wands (King of Wands / Vua Gậy)
+
+- **Ý nghĩa cốt lõi:** Nhà lãnh đạo có tầm nhìn, quyền uy đam mê, truyền cảm hứng và sáng tạo.
+- **Ý tưởng tạo hình:** Vị vua quyền lực ngồi trên ngai vàng hình ngọn lửa chạm trổ kỳ giông, đội vương miện rực lửa, tay cầm cây gậy gỗ nảy lộc, toát ra khí chất áp đảo của người dẫn đầu.
+
+#### 🚀 Midjourney Prompt:
+```text
+Tarot card of 'King of Wands', Korean webtoon style, powerful charismatic king seated on a throne decorated with fiery lions and salamanders, wearing an open-chest royal tunic and a crimson mantle of flames, holding a blooming heavy wooden staff, blazing brazier fires beside the throne, commanding intense gaze, cinematic dramatic lighting, ornate gold tarot border --ar 2:3 --v 6.1 --style raw
+```
+
+#### 🎨 Stable Diffusion / NovelAI Tags:
+```text
+masterpiece, best quality, manhwa art, korean webtoon style, 1boy, king of wands tarot card, charismatic handsome king, muscular chest, royal crimson robe, flame crown, holding flowering wand, lion throne, fire braziers, authoritative aura, tarot frame
+```
+
+
+---
+
+## 💧 PHẦN III: SUIT OF CUPS (BỘ CỐC - NGUYÊN TỐ NƯỚC / TÌNH CẢM - 14 LÁ)
+
+### 🎴 Ace. Ace of Cups (Ace of Cups / Át Cốc)
+
+- **Ý nghĩa cốt lõi:** Tình yêu thuần khiết tràn trề, trực giác bừng mở, nguồn cảm xúc dồi dào.
+- **Ý tưởng tạo hình:** Bàn tay thần thánh nâng chiếc chén thánh bằng vàng phát sáng, từ đó năm dòng nước cảm xúc tuôn trào xuống hồ sen nở rộ, một chú chim bồ câu trắng ngậm bánh thánh hạ cánh xuống.
+
+#### 🚀 Midjourney Prompt:
+```text
+Tarot card of 'Ace of Cups', Korean manhwa art style, a divine glowing hand holding a majestic golden chalice overflowing with five crystalline streams of water pouring into a pond filled with blooming pink lotus flowers, a pure white dove carrying a circular communion wafer descending into the cup, dewdrops, rainbow refraction, ethereal water ripples, ornate gold tarot border --ar 2:3 --v 6.1 --style raw
+```
+
+#### 🎨 Stable Diffusion / NovelAI Tags:
+```text
+masterpiece, best quality, manhwa art, korean webtoon style, ace of cups tarot card, glowing golden chalice overflowing with pure water streams, pink water lilies lotus pond, white dove descending, rainbow glow, ethereal water reflections, mystical holy vibe, tarot frame
+```
+
+### 🎴 2. Two of Cups (Two of Cups / Hai Cốc)
+
+- **Ý nghĩa cốt lõi:** Sự hòa hợp đôi lứa, tình yêu sâu sắc, lời thề hẹn gắn kết tâm hồn.
+- **Ý tưởng tạo hình:** Đôi tình nhân manhwa quyến rũ trao nhau hai chiếc chén vàng chạm ngọc, ánh mắt đắm đuối giao hòa, phía trên lơ lửng biểu tượng quyền trượng Caduceus của thần Hermes và đầu sư tử có cánh.
+
+#### 🚀 Midjourney Prompt:
+```text
+Tarot card of 'Two of Cups', adult Korean manhwa aesthetic, a handsome man and a stunning blonde woman dressed in elegant romantic garments exchanging two golden goblets in a sacred toast, gaze locked in mutual love, hovering above them is a glowing Caduceus staff topped with a winged red lion head, blooming rose arbor background, soft romantic bloom lighting, ornate tarot frame --ar 2:3 --v 6.1 --style raw
+```
+
+#### 🎨 Stable Diffusion / NovelAI Tags:
+```text
+masterpiece, best quality, manhwa art, korean webtoon style, 1girl, 1boy, two of cups tarot card, romantic couple toasting golden goblets, loving gaze, winged red lion and caduceus above, rose garden background, romantic pastel colors, tarot card frame
+```
+
+### 🎴 3. Three of Cups (Three of Cups / Ba Cốc)
+
+- **Ý nghĩa cốt lõi:** Tình bạn ngọt ngào, tiệc tùng ăn mừng, sự sẻ chia niềm vui và nâng ly chúc phúc.
+- **Ý tưởng tạo hình:** Ba thiếu nữ manhwa xinh đẹp rạng ngời trong trang phục lụa mềm mại nâng cao ba chiếc ly vàng chạm nhau trong điệu nhảy tròn, xung quanh ngập tràn hoa tươi và nho ngọt.
+
+#### 🚀 Midjourney Prompt:
+```text
+Tarot card of 'Three of Cups', Korean webtoon manhwa style, three gorgeous laughing maidens in pastel sheer silk dresses dancing together in a circle, raising three golden wine chalices high in a joyful celebratory toast, garland of grapes and flowers in their hair, bountiful harvest garden setting, cheerful vibrant atmosphere, soft gloss highlights, ornate gold tarot border --ar 2:3 --v 6.1 --style raw
+```
+
+#### 🎨 Stable Diffusion / NovelAI Tags:
+```text
+masterpiece, best quality, manhwa art, korean webtoon style, 3girls, three of cups tarot card, three beautiful happy girls dancing, raising golden wine cups, pastel sheer dresses, flower wreaths, garden harvest, joyful party celebration, tarot frame, high quality
+```
+
+### 🎴 4. Four of Cups (Four of Cups / Bốn Cốc)
+
+- **Ý nghĩa cốt lõi:** Sự thờ ơ, chán chường, bỏ lỡ cơ hội mới đang được trao tặng.
+- **Ý tưởng tạo hình:** Cô gái manhwa xinh đẹp ngồi khoanh tay dưới gốc cây cổ thụ với vẻ mặt u sầu hờ hững, phớt lờ ba chiếc cốc đặt trên cỏ, trong khi một bàn tay mây đang chìa ra chiếc cốc thứ tư phát sáng.
+
+#### 🚀 Midjourney Prompt:
+```text
+Tarot card of 'Four of Cups', Korean manhwa style, pensive attractive blonde maiden sitting cross-legged beneath a lush shady tree with arms crossed, melancholic bored expression, ignoring three golden cups standing on the grass while a mystical cloud-hand offers a fourth glowing cup right before her, soft dappled sunlight, moody introspection, ornate tarot card frame --ar 2:3 --v 6.1 --style raw
+```
+
+#### 🎨 Stable Diffusion / NovelAI Tags:
+```text
+masterpiece, best quality, manhwa art, korean webtoon style, 1girl, four of cups tarot card, moody blonde beauty under tree, arms crossed, ignoring 3 cups on grass, floating cloud hand offering a fourth cup, contemplative bored face, soft lighting, tarot frame
+```
+
+### 🎴 5. Five of Cups (Five of Cups / Năm Cốc)
+
+- **Ý nghĩa cốt lõi:** Nỗi buồn mất mát, tiếc nuối quá khứ nhưng vẫn còn hy vọng phía sau.
+- **Ý tưởng tạo hình:** Nàng thiếu nữ khoác áo choàng đen đứng cúi đầu đau buồn nhìn ba chiếc cốc vàng bị đổ tràn rượu đỏ xuống đất, sau lưng nàng vẫn còn hai chiếc cốc nguyên vẹn và một cây cầu đá dẫn về lâu đài.
+
+#### 🚀 Midjourney Prompt:
+```text
+Tarot card of 'Five of Cups', Korean adult manhwa art style, sorrowful blonde beauty in a draped black mourning cloak looking down at three spilled golden cups on the dark ground with red wine pooling, two upright cups remain standing behind her, an ancient arched stone bridge crossing a river to a safe castle in distance, moody grey clouds, emotional melancholy, ornate tarot border --ar 2:3 --v 6.1 --style raw
+```
+
+#### 🎨 Stable Diffusion / NovelAI Tags:
+```text
+masterpiece, best quality, manhwa art, korean webtoon style, 1girl, five of cups tarot card, sad blonde in black cloak, three spilled cups with red wine on ground, two standing cups behind, stone bridge and river, melancholic moody lighting, tarot card frame
+```
+
+### 🎴 6. Six of Cups (Six of Cups / Sáu Cốc)
+
+- **Ý nghĩa cốt lõi:** Kỷ niệm tuổi thơ ngọt ngào, sự ngây thơ, tái ngộ người quen cũ.
+- **Ý tưởng tạo hình:** Cảnh tượng hoài niệm trong khu vườn cổ tích: chàng thiếu niên trao chiếc cốc vàng đầy hoa trắng ngát hương cho cô gái nhỏ nhắn, xung quanh là năm chiếc cốc khác cắm đầy hoa tươi.
+
+#### 🚀 Midjourney Prompt:
+```text
+Tarot card of 'Six of Cups', Korean manhwa webtoon aesthetic, charming nostalgic garden where a sweet youth offers a golden cup filled with white blossoms to a lovely young maiden, five other flower-filled cups decorating the courtyard, fairy-tale stone cottage background, warm pastel nostalgic haze, gentle innocence, ornate gold tarot border --ar 2:3 --v 6.1 --style raw
+```
+
+#### 🎨 Stable Diffusion / NovelAI Tags:
+```text
+masterpiece, best quality, manhwa art, korean webtoon style, six of cups tarot card, nostalgic romantic garden, offering a golden cup filled with white flowers, ancient courtyard cottage, sweet innocent vibe, warm pastel lighting, ornate tarot frame
+```
+
+### 🎴 7. Seven of Cups (Seven of Cups / Bảy Cốc)
+
+- **Ý nghĩa cốt lõi:** Ảo mộng nhiều lựa chọn, cám dỗ phù phiếm, sự hoang tưởng và mơ mộng.
+- **Ý tưởng tạo hình:** Cô gái manhwa đứng ngỡ ngàng trước bảy chiếc cốc vàng lơ lửng trong đám mây ảo diệu, mỗi chiếc cốc chứa một thứ cám dỗ: châu báu, lâu đài, quái rồng, vòng nguyệt quế, người tình và bóng ma.
+
+#### 🚀 Midjourney Prompt:
+```text
+Tarot card of 'Seven of Cups', Korean manhwa art style, an alluring blonde dreamer seen from behind gazing in awe at seven golden chalices floating in ethereal clouds, each cup holding a fantastical vision: sparkling jewels, a castle, a fearsome dragon, a glowing lover, a laurel wreath, and a mysterious shrouded figure, surreal purple dreamscape, glowing mist, ornate gold tarot border --ar 2:3 --v 6.1 --style raw
+```
+
+#### 🎨 Stable Diffusion / NovelAI Tags:
+```text
+masterpiece, best quality, manhwa art, korean webtoon style, 1girl, seven of cups tarot card, girl looking at 7 floating cups in clouds, each cup holds illusions (jewels, dragon, castle, mask), surreal dreamscape, magical glowing mist, tarot frame
+```
+
+### 🎴 8. Eight of Cups (Eight of Cups / Tám Cốc)
+
+- **Ý nghĩa cốt lõi:** Dứt áo ra đi tìm chân lý, từ bỏ những thứ không còn phục vụ tâm hồn.
+- **Ý tưởng tạo hình:** Nàng lữ khách khoác áo choàng đỏ lặng lẽ bước đi vào hẻm núi đêm tối dưới vầng trăng khuyết huyền bí, bỏ lại sau lưng tám chiếc cốc vàng được xếp ngay ngắn bên bờ nước.
+
+#### 🚀 Midjourney Prompt:
+```text
+Tarot card of 'Eight of Cups', Korean adult manhwa style, solitary cloaked blonde figure walking away into rocky barren mountains under an eclipsed crescent moon at midnight, leaving behind eight neatly stacked golden cups by the water shore, staff in hand, poignant departure, mystical indigo and deep blue night ambience, ornate tarot card frame --ar 2:3 --v 6.1 --style raw
+```
+
+#### 🎨 Stable Diffusion / NovelAI Tags:
+```text
+masterpiece, best quality, manhwa art, korean webtoon style, 1girl, eight of cups tarot card, cloaked girl walking away into mountain path at night, leaving 8 golden cups behind, crescent moon, emotional departure, deep blue moonlight, tarot frame
+```
+
+### 🎴 9. Nine of Cups (Nine of Cups / Chín Cốc)
+
+- **Ý nghĩa cốt lõi:** Ước nguyện thành hiện thực (Wish Card), sự mãn nguyện, sung sướng trọn vẹn.
+- **Ý tưởng tạo hình:** Nàng tiểu thư manhwa vô cùng gợi cảm ngồi khoan khoái trên ghế nệm nhung, mỉm cười tự mãn trước bàn tiệc bày chín chiếc ly vàng sáng loáng thành hình cánh cung sau lưng.
+
+#### 🚀 Midjourney Prompt:
+```text
+Tarot card of 'Nine of Cups', adult Korean manhwa aesthetic, voluptuous blonde beauty sitting luxuriously with arms folded across her chest, wearing a sensual white strappy bustier and silk drapery, smug satisfied smile on her blushing face, behind her is an arched display table showcasing nine gleaming golden chalices, warm festive banquet lighting, opulent comfort, ornate tarot border --ar 2:3 --v 6.1 --style raw
+```
+
+#### 🎨 Stable Diffusion / NovelAI Tags:
+```text
+masterpiece, best quality, manhwa art, korean webtoon style, 1girl, nine of cups tarot card, smug happy blonde girl, bustier straps, nine golden cups arranged in arc behind her, banquet hall, wish fulfilled, luxury satisfaction, warm lighting, tarot frame
+```
+
+### 🎴 10. Ten of Cups (Ten of Cups / Mười Cốc)
+
+- **Ý nghĩa cốt lõi:** Hạnh phúc gia đình viên mãn, tình yêu vĩnh cửu, sự an lành tuyệt đối.
+- **Ý tưởng tạo hình:** Cặp đôi manhwa đứng ôm nhau ngước nhìn cầu vồng rực rỡ bắc qua bầu trời trong xanh, trên cầu vồng phát sáng mười chiếc cốc vàng lấp lánh, phía dưới là ngôi nhà ấm áp bên đồng cỏ xanh tươi.
+
+#### 🚀 Midjourney Prompt:
+```text
+Tarot card of 'Ten of Cups', Korean manhwa webtoon style, loving couple standing arm in arm gazing up at a magnificent glowing rainbow stretching across the azure sky, ten golden cups shimmering along the rainbow arc, picturesque countryside cottage and dancing children below, idyllic eternal happiness, vibrant joyful pastel lighting, ornate gold tarot border --ar 2:3 --v 6.1 --style raw
+```
+
+#### 🎨 Stable Diffusion / NovelAI Tags:
+```text
+masterpiece, best quality, manhwa art, korean webtoon style, couple, ten of cups tarot card, loving embrace, giant rainbow with 10 golden cups glowing, green hills, cozy cottage, joyful family bliss, sunny bright sky, ornate tarot frame
+```
+
+### 🎴 Page. Page of Cups (Page of Cups / Tiểu Thư Cốc)
+
+- **Ý nghĩa cốt lõi:** Trực giác nghệ thuật, thông điệp tình cảm ngọt ngào, tâm hồn lãng mạn.
+- **Ý tưởng tạo hình:** Nàng thơ manhwa ngọt ngào đứng bên bờ biển sóng vỗ nhẹ, cầm chiếc ly vàng từ đó một chú cá nhỏ màu hồng lấp lánh đang ngoi đầu lên trò chuyện một cách kỳ diệu.
+
+#### 🚀 Midjourney Prompt:
+```text
+Tarot card of 'Page of Cups', Korean webtoon manhwa style, sweet dreamy blonde maiden in a floral embroidered tunic with ruffled lace collar, standing by gentle ocean waves, holding a golden chalice from which a whimsical glowing magical fish pops out looking at her, surprised playful smile, sparkling water reflections, soft sea breeze, ornate tarot frame --ar 2:3 --v 6.1 --style raw
+```
+
+#### 🎨 Stable Diffusion / NovelAI Tags:
+```text
+masterpiece, best quality, manhwa art, korean webtoon style, 1girl, page of cups tarot card, cute dreamy blonde, ocean beach, holding golden cup with little magical fish popping out, sweet smile, blue sea waves, whimsical artistic vibe, tarot frame
+```
+
+### 🎴 Knight. Knight of Cups (Knight of Cups / Hiệp Sĩ Cốc)
+
+- **Ý nghĩa cốt lõi:** Kỵ sĩ lãng mạn, người mang lời tỏ tình, sự hào hoa phong nhã.
+- **Ý tưởng tạo hình:** Kỵ sĩ tuấn tú mang giáp bạc chạm khắc cá có cánh, cưỡi ngựa trắng thong dong băng qua dòng suối trong, tay đưa về phía trước chiếc cốc vàng tình yêu như một lời cầu hôn dịu dàng.
+
+#### 🚀 Midjourney Prompt:
+```text
+Tarot card of 'Knight of Cups', Korean adult manhwa art style, handsome graceful knight in silver plate armor adorned with winged fish motifs, riding a calm white horse crossing a shallow clear river, extending forward a glowing golden cup of devotion, dreamy poetic gaze, misty willow trees in background, soft romantic lighting, ornate gold tarot border --ar 2:3 --v 6.1 --style raw
+```
+
+#### 🎨 Stable Diffusion / NovelAI Tags:
+```text
+masterpiece, best quality, manhwa art, korean webtoon style, 1boy, knight of cups tarot card, handsome romantic knight, silver armor, riding white horse across river, holding forward golden grail cup, dreamy eyes, romantic atmosphere, tarot card frame
+```
+
+### 🎴 Queen. Queen of Cups (Queen of Cups / Nữ Hoàng Cốc)
+
+- **Ý nghĩa cốt lõi:** Lòng trắc ẩn sâu sắc, giác quan thứ sáu, sự quyến rũ êm dịu của biển cả.
+- **Ý tưởng tạo hình:** Nữ hoàng tuyệt mỹ ngồi trên ngai vàng chạm hình nàng tiên cá bên mép sóng biển dập dềnh, ngắm nhìn chiếc cốc thánh nắp kín chạm khắc thiên thần vô cùng tinh xảo.
+
+#### 🚀 Midjourney Prompt:
+```text
+Tarot card of 'Queen of Cups', adult Korean manhwa style, deeply emotional voluptuous blonde queen seated on an ornate stone throne carved with mermaids at the edge of rolling ocean waves, wearing an aquamarine translucent gown with white lace harness straps, contemplating an elaborate golden ciborium cup with cherub handles, psychic aura, bioluminescent sea glow, ornate tarot frame --ar 2:3 --v 6.1 --style raw
+```
+
+#### 🎨 Stable Diffusion / NovelAI Tags:
+```text
+masterpiece, best quality, manhwa art, korean webtoon style, 1girl, queen of cups tarot card, gorgeous blonde queen, mermaid throne on ocean beach, aquamarine sheer gown, holding ornate golden cup, gentle waves touching feet, empathetic direct gaze, mystical water glow, tarot frame
+```
+
+### 🎴 King. King of Cups (King of Cups / Vua Cốc)
+
+- **Ý nghĩa cốt lõi:** Bậc thầy cảm xúc, sự điềm đạm bao dung, làm chủ tâm trí giữa sóng gió.
+- **Ý tưởng tạo hình:** Vị vua điềm đạm ngồi trên ngai vàng lơ lửng trên mặt biển cuộn sóng, tay cầm chén vàng và quyền trượng, một con cá heo và con thuyền lướt nhẹ phía chân trời.
+
+#### 🚀 Midjourney Prompt:
+```text
+Tarot card of 'King of Cups', Korean manhwa art style, dignified handsome king seated calmly on a throne floating atop undulating ocean waves, wearing blue robes with fish-scale armor mantle, holding a golden chalice and scepter, leaping dolphin and ship on the horizon, serene master of emotional depths, soft sea spray, ornate gold tarot border --ar 2:3 --v 6.1 --style raw
+```
+
+#### 🎨 Stable Diffusion / NovelAI Tags:
+```text
+masterpiece, best quality, manhwa art, korean webtoon style, 1boy, king of cups tarot card, dignified handsome king, throne floating on ocean waves, holding golden cup and scepter, jumping dolphin in background, calm sea, authoritative emotional maturity, tarot frame
+```
+
+
+---
+
+## ⚔️ PHẦN IV: SUIT OF SWORDS (BỘ KIẾM - NGUYÊN TỐ KHÍ / LÝ TRÍ & XUNG ĐỘT - 14 LÁ)
+
+### 🎴 Ace. Ace of Swords (Ace of Swords / Át Kiếm)
+
+- **Ý nghĩa cốt lõi:** Sự thật sáng tỏ, tư duy đột phá, sức mạnh của lý trí và công lý sắc bén.
+- **Ý tưởng tạo hình:** Bàn tay thanh mảnh vươn ra từ mây trời nắm chặt thanh đại kiếm hai lưỡi sắc lẹm chỉ thẳng lên trời, đầu kiếm đội vương miện kết bằng cành ô-liu và lá cọ, tia sét phát sáng rực rỡ xung quanh.
+
+#### 🚀 Midjourney Prompt:
+```text
+Tarot card of 'Ace of Swords', Korean manhwa webtoon style, a delicate feminine hand emerging from storm clouds firmly grasping an upright double-edged gleaming steel sword, sword tip piercing a golden crown adorned with olive and palm branches, floating golden yod sparks, dramatic mountain peaks below, crystal clear azure sky, sharp razor focus, ornate gold tarot border --ar 2:3 --v 6.1 --style raw
+```
+
+#### 🎨 Stable Diffusion / NovelAI Tags:
+```text
+masterpiece, best quality, manhwa art, korean webtoon style, ace of swords tarot card, hand from clouds gripping upright shining broadsword, golden crown on tip of sword, olive branches, floating sparks, mountain backdrop, sharp clear lighting, tarot card frame
+```
+
+### 🎴 2. Two of Swords (Two of Swords / Hai Kiếm)
+
+- **Ý nghĩa cốt lõi:** Sự bế tắc, lưỡng lự khó quyết định, nhắm mắt để lắng nghe lý trí bên trong.
+- **Ý tưởng tạo hình:** Nàng thiếu nữ manhwa mặc váy trắng bị bịt mắt bằng dải lụa trắng, ngồi trên băng ghế đá bên bờ biển đêm, hai tay bắt chéo giữ hai thanh kiếm lớn trước ngực, trăng khuyết treo trên nền trời tĩnh mịch.
+
+#### 🚀 Midjourney Prompt:
+```text
+Tarot card of 'Two of Swords', adult Korean manhwa style, beautiful blonde maiden blindfolded with a white silk sash, sitting on a stone bench beside a calm nighttime sea, holding two crossed heavy swords balanced across her chest, wearing a revealing white strap dress, crescent moon shining above, calm sea with small rocky islands, tense silent standoff, ornate tarot frame --ar 2:3 --v 6.1 --style raw
+```
+
+#### 🎨 Stable Diffusion / NovelAI Tags:
+```text
+masterpiece, best quality, manhwa art, korean webtoon style, 1girl, two of swords tarot card, blindfolded blonde girl, white strappy dress, holding two crossed swords across chest, stone bench by night sea, crescent moon, balanced stalemate, calm atmospheric lighting, tarot frame
+```
+
+### 🎴 3. Three of Swords (Three of Swords / Ba Kiếm)
+
+- **Ý nghĩa cốt lõi:** Nỗi đau tan vỡ, tổn thương tình cảm, sự phản bội và bài học đắng cay.
+- **Ý tưởng tạo hình:** Trái tim pha lê đỏ rực phát sáng bị ba thanh kiếm sắc lạnh đâm xuyên qua giữa bầu trời giông bão xám xịt với mưa rơi tầm tã và sấm chớp rạch ngang nền trời.
+
+#### 🚀 Midjourney Prompt:
+```text
+Tarot card of 'Three of Swords', Korean manhwa aesthetic, a glowing crimson crystal heart pierced cleanly by three sharp gleaming silver swords, suspended against dark turbulent storm clouds with torrential rain and flashes of lightning, poignant emotional heartache, dramatic high-contrast lighting, raindrops catching neon reflections, ornate gold tarot border --ar 2:3 --v 6.1 --style raw
+```
+
+#### 🎨 Stable Diffusion / NovelAI Tags:
+```text
+masterpiece, best quality, manhwa art, korean webtoon style, three of swords tarot card, glowing red heart pierced by three swords, stormy sky with rain and lightning, dramatic emotional heartbreak, dark clouds, sharp reflections, tarot card frame
+```
+
+### 🎴 4. Four of Swords (Four of Swords / Bốn Kiếm)
+
+- **Ý nghĩa cốt lõi:** Nghỉ ngơi phục hồi, tĩnh tâm dưỡng sức sau giông bão, sự bình yên trong thánh đường.
+- **Ý tưởng tạo hình:** Nữ chiến binh manhwa xinh đẹp nằm tĩnh dưỡng thanh thản trên lăng mộ đá trong thánh đường, hai tay chắp trước ngực, ba thanh kiếm treo trên tường phía trên và một thanh kiếm khắc cạnh chỗ nàng nằm.
+
+#### 🚀 Midjourney Prompt:
+```text
+Tarot card of 'Four of Swords', Korean adult manhwa digital art, beautiful sleeping blonde knight resting peacefully atop a carved stone tomb inside a sunlit cathedral, hands folded in prayer over sheer white bedsheets, three swords mounted horizontally on the wall above and one carved on the sarcophagus, vibrant stained-glass window casting colorful light, serene sanctuary, ornate tarot border --ar 2:3 --v 6.1 --style raw
+```
+
+#### 🎨 Stable Diffusion / NovelAI Tags:
+```text
+masterpiece, best quality, manhwa art, korean webtoon style, 1girl, four of swords tarot card, peaceful sleeping blonde knight, lying on stone tomb in church, hands in prayer, three swords on wall, stained glass colorful lighting, peaceful rest, tarot frame
+```
+
+### 🎴 5. Five of Swords (Five of Swords / Năm Kiếm)
+
+- **Ý nghĩa cốt lõi:** Chiến thắng cay đắng, tư lợi cá nhân, sự phản trắc để lại tổn thương.
+- **Ý tưởng tạo hình:** Cô gái manhwa nhe răng cười nham hiểm thu gom ba thanh kiếm của đối thủ, trong khi hai kẻ chiến bại cúi đầu bỏ đi trong uất ức dưới bầu trời lộng gió xám xịt.
+
+#### 🚀 Midjourney Prompt:
+```text
+Tarot card of 'Five of Swords', Korean manhwa webtoon style, cunning seductive blonde fighter holding three swords and glancing over her shoulder with a cocky victorious smirk, while two defeated figures walk away dejectedly in the background, choppy grey sea and gusty cloudy sky, tense competitive betrayal, crisp lines, ornate gold tarot border --ar 2:3 --v 6.1 --style raw
+```
+
+#### 🎨 Stable Diffusion / NovelAI Tags:
+```text
+masterpiece, best quality, manhwa art, korean webtoon style, 1girl, five of swords tarot card, smirking blonde girl holding three swords, two defeated comrades walking away in background, windy battlefield, arrogant victory smile, grey cloudy sky, tarot frame
+```
+
+### 🎴 6. Six of Swords (Six of Swords / Sáu Kiếm)
+
+- **Ý nghĩa cốt lõi:** Rời xa sóng gió, hành trình chuyển tiếp sang vùng đất bình yên hơn.
+- **Ý tưởng tạo hình:** Một người chèo thuyền lái con thuyền gỗ chở người đẹp trùm khăn mỏng và sáu thanh kiếm cắm thẳng trên mũi thuyền, rời khỏi vùng nước gợn sóng tiến vào vùng nước êm ả hướng tới bến bờ bình yên.
+
+#### 🚀 Midjourney Prompt:
+```text
+Tarot card of 'Six of Swords', Korean adult manhwa style, a wooden ferry boat gliding across calm misty waters toward a sunlit shore, carrying a veiled cloaked beauty and a tall hooded ferryman, six swords planted upright in the hull of the boat, transition from choppy waters to serene tranquil sea, dawn mist, melancholic hope, ornate tarot card frame --ar 2:3 --v 6.1 --style raw
+```
+
+#### 🎨 Stable Diffusion / NovelAI Tags:
+```text
+masterpiece, best quality, manhwa art, korean webtoon style, six of swords tarot card, wooden boat carrying cloaked woman across calm water, six swords standing upright in boat, boatman with pole, moving towards peaceful shore, misty dawn lighting, tarot frame
+```
+
+### 🎴 7. Seven of Swords (Seven of Swords / Bảy Kiếm)
+
+- **Ý nghĩa cốt lõi:** Mưu mẹo, sự lén lút, hành động độc lập và sự tinh ranh trốn thoát.
+- **Ý tưởng tạo hình:** Nàng đạo tặc manhwa tóc vàng nhón chân lẻn ra khỏi doanh trại quân địch, tay ôm năm thanh kiếm sáng loáng, ngoái lại nhìn hai thanh kiếm còn cắm lại với nụ cười tinh quái.
+
+#### 🚀 Midjourney Prompt:
+```text
+Tarot card of 'Seven of Swords', Korean manhwa webtoon aesthetic, stealthy nimble blonde rogue in tight leather harness and spy suit tiptoeing away from an enemy military encampment, carrying five stolen swords in her arms, looking back playfully over her shoulder at two swords left standing, twilight camp tents, mischievous smirk, dynamic sly pose, ornate gold tarot border --ar 2:3 --v 6.1 --style raw
+```
+
+#### 🎨 Stable Diffusion / NovelAI Tags:
+```text
+masterpiece, best quality, manhwa art, korean webtoon style, 1girl, seven of swords tarot card, sneaky blonde rogue, tight leather harness outfit, carrying five swords, tiptoeing away, playful smirk looking back at 2 remaining swords, military tents, night stealth, tarot frame
+```
+
+### 🎴 8. Eight of Swords (Eight of Swords / Tám Kiếm)
+
+- **Ý nghĩa cốt lõi:** Cảm giác bị giam cầm, tự trói buộc tâm trí bởi nỗi sợ hãi vô căn cứ.
+- **Ý tưởng tạo hình:** Nàng thiếu nữ manhwa quyến rũ bị trói bằng dây lụa trắng và bịt mắt, đứng giữa vòng vây của tám thanh kiếm cắm xung quanh trên mặt đất lầy lội, nhưng đôi chân nàng thực chất vẫn tự do bước đi.
+
+#### 🚀 Midjourney Prompt:
+```text
+Tarot card of 'Eight of Swords', adult Korean manhwa style, alluring blonde maiden bound loosely in soft white ropes and blindfolded with silk ribbons, standing inside an enclosure of eight sharp swords planted in muddy ground, dark castle on distant cliff, water puddles reflecting the cloudy sky, feeling trapped yet free to walk away, sensual vulnerability, glossy skin, ornate tarot frame --ar 2:3 --v 6.1 --style raw
+```
+
+#### 🎨 Stable Diffusion / NovelAI Tags:
+```text
+masterpiece, best quality, manhwa art, korean webtoon style, 1girl, eight of swords tarot card, blindfolded blonde, white rope bondage straps, trapped inside circle of 8 planted swords, muddy ground, gloomy sky, sensual helpless pose, glossy skin highlights, tarot frame
+```
+
+### 🎴 9. Nine of Swords (Nine of Swords / Chín Kiếm)
+
+- **Ý nghĩa cốt lõi:** Cơn ác mộng nửa đêm, lo âu, dằn vặt tâm lý và nỗi sợ hãi quá độ.
+- **Ý tưởng tạo hình:** Cô gái manhwa bật dậy trên giường ngủ trong đêm tối, ôm mặt khóc trong cơn ác mộng, phía trên đầu giường treo chín thanh kiếm đen sắc nhọn đe dọa, chăn phủ thêu các biểu tượng chiêm tinh.
+
+#### 🚀 Midjourney Prompt:
+```text
+Tarot card of 'Nine of Swords', Korean adult manhwa art style, distressed blonde maiden sitting up in bed in the dead of night, burying her face in her hands in deep anguish, wearing a sheer white nightgown, nine sharp swords mounted horizontally on the pitch black wall above her head, quilt embroidered with astrological zodiac signs, moody dramatic shadow, emotional nightmare, ornate gold tarot border --ar 2:3 --v 6.1 --style raw
+```
+
+#### 🎨 Stable Diffusion / NovelAI Tags:
+```text
+masterpiece, best quality, manhwa art, korean webtoon style, 1girl, nine of swords tarot card, blonde girl sitting in bed with head in hands, crying, sheer nightgown, nine swords hanging on wall above bed, dark bedroom, nightmare anxiety, dramatic shadows, tarot frame
+```
+
+### 🎴 10. Ten of Swords (Ten of Swords / Mười Kiếm)
+
+- **Ý nghĩa cốt lõi:** Chạm đáy nỗi đau, sự kết thúc hoàn toàn, bình minh tái sinh sắp ló dạng.
+- **Ý tưởng tạo hình:** Nhân vật manhwa nằm sấp trên bờ cát với mười thanh kiếm cắm dọc sống lưng, nhưng trên đường chân trời tối tăm, ánh bình minh vàng kim rực rỡ đang phá tan màn đêm báo hiệu tái sinh.
+
+#### 🚀 Midjourney Prompt:
+```text
+Tarot card of 'Ten of Swords', Korean webtoon manhwa style, a dramatic scene of a fallen slender figure lying on the shoreline with ten swords pinned along the back, draped in red silk cloth, dark stormy clouds in the sky parting as a brilliant golden sunrise breaks across the calm sea horizon, rebirth from ruin, cinematic lighting, ornate gold tarot border --ar 2:3 --v 6.1 --style raw
+```
+
+#### 🎨 Stable Diffusion / NovelAI Tags:
+```text
+masterpiece, best quality, manhwa art, korean webtoon style, ten of swords tarot card, figure lying on shore with ten swords in back, red cloth, dark clouds parting, golden sunrise on sea horizon, dramatic rebirth, cinematic lighting, tarot card frame
+```
+
+### 🎴 Page. Page of Swords (Page of Swords / Tiểu Thư Kiếm)
+
+- **Ý nghĩa cốt lõi:** Sự sắc sảo, tò mò trí tuệ, cảnh giác và tinh thần dám nghĩ dám làm.
+- **Ý tưởng tạo hình:** Nàng thiếu nữ manhwa lanh lợi đứng trên mỏm đồi lộng gió, hai tay nắm thanh kiếm sẵn sàng nghênh chiến, mái tóc và dải áo bay phần phật trước đàn chim đang chao liệng.
+
+#### 🚀 Midjourney Prompt:
+```text
+Tarot card of 'Page of Swords', Korean manhwa art style, sharp-witted athletic blonde maiden standing poised on a rocky hill with an upright sword held firmly in both hands, wind whipping through her hair and short tunic, billowing cumulus clouds and flock of birds soaring in sky, vigilant keen gaze, vibrant dynamic lighting, ornate gold tarot border --ar 2:3 --v 6.1 --style raw
+```
+
+#### 🎨 Stable Diffusion / NovelAI Tags:
+```text
+masterpiece, best quality, manhwa art, korean webtoon style, 1girl, page of swords tarot card, alert blonde swordswoman, holding sword ready, standing on windy grassy hill, wind in hair, birds in sky, confident sharp expression, bright daylight, tarot frame
+```
+
+### 🎴 Knight. Knight of Swords (Knight of Swords / Hiệp Sĩ Kiếm)
+
+- **Ý nghĩa cốt lõi:** Cơn lốc tấn công, quyết đoán phi thường, xông pha không ngại hiểm nguy.
+- **Ý tưởng tạo hình:** Kỵ sĩ manhwa dũng mãnh vung kiếm lao như tên bắn trên lưng tuấn mã đang phi nước đại, vượt qua cơn bão lốc xoáy với ánh mắt sắc như dao cạo.
+
+#### 🚀 Midjourney Prompt:
+```text
+Tarot card of 'Knight of Swords', high impact Korean manhwa digital art, fierce knight in sleek silver aerodynamic armor charging furiously on a galloping warhorse, holding sword high and forward, storm clouds tearing across a windy turbulent sky, flying dust particles, unstoppable momentum, intense aggressive focus, ornate gold tarot border --ar 2:3 --v 6.1 --style raw
+```
+
+#### 🎨 Stable Diffusion / NovelAI Tags:
+```text
+masterpiece, best quality, manhwa art, korean webtoon style, knight of swords tarot card, charging knight in silver armor on horse, brandishing sword, storm winds, galloping horse, intense speed lines, dynamic fighting spirit, tarot card frame
+```
+
+### 🎴 Queen. Queen of Swords (Queen of Swords / Nữ Hoàng Kiếm)
+
+- **Ý nghĩa cốt lõi:** Trí tuệ sắc sảo, tính độc lập kiên cường, phán đoán công tâm và thẳng thắn.
+- **Ý tưởng tạo hình:** Nữ hoàng manhwa băng thanh ngọc khiết ngồi trên ngai đá chạm khắc thiên thần, tay phải giơ thẳng thanh gươm phán quyết, tay trái đưa ra phía trước như đón nhận sự thật, ánh mắt lạnh lùng đầy quyến rũ.
+
+#### 🚀 Midjourney Prompt:
+```text
+Tarot card of 'Queen of Swords', adult Korean manhwa aesthetic, stunningly sharp blonde queen seated on an ornate stone throne carved with butterflies and cherubs, wearing a tailored high-slit white gown with silver collar harness, holding an upright broadsword in right hand while gesturing forward with left, clear azure sky with swift clouds, piercing cold seductive gaze, ornate tarot frame --ar 2:3 --v 6.1 --style raw
+```
+
+#### 🎨 Stable Diffusion / NovelAI Tags:
+```text
+masterpiece, best quality, manhwa art, korean webtoon style, 1girl, queen of swords tarot card, ice queen blonde, regal white dress with straps, holding upright sword, butterfly stone throne, cold intelligent sharp eyes, clear blue sky with clouds, tarot frame, ultra detailed
+```
+
+### 🎴 King. King of Swords (King of Swords / Vua Kiếm)
+
+- **Ý nghĩa cốt lõi:** Bậc thầy trí tuệ, quyền uy tối thượng của luật pháp và logic phán xét.
+- **Ý tưởng tạo hình:** Vua Kiếm uy nghiêm ngồi trên ngai đá cẩm thạch, tay giữ thanh gươm thẳng đứng tượng trưng cho chân lý và luật pháp tối cao, ánh mắt thấu suốt mọi mưu mô.
+
+#### 🚀 Midjourney Prompt:
+```text
+Tarot card of 'King of Swords', Korean webtoon manhwa style, authoritative handsome king seated on a high-backed marble throne decorated with crescent moons and cherubs, wearing royal purple mantle and silver armor collar, holding an upright gleaming sword of truth, calm discerning expression, clear bright sky backdrop, crisp linework, ornate gold tarot border --ar 2:3 --v 6.1 --style raw
+```
+
+#### 🎨 Stable Diffusion / NovelAI Tags:
+```text
+masterpiece, best quality, manhwa art, korean webtoon style, 1boy, king of swords tarot card, handsome stern king, silver armor, purple robe, holding upright broadsword, marble throne, clear sky, wise authoritative gaze, tarot card frame
+```
+
+
+---
+
+## 🪙 PHẦN V: SUIT OF PENTACLES (BỘ TIỀN - NGUYÊN TỐ ĐẤT / TÀI CHÍNH & VẬT CHẤT - 14 LÁ)
+
+### 🎴 Ace. Ace of Pentacles (Ace of Pentacles / Át Tiền)
+
+- **Ý nghĩa cốt lõi:** Cơ hội tài chính mới, sự thịnh vượng vật chất, nền móng vững chắc.
+- **Ý tưởng tạo hình:** Bàn tay ngọc ngà từ đám mây nâng đồng tiền vàng khổng lồ khắc hình ngôi sao năm cánh, lơ lửng trên khu vườn hoa hồng nở rộ với cổng vòm dẫn ra những dãy núi hùng vĩ.
+
+#### 🚀 Midjourney Prompt:
+```text
+Tarot card of 'Ace of Pentacles', Korean manhwa art style, a radiant glowing hand emerging from heavenly clouds offering a large golden coin engraved with a sparkling pentagram, hovering over a lush verdant garden of blooming white lilies and red roses, archway leading to distant purple mountains, golden coin sparkles, prosperous warm lighting, ornate gold tarot border --ar 2:3 --v 6.1 --style raw
+```
+
+#### 🎨 Stable Diffusion / NovelAI Tags:
+```text
+masterpiece, best quality, manhwa art, korean webtoon style, ace of pentacles tarot card, hand from clouds offering giant glowing golden pentacle coin, garden with blooming roses and lilies, archway to mountains, prosperous golden light, tarot frame
+```
+
+### 🎴 2. Two of Pentacles (Two of Pentacles / Hai Tiền)
+
+- **Ý nghĩa cốt lõi:** Cân bằng tài chính, xoay sở khéo léo giữa nhiều ưu tiên trong cuộc sống.
+- **Ý tưởng tạo hình:** Nàng vũ công manhwa uyển chuyển tung hứng hai đồng tiền vàng được bao bọc bởi dải ruy băng vô cực (Infinity) phát sáng, phía sau là biển cuộn sóng và những con tàu lắc lư nhịp nhàng.
+
+#### 🚀 Midjourney Prompt:
+```text
+Tarot card of 'Two of Pentacles', Korean adult manhwa style, agile attractive blonde dancer in a playful jester-inspired crop top and white strap harness, skillfully juggling two glowing golden pentacle coins looped inside a luminous infinity ribbon, rolling ocean waves and rocking ships in the background, lively balance and grace, ornate gold tarot border --ar 2:3 --v 6.1 --style raw
+```
+
+#### 🎨 Stable Diffusion / NovelAI Tags:
+```text
+masterpiece, best quality, manhwa art, korean webtoon style, 1girl, two of pentacles tarot card, cute blonde dancer, white harness crop top, juggling 2 golden coins inside glowing infinity loop, ocean waves and ships background, agile playful expression, tarot frame
+```
+
+### 🎴 3. Three of Pentacles (Three of Pentacles / Ba Tiền)
+
+- **Ý nghĩa cốt lõi:** Hợp tác chuyên nghiệp, tay nghề bậc thầy, xây dựng công trình vĩ đại.
+- **Ý tưởng tạo hình:** Nữ kiến trúc sư/nghệ nhân manhwa tài hoa đang chạm khắc vòm thánh đường nguy nga, trao đổi bản vẽ với các đồng nghiệp, trên vòm đá gắn ba đồng tiền vàng rực rỡ.
+
+#### 🚀 Midjourney Prompt:
+```text
+Tarot card of 'Three of Pentacles', Korean manhwa webtoon aesthetic, a talented master sculptress standing in a majestic cathedral archway discussing blueprints with colleagues, wearing an artisan leather apron over stylish inner wear, three golden pentacles carved prominently into the cathedral stone arch above, golden sunlight streaming through stone pillars, ornate tarot frame --ar 2:3 --v 6.1 --style raw
+```
+
+#### 🎨 Stable Diffusion / NovelAI Tags:
+```text
+masterpiece, best quality, manhwa art, korean webtoon style, three of pentacles tarot card, female artisan architect in cathedral, holding blueprints, three golden pentacles carved on stone archway, sunbeams, craftsmanship and collaboration, tarot card frame
+```
+
+### 🎴 4. Four of Pentacles (Four of Pentacles / Bốn Tiền)
+
+- **Ý nghĩa cốt lõi:** Giữ chặt tài sản, sự an toàn tài chính nhưng có nguy cơ bảo thủ, keo kiệt.
+- **Ý tưởng tạo hình:** Cô nàng manhwa giàu có ngồi ôm chặt một đồng tiền vàng lớn trước ngực, đội một đồng trên vương miện và đặt hai đồng dưới gót chân, phía sau là toàn cảnh thành phố hiện đại sầm uất.
+
+#### 🚀 Midjourney Prompt:
+```text
+Tarot card of 'Four of Pentacles', Korean adult manhwa style, wealthy possessive blonde maiden sitting firmly on a carved stone block, clutching tightly to a large golden pentacle over her chest, wearing another pentacle on her crown, and resting her feet upon two more, city skyline in the background, possessive protective smirk, luxurious gold-trimmed outfit, ornate tarot frame --ar 2:3 --v 6.1 --style raw
+```
+
+#### 🎨 Stable Diffusion / NovelAI Tags:
+```text
+masterpiece, best quality, manhwa art, korean webtoon style, 1girl, four of pentacles tarot card, greedy wealthy blonde, clutching golden coin to chest, standing on two coins, crown with coin, city backdrop, possessive smug smile, luxurious outfit, tarot frame
+```
+
+### 🎴 5. Five of Pentacles (Five of Pentacles / Năm Tiền)
+
+- **Ý nghĩa cốt lõi:** Khó khăn vật chất, cảm giác bị bỏ rơi, nhưng luôn có nơi trú ẩn ấm áp nếu nhìn lên.
+- **Ý tưởng tạo hình:** Hai người đẹp manhwa trong bộ áo rách tả tơi dìu nhau bước qua bão tuyết đêm đông lạnh giá, đi ngang qua ô cửa sổ kính màu phát sáng rực rỡ của thánh đường có hình năm đồng tiền vàng ấm áp.
+
+#### 🚀 Midjourney Prompt:
+```text
+Tarot card of 'Five of Pentacles', Korean manhwa digital art, two shivering slender beauties in tattered clothes trudging through a deep blizzard at night, passing beneath the warm glowing stained-glass window of a sanctuary church depicting five golden pentacles, falling snow, contrast of freezing blue snow and warm golden sanctuary light, emotional empathy, ornate tarot border --ar 2:3 --v 6.1 --style raw
+```
+
+#### 🎨 Stable Diffusion / NovelAI Tags:
+```text
+masterpiece, best quality, manhwa art, korean webtoon style, five of pentacles tarot card, two impoverished girls walking in snowstorm, passing church with glowing stained glass window showing 5 pentacles, blizzard, cold blue and warm yellow light contrast, tarot frame
+```
+
+### 🎴 6. Six of Pentacles (Six of Pentacles / Sáu Tiền)
+
+- **Ý nghĩa cốt lõi:** Lòng hào phóng, từ thiện, sự cân bằng giữa cho và nhận trong cuộc sống.
+- **Ý tưởng tạo hình:** Nữ quý tộc manhwa lộng lẫy một tay cầm cán cân công lý, một tay phát những đồng tiền vàng sáng lấp lánh cho những người cần giúp đỡ đang quỳ gối cảm tạ.
+
+#### 🚀 Midjourney Prompt:
+```text
+Tarot card of 'Six of Pentacles', Korean adult manhwa style, generous glamorous blonde noblewoman in an opulent velvet and fur robe with strappy bodice, holding a golden scale of balance in one hand while graciously distributing glowing gold coins to grateful kneeling recipients, wealthy manor courtyard, warm charitable glow, ornate gold tarot border --ar 2:3 --v 6.1 --style raw
+```
+
+#### 🎨 Stable Diffusion / NovelAI Tags:
+```text
+masterpiece, best quality, manhwa art, korean webtoon style, 1girl, six of pentacles tarot card, generous blonde noble lady, holding balance scale, giving golden coins to kneeling people, charitable smile, luxurious dress with straps, warm sunlight, tarot frame
+```
+
+### 🎴 7. Seven of Pentacles (Seven of Pentacles / Bảy Tiền)
+
+- **Ý nghĩa cốt lõi:** Kiên nhẫn chờ đợi mùa màng bội thu, đánh giá thành quả lao động.
+- **Ý tưởng tạo hình:** Cô gái manhwa xinh đẹp tựa cằm vào cán cuốc, mỉm cười hài lòng ngắm nhìn giàn nho trĩu quả đính bảy đồng tiền vàng lấp lánh đang đến ngày thu hoạch.
+
+#### 🚀 Midjourney Prompt:
+```text
+Tarot card of 'Seven of Pentacles', Korean webtoon manhwa style, beautiful blonde gardener girl leaning on the handle of her spade, pausing to look thoughtfully at a lush green vine heavy with seven glowing golden pentacles, blooming vineyard backdrop, patient contemplative smile, soft golden hour sunlight, rustic chic harness overalls, ornate tarot frame --ar 2:3 --v 6.1 --style raw
+```
+
+#### 🎨 Stable Diffusion / NovelAI Tags:
+```text
+masterpiece, best quality, manhwa art, korean webtoon style, 1girl, seven of pentacles tarot card, cute blonde gardener, leaning on spade, looking at vine with 7 golden coins growing like fruit, vineyard, patient smile, sunset glow, tarot card frame
+```
+
+### 🎴 8. Eight of Pentacles (Eight of Pentacles / Tám Tiền)
+
+- **Ý nghĩa cốt lõi:** Sự chăm chỉ, trau dồi kỹ năng, sự tỉ mỉ hoàn thiện từng chi tiết.
+- **Ý tưởng tạo hình:** Nữ nghệ nhân chế tác trang sức manhwa ngồi bên bàn làm việc say sưa khắc từng hoa văn ngôi sao lên tám đồng tiền vàng, thể hiện sự đam mê nghề nghiệp đỉnh cao.
+
+#### 🚀 Midjourney Prompt:
+```text
+Tarot card of 'Eight of Pentacles', Korean manhwa art style, dedicated skillful blonde artisan seated at her wooden workbench, meticulously carving intricate pentagram engravings onto golden coins, eight finished coins displayed neatly on the wall and table, artisan tools, focused enchanting expression, warm workshop lamplight, ornate gold tarot border --ar 2:3 --v 6.1 --style raw
+```
+
+#### 🎨 Stable Diffusion / NovelAI Tags:
+```text
+masterpiece, best quality, manhwa art, korean webtoon style, 1girl, eight of pentacles tarot card, blonde craftsman girl at workbench, carving golden pentacle coins, eight coins on display, focused diligent expression, cozy workshop lighting, tarot card frame
+```
+
+### 🎴 9. Nine of Pentacles (Nine of Pentacles / Chín Tiền)
+
+- **Ý nghĩa cốt lõi:** Cuộc sống xa hoa độc lập, hưởng thụ thành quả, sự quý phái tao nhã.
+- **Ý tưởng tạo hình:** Nàng tiểu thư manhwa quý tộc kiêu kỳ khoác áo lụa xẻ tà sang trọng đứng giữa vườn nho trĩu quả chín đồng tiền vàng, trên tay đeo găng da có chú chim ưng hoàng gia đang đậu kiêu hãnh.
+
+#### 🚀 Midjourney Prompt:
+```text
+Tarot card of 'Nine of Pentacles', adult Korean manhwa aesthetic, impeccably glamorous blonde aristocrat standing elegantly in her private vineyard laden with golden grapes and nine shimmering pentacles, wearing an opulent silk dress with delicate lace harness accents, a hooded hunting falcon perched on her gloved hand, luxury manor in background, self-sufficient sensual elegance, ornate tarot frame --ar 2:3 --v 6.1 --style raw
+```
+
+#### 🎨 Stable Diffusion / NovelAI Tags:
+```text
+masterpiece, best quality, manhwa art, korean webtoon style, 1girl, nine of pentacles tarot card, aristocratic blonde beauty, silk luxury dress with straps, hunting falcon on gloved wrist, vineyard with 9 golden coins, luxurious estate garden, independent wealthy vibe, tarot frame
+```
+
+### 🎴 10. Ten of Pentacles (Ten of Pentacles / Mười Tiền)
+
+- **Ý nghĩa cốt lõi:** Gia tộc hưng vượng, tài sản truyền đời, di sản vững bền qua các thế hệ.
+- **Ý tưởng tạo hình:** Cổng vòm lâu đài gia tộc tráng lệ đính mười đồng tiền vàng xếp theo mô hình Cây Sự Sống (Tree of Life), bên dưới là gia đình hạnh phúc và những chú chó cưng trung thành dưới ánh nắng chan hòa.
+
+#### 🚀 Midjourney Prompt:
+```text
+Tarot card of 'Ten of Pentacles', Korean webtoon adult manhwa style, a wealthy multi-generational dynasty gathering in the grand courtyard of an ancestral palace under an ornate stone archway adorned with ten golden pentacles arranged in the Tree of Life pattern, playful loyal dogs, opulent statues and fountains, generational wealth and legacy, warm golden sunlight, ornate tarot frame --ar 2:3 --v 6.1 --style raw
+```
+
+#### 🎨 Stable Diffusion / NovelAI Tags:
+```text
+masterpiece, best quality, manhwa art, korean webtoon style, ten of pentacles tarot card, wealthy palace courtyard, ten golden pentacles on archway in Tree of Life formation, happy wealthy family, noble dogs, palace fountains, golden hour, prosperity legacy, tarot frame
+```
+
+### 🎴 Page. Page of Pentacles (Page of Pentacles / Tiểu Thư Tiền)
+
+- **Ý nghĩa cốt lõi:** Học hỏi thực tế, tham vọng nghề nghiệp mới, trân trọng cơ hội vật chất.
+- **Ý tưởng tạo hình:** Nàng học viên manhwa dễ thương đứng giữa đồng cỏ hoa nở rộ, hai tay nâng niu và chiêm ngưỡng một đồng tiền vàng lớn đang tỏa ánh hào quang lấp lánh.
+
+#### 🚀 Midjourney Prompt:
+```text
+Tarot card of 'Page of Pentacles', Korean manhwa style, studious ambitious blonde maiden standing in a blooming wildflower meadow, carefully holding aloft and admiring a large glowing golden pentacle coin hovering above her palms, wearing a stylish green velvet beret and modern strapped tunic, lush grove and plowed fields behind, eager inspired expression, ornate gold tarot border --ar 2:3 --v 6.1 --style raw
+```
+
+#### 🎨 Stable Diffusion / NovelAI Tags:
+```text
+masterpiece, best quality, manhwa art, korean webtoon style, 1girl, page of pentacles tarot card, cute studious blonde, green beret, holding glowing golden coin with both hands, wildflower meadow, plowed fields backdrop, eager hopeful gaze, bright lighting, tarot frame
+```
+
+### 🎴 Knight. Knight of Pentacles (Knight of Pentacles / Hiệp Sĩ Tiền)
+
+- **Ý nghĩa cốt lõi:** Sự kiên định, đáng tin cậy, làm việc cẩn trọng và tích lũy bền vững.
+- **Ý tưởng tạo hình:** Kỵ sĩ manhwa khoác giáp sắt nặng nề cưỡi chú chiến mã đen lực lưỡng đứng giữa cánh đồng màu mỡ, tay nâng niu đồng tiền vàng với sự cẩn trọng và kiên định phi thường.
+
+#### 🚀 Midjourney Prompt:
+```text
+Tarot card of 'Knight of Pentacles', Korean webtoon digital art, solid dependable knight in heavy dark plate armor mounted upon a massive black draft horse in a fertile cultivated field, holding a gleaming golden pentacle coin with calm steady contemplation, vast green farmland and rolling hills, unyielding dedication, crisp lines, ornate gold tarot border --ar 2:3 --v 6.1 --style raw
+```
+
+#### 🎨 Stable Diffusion / NovelAI Tags:
+```text
+masterpiece, best quality, manhwa art, korean webtoon style, knight of pentacles tarot card, handsome knight in heavy dark armor on black horse, holding golden pentacle coin, plowed farm field, patient reliable expression, clear afternoon light, tarot card frame
+```
+
+### 🎴 Queen. Queen of Pentacles (Queen of Pentacles / Nữ Hoàng Tiền)
+
+- **Ý nghĩa cốt lõi:** Sự nuôi dưỡng trù phú, người phụ nữ đảm đang giàu có, gắn bó với đất mẹ.
+- **Ý tưởng tạo hình:** Nữ hoàng manhwa đẫy đà quyến rũ ngồi trên ngai vàng chạm trổ hoa trái giữa thiên nhiên xanh mướt, ôm đồng tiền vàng lớn trong lòng, bên cạnh có chú thỏ nhỏ nhảy nhót giữa muôn hoa.
+
+#### 🚀 Midjourney Prompt:
+```text
+Tarot card of 'Queen of Pentacles', adult Korean manhwa aesthetic, bountiful voluptuous blonde queen seated on an ornate wooden throne carved with fruits and animals in a verdant blooming garden, holding a large golden pentacle tenderly in her lap, wearing a rich green and gold silk gown with sheer harness neckline, a cute wild rabbit leaping nearby, warm abundant maternal sunlight, glossy skin, ornate tarot frame --ar 2:3 --v 6.1 --style raw
+```
+
+#### 🎨 Stable Diffusion / NovelAI Tags:
+```text
+masterpiece, best quality, manhwa art, korean webtoon style, 1girl, queen of pentacles tarot card, voluptuous blonde queen, green and gold dress with straps, holding golden pentacle coin in lap, rabbit at feet, lush garden with fruit trees, warm comforting sunlight, tarot frame, ultra detailed
+```
+
+### 🎴 King. King of Pentacles (King of Pentacles / Vua Tiền)
+
+- **Ý nghĩa cốt lõi:** Đế vương tài chính, sự thịnh vượng đỉnh cao, doanh nhân thành đạt và vững chãi.
+- **Ý tưởng tạo hình:** Vị vua giàu có quyền lực ngồi trên ngai vàng chạm khắc đầu bò đực dũng mãnh, khoác áo choàng nhung viền lông thú thêu hoa văn lá nho, tay cầm quyền trượng và đồng tiền vàng lớn.
+
+#### 🚀 Midjourney Prompt:
+```text
+Tarot card of 'King of Pentacles', Korean manhwa art style, wealthy powerful king seated on a grand stone throne carved with bull heads, surrounded by luscious grapevines and castle towers, wearing an ermine-trimmed royal mantle and gold-embroidered tunic, holding a golden scepter and large pentacle coin, authoritative prosperous aura, rich golden lighting, ornate gold tarot border --ar 2:3 --v 6.1 --style raw
+```
+
+#### 🎨 Stable Diffusion / NovelAI Tags:
+```text
+masterpiece, best quality, manhwa art, korean webtoon style, 1boy, king of pentacles tarot card, wealthy handsome king, royal robes with fur trim, seated on bull throne, holding golden scepter and coin, grapevines, castle backdrop, prosperous confident aura, tarot card frame
+```
+
+
+---
+
+## 💡 4. MẸO TỐI ƯU HÓA HÌNH ẢNH (PRO-TIPS)
+
+1. **Giữ tính đồng bộ nhân vật (Character Consistency):**
+   - Nếu bạn muốn tạo nguyên bộ bài với đúng cô gái tóc vàng trong `Capture3.PNG`, hãy thêm vào prompt các đặc điểm nhận dạng cố định: `blonde wavy hair, seductive hooded amber-brown eyes, winged eyeliner, choker collar, hourglass figure, pale glowing skin`.
+   - Trong Midjourney: Dùng thêm tham số `--cref [Link_Ảnh_Capture3] --cw 80`.
+2. **Tạo hiệu ứng bài Tarot chân thực:**
+   - Thêm cụm từ: `tarot card format, ornate golden art-nouveau border, banner at bottom with text '[Tên lá bài]'` để bài có khung viền hoa văn vàng kim cổ điển sang trọng.
+3. **Chỉnh sửa bàn tay & chi tiết nhỏ (Inpainting):**
+   - Với các lá bài cầm gươm, cốc, gậy hoặc tiền, sử dụng chức năng Inpaint/Vary (Region) để tái tạo ngón tay thon dài mượt mà chuẩn nét vẽ Manhwa.
