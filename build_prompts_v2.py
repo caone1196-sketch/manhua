@@ -109,6 +109,15 @@ POSE_OVERRIDES = {
                "the air just above the marble tray with the apple coiled by a silver serpent, "
                "foreheads nearly touching, both in matching soaking-wet pearl-white micro "
                "string bikinis, EXACTLY TWO women in the scene — never one, never three",
+    # Strength: trong bồn tắm đồng, sư tử thật bên cạnh — tay đặt dịu dàng trên bờm
+    "08-strength": "kneeling upright in the copper tub among the floating red rose petals, "
+               "thighs close together, spine arched in a soft alluring curve, one arm lifted "
+               "fluffing her wet copper mane of hair, chin high and serene; her other hand "
+               "gently cradles the head of a HUGE real lion standing beside the tub — a "
+               "magnificent tawny-gold beast with a full flaming mane, leaning its head "
+               "against the copper rim into her palm, eyes half-closed in total docile trust, "
+               "mouth softly closed, completely tamed by her tenderness, exactly one lion "
+               "and no other animals in the scene",
 }
 
 # ---------------------------------------------------------------------------
@@ -170,7 +179,9 @@ BATHROOM_STYLES = {
     "08-strength": ("Safari-lodge stone bath",
         "a warm-hearted 20-year-old streamer in a safari-lodge bathroom: rough stone walls and dark "
         "teak, a brass lion-head waterfall faucet filling a copper tub, red rose petals floating on "
-        "the water, a garland of red roses laid across the tub tray, warm lantern glow"),
+        "the water, a garland of red roses laid across the tub tray, warm lantern glow, and one "
+        "huge real lion with a full tawny-gold mane standing calmly beside the copper tub, leaning "
+        "its head against the rim into her hand"),
     "09-hermit": ("Candlelit mountain grotto",
         "a reclusive 24-year-old streamer in a candlelit mountain-grotto bathroom: a natural stone "
         "grotto with mineral-crystal walls, a single glowing brass lantern hanging from the ceiling "
