@@ -1,12 +1,13 @@
-# TWO OF CUPS (2) — Frameless Wet-Manhwa v2 · mode bathroom
+# TWO OF CUPS (2) — Frameless Wet-Manhwa v2.2 · mode bathroom
 
 - **Slug:** `cups-02` | **Group:** cups
 - **Emblem:** two interlocked rings
+- **Phong cách phòng tắm:** Twin-basin rings
 - **Reference style/contour/lettering:** `major_08_strength.png`
 - **Reference wet fabric/swimwear:** `test_card_17_the_star.png`
 - **Outfit:** soaking-wet midnight-black micro string bikini with fine gold chain straps (opaque swimwear, no see-through)
-- **Pose nghệ thuật:** standing arabesque-like balance — weight on one leg, the other extended back resting on the tub rim, arms held in a high-low axis line like a dancer
-- **Background mode:** bathroom
+- **Pose gợi cảm:** seated sideways on the tub rim leaning back on one straight arm, chest lifted, one knee drawn up while the other leg trails toe-deep in the water, wet hair cascading down her back
+- **Background mode:** bathroom · **Giáp:** đã loại bỏ hoàn toàn (strip + negative)
 
 ## Prompt
 
@@ -21,14 +22,16 @@ GARMENT-TO-BODY DETAIL: thin strap tension lines pressing gently into shoulders 
 
 WET FABRIC (match reference 2): soaking-wet midnight-black micro string bikini with fine gold chain straps — waterlogged darkened tone with a glossy wet sheen, fabric fully opaque, clinging like a second skin with zero loose folds, plastered wet wrinkles, water droplets beading on the fabric surface, tiny drips falling from the fabric edges; whole body wet with droplets and thin rivulets, wet gleaming hair strands; she is mid-shower under the rainfall head or just stepped out of the tub, so the soaked look reads naturally indoors.
 
-FIGURE: 21 years old, build: **A** mảnh, dáng nghiêng giao hòa uyển chuyển, hair: soft ash-brown hair worn in a low intertwined romantic braid, eyes: hazel-green mềm, upturned, say mê nhìn người kia, skin: fair with glossy wet highlights, signature: lúm đồng tiền má trái, aura: nước mưa, hứa hẹn, hoa táo. Pose (artistic figure study): standing arabesque-like balance — weight on one leg, the other extended back resting on the tub rim, arms held in a high-low axis line like a dancer; barefoot; blushing cheeks, cat eyeliner, softly parted lips with a confident gentle smile.
+FIGURE: 21 years old, build: **A** mảnh, dáng nghiêng giao hòa uyển chuyển, hair: soft ash-brown hair worn in a low intertwined romantic braid, eyes: hazel-green mềm, upturned, say mê nhìn người kia, skin: fair with glossy wet highlights, signature: lúm đồng tiền má trái, aura: nước mưa, hứa hẹn, hoa táo. Alluring pose: seated sideways on the tub rim leaning back on one straight arm, chest lifted, one knee drawn up while the other leg trails toe-deep in the water, wet hair cascading down her back. Barefoot; blushing cheeks, cat eyeliner, softly parted lips.
 
-SCENE & SYMBOLISM: the card's symbolism re-staged in a modern luxury bathroom: two interlocked rings rendered as a glowing mirror hologram, suit objects arranged on the marble vanity, rainfall shower steam and warm LED accents, night city glow through frosted glass. Tarot emblem integrated naturally: two interlocked rings. COUNT LOCK — EXACTLY 2 CHALICES (hard constraint; count before you draw).
+SCENE & SYMBOLISM (Twin-basin rings): in a twin-basin bathroom: two matching basins with interlocked-ring chrome faucets, a rose-quartz two-seat vanity, two crystal chalices raised — one in each of her hands — rims touching above the steam. Tarot emblem integrated naturally: two interlocked rings. COUNT LOCK — EXACTLY 2 CHALICES (hard constraint; count before you draw).
 The scene contains exactly 2 chalices — not 1, not 3.
-Placement is locked: exactly two chalices, one raised in each lover's hand, one on the left and one on the right, both bowls fully visible and not overlapping — no third cup.
-Every one of the 2 must be fully visible: nothing occluded by a body, limb, cloth, cloud or another object, nothing fused, broken, cropped by the golden frame, or half-hidden behind a figure. Keep them at one consistent size, shape, material and color so they read as a single countable set, with a clear gap of background between each one. Place no other chalices anywhere else on the card — not in the frame, not in the background, not held by a figure, not as decoration. The emblem in the top medallion is a separate heraldic motif and does NOT count toward the 2. Before finishing, count them: 1 to 2. If the total is not 2, redraw.
+Placement is locked: exactly two crystal chalices, one raised in each hand, rims touching; no third cup
+Every one of the 2 must be fully visible: nothing occluded by a body, limb, cloth, steam or another object, nothing fused, broken, cropped or half-hidden behind a figure. Keep them at one consistent size, shape, material and color so they read as a single countable set, with a clear gap of background between each one. Place no other chalices anywhere else on the card — not in the frame, not in the background, not as decoration. The emblem is a separate heraldic motif and does NOT count toward the 2. Before finishing, count them: 1 to 2. If the total is not 2, redraw.
 
-DEPTH & LIGHT: soft steam layers diffusing warm LED and neon accents, wet marble and mirror reflections on soaked skin, cinematic warm-cool contrast, water droplets sparkling in the light shafts, faint golden sparkles in the mist.
+DEPTH & LIGHT: soft steam and light-shaft layers diffusing the bathroom's accent lighting (LED, neon, candle or skylight), wet tile and mirror reflections on soaked skin, cinematic warm-cool contrast, water droplets sparkling in the light shafts, faint golden sparkles in the mist.
+
+NO ARMOR ANYWHERE ON THE FIGURE — strictly no helmet, no breastplate, no gauntlets, no chainmail, no pauldrons, no metal plates, no knight costume pieces; she wears only the soaking-wet swimwear described above.
 
 At the bottom, centered: the title "TWO OF CUPS" in antique-gold serif lettering matching reference 1. No numbers, no Roman numerals, no other text, no frame, no border, no banner, no watermark, no signature. Masterpiece manhwa illustration, portrait 7:12.
 ```

@@ -1,12 +1,13 @@
-# NINE OF PENTACLES (9) — Frameless Wet-Manhwa v2 · mode bathroom
+# NINE OF PENTACLES (9) — Frameless Wet-Manhwa v2.2 · mode bathroom
 
 - **Slug:** `pentacles-09` | **Group:** pentacles
 - **Emblem:** nine pentacles on an arbor
+- **Phong cách phòng tắm:** Estate arbor
 - **Reference style/contour/lettering:** `major_08_strength.png`
 - **Reference wet fabric/swimwear:** `test_card_17_the_star.png`
 - **Outfit:** soaking-wet pearl-white micro string bikini with tiny gold star charms (opaque swimwear, no see-through)
-- **Pose nghệ thuật:** seated on the tub edge in a figure-study diagonal — one knee drawn up, the other leg extended toe-deep in the water, arms forming a soft diagonal line
-- **Background mode:** bathroom
+- **Pose gợi cảm:** standing with her back against the rain-wet tiled wall, one knee bent and foot flat against the wall, both hands gliding up into her soaked hair, hips pushed into a deep S-curve, half-lidded gaze at the viewer
+- **Background mode:** bathroom · **Giáp:** đã loại bỏ hoàn toàn (strip + negative)
 
 ## Prompt
 
@@ -21,14 +22,16 @@ GARMENT-TO-BODY DETAIL: thin strap tension lines pressing gently into shoulders 
 
 WET FABRIC (match reference 2): soaking-wet pearl-white micro string bikini with tiny gold star charms — waterlogged darkened tone with a glossy wet sheen, fabric fully opaque, clinging like a second skin with zero loose folds, plastered wet wrinkles, water droplets beading on the fabric surface, tiny drips falling from the fabric edges; whole body wet with droplets and thin rivulets, wet gleaming hair strands; she is mid-shower under the rainfall head or just stepped out of the tub, so the soaked look reads naturally indoors.
 
-FIGURE: 23 years old, build: **C** đồng hồ thanh lịch, cong mềm trung bình, hair: long vine-dark espresso hair loosely curled with gold thread, eyes: deep espresso vệt xanh, almond, kiêu hãnh bình thản, skin: honey with glossy wet highlights, signature: nhẫn vàng mảnh ở mắt cá phải, aura: vườn nho, vàng, chim sẻ. Pose (artistic figure study): seated on the tub edge in a figure-study diagonal — one knee drawn up, the other leg extended toe-deep in the water, arms forming a soft diagonal line; barefoot; blushing cheeks, cat eyeliner, softly parted lips with a confident gentle smile.
+FIGURE: 23 years old, build: **C** đồng hồ thanh lịch, cong mềm trung bình, hair: long vine-dark espresso hair loosely curled with gold thread, eyes: deep espresso vệt xanh, almond, kiêu hãnh bình thản, skin: honey with glossy wet highlights, signature: nhẫn vàng mảnh ở mắt cá phải, aura: vườn nho, vàng, chim sẻ. Alluring pose: standing with her back against the rain-wet tiled wall, one knee bent and foot flat against the wall, both hands gliding up into her soaked hair, hips pushed into a deep S-curve, half-lidded gaze at the viewer. Barefoot; blushing cheeks, cat eyeliner, softly parted lips.
 
-SCENE & SYMBOLISM: the card's symbolism re-staged in a modern luxury bathroom: nine pentacles on an arbor rendered as a glowing mirror hologram, suit objects arranged on the marble vanity, rainfall shower steam and warm LED accents, night city glow through frosted glass. Tarot emblem integrated naturally: nine pentacles on an arbor. COUNT LOCK — EXACTLY 9 PENTACLE COINS (hard constraint; count before you draw).
+SCENE & SYMBOLISM (Estate arbor): in an estate-arbor bathroom: a grape-arbor lattice over the tub, a small bronze falcon statue on the ledge, vine-wrapped gold light, nine pentacle coins fixed in one row along the arbor beam. Tarot emblem integrated naturally: nine pentacles on an arbor. COUNT LOCK — EXACTLY 9 PENTACLE COINS (hard constraint; count before you draw).
 The scene contains exactly 9 pentacle coins — not 8, not 10.
-Placement is locked: exactly nine coins fixed to the arbor beam in ONE row of 9, evenly spaced against open sky, all nine fully visible, none hidden by leaves or by her body — count them left to right: 1 to 9.
-Every one of the 9 must be fully visible: nothing occluded by a body, limb, cloth, cloud or another object, nothing fused, broken, cropped by the golden frame, or half-hidden behind a figure. Keep them at one consistent size, shape, material and color so they read as a single countable set, with a clear gap of background between each one. Place no other pentacle coins anywhere else on the card — not in the frame, not in the background, not held by a figure, not as decoration. The emblem in the top medallion is a separate heraldic motif and does NOT count toward the 9. Before finishing, count them: 1 to 9. If the total is not 9, redraw.
+Placement is locked: exactly nine coins fixed in ONE row along the arbor beam, evenly spaced, all nine fully visible, none hidden by leaves or by her body — count them left to right: 1 to 9
+Every one of the 9 must be fully visible: nothing occluded by a body, limb, cloth, steam or another object, nothing fused, broken, cropped or half-hidden behind a figure. Keep them at one consistent size, shape, material and color so they read as a single countable set, with a clear gap of background between each one. Place no other pentacle coins anywhere else on the card — not in the frame, not in the background, not as decoration. The emblem is a separate heraldic motif and does NOT count toward the 9. Before finishing, count them: 1 to 9. If the total is not 9, redraw.
 
-DEPTH & LIGHT: soft steam layers diffusing warm LED and neon accents, wet marble and mirror reflections on soaked skin, cinematic warm-cool contrast, water droplets sparkling in the light shafts, faint golden sparkles in the mist.
+DEPTH & LIGHT: soft steam and light-shaft layers diffusing the bathroom's accent lighting (LED, neon, candle or skylight), wet tile and mirror reflections on soaked skin, cinematic warm-cool contrast, water droplets sparkling in the light shafts, faint golden sparkles in the mist.
+
+NO ARMOR ANYWHERE ON THE FIGURE — strictly no helmet, no breastplate, no gauntlets, no chainmail, no pauldrons, no metal plates, no knight costume pieces; she wears only the soaking-wet swimwear described above.
 
 At the bottom, centered: the title "NINE OF PENTACLES" in antique-gold serif lettering matching reference 1. No numbers, no Roman numerals, no other text, no frame, no border, no banner, no watermark, no signature. Masterpiece manhwa illustration, portrait 7:12.
 ```

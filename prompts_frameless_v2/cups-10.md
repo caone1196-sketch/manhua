@@ -1,12 +1,13 @@
-# TEN OF CUPS (10) — Frameless Wet-Manhwa v2 · mode bathroom
+# TEN OF CUPS (10) — Frameless Wet-Manhwa v2.2 · mode bathroom
 
 - **Slug:** `cups-10` | **Group:** cups
 - **Emblem:** ten chalices under a rainbow
+- **Phong cách phòng tắm:** Rainbow-glass arc
 - **Reference style/contour/lettering:** `major_08_strength.png`
 - **Reference wet fabric/swimwear:** `test_card_17_the_star.png`
 - **Outfit:** soaking-wet rose-pink micro string bikini with small satin bow accents (opaque swimwear, no see-through)
-- **Pose nghệ thuật:** reclining diagonal across the tub edge — hip line lifted, one leg extended in a long elegant line, one arm arched overhead
-- **Background mode:** bathroom
+- **Pose gợi cảm:** leaning forward over the vanity on both hands, weight low, looking into the lit mirror with a teasing smile, hips pushed back
+- **Background mode:** bathroom · **Giáp:** đã loại bỏ hoàn toàn (strip + negative)
 
 ## Prompt
 
@@ -21,14 +22,16 @@ GARMENT-TO-BODY DETAIL: thin strap tension lines pressing gently into shoulders 
 
 WET FABRIC (match reference 2): soaking-wet rose-pink micro string bikini with small satin bow accents — waterlogged darkened tone with a glossy wet sheen, fabric fully opaque, clinging like a second skin with zero loose folds, plastered wet wrinkles, water droplets beading on the fabric surface, tiny drips falling from the fabric edges; whole body wet with droplets and thin rivulets, wet gleaming hair strands; she is mid-shower under the rainfall head or just stepped out of the tub, so the soaked look reads naturally indoors.
 
-FIGURE: 22 years old, build: **C** thanh-mềm, dáng mẹ trẻ đầy ân cần, hair: warm hazel-brown hair cascading in silky ripples, eyes: hazel mềm, warm, dịu dàng, skin: warm peach with glossy wet highlights, signature: bớt hình trái tim mờ trên hông trái, aura: tổ ấm, cầu vồng, tiếng trẻ. Pose (artistic figure study): reclining diagonal across the tub edge — hip line lifted, one leg extended in a long elegant line, one arm arched overhead; barefoot; blushing cheeks, cat eyeliner, softly parted lips with a confident gentle smile.
+FIGURE: 22 years old, build: **C** thanh-mềm, dáng mẹ trẻ đầy ân cần, hair: warm hazel-brown hair cascading in silky ripples, eyes: hazel mềm, warm, dịu dàng, skin: warm peach with glossy wet highlights, signature: bớt hình trái tim mờ trên hông trái, aura: tổ ấm, cầu vồng, tiếng trẻ. Alluring pose: leaning forward over the vanity on both hands, weight low, looking into the lit mirror with a teasing smile, hips pushed back. Barefoot; blushing cheeks, cat eyeliner, softly parted lips.
 
-SCENE & SYMBOLISM: the card's symbolism re-staged in a modern luxury bathroom: ten chalices under a rainbow rendered as a glowing mirror hologram, suit objects arranged on the marble vanity, rainfall shower steam and warm LED accents, night city glow through frosted glass. Tarot emblem integrated naturally: ten chalices under a rainbow. COUNT LOCK — EXACTLY 10 CHALICES (hard constraint; count before you draw).
+SCENE & SYMBOLISM (Rainbow-glass arc): in a rainbow-glass bathroom: a rainbow-shaped glass shelf backlit in spectrum colors, family-warm golden light, ten chalices standing along the arc — four on the left half, four on the right half, two at the apex. Tarot emblem integrated naturally: ten chalices under a rainbow. COUNT LOCK — EXACTLY 10 CHALICES (hard constraint; count before you draw).
 The scene contains exactly 10 chalices — not 9, not 11.
-Placement is locked: exactly ten chalices along ONE rainbow arc — 4 on the left half, 4 on the right half, 2 at the apex — 4 + 4 + 2 = 10; evenly spaced against open sky, all ten bowls countable.
-Every one of the 10 must be fully visible: nothing occluded by a body, limb, cloth, cloud or another object, nothing fused, broken, cropped by the golden frame, or half-hidden behind a figure. Keep them at one consistent size, shape, material and color so they read as a single countable set, with a clear gap of background between each one. Place no other chalices anywhere else on the card — not in the frame, not in the background, not held by a figure, not as decoration. The emblem in the top medallion is a separate heraldic motif and does NOT count toward the 10. Before finishing, count them: 1 to 10. If the total is not 10, redraw.
+Placement is locked: exactly ten chalices along the rainbow-arc glass shelf — four on the left half, four on the right half, two at the apex — 4 + 4 + 2 = 10; all ten bowls countable
+Every one of the 10 must be fully visible: nothing occluded by a body, limb, cloth, steam or another object, nothing fused, broken, cropped or half-hidden behind a figure. Keep them at one consistent size, shape, material and color so they read as a single countable set, with a clear gap of background between each one. Place no other chalices anywhere else on the card — not in the frame, not in the background, not as decoration. The emblem is a separate heraldic motif and does NOT count toward the 10. Before finishing, count them: 1 to 10. If the total is not 10, redraw.
 
-DEPTH & LIGHT: soft steam layers diffusing warm LED and neon accents, wet marble and mirror reflections on soaked skin, cinematic warm-cool contrast, water droplets sparkling in the light shafts, faint golden sparkles in the mist.
+DEPTH & LIGHT: soft steam and light-shaft layers diffusing the bathroom's accent lighting (LED, neon, candle or skylight), wet tile and mirror reflections on soaked skin, cinematic warm-cool contrast, water droplets sparkling in the light shafts, faint golden sparkles in the mist.
+
+NO ARMOR ANYWHERE ON THE FIGURE — strictly no helmet, no breastplate, no gauntlets, no chainmail, no pauldrons, no metal plates, no knight costume pieces; she wears only the soaking-wet swimwear described above.
 
 At the bottom, centered: the title "TEN OF CUPS" in antique-gold serif lettering matching reference 1. No numbers, no Roman numerals, no other text, no frame, no border, no banner, no watermark, no signature. Masterpiece manhwa illustration, portrait 7:12.
 ```

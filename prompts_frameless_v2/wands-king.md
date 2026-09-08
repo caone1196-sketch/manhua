@@ -1,12 +1,13 @@
-# KING OF WANDS (K) — Frameless Wet-Manhwa v2 · mode bathroom
+# KING OF WANDS (K) — Frameless Wet-Manhwa v2.2 · mode bathroom
 
 - **Slug:** `wands-king` | **Group:** wands
 - **Emblem:** a flaming wand rising from a lion head
+- **Phong cách phòng tắm:** Lion-head gold
 - **Reference style/contour/lettering:** `major_08_strength.png`
 - **Reference wet fabric/swimwear:** `test_card_17_the_star.png`
 - **Outfit:** soaking-wet cherry-red micro string bikini with tiny pearl beads (opaque swimwear, no see-through)
-- **Pose nghệ thuật:** kneeling stretch pose — one knee on the bath mat, torso arched back gracefully, both arms curving overhead like a dancer
-- **Background mode:** bathroom
+- **Pose gợi cảm:** wrapping a towel around her hips mid-motion, spine arched, head thrown back, eyes closed, one shoulder bare, towel still trailing in the water
+- **Background mode:** bathroom · **Giáp:** đã loại bỏ hoàn toàn (strip + negative)
 
 ## Prompt
 
@@ -21,14 +22,16 @@ GARMENT-TO-BODY DETAIL: thin strap tension lines pressing gently into shoulders 
 
 WET FABRIC (match reference 2): soaking-wet cherry-red micro string bikini with tiny pearl beads — waterlogged darkened tone with a glossy wet sheen, fabric fully opaque, clinging like a second skin with zero loose folds, plastered wet wrinkles, water droplets beading on the fabric surface, tiny drips falling from the fabric edges; whole body wet with droplets and thin rivulets, wet gleaming hair strands; she is mid-shower under the rainfall head or just stepped out of the tub, so the soaked look reads naturally indoors.
 
-FIGURE: 25 years old, build: **B** cao, vai rộng, dáng quân chủ thanh thoát, hair: dark bronze hair swept back in an ornate crown braid with fiery orange ribbons, eyes: bronze-gold, hooded, uy nghiêm, skin: light bronze with glossy wet highlights, signature: băng tay xăm hình ruy băng cam quanh cổ tay phải, aura: rồng, hoàng kim, gió lửa. Pose (artistic figure study): kneeling stretch pose — one knee on the bath mat, torso arched back gracefully, both arms curving overhead like a dancer; barefoot; blushing cheeks, cat eyeliner, softly parted lips with a confident gentle smile.
+FIGURE: 25 years old, build: **B** cao, vai rộng, dáng quân chủ thanh thoát, hair: dark bronze hair swept back in an ornate crown braid with fiery orange ribbons, eyes: bronze-gold, hooded, uy nghiêm, skin: light bronze with glossy wet highlights, signature: băng tay xăm hình ruy băng cam quanh cổ tay phải, aura: rồng, hoàng kim, gió lửa. Alluring pose: wrapping a towel around her hips mid-motion, spine arched, head thrown back, eyes closed, one shoulder bare, towel still trailing in the water. Barefoot; blushing cheeks, cat eyeliner, softly parted lips.
 
-SCENE & SYMBOLISM: the card's symbolism re-staged in a modern luxury bathroom: a flaming wand rising from a lion head rendered as a glowing mirror hologram, suit objects arranged on the marble vanity, rainfall shower steam and warm LED accents, night city glow through frosted glass. Tarot emblem integrated naturally: a flaming wand rising from a lion head. COUNT LOCK — EXACTLY 1 WAND (hard constraint; count before you draw).
+SCENE & SYMBOLISM (Lion-head gold): in a lion-head throne bathroom: a gold lion-head wall fountain above the tub, flame-shaped chandelier sconces, a deep amber palette, one living green wand standing upright in a brass lion-paw holder. Tarot emblem integrated naturally: a flaming wand rising from a lion head. COUNT LOCK — EXACTLY 1 wand (hard constraint; count before you draw).
 The scene contains exactly 1 wand — not 0, not 2.
-Placement is locked: exactly one living green wand; no other staff.
-Every one of the 1 must be fully visible: nothing occluded by a body, limb, cloth, cloud or another object, nothing fused, broken, cropped by the golden frame, or half-hidden behind a figure. Keep them at one consistent size, shape, material and color so they read as a single countable set, with a clear gap of background between each one. Place no other wand anywhere else on the card — not in the frame, not in the background, not held by a figure, not as decoration. The emblem in the top medallion is a separate heraldic motif and does NOT count toward the 1. Before finishing, count them: 1 to 1. If the total is not 1, redraw.
+Placement is locked: exactly one living green wand in the brass lion-paw holder; no other staff
+Every one of the 1 must be fully visible: nothing occluded by a body, limb, cloth, steam or another object, nothing fused, broken, cropped or half-hidden behind a figure. Keep them at one consistent size, shape, material and color so they read as a single countable set, with a clear gap of background between each one. Place no other wand anywhere else on the card — not in the frame, not in the background, not as decoration. The emblem is a separate heraldic motif and does NOT count toward the 1. Before finishing, count them: 1 to 1. If the total is not 1, redraw.
 
-DEPTH & LIGHT: soft steam layers diffusing warm LED and neon accents, wet marble and mirror reflections on soaked skin, cinematic warm-cool contrast, water droplets sparkling in the light shafts, faint golden sparkles in the mist.
+DEPTH & LIGHT: soft steam and light-shaft layers diffusing the bathroom's accent lighting (LED, neon, candle or skylight), wet tile and mirror reflections on soaked skin, cinematic warm-cool contrast, water droplets sparkling in the light shafts, faint golden sparkles in the mist.
+
+NO ARMOR ANYWHERE ON THE FIGURE — strictly no helmet, no breastplate, no gauntlets, no chainmail, no pauldrons, no metal plates, no knight costume pieces; she wears only the soaking-wet swimwear described above.
 
 At the bottom, centered: the title "KING OF WANDS" in antique-gold serif lettering matching reference 1. No numbers, no Roman numerals, no other text, no frame, no border, no banner, no watermark, no signature. Masterpiece manhwa illustration, portrait 7:12.
 ```

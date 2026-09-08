@@ -1,12 +1,13 @@
-# THE EMPEROR (IV) — Frameless Wet-Manhwa v2 · mode bathroom
+# THE EMPEROR (IV) — Frameless Wet-Manhwa v2.2 · mode bathroom
 
 - **Slug:** `04-emperor` | **Group:** major
 - **Emblem:** a ram's head
+- **Phong cách phòng tắm:** Stone steam-room throne
 - **Reference style/contour/lettering:** `major_08_strength.png`
 - **Reference wet fabric/swimwear:** `test_card_17_the_star.png`
 - **Outfit:** soaking-wet metallic gold micro string bikini with opaque lace-trim edges (opaque swimwear, no see-through)
-- **Pose nghệ thuật:** seated cross-knee figure study — back straight, one arm resting on the knee, the other extended along the seat, chin slightly lifted
-- **Background mode:** bathroom
+- **Pose gợi cảm:** reclining along the tub edge on one hip, propped on one elbow, legs stacked in one long elegant line, chin tilted up, lips softly parted
+- **Background mode:** bathroom · **Giáp:** đã loại bỏ hoàn toàn (strip + negative)
 
 ## Prompt
 
@@ -21,11 +22,13 @@ GARMENT-TO-BODY DETAIL: thin strap tension lines pressing gently into shoulders 
 
 WET FABRIC (match reference 2): soaking-wet metallic gold micro string bikini with opaque lace-trim edges — waterlogged darkened tone with a glossy wet sheen, fabric fully opaque, clinging like a second skin with zero loose folds, plastered wet wrinkles, water droplets beading on the fabric surface, tiny drips falling from the fabric edges; whole body wet with droplets and thin rivulets, wet gleaming hair strands; she is mid-shower under the rainfall head or just stepped out of the tub, so the soaked look reads naturally indoors.
 
-FIGURE: 25 years old, build: **B** cao, vai rộng, săn chắc theo kiểu chiến binh, không thô, hair: sleek dark bronze-brown hair in a sharp warrior braid, crowned with a golden ram-horn circlet, eyes: storm-grey, hooded, lạnh lùng ra lệnh, skin: sand with glossy wet highlights, signature: sẹo nhỏ khía chân mày phải, aura: đá granit, sắt, gió núi. Pose (artistic figure study): seated cross-knee figure study — back straight, one arm resting on the knee, the other extended along the seat, chin slightly lifted; barefoot; blushing cheeks, cat eyeliner, softly parted lips with a confident gentle smile.
+FIGURE: 25 years old, build: **B** cao, vai rộng, săn chắc theo kiểu chiến binh, không thô, hair: sleek dark bronze-brown hair in a sharp warrior braid, crowned with a golden ram-horn circlet, eyes: storm-grey, hooded, lạnh lùng ra lệnh, skin: sand with glossy wet highlights, signature: sẹo nhỏ khía chân mày phải, aura: đá granit, sắt, gió núi. Alluring pose: reclining along the tub edge on one hip, propped on one elbow, legs stacked in one long elegant line, chin tilted up, lips softly parted. Barefoot; blushing cheeks, cat eyeliner, softly parted lips.
 
-SCENE & SYMBOLISM: a poised 25-year-old streamer in a modern luxury steam bathroom: on a stone bench throne beneath a bronze ram-head shower fixture, volcanic-red LED backlighting along the marble, holding a golden ankh stylus, two ram-head sculptures on the vanity shelf, a barren mountain tile mural behind, steam rolling low. Tarot emblem integrated naturally: a ram's head. COUNT LOCK: This card contains NO loose suit objects in the scene. Do not add random floating or decorative cups, swords, wands, or pentacles.
+SCENE & SYMBOLISM (Stone steam-room throne): a poised 25-year-old streamer in a stone steam-room throne bathroom: a carved stone bench throne beneath a bronze ram-head rainfall fixture, volcanic-red LED backlighting along dark marble, two ram-head sculptures on the shelf, a barren mountain mural in grey tile, steam rolling low, a golden ankh stylus in her hand. Tarot emblem integrated naturally: a ram's head. COUNT LOCK: This card contains NO loose suit objects in the scene. Do not add random floating or decorative cups, swords, wands, or pentacles.
 
-DEPTH & LIGHT: soft steam layers diffusing warm LED and neon accents, wet marble and mirror reflections on soaked skin, cinematic warm-cool contrast, water droplets sparkling in the light shafts, faint golden sparkles in the mist.
+DEPTH & LIGHT: soft steam and light-shaft layers diffusing the bathroom's accent lighting (LED, neon, candle or skylight), wet tile and mirror reflections on soaked skin, cinematic warm-cool contrast, water droplets sparkling in the light shafts, faint golden sparkles in the mist.
+
+NO ARMOR ANYWHERE ON THE FIGURE — strictly no helmet, no breastplate, no gauntlets, no chainmail, no pauldrons, no metal plates, no knight costume pieces; she wears only the soaking-wet swimwear described above.
 
 At the bottom, centered: the title "THE EMPEROR" in antique-gold serif lettering matching reference 1. No numbers, no Roman numerals, no other text, no frame, no border, no banner, no watermark, no signature. Masterpiece manhwa illustration, portrait 7:12.
 ```

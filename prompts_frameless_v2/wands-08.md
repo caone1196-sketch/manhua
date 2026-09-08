@@ -1,12 +1,13 @@
-# EIGHT OF WANDS (8) — Frameless Wet-Manhwa v2 · mode bathroom
+# EIGHT OF WANDS (8) — Frameless Wet-Manhwa v2.2 · mode bathroom
 
 - **Slug:** `wands-08` | **Group:** wands
 - **Emblem:** eight parallel wands
+- **Phong cách phòng tắm:** Speed-line yacht wet room
 - **Reference style/contour/lettering:** `major_08_strength.png`
 - **Reference wet fabric/swimwear:** `test_card_17_the_star.png`
 - **Outfit:** soaking-wet cherry-red micro string bikini with tiny pearl beads (opaque swimwear, no see-through)
-- **Pose nghệ thuật:** kneeling stretch pose — one knee on the bath mat, torso arched back gracefully, both arms curving overhead like a dancer
-- **Background mode:** bathroom
+- **Pose gợi cảm:** caught mid-turn stepping out of the shower, glancing back at the viewer over her bare shoulder, water droplets flicking from her fingertips, hips mid-sway
+- **Background mode:** bathroom · **Giáp:** đã loại bỏ hoàn toàn (strip + negative)
 
 ## Prompt
 
@@ -21,14 +22,16 @@ GARMENT-TO-BODY DETAIL: thin strap tension lines pressing gently into shoulders 
 
 WET FABRIC (match reference 2): soaking-wet cherry-red micro string bikini with tiny pearl beads — waterlogged darkened tone with a glossy wet sheen, fabric fully opaque, clinging like a second skin with zero loose folds, plastered wet wrinkles, water droplets beading on the fabric surface, tiny drips falling from the fabric edges; whole body wet with droplets and thin rivulets, wet gleaming hair strands; she is mid-shower under the rainfall head or just stepped out of the tub, so the soaked look reads naturally indoors.
 
-FIGURE: N/A, build: N/A, hair: N/A, eyes: N/A, skin: N/A with glossy wet highlights, signature: N/A, aura: N/A. Pose (artistic figure study): kneeling stretch pose — one knee on the bath mat, torso arched back gracefully, both arms curving overhead like a dancer; barefoot; blushing cheeks, cat eyeliner, softly parted lips with a confident gentle smile.
+FIGURE: 20 years old, build: slender waist with curvy feminine silhouette, hair: flowing golden hair, eyes: alluring eyes, skin: porcelain with glossy wet highlights, signature: a tiny gold star mark behind her ear, aura: warm steam and soft light. Alluring pose: caught mid-turn stepping out of the shower, glancing back at the viewer over her bare shoulder, water droplets flicking from her fingertips, hips mid-sway. Barefoot; blushing cheeks, cat eyeliner, softly parted lips.
 
-SCENE & SYMBOLISM: the card's symbolism re-staged in a modern luxury bathroom: eight parallel wands rendered as a glowing mirror hologram, suit objects arranged on the marble vanity, rainfall shower steam and warm LED accents, night city glow through frosted glass. Tarot emblem integrated naturally: eight parallel wands. COUNT LOCK — EXACTLY 8 WANDS (hard constraint; count before you draw).
+SCENE & SYMBOLISM (Speed-line yacht wet room): in a racing-yacht wet room: sleek white hull curves, eight parallel chrome towel rails running like speed lines along the wall, motion-streaked tile, wind-and-water energy, eight wands flying in one parallel row through the steam overhead. Tarot emblem integrated naturally: eight parallel wands. COUNT LOCK — EXACTLY 8 WANDS (hard constraint; count before you draw).
 The scene contains exactly 8 wands — not 7, not 9.
-Placement is locked: exactly eight wands in ONE single parallel diagonal row across the open sky — 1 row of 8, evenly spaced, all eight pointing the same way, none crossing, none cropped by the frame.
-Every one of the 8 must be fully visible: nothing occluded by a body, limb, cloth, cloud or another object, nothing fused, broken, cropped by the golden frame, or half-hidden behind a figure. Keep them at one consistent size, shape, material and color so they read as a single countable set, with a clear gap of background between each one. Place no other wands anywhere else on the card — not in the frame, not in the background, not held by a figure, not as decoration. The emblem in the top medallion is a separate heraldic motif and does NOT count toward the 8. Before finishing, count them: 1 to 8. If the total is not 8, redraw.
+Placement is locked: exactly eight wands flying in ONE single parallel row through the steam above the tub — evenly spaced, all eight pointing the same way, none crossing, none cropped
+Every one of the 8 must be fully visible: nothing occluded by a body, limb, cloth, steam or another object, nothing fused, broken, cropped or half-hidden behind a figure. Keep them at one consistent size, shape, material and color so they read as a single countable set, with a clear gap of background between each one. Place no other wands anywhere else on the card — not in the frame, not in the background, not as decoration. The emblem is a separate heraldic motif and does NOT count toward the 8. Before finishing, count them: 1 to 8. If the total is not 8, redraw.
 
-DEPTH & LIGHT: soft steam layers diffusing warm LED and neon accents, wet marble and mirror reflections on soaked skin, cinematic warm-cool contrast, water droplets sparkling in the light shafts, faint golden sparkles in the mist.
+DEPTH & LIGHT: soft steam and light-shaft layers diffusing the bathroom's accent lighting (LED, neon, candle or skylight), wet tile and mirror reflections on soaked skin, cinematic warm-cool contrast, water droplets sparkling in the light shafts, faint golden sparkles in the mist.
+
+NO ARMOR ANYWHERE ON THE FIGURE — strictly no helmet, no breastplate, no gauntlets, no chainmail, no pauldrons, no metal plates, no knight costume pieces; she wears only the soaking-wet swimwear described above.
 
 At the bottom, centered: the title "EIGHT OF WANDS" in antique-gold serif lettering matching reference 1. No numbers, no Roman numerals, no other text, no frame, no border, no banner, no watermark, no signature. Masterpiece manhwa illustration, portrait 7:12.
 ```

@@ -1,12 +1,13 @@
-# THE FOOL (0) — Frameless Wet-Manhwa v2 · mode bathroom
+# THE FOOL (0) — Frameless Wet-Manhwa v2.2 · mode bathroom
 
 - **Slug:** `00-fool` | **Group:** major
 - **Emblem:** a white rose
+- **Phong cách phòng tắm:** Scandi sunrise spa
 - **Reference style/contour/lettering:** `major_08_strength.png`
 - **Reference wet fabric/swimwear:** `test_card_17_the_star.png`
 - **Outfit:** soaking-wet pearl-white micro string bikini with tiny gold star charms (opaque swimwear, no see-through)
-- **Pose nghệ thuật:** seated on the tub edge in a figure-study diagonal — one knee drawn up, the other leg extended toe-deep in the water, arms forming a soft diagonal line
-- **Background mode:** bathroom
+- **Pose gợi cảm:** standing with her back against the rain-wet tiled wall, one knee bent and foot flat against the wall, both hands gliding up into her soaked hair, hips pushed into a deep S-curve, half-lidded gaze at the viewer
+- **Background mode:** bathroom · **Giáp:** đã loại bỏ hoàn toàn (strip + negative)
 
 ## Prompt
 
@@ -21,11 +22,13 @@ GARMENT-TO-BODY DETAIL: thin strap tension lines pressing gently into shoulders 
 
 WET FABRIC (match reference 2): soaking-wet pearl-white micro string bikini with tiny gold star charms — waterlogged darkened tone with a glossy wet sheen, fabric fully opaque, clinging like a second skin with zero loose folds, plastered wet wrinkles, water droplets beading on the fabric surface, tiny drips falling from the fabric edges; whole body wet with droplets and thin rivulets, wet gleaming hair strands; she is mid-shower under the rainfall head or just stepped out of the tub, so the soaked look reads naturally indoors.
 
-FIGURE: 19 years old, build: **A** petite & lithe, eo nhỏ, bước chân nhẹ như gió, hair: loose wind-tossed honey-blonde waves down to her shoulder blades, sunlit and carefree, eyes: honey-amber, doe, tròn long lanh, ngây thơ không phòng bị, skin: warm peach with glossy wet highlights, signature: 3 tàn nhang vàng nhỏ dưới mắt trái, aura: gió mai, mật ong, vực thẳm mời gọi. Pose (artistic figure study): seated on the tub edge in a figure-study diagonal — one knee drawn up, the other leg extended toe-deep in the water, arms forming a soft diagonal line; barefoot; blushing cheeks, cat eyeliner, softly parted lips with a confident gentle smile.
+FIGURE: 19 years old, build: **A** petite & lithe, eo nhỏ, bước chân nhẹ như gió, hair: loose wind-tossed honey-blonde waves down to her shoulder blades, sunlit and carefree, eyes: honey-amber, doe, tròn long lanh, ngây thơ không phòng bị, skin: warm peach with glossy wet highlights, signature: 3 tàn nhang vàng nhỏ dưới mắt trái, aura: gió mai, mật ong, vực thẳm mời gọi. Alluring pose: standing with her back against the rain-wet tiled wall, one knee bent and foot flat against the wall, both hands gliding up into her soaked hair, hips pushed into a deep S-curve, half-lidded gaze at the viewer. Barefoot; blushing cheeks, cat eyeliner, softly parted lips.
 
-SCENE & SYMBOLISM: a playful 19-year-old streamer in a modern luxury bathroom at sunrise: a glowing digital white rose in one hand, a cute white Pomeranian puppy on the fluffy bath mat beside her, steam curling off the water, floor-to-ceiling frosted glass with a cyberpunk city glow beyond. Tarot emblem integrated naturally: a white rose. COUNT LOCK: This card contains NO loose suit objects in the scene. Do not add random floating or decorative cups, swords, wands, or pentacles.
+SCENE & SYMBOLISM (Scandi sunrise spa): a playful 19-year-old streamer in a Scandinavian sunrise spa bathroom: pale birch-slat walls, a round white freestanding tub, floor-to-ceiling frosted glass glowing with a cyberpunk sunrise city beyond, steam curling off the water, a cute white Pomeranian puppy waiting on the fluffy bath mat, a single glowing digital white rose in her hand. Tarot emblem integrated naturally: a white rose. COUNT LOCK: This card contains NO loose suit objects in the scene. Do not add random floating or decorative cups, swords, wands, or pentacles.
 
-DEPTH & LIGHT: soft steam layers diffusing warm LED and neon accents, wet marble and mirror reflections on soaked skin, cinematic warm-cool contrast, water droplets sparkling in the light shafts, faint golden sparkles in the mist.
+DEPTH & LIGHT: soft steam and light-shaft layers diffusing the bathroom's accent lighting (LED, neon, candle or skylight), wet tile and mirror reflections on soaked skin, cinematic warm-cool contrast, water droplets sparkling in the light shafts, faint golden sparkles in the mist.
+
+NO ARMOR ANYWHERE ON THE FIGURE — strictly no helmet, no breastplate, no gauntlets, no chainmail, no pauldrons, no metal plates, no knight costume pieces; she wears only the soaking-wet swimwear described above.
 
 At the bottom, centered: the title "THE FOOL" in antique-gold serif lettering matching reference 1. No numbers, no Roman numerals, no other text, no frame, no border, no banner, no watermark, no signature. Masterpiece manhwa illustration, portrait 7:12.
 ```

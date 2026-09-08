@@ -1,12 +1,13 @@
-# QUEEN OF CUPS (Q) — Frameless Wet-Manhwa v2 · mode bathroom
+# QUEEN OF CUPS (Q) — Frameless Wet-Manhwa v2.2 · mode bathroom
 
 - **Slug:** `cups-queen` | **Group:** cups
 - **Emblem:** a lidded chalice between waves
+- **Phong cách phòng tắm:** Ocean grotto
 - **Reference style/contour/lettering:** `major_08_strength.png`
 - **Reference wet fabric/swimwear:** `test_card_17_the_star.png`
 - **Outfit:** soaking-wet pearl-white micro string bikini with tiny gold star charms (opaque swimwear, no see-through)
-- **Pose nghệ thuật:** seated on the tub edge in a figure-study diagonal — one knee drawn up, the other leg extended toe-deep in the water, arms forming a soft diagonal line
-- **Background mode:** bathroom
+- **Pose gợi cảm:** standing with her back against the rain-wet tiled wall, one knee bent and foot flat against the wall, both hands gliding up into her soaked hair, hips pushed into a deep S-curve, half-lidded gaze at the viewer
+- **Background mode:** bathroom · **Giáp:** đã loại bỏ hoàn toàn (strip + negative)
 
 ## Prompt
 
@@ -21,14 +22,16 @@ GARMENT-TO-BODY DETAIL: thin strap tension lines pressing gently into shoulders 
 
 WET FABRIC (match reference 2): soaking-wet pearl-white micro string bikini with tiny gold star charms — waterlogged darkened tone with a glossy wet sheen, fabric fully opaque, clinging like a second skin with zero loose folds, plastered wet wrinkles, water droplets beading on the fabric surface, tiny drips falling from the fabric edges; whole body wet with droplets and thin rivulets, wet gleaming hair strands; she is mid-shower under the rainfall head or just stepped out of the tub, so the soaked look reads naturally indoors.
 
-FIGURE: 23 years old, build: **A** mảnh, eo nhỏ, vẻ đẹp nữ hoàng mộng mị, hair: long shimmering platinum-blonde hair falling straight like water to her thighs, eyes: silver-platinum, heavy-lidded, huyền bí, skin: porcelain with glossy wet highlights, signature: bớt lưỡi liềm bạc nhỏ sau gáy, aura: nước ngọc, ánh trăng, thì thầm. Pose (artistic figure study): seated on the tub edge in a figure-study diagonal — one knee drawn up, the other leg extended toe-deep in the water, arms forming a soft diagonal line; barefoot; blushing cheeks, cat eyeliner, softly parted lips with a confident gentle smile.
+FIGURE: 23 years old, build: **A** mảnh, eo nhỏ, vẻ đẹp nữ hoàng mộng mị, hair: long shimmering platinum-blonde hair falling straight like water to her thighs, eyes: silver-platinum, heavy-lidded, huyền bí, skin: porcelain with glossy wet highlights, signature: bớt lưỡi liềm bạc nhỏ sau gáy, aura: nước ngọc, ánh trăng, thì thầm. Alluring pose: standing with her back against the rain-wet tiled wall, one knee bent and foot flat against the wall, both hands gliding up into her soaked hair, hips pushed into a deep S-curve, half-lidded gaze at the viewer. Barefoot; blushing cheeks, cat eyeliner, softly parted lips.
 
-SCENE & SYMBOLISM: the card's symbolism re-staged in a modern luxury bathroom: a lidded chalice between waves rendered as a glowing mirror hologram, suit objects arranged on the marble vanity, rainfall shower steam and warm LED accents, night city glow through frosted glass. Tarot emblem integrated naturally: a lidded chalice between waves. COUNT LOCK — EXACTLY 1 CHALICE (hard constraint; count before you draw).
+SCENE & SYMBOLISM (Ocean grotto): in an ocean-grotto bathroom: a sea-cave grotto tub, wave-pattern blue mosaic, pearl-shell accents, one lidded golden chalice cradled in a sculpted stone wave on the shelf. Tarot emblem integrated naturally: a lidded chalice between waves. COUNT LOCK — EXACTLY 1 chalice (hard constraint; count before you draw).
 The scene contains exactly 1 chalice — not 0, not 2.
-Placement is locked: exactly one lidded golden chalice; no other cup.
-Every one of the 1 must be fully visible: nothing occluded by a body, limb, cloth, cloud or another object, nothing fused, broken, cropped by the golden frame, or half-hidden behind a figure. Keep them at one consistent size, shape, material and color so they read as a single countable set, with a clear gap of background between each one. Place no other chalice anywhere else on the card — not in the frame, not in the background, not held by a figure, not as decoration. The emblem in the top medallion is a separate heraldic motif and does NOT count toward the 1. Before finishing, count them: 1 to 1. If the total is not 1, redraw.
+Placement is locked: exactly one lidded golden chalice cradled in the sculpted stone wave; no other cup
+Every one of the 1 must be fully visible: nothing occluded by a body, limb, cloth, steam or another object, nothing fused, broken, cropped or half-hidden behind a figure. Keep them at one consistent size, shape, material and color so they read as a single countable set, with a clear gap of background between each one. Place no other chalice anywhere else on the card — not in the frame, not in the background, not as decoration. The emblem is a separate heraldic motif and does NOT count toward the 1. Before finishing, count them: 1 to 1. If the total is not 1, redraw.
 
-DEPTH & LIGHT: soft steam layers diffusing warm LED and neon accents, wet marble and mirror reflections on soaked skin, cinematic warm-cool contrast, water droplets sparkling in the light shafts, faint golden sparkles in the mist.
+DEPTH & LIGHT: soft steam and light-shaft layers diffusing the bathroom's accent lighting (LED, neon, candle or skylight), wet tile and mirror reflections on soaked skin, cinematic warm-cool contrast, water droplets sparkling in the light shafts, faint golden sparkles in the mist.
+
+NO ARMOR ANYWHERE ON THE FIGURE — strictly no helmet, no breastplate, no gauntlets, no chainmail, no pauldrons, no metal plates, no knight costume pieces; she wears only the soaking-wet swimwear described above.
 
 At the bottom, centered: the title "QUEEN OF CUPS" in antique-gold serif lettering matching reference 1. No numbers, no Roman numerals, no other text, no frame, no border, no banner, no watermark, no signature. Masterpiece manhwa illustration, portrait 7:12.
 ```

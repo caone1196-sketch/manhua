@@ -1,12 +1,13 @@
-# TEN OF WANDS (10) — Frameless Wet-Manhwa v2 · mode bathroom
+# TEN OF WANDS (10) — Frameless Wet-Manhwa v2.2 · mode bathroom
 
 - **Slug:** `wands-10` | **Group:** wands
 - **Emblem:** ten wands in a bundle
+- **Phong cách phòng tắm:** Apothecary bundle
 - **Reference style/contour/lettering:** `major_08_strength.png`
 - **Reference wet fabric/swimwear:** `test_card_17_the_star.png`
 - **Outfit:** soaking-wet midnight-black micro string bikini with fine gold chain straps (opaque swimwear, no see-through)
-- **Pose nghệ thuật:** standing arabesque-like balance — weight on one leg, the other extended back resting on the tub rim, arms held in a high-low axis line like a dancer
-- **Background mode:** bathroom
+- **Pose gợi cảm:** seated in the shallow water facing the viewer, knees together tilted to one side, arms loosely crossed beneath her chest, shoulders glistening with droplets
+- **Background mode:** bathroom · **Giáp:** đã loại bỏ hoàn toàn (strip + negative)
 
 ## Prompt
 
@@ -21,14 +22,16 @@ GARMENT-TO-BODY DETAIL: thin strap tension lines pressing gently into shoulders 
 
 WET FABRIC (match reference 2): soaking-wet midnight-black micro string bikini with fine gold chain straps — waterlogged darkened tone with a glossy wet sheen, fabric fully opaque, clinging like a second skin with zero loose folds, plastered wet wrinkles, water droplets beading on the fabric surface, tiny drips falling from the fabric edges; whole body wet with droplets and thin rivulets, wet gleaming hair strands; she is mid-shower under the rainfall head or just stepped out of the tub, so the soaked look reads naturally indoors.
 
-FIGURE: 23 years old, build: **B** lưng khỏe, vai vững, cơ bắp làm việc, hair: damp chestnut hair clinging to brow from labor, eyes: deep brown viền amber, heavy-lidded, mệt nhưng kiêu, skin: sand with glossy wet highlights, signature: vết sẹo bỏng nhỏ trên cẳng tay trái, aura: mồ hôi, lúa, đất ấm. Pose (artistic figure study): standing arabesque-like balance — weight on one leg, the other extended back resting on the tub rim, arms held in a high-low axis line like a dancer; barefoot; blushing cheeks, cat eyeliner, softly parted lips with a confident gentle smile.
+FIGURE: 23 years old, build: **B** lưng khỏe, vai vững, cơ bắp làm việc, hair: damp chestnut hair clinging to brow from labor, eyes: deep brown viền amber, heavy-lidded, mệt nhưng kiêu, skin: sand with glossy wet highlights, signature: vết sẹo bỏng nhỏ trên cẳng tay trái, aura: mồ hôi, lúa, đất ấm. Alluring pose: seated in the shallow water facing the viewer, knees together tilted to one side, arms loosely crossed beneath her chest, shoulders glistening with droplets. Barefoot; blushing cheeks, cat eyeliner, softly parted lips.
 
-SCENE & SYMBOLISM: the card's symbolism re-staged in a modern luxury bathroom: ten wands in a bundle rendered as a glowing mirror hologram, suit objects arranged on the marble vanity, rainfall shower steam and warm LED accents, night city glow through frosted glass. Tarot emblem integrated naturally: ten wands in a bundle. COUNT LOCK — EXACTLY 10 WANDS (hard constraint; count before you draw).
+SCENE & SYMBOLISM (Apothecary bundle): in an apothecary bathroom: shelves of amber glass bottles, dark wood and copper, heavy warm air, one great bundle of ten wands tied at the middle leaning against the tub, its ten tips fanned and countable. Tarot emblem integrated naturally: ten wands in a bundle. COUNT LOCK — EXACTLY 10 WANDS (hard constraint; count before you draw).
 The scene contains exactly 10 wands — not 9, not 11.
-Placement is locked: exactly ten wands in one natural bundle tied at the middle — count the ten tips of the fan: 1, 2, 3, 4, 5, 6, 7, 8, 9, 10; no nine, no eleven.
-Every one of the 10 must be fully visible: nothing occluded by a body, limb, cloth, cloud or another object, nothing fused, broken, cropped by the golden frame, or half-hidden behind a figure. Keep them at one consistent size, shape, material and color so they read as a single countable set, with a clear gap of background between each one. Place no other wands anywhere else on the card — not in the frame, not in the background, not held by a figure, not as decoration. The emblem in the top medallion is a separate heraldic motif and does NOT count toward the 10. Before finishing, count them: 1 to 10. If the total is not 10, redraw.
+Placement is locked: exactly ten wands in one natural bundle tied at the middle leaning against the tub — count the ten fanned tips: 1, 2, 3, 4, 5, 6, 7, 8, 9, 10; no nine, no eleven
+Every one of the 10 must be fully visible: nothing occluded by a body, limb, cloth, steam or another object, nothing fused, broken, cropped or half-hidden behind a figure. Keep them at one consistent size, shape, material and color so they read as a single countable set, with a clear gap of background between each one. Place no other wands anywhere else on the card — not in the frame, not in the background, not as decoration. The emblem is a separate heraldic motif and does NOT count toward the 10. Before finishing, count them: 1 to 10. If the total is not 10, redraw.
 
-DEPTH & LIGHT: soft steam layers diffusing warm LED and neon accents, wet marble and mirror reflections on soaked skin, cinematic warm-cool contrast, water droplets sparkling in the light shafts, faint golden sparkles in the mist.
+DEPTH & LIGHT: soft steam and light-shaft layers diffusing the bathroom's accent lighting (LED, neon, candle or skylight), wet tile and mirror reflections on soaked skin, cinematic warm-cool contrast, water droplets sparkling in the light shafts, faint golden sparkles in the mist.
+
+NO ARMOR ANYWHERE ON THE FIGURE — strictly no helmet, no breastplate, no gauntlets, no chainmail, no pauldrons, no metal plates, no knight costume pieces; she wears only the soaking-wet swimwear described above.
 
 At the bottom, centered: the title "TEN OF WANDS" in antique-gold serif lettering matching reference 1. No numbers, no Roman numerals, no other text, no frame, no border, no banner, no watermark, no signature. Masterpiece manhwa illustration, portrait 7:12.
 ```

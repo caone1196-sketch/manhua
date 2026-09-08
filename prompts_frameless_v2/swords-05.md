@@ -1,12 +1,13 @@
-# FIVE OF SWORDS (5) — Frameless Wet-Manhwa v2 · mode bathroom
+# FIVE OF SWORDS (5) — Frameless Wet-Manhwa v2.2 · mode bathroom
 
 - **Slug:** `swords-05` | **Group:** swords
 - **Emblem:** five swords, two discarded
+- **Phong cách phòng tắm:** Storm victor
 - **Reference style/contour/lettering:** `major_08_strength.png`
 - **Reference wet fabric/swimwear:** `test_card_17_the_star.png`
 - **Outfit:** soaking-wet pearl-white micro string bikini with tiny gold star charms (opaque swimwear, no see-through)
-- **Pose nghệ thuật:** seated on the tub edge in a figure-study diagonal — one knee drawn up, the other leg extended toe-deep in the water, arms forming a soft diagonal line
-- **Background mode:** bathroom
+- **Pose gợi cảm:** one bare foot up on the tub rim, both hands sliding slowly down the raised thigh, back curved, looking down at the viewer through wet lashes
+- **Background mode:** bathroom · **Giáp:** đã loại bỏ hoàn toàn (strip + negative)
 
 ## Prompt
 
@@ -21,14 +22,16 @@ GARMENT-TO-BODY DETAIL: thin strap tension lines pressing gently into shoulders 
 
 WET FABRIC (match reference 2): soaking-wet pearl-white micro string bikini with tiny gold star charms — waterlogged darkened tone with a glossy wet sheen, fabric fully opaque, clinging like a second skin with zero loose folds, plastered wet wrinkles, water droplets beading on the fabric surface, tiny drips falling from the fabric edges; whole body wet with droplets and thin rivulets, wet gleaming hair strands; she is mid-shower under the rainfall head or just stepped out of the tub, so the soaked look reads naturally indoors.
 
-FIGURE: 22 years old, build: **B** mảnh nhanh, vai sắc, dáng xoay người gọn, hair: wind-blown dark brown hair with a subtle confident smirk, eyes: dark emerald, almond, liếc xéo tự mãn, skin: light olive with glossy wet highlights, signature: sẹo mảnh xé đôi chân mày phải, aura: gió thắng, lá khô, cười mỉa. Pose (artistic figure study): seated on the tub edge in a figure-study diagonal — one knee drawn up, the other leg extended toe-deep in the water, arms forming a soft diagonal line; barefoot; blushing cheeks, cat eyeliner, softly parted lips with a confident gentle smile.
+FIGURE: 22 years old, build: **B** mảnh nhanh, vai sắc, dáng xoay người gọn, hair: wind-blown dark brown hair with a subtle confident smirk, eyes: dark emerald, almond, liếc xéo tự mãn, skin: light olive with glossy wet highlights, signature: sẹo mảnh xé đôi chân mày phải, aura: gió thắng, lá khô, cười mỉa. Alluring pose: one bare foot up on the tub rim, both hands sliding slowly down the raised thigh, back curved, looking down at the viewer through wet lashes. Barefoot; blushing cheeks, cat eyeliner, softly parted lips.
 
-SCENE & SYMBOLISM: the card's symbolism re-staged in a modern luxury bathroom: five swords, two discarded rendered as a glowing mirror hologram, suit objects arranged on the marble vanity, rainfall shower steam and warm LED accents, night city glow through frosted glass. Tarot emblem integrated naturally: five swords, two discarded. COUNT LOCK — EXACTLY 5 SWORDS (hard constraint; count before you draw).
+SCENE & SYMBOLISM (Storm victor): in a storm-victor bathroom: dark slate tile, wind-blown spray through an open window, stormy contrast light, three crystal blades gathered upright and fanned in her hands and two lying abandoned on the wet floor behind her. Tarot emblem integrated naturally: five swords, two discarded. COUNT LOCK — EXACTLY 5 SWORDS (hard constraint; count before you draw).
 The scene contains exactly 5 swords — not 4, not 6.
-Placement is locked: exactly five swords: three gathered in the victor's hands, held upright and fanned so all three hilts are separate, plus two lying abandoned in the sand behind him — 3 + 2 = 5.
-Every one of the 5 must be fully visible: nothing occluded by a body, limb, cloth, cloud or another object, nothing fused, broken, cropped by the golden frame, or half-hidden behind a figure. Keep them at one consistent size, shape, material and color so they read as a single countable set, with a clear gap of background between each one. Place no other swords anywhere else on the card — not in the frame, not in the background, not held by a figure, not as decoration. The emblem in the top medallion is a separate heraldic motif and does NOT count toward the 5. Before finishing, count them: 1 to 5. If the total is not 5, redraw.
+Placement is locked: exactly five crystal blades: three gathered upright and fanned in her hands, all three hilts separate, plus two lying abandoned on the wet floor behind her — 3 + 2 = 5
+Every one of the 5 must be fully visible: nothing occluded by a body, limb, cloth, steam or another object, nothing fused, broken, cropped or half-hidden behind a figure. Keep them at one consistent size, shape, material and color so they read as a single countable set, with a clear gap of background between each one. Place no other swords anywhere else on the card — not in the frame, not in the background, not as decoration. The emblem is a separate heraldic motif and does NOT count toward the 5. Before finishing, count them: 1 to 5. If the total is not 5, redraw.
 
-DEPTH & LIGHT: soft steam layers diffusing warm LED and neon accents, wet marble and mirror reflections on soaked skin, cinematic warm-cool contrast, water droplets sparkling in the light shafts, faint golden sparkles in the mist.
+DEPTH & LIGHT: soft steam and light-shaft layers diffusing the bathroom's accent lighting (LED, neon, candle or skylight), wet tile and mirror reflections on soaked skin, cinematic warm-cool contrast, water droplets sparkling in the light shafts, faint golden sparkles in the mist.
+
+NO ARMOR ANYWHERE ON THE FIGURE — strictly no helmet, no breastplate, no gauntlets, no chainmail, no pauldrons, no metal plates, no knight costume pieces; she wears only the soaking-wet swimwear described above.
 
 At the bottom, centered: the title "FIVE OF SWORDS" in antique-gold serif lettering matching reference 1. No numbers, no Roman numerals, no other text, no frame, no border, no banner, no watermark, no signature. Masterpiece manhwa illustration, portrait 7:12.
 ```

@@ -1,12 +1,13 @@
-# THREE OF WANDS (3) — Frameless Wet-Manhwa v2 · mode bathroom
+# THREE OF WANDS (3) — Frameless Wet-Manhwa v2.2 · mode bathroom
 
 - **Slug:** `wands-03` | **Group:** wands
 - **Emblem:** three leafy wands in a fan
+- **Phong cách phòng tắm:** Harbor porthole
 - **Reference style/contour/lettering:** `major_08_strength.png`
 - **Reference wet fabric/swimwear:** `test_card_17_the_star.png`
 - **Outfit:** soaking-wet pearl-white micro string bikini with tiny gold star charms (opaque swimwear, no see-through)
-- **Pose nghệ thuật:** seated on the tub edge in a figure-study diagonal — one knee drawn up, the other leg extended toe-deep in the water, arms forming a soft diagonal line
-- **Background mode:** bathroom
+- **Pose gợi cảm:** standing with her back against the rain-wet tiled wall, one knee bent and foot flat against the wall, both hands gliding up into her soaked hair, hips pushed into a deep S-curve, half-lidded gaze at the viewer
+- **Background mode:** bathroom · **Giáp:** đã loại bỏ hoàn toàn (strip + negative)
 
 ## Prompt
 
@@ -21,14 +22,16 @@ GARMENT-TO-BODY DETAIL: thin strap tension lines pressing gently into shoulders 
 
 WET FABRIC (match reference 2): soaking-wet pearl-white micro string bikini with tiny gold star charms — waterlogged darkened tone with a glossy wet sheen, fabric fully opaque, clinging like a second skin with zero loose folds, plastered wet wrinkles, water droplets beading on the fabric surface, tiny drips falling from the fabric edges; whole body wet with droplets and thin rivulets, wet gleaming hair strands; she is mid-shower under the rainfall head or just stepped out of the tub, so the soaked look reads naturally indoors.
 
-FIGURE: 23 years old, build: **B** cao, mảnh, lưng dài hướng về chân trời, hair: warm caramel-brown hair loosely braided with golden cord, eyes: honey-brown, almond, quyết tâm nhìn về khơi xa, skin: warm tan with glossy wet highlights, signature: khuyên vàng nhỏ ở ngón cái tay phải, aura: hoàng hôn, bến cảng, buồm. Pose (artistic figure study): seated on the tub edge in a figure-study diagonal — one knee drawn up, the other leg extended toe-deep in the water, arms forming a soft diagonal line; barefoot; blushing cheeks, cat eyeliner, softly parted lips with a confident gentle smile.
+FIGURE: 23 years old, build: **B** cao, mảnh, lưng dài hướng về chân trời, hair: warm caramel-brown hair loosely braided with golden cord, eyes: honey-brown, almond, quyết tâm nhìn về khơi xa, skin: warm tan with glossy wet highlights, signature: khuyên vàng nhỏ ở ngón cái tay phải, aura: hoàng hôn, bến cảng, buồm. Alluring pose: standing with her back against the rain-wet tiled wall, one knee bent and foot flat against the wall, both hands gliding up into her soaked hair, hips pushed into a deep S-curve, half-lidded gaze at the viewer. Barefoot; blushing cheeks, cat eyeliner, softly parted lips.
 
-SCENE & SYMBOLISM: the card's symbolism re-staged in a modern luxury bathroom: three leafy wands in a fan rendered as a glowing mirror hologram, suit objects arranged on the marble vanity, rainfall shower steam and warm LED accents, night city glow through frosted glass. Tarot emblem integrated naturally: three leafy wands in a fan. COUNT LOCK — EXACTLY 3 WANDS (hard constraint; count before you draw).
+SCENE & SYMBOLISM (Harbor porthole): in a harbor-view bathroom: round brass porthole windows, mooring-rope towel rings, sea light mixing with warm lantern glow, three leafy wands planted upright in one straight row across the wet floor before the tub. Tarot emblem integrated naturally: three leafy wands in a fan. COUNT LOCK — EXACTLY 3 WANDS (hard constraint; count before you draw).
 The scene contains exactly 3 wands — not 2, not 4.
-Placement is locked: exactly three wands planted upright in one straight diagonal row across the foreground, evenly spaced and widely separated, all three tips clear of the horizon, none overlapping or crossing — count them left to right: 1, 2, 3.
-Every one of the 3 must be fully visible: nothing occluded by a body, limb, cloth, cloud or another object, nothing fused, broken, cropped by the golden frame, or half-hidden behind a figure. Keep them at one consistent size, shape, material and color so they read as a single countable set, with a clear gap of background between each one. Place no other wands anywhere else on the card — not in the frame, not in the background, not held by a figure, not as decoration. The emblem in the top medallion is a separate heraldic motif and does NOT count toward the 3. Before finishing, count them: 1 to 3. If the total is not 3, redraw.
+Placement is locked: exactly three wands planted upright in one straight row across the wet floor before the tub, evenly spaced and widely separated, none overlapping — count them left to right: 1, 2, 3
+Every one of the 3 must be fully visible: nothing occluded by a body, limb, cloth, steam or another object, nothing fused, broken, cropped or half-hidden behind a figure. Keep them at one consistent size, shape, material and color so they read as a single countable set, with a clear gap of background between each one. Place no other wands anywhere else on the card — not in the frame, not in the background, not as decoration. The emblem is a separate heraldic motif and does NOT count toward the 3. Before finishing, count them: 1 to 3. If the total is not 3, redraw.
 
-DEPTH & LIGHT: soft steam layers diffusing warm LED and neon accents, wet marble and mirror reflections on soaked skin, cinematic warm-cool contrast, water droplets sparkling in the light shafts, faint golden sparkles in the mist.
+DEPTH & LIGHT: soft steam and light-shaft layers diffusing the bathroom's accent lighting (LED, neon, candle or skylight), wet tile and mirror reflections on soaked skin, cinematic warm-cool contrast, water droplets sparkling in the light shafts, faint golden sparkles in the mist.
+
+NO ARMOR ANYWHERE ON THE FIGURE — strictly no helmet, no breastplate, no gauntlets, no chainmail, no pauldrons, no metal plates, no knight costume pieces; she wears only the soaking-wet swimwear described above.
 
 At the bottom, centered: the title "THREE OF WANDS" in antique-gold serif lettering matching reference 1. No numbers, no Roman numerals, no other text, no frame, no border, no banner, no watermark, no signature. Masterpiece manhwa illustration, portrait 7:12.
 ```

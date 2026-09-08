@@ -1,12 +1,13 @@
-# THE DEVIL (XV) — Frameless Wet-Manhwa v2 · mode bathroom
+# THE DEVIL (XV) — Frameless Wet-Manhwa v2.2 · mode bathroom
 
 - **Slug:** `15-devil` | **Group:** major
 - **Emblem:** an inverted pentagram
+- **Phong cách phòng tắm:** Crimson neon gothic
 - **Reference style/contour/lettering:** `major_08_strength.png`
 - **Reference wet fabric/swimwear:** `test_card_17_the_star.png`
 - **Outfit:** soaking-wet rose-pink micro string bikini with small satin bow accents (opaque swimwear, no see-through)
-- **Pose nghệ thuật:** reclining diagonal across the tub edge — hip line lifted, one leg extended in a long elegant line, one arm arched overhead
-- **Background mode:** bathroom
+- **Pose gợi cảm:** kneeling upright on the bath mat, thighs close together, torso arched gracefully back, both arms lifting her wet hair, spine curved like a drawn bow, eyes closed in a soft sigh
+- **Background mode:** bathroom · **Giáp:** đã loại bỏ hoàn toàn (strip + negative)
 
 ## Prompt
 
@@ -21,11 +22,13 @@ GARMENT-TO-BODY DETAIL: thin strap tension lines pressing gently into shoulders 
 
 WET FABRIC (match reference 2): soaking-wet rose-pink micro string bikini with small satin bow accents — waterlogged darkened tone with a glossy wet sheen, fabric fully opaque, clinging like a second skin with zero loose folds, plastered wet wrinkles, water droplets beading on the fabric surface, tiny drips falling from the fabric edges; whole body wet with droplets and thin rivulets, wet gleaming hair strands; she is mid-shower under the rainfall head or just stepped out of the tub, so the soaked look reads naturally indoors.
 
-FIGURE: 21 years old, build: **D** cong đầy đặn vừa, hông mềm, lưng võng gợi cảm, hair: midnight-black wavy hair with deep wine-red undertones, wild and untamed, eyes: wine-plum, cat, heavy-lidded, đốt mắt, skin: sand with glossy wet highlights, signature: nốt ruồi đỏ thẫm ở khóe môi, aura: khói ngọt, gỗ đàn hương, dây xích. Pose (artistic figure study): reclining diagonal across the tub edge — hip line lifted, one leg extended in a long elegant line, one arm arched overhead; barefoot; blushing cheeks, cat eyeliner, softly parted lips with a confident gentle smile.
+FIGURE: 21 years old, build: **D** cong đầy đặn vừa, hông mềm, lưng võng gợi cảm, hair: midnight-black wavy hair with deep wine-red undertones, wild and untamed, eyes: wine-plum, cat, heavy-lidded, đốt mắt, skin: sand with glossy wet highlights, signature: nốt ruồi đỏ thẫm ở khóe môi, aura: khói ngọt, gỗ đàn hương, dây xích. Alluring pose: kneeling upright on the bath mat, thighs close together, torso arched gracefully back, both arms lifting her wet hair, spine curved like a drawn bow, eyes closed in a soft sigh. Barefoot; blushing cheeks, cat eyeliner, softly parted lips.
 
-SCENE & SYMBOLISM: the card's symbolism re-staged in a modern luxury bathroom: an inverted pentagram rendered as a glowing mirror hologram, suit objects arranged on the marble vanity, rainfall shower steam and warm LED accents, night city glow through frosted glass. Tarot emblem integrated naturally: an inverted pentagram. COUNT LOCK: This card contains NO loose suit objects in the scene. Do not add random floating or decorative cups, swords, wands, or pentacles.
+SCENE & SYMBOLISM (Crimson neon gothic): a seductive 24-year-old streamer in a crimson gothic bathroom: glossy black tile, an inverted pentagram glowing crimson neon on the wall, loose golden chain links draped over the tub rim, dark red candles, wine-red steam light. Tarot emblem integrated naturally: an inverted pentagram. COUNT LOCK: This card contains NO loose suit objects in the scene. Do not add random floating or decorative cups, swords, wands, or pentacles.
 
-DEPTH & LIGHT: soft steam layers diffusing warm LED and neon accents, wet marble and mirror reflections on soaked skin, cinematic warm-cool contrast, water droplets sparkling in the light shafts, faint golden sparkles in the mist.
+DEPTH & LIGHT: soft steam and light-shaft layers diffusing the bathroom's accent lighting (LED, neon, candle or skylight), wet tile and mirror reflections on soaked skin, cinematic warm-cool contrast, water droplets sparkling in the light shafts, faint golden sparkles in the mist.
+
+NO ARMOR ANYWHERE ON THE FIGURE — strictly no helmet, no breastplate, no gauntlets, no chainmail, no pauldrons, no metal plates, no knight costume pieces; she wears only the soaking-wet swimwear described above.
 
 At the bottom, centered: the title "THE DEVIL" in antique-gold serif lettering matching reference 1. No numbers, no Roman numerals, no other text, no frame, no border, no banner, no watermark, no signature. Masterpiece manhwa illustration, portrait 7:12.
 ```

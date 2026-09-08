@@ -1,12 +1,13 @@
-# DEATH (XIII) — Frameless Wet-Manhwa v2 · mode bathroom
+# DEATH (XIII) — Frameless Wet-Manhwa v2.2 · mode bathroom
 
 - **Slug:** `13-death` | **Group:** major
 - **Emblem:** a five-petaled white rose
+- **Phong cách phòng tắm:** Gothic onyx & lilies
 - **Reference style/contour/lettering:** `major_08_strength.png`
 - **Reference wet fabric/swimwear:** `test_card_17_the_star.png`
 - **Outfit:** soaking-wet midnight-black micro string bikini with fine gold chain straps (opaque swimwear, no see-through)
-- **Pose nghệ thuật:** standing arabesque-like balance — weight on one leg, the other extended back resting on the tub rim, arms held in a high-low axis line like a dancer
-- **Background mode:** bathroom
+- **Pose gợi cảm:** seated sideways on the tub rim leaning back on one straight arm, chest lifted, one knee drawn up while the other leg trails toe-deep in the water, wet hair cascading down her back
+- **Background mode:** bathroom · **Giáp:** đã loại bỏ hoàn toàn (strip + negative)
 
 ## Prompt
 
@@ -21,11 +22,13 @@ GARMENT-TO-BODY DETAIL: thin strap tension lines pressing gently into shoulders 
 
 WET FABRIC (match reference 2): soaking-wet midnight-black micro string bikini with fine gold chain straps — waterlogged darkened tone with a glossy wet sheen, fabric fully opaque, clinging like a second skin with zero loose folds, plastered wet wrinkles, water droplets beading on the fabric surface, tiny drips falling from the fabric edges; whole body wet with droplets and thin rivulets, wet gleaming hair strands; she is mid-shower under the rainfall head or just stepped out of the tub, so the soaked look reads naturally indoors.
 
-FIGURE: 22 years old, build: **A** cao, mảnh, bóng dáng kỵ sĩ lạnh, hair: long bone-platinum hair flowing behind an ornate gothic helm, eyes: ice-blue nhạt, hooded, không thể đọc, skin: porcelain with glossy wet highlights, signature: xăm hoa hồng trắng trên xương bả vai phải, aura: sương lạnh, bông hoa héo. Pose (artistic figure study): standing arabesque-like balance — weight on one leg, the other extended back resting on the tub rim, arms held in a high-low axis line like a dancer; barefoot; blushing cheeks, cat eyeliner, softly parted lips with a confident gentle smile.
+FIGURE: 22 years old, build: **A** cao, mảnh, bóng dáng kỵ sĩ lạnh, hair: long bone-platinum hair flowing behind an ornate gothic helm, eyes: ice-blue nhạt, hooded, không thể đọc, skin: porcelain with glossy wet highlights, signature: xăm hoa hồng trắng trên xương bả vai phải, aura: sương lạnh, bông hoa héo. Alluring pose: seated sideways on the tub rim leaning back on one straight arm, chest lifted, one knee drawn up while the other leg trails toe-deep in the water, wet hair cascading down her back. Barefoot; blushing cheeks, cat eyeliner, softly parted lips.
 
-SCENE & SYMBOLISM: the card's symbolism re-staged in a modern luxury bathroom: a five-petaled white rose rendered as a glowing mirror hologram, suit objects arranged on the marble vanity, rainfall shower steam and warm LED accents, night city glow through frosted glass. Tarot emblem integrated naturally: a five-petaled white rose. COUNT LOCK: This card contains NO loose suit objects in the scene. Do not add random floating or decorative cups, swords, wands, or pentacles.
+SCENE & SYMBOLISM (Gothic onyx & lilies): a transformative 23-year-old streamer in a gothic onyx bathroom: black onyx walls, a white marble tub ringed with white lilies, five-petaled white roses floating on still black water, a faint silver skull motif etched in the fogged mirror, pale moonlight through a gothic arched window. Tarot emblem integrated naturally: a five-petaled white rose. COUNT LOCK: This card contains NO loose suit objects in the scene. Do not add random floating or decorative cups, swords, wands, or pentacles.
 
-DEPTH & LIGHT: soft steam layers diffusing warm LED and neon accents, wet marble and mirror reflections on soaked skin, cinematic warm-cool contrast, water droplets sparkling in the light shafts, faint golden sparkles in the mist.
+DEPTH & LIGHT: soft steam and light-shaft layers diffusing the bathroom's accent lighting (LED, neon, candle or skylight), wet tile and mirror reflections on soaked skin, cinematic warm-cool contrast, water droplets sparkling in the light shafts, faint golden sparkles in the mist.
+
+NO ARMOR ANYWHERE ON THE FIGURE — strictly no helmet, no breastplate, no gauntlets, no chainmail, no pauldrons, no metal plates, no knight costume pieces; she wears only the soaking-wet swimwear described above.
 
 At the bottom, centered: the title "DEATH" in antique-gold serif lettering matching reference 1. No numbers, no Roman numerals, no other text, no frame, no border, no banner, no watermark, no signature. Masterpiece manhwa illustration, portrait 7:12.
 ```

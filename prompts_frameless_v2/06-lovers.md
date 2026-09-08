@@ -1,12 +1,13 @@
-# THE LOVERS (VI) — Frameless Wet-Manhwa v2 · mode bathroom
+# THE LOVERS (VI) — Frameless Wet-Manhwa v2.2 · mode bathroom
 
 - **Slug:** `06-lovers` | **Group:** major
 - **Emblem:** an apple coiled by a serpent
+- **Phong cách phòng tắm:** Rose-petal twin-tub spa
 - **Reference style/contour/lettering:** `major_08_strength.png`
 - **Reference wet fabric/swimwear:** `test_card_17_the_star.png`
 - **Outfit:** soaking-wet pearl-white micro string bikini with tiny gold star charms (opaque swimwear, no see-through)
-- **Pose nghệ thuật:** seated on the tub edge in a figure-study diagonal — one knee drawn up, the other leg extended toe-deep in the water, arms forming a soft diagonal line
-- **Background mode:** bathroom
+- **Pose gợi cảm:** one bare foot up on the tub rim, both hands sliding slowly down the raised thigh, back curved, looking down at the viewer through wet lashes
+- **Background mode:** bathroom · **Giáp:** đã loại bỏ hoàn toàn (strip + negative)
 
 ## Prompt
 
@@ -21,11 +22,13 @@ GARMENT-TO-BODY DETAIL: thin strap tension lines pressing gently into shoulders 
 
 WET FABRIC (match reference 2): soaking-wet pearl-white micro string bikini with tiny gold star charms — waterlogged darkened tone with a glossy wet sheen, fabric fully opaque, clinging like a second skin with zero loose folds, plastered wet wrinkles, water droplets beading on the fabric surface, tiny drips falling from the fabric edges; whole body wet with droplets and thin rivulets, wet gleaming hair strands; she is mid-shower under the rainfall head or just stepped out of the tub, so the soaked look reads naturally indoors.
 
-FIGURE: 21 years old, build: **A** đồng hồ mảnh, eo mềm, uyển chuyển, hair: warm chestnut-brown hair gathered in a loose romantic knot with soft wisps framing her cheeks, eyes: chestnut-amber, doe, liếc nghiêng say đắm về phía người kia, skin: warm peach with glossy wet highlights, signature: lúm đồng tiền má phải, aura: hoa cam, gió hè, lời hứa. Pose (artistic figure study): seated on the tub edge in a figure-study diagonal — one knee drawn up, the other leg extended toe-deep in the water, arms forming a soft diagonal line; barefoot; blushing cheeks, cat eyeliner, softly parted lips with a confident gentle smile.
+FIGURE: 21 years old, build: **A** đồng hồ mảnh, eo mềm, uyển chuyển, hair: warm chestnut-brown hair gathered in a loose romantic knot with soft wisps framing her cheeks, eyes: chestnut-amber, doe, liếc nghiêng say đắm về phía người kia, skin: warm peach with glossy wet highlights, signature: lúm đồng tiền má phải, aura: hoa cam, gió hè, lời hứa. Alluring pose: one bare foot up on the tub rim, both hands sliding slowly down the raised thigh, back curved, looking down at the viewer through wet lashes. Barefoot; blushing cheeks, cat eyeliner, softly parted lips.
 
-SCENE & SYMBOLISM: the card's symbolism re-staged in a modern luxury bathroom: an apple coiled by a serpent rendered as a glowing mirror hologram, suit objects arranged on the marble vanity, rainfall shower steam and warm LED accents, night city glow through frosted glass. Tarot emblem integrated naturally: an apple coiled by a serpent. COUNT LOCK: This card contains NO loose suit objects in the scene. Do not add random floating or decorative cups, swords, wands, or pentacles.
+SCENE & SYMBOLISM (Rose-petal twin-tub spa): a romantic 21-year-old streamer in a couples' spa bathroom: two copper clawfoot tubs side by side on rose-quartz tile, fresh red rose petals floating on the water, an apple coiled by a silver serpent on a marble tray between the tubs, soft blush lantern light. Tarot emblem integrated naturally: an apple coiled by a serpent. COUNT LOCK: This card contains NO loose suit objects in the scene. Do not add random floating or decorative cups, swords, wands, or pentacles.
 
-DEPTH & LIGHT: soft steam layers diffusing warm LED and neon accents, wet marble and mirror reflections on soaked skin, cinematic warm-cool contrast, water droplets sparkling in the light shafts, faint golden sparkles in the mist.
+DEPTH & LIGHT: soft steam and light-shaft layers diffusing the bathroom's accent lighting (LED, neon, candle or skylight), wet tile and mirror reflections on soaked skin, cinematic warm-cool contrast, water droplets sparkling in the light shafts, faint golden sparkles in the mist.
+
+NO ARMOR ANYWHERE ON THE FIGURE — strictly no helmet, no breastplate, no gauntlets, no chainmail, no pauldrons, no metal plates, no knight costume pieces; she wears only the soaking-wet swimwear described above.
 
 At the bottom, centered: the title "THE LOVERS" in antique-gold serif lettering matching reference 1. No numbers, no Roman numerals, no other text, no frame, no border, no banner, no watermark, no signature. Masterpiece manhwa illustration, portrait 7:12.
 ```

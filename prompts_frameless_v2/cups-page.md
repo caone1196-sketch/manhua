@@ -1,12 +1,13 @@
-# PAGE OF CUPS (P) — Frameless Wet-Manhwa v2 · mode bathroom
+# PAGE OF CUPS (P) — Frameless Wet-Manhwa v2.2 · mode bathroom
 
 - **Slug:** `cups-page` | **Group:** cups
 - **Emblem:** a chalice with a fish
+- **Phong cách phòng tắm:** Kawaii aquarium
 - **Reference style/contour/lettering:** `major_08_strength.png`
 - **Reference wet fabric/swimwear:** `test_card_17_the_star.png`
 - **Outfit:** soaking-wet metallic gold micro string bikini with opaque lace-trim edges (opaque swimwear, no see-through)
-- **Pose nghệ thuật:** seated cross-knee figure study — back straight, one arm resting on the knee, the other extended along the seat, chin slightly lifted
-- **Background mode:** bathroom
+- **Pose gợi cảm:** side-lying mermaid pose along the marble ledge, propped on one forearm, legs scissored in a long line, one hand combing wet hair off her face
+- **Background mode:** bathroom · **Giáp:** đã loại bỏ hoàn toàn (strip + negative)
 
 ## Prompt
 
@@ -21,14 +22,16 @@ GARMENT-TO-BODY DETAIL: thin strap tension lines pressing gently into shoulders 
 
 WET FABRIC (match reference 2): soaking-wet metallic gold micro string bikini with opaque lace-trim edges — waterlogged darkened tone with a glossy wet sheen, fabric fully opaque, clinging like a second skin with zero loose folds, plastered wet wrinkles, water droplets beading on the fabric surface, tiny drips falling from the fabric edges; whole body wet with droplets and thin rivulets, wet gleaming hair strands; she is mid-shower under the rainfall head or just stepped out of the tub, so the soaked look reads naturally indoors.
 
-FIGURE: 18 years old, build: **A** nhỏ nhắn, tay chân mảnh, dáng cầm chén, hair: dark glossy hair in a single side fishtail braid over the collarbone, eyes: smoky-blue, doe, ngạc nhiên đầy mộng mơ, skin: fair with glossy wet highlights, signature: khuyên bạc hình ngôi sao trên vành tai phải, aura: giấc mơ, cá bạc, nước. Pose (artistic figure study): seated cross-knee figure study — back straight, one arm resting on the knee, the other extended along the seat, chin slightly lifted; barefoot; blushing cheeks, cat eyeliner, softly parted lips with a confident gentle smile.
+FIGURE: 18 years old, build: **A** nhỏ nhắn, tay chân mảnh, dáng cầm chén, hair: dark glossy hair in a single side fishtail braid over the collarbone, eyes: smoky-blue, doe, ngạc nhiên đầy mộng mơ, skin: fair with glossy wet highlights, signature: khuyên bạc hình ngôi sao trên vành tai phải, aura: giấc mơ, cá bạc, nước. Alluring pose: side-lying mermaid pose along the marble ledge, propped on one forearm, legs scissored in a long line, one hand combing wet hair off her face. Barefoot; blushing cheeks, cat eyeliner, softly parted lips.
 
-SCENE & SYMBOLISM: the card's symbolism re-staged in a modern luxury bathroom: a chalice with a fish rendered as a glowing mirror hologram, suit objects arranged on the marble vanity, rainfall shower steam and warm LED accents, night city glow through frosted glass. Tarot emblem integrated naturally: a chalice with a fish. COUNT LOCK — EXACTLY 1 CHALICE (hard constraint; count before you draw).
+SCENE & SYMBOLISM (Kawaii aquarium): in a kawaii-aquarium bathroom: pastel aqua tile, playful bubbles drifting in the air, one round fishbowl with a curious goldfish on the vanity, one chalice-shaped basin glowing beside the tub. Tarot emblem integrated naturally: a chalice with a fish. COUNT LOCK — EXACTLY 1 chalice (hard constraint; count before you draw).
 The scene contains exactly 1 chalice — not 0, not 2.
-Placement is locked: exactly one chalice; no other cup anywhere in the scene.
-Every one of the 1 must be fully visible: nothing occluded by a body, limb, cloth, cloud or another object, nothing fused, broken, cropped by the golden frame, or half-hidden behind a figure. Keep them at one consistent size, shape, material and color so they read as a single countable set, with a clear gap of background between each one. Place no other chalice anywhere else on the card — not in the frame, not in the background, not held by a figure, not as decoration. The emblem in the top medallion is a separate heraldic motif and does NOT count toward the 1. Before finishing, count them: 1 to 1. If the total is not 1, redraw.
+Placement is locked: exactly one chalice-shaped basin beside the tub; the fishbowl goldfish is a fish, not a cup; no other cup anywhere
+Every one of the 1 must be fully visible: nothing occluded by a body, limb, cloth, steam or another object, nothing fused, broken, cropped or half-hidden behind a figure. Keep them at one consistent size, shape, material and color so they read as a single countable set, with a clear gap of background between each one. Place no other chalice anywhere else on the card — not in the frame, not in the background, not as decoration. The emblem is a separate heraldic motif and does NOT count toward the 1. Before finishing, count them: 1 to 1. If the total is not 1, redraw.
 
-DEPTH & LIGHT: soft steam layers diffusing warm LED and neon accents, wet marble and mirror reflections on soaked skin, cinematic warm-cool contrast, water droplets sparkling in the light shafts, faint golden sparkles in the mist.
+DEPTH & LIGHT: soft steam and light-shaft layers diffusing the bathroom's accent lighting (LED, neon, candle or skylight), wet tile and mirror reflections on soaked skin, cinematic warm-cool contrast, water droplets sparkling in the light shafts, faint golden sparkles in the mist.
+
+NO ARMOR ANYWHERE ON THE FIGURE — strictly no helmet, no breastplate, no gauntlets, no chainmail, no pauldrons, no metal plates, no knight costume pieces; she wears only the soaking-wet swimwear described above.
 
 At the bottom, centered: the title "PAGE OF CUPS" in antique-gold serif lettering matching reference 1. No numbers, no Roman numerals, no other text, no frame, no border, no banner, no watermark, no signature. Masterpiece manhwa illustration, portrait 7:12.
 ```

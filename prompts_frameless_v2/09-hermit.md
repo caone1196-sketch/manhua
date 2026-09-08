@@ -1,12 +1,13 @@
-# THE HERMIT (IX) — Frameless Wet-Manhwa v2 · mode bathroom
+# THE HERMIT (IX) — Frameless Wet-Manhwa v2.2 · mode bathroom
 
 - **Slug:** `09-hermit` | **Group:** major
 - **Emblem:** a glowing lantern
+- **Phong cách phòng tắm:** Candlelit mountain grotto
 - **Reference style/contour/lettering:** `major_08_strength.png`
 - **Reference wet fabric/swimwear:** `test_card_17_the_star.png`
 - **Outfit:** soaking-wet rose-pink micro string bikini with small satin bow accents (opaque swimwear, no see-through)
-- **Pose nghệ thuật:** reclining diagonal across the tub edge — hip line lifted, one leg extended in a long elegant line, one arm arched overhead
-- **Background mode:** bathroom
+- **Pose gợi cảm:** leaning forward over the vanity on both hands, weight low, looking into the lit mirror with a teasing smile, hips pushed back
+- **Background mode:** bathroom · **Giáp:** đã loại bỏ hoàn toàn (strip + negative)
 
 ## Prompt
 
@@ -21,11 +22,13 @@ GARMENT-TO-BODY DETAIL: thin strap tension lines pressing gently into shoulders 
 
 WET FABRIC (match reference 2): soaking-wet rose-pink micro string bikini with small satin bow accents — waterlogged darkened tone with a glossy wet sheen, fabric fully opaque, clinging like a second skin with zero loose folds, plastered wet wrinkles, water droplets beading on the fabric surface, tiny drips falling from the fabric edges; whole body wet with droplets and thin rivulets, wet gleaming hair strands; she is mid-shower under the rainfall head or just stepped out of the tub, so the soaked look reads naturally indoors.
 
-FIGURE: 23 years old, build: **A** mảnh, huyền bí, dáng ngồi thiền, hair: ethereal silver-ash long hair, veiled beneath sheer white cowl gauze, eyes: silver-grey gần như trong suốt, dreamy, an tĩnh, skin: porcelain with glossy wet highlights, signature: bớt hình mặt trăng trên cổ tay phải trong, aura: tuyết rơi im lặng, nến. Pose (artistic figure study): reclining diagonal across the tub edge — hip line lifted, one leg extended in a long elegant line, one arm arched overhead; barefoot; blushing cheeks, cat eyeliner, softly parted lips with a confident gentle smile.
+FIGURE: 23 years old, build: **A** mảnh, huyền bí, dáng ngồi thiền, hair: ethereal silver-ash long hair, veiled beneath sheer white cowl gauze, eyes: silver-grey gần như trong suốt, dreamy, an tĩnh, skin: porcelain with glossy wet highlights, signature: bớt hình mặt trăng trên cổ tay phải trong, aura: tuyết rơi im lặng, nến. Alluring pose: leaning forward over the vanity on both hands, weight low, looking into the lit mirror with a teasing smile, hips pushed back. Barefoot; blushing cheeks, cat eyeliner, softly parted lips.
 
-SCENE & SYMBOLISM: the card's symbolism re-staged in a modern luxury bathroom: a glowing lantern rendered as a glowing mirror hologram, suit objects arranged on the marble vanity, rainfall shower steam and warm LED accents, night city glow through frosted glass. Tarot emblem integrated naturally: a glowing lantern. COUNT LOCK: This card contains NO loose suit objects in the scene. Do not add random floating or decorative cups, swords, wands, or pentacles.
+SCENE & SYMBOLISM (Candlelit mountain grotto): a reclusive 24-year-old streamer in a candlelit mountain-grotto bathroom: a natural stone grotto with mineral-crystal walls, a single glowing brass lantern hanging from the ceiling rock, one warm shaft of lantern light cutting through the steam, deep quiet shadows. Tarot emblem integrated naturally: a glowing lantern. COUNT LOCK: This card contains NO loose suit objects in the scene. Do not add random floating or decorative cups, swords, wands, or pentacles.
 
-DEPTH & LIGHT: soft steam layers diffusing warm LED and neon accents, wet marble and mirror reflections on soaked skin, cinematic warm-cool contrast, water droplets sparkling in the light shafts, faint golden sparkles in the mist.
+DEPTH & LIGHT: soft steam and light-shaft layers diffusing the bathroom's accent lighting (LED, neon, candle or skylight), wet tile and mirror reflections on soaked skin, cinematic warm-cool contrast, water droplets sparkling in the light shafts, faint golden sparkles in the mist.
+
+NO ARMOR ANYWHERE ON THE FIGURE — strictly no helmet, no breastplate, no gauntlets, no chainmail, no pauldrons, no metal plates, no knight costume pieces; she wears only the soaking-wet swimwear described above.
 
 At the bottom, centered: the title "THE HERMIT" in antique-gold serif lettering matching reference 1. No numbers, no Roman numerals, no other text, no frame, no border, no banner, no watermark, no signature. Masterpiece manhwa illustration, portrait 7:12.
 ```

@@ -1,12 +1,13 @@
-# SEVEN OF WANDS (7) — Frameless Wet-Manhwa v2 · mode bathroom
+# SEVEN OF WANDS (7) — Frameless Wet-Manhwa v2.2 · mode bathroom
 
 - **Slug:** `wands-07` | **Group:** wands
 - **Emblem:** seven wands in a palisade
+- **Phong cách phòng tắm:** Bamboo palisade terrace
 - **Reference style/contour/lettering:** `major_08_strength.png`
 - **Reference wet fabric/swimwear:** `test_card_17_the_star.png`
 - **Outfit:** soaking-wet metallic gold micro string bikini with opaque lace-trim edges (opaque swimwear, no see-through)
-- **Pose nghệ thuật:** seated cross-knee figure study — back straight, one arm resting on the knee, the other extended along the seat, chin slightly lifted
-- **Background mode:** bathroom
+- **Pose gợi cảm:** reclining along the tub edge on one hip, propped on one elbow, legs stacked in one long elegant line, chin tilted up, lips softly parted
+- **Background mode:** bathroom · **Giáp:** đã loại bỏ hoàn toàn (strip + negative)
 
 ## Prompt
 
@@ -21,14 +22,16 @@ GARMENT-TO-BODY DETAIL: thin strap tension lines pressing gently into shoulders 
 
 WET FABRIC (match reference 2): soaking-wet metallic gold micro string bikini with opaque lace-trim edges — waterlogged darkened tone with a glossy wet sheen, fabric fully opaque, clinging like a second skin with zero loose folds, plastered wet wrinkles, water droplets beading on the fabric surface, tiny drips falling from the fabric edges; whole body wet with droplets and thin rivulets, wet gleaming hair strands; she is mid-shower under the rainfall head or just stepped out of the tub, so the soaked look reads naturally indoors.
 
-FIGURE: 21 years old, build: **A** mảnh, dai, gân gọn, dáng phòng thủ, hair: dark espresso hair cropped close at sides with messy curls on top, eyes: dark chestnut, narrow, cảnh giác dưới lông mày thấp, skin: light olive with glossy wet highlights, signature: vết khía nhỏ ở chân mày trái, aura: rìa rừng, đêm, lửa nhỏ. Pose (artistic figure study): seated cross-knee figure study — back straight, one arm resting on the knee, the other extended along the seat, chin slightly lifted; barefoot; blushing cheeks, cat eyeliner, softly parted lips with a confident gentle smile.
+FIGURE: 21 years old, build: **A** mảnh, dai, gân gọn, dáng phòng thủ, hair: dark espresso hair cropped close at sides with messy curls on top, eyes: dark chestnut, narrow, cảnh giác dưới lông mày thấp, skin: light olive with glossy wet highlights, signature: vết khía nhỏ ở chân mày trái, aura: rìa rừng, đêm, lửa nhỏ. Alluring pose: reclining along the tub edge on one hip, propped on one elbow, legs stacked in one long elegant line, chin tilted up, lips softly parted. Barefoot; blushing cheeks, cat eyeliner, softly parted lips.
 
-SCENE & SYMBOLISM: the card's symbolism re-staged in a modern luxury bathroom: seven wands in a palisade rendered as a glowing mirror hologram, suit objects arranged on the marble vanity, rainfall shower steam and warm LED accents, night city glow through frosted glass. Tarot emblem integrated naturally: seven wands in a palisade. COUNT LOCK — EXACTLY 7 WANDS (hard constraint; count before you draw).
+SCENE & SYMBOLISM (Bamboo palisade terrace): in a bamboo-terrace bathroom: a palisade of live bamboo screening the outdoor tub, green stone tiles, warm morning light, one wand held in both her hands and six wands rising upright in a palisade row from behind the tub rim. Tarot emblem integrated naturally: seven wands in a palisade. COUNT LOCK — EXACTLY 7 WANDS (hard constraint; count before you draw).
 The scene contains exactly 7 wands — not 6, not 8.
-Placement is locked: exactly seven wands: one held in the young woman's two hands plus six rising from below the cliff edge in front of her — 1 + 6 = 7; the six lower tips evenly spaced along the cliff line, none overlapping.
-Every one of the 7 must be fully visible: nothing occluded by a body, limb, cloth, cloud or another object, nothing fused, broken, cropped by the golden frame, or half-hidden behind a figure. Keep them at one consistent size, shape, material and color so they read as a single countable set, with a clear gap of background between each one. Place no other wands anywhere else on the card — not in the frame, not in the background, not held by a figure, not as decoration. The emblem in the top medallion is a separate heraldic motif and does NOT count toward the 7. Before finishing, count them: 1 to 7. If the total is not 7, redraw.
+Placement is locked: exactly seven wands: one held in her two hands plus six rising upright from behind the tub rim in one palisade row — 1 + 6 = 7; the six tips evenly spaced, none overlapping her body
+Every one of the 7 must be fully visible: nothing occluded by a body, limb, cloth, steam or another object, nothing fused, broken, cropped or half-hidden behind a figure. Keep them at one consistent size, shape, material and color so they read as a single countable set, with a clear gap of background between each one. Place no other wands anywhere else on the card — not in the frame, not in the background, not as decoration. The emblem is a separate heraldic motif and does NOT count toward the 7. Before finishing, count them: 1 to 7. If the total is not 7, redraw.
 
-DEPTH & LIGHT: soft steam layers diffusing warm LED and neon accents, wet marble and mirror reflections on soaked skin, cinematic warm-cool contrast, water droplets sparkling in the light shafts, faint golden sparkles in the mist.
+DEPTH & LIGHT: soft steam and light-shaft layers diffusing the bathroom's accent lighting (LED, neon, candle or skylight), wet tile and mirror reflections on soaked skin, cinematic warm-cool contrast, water droplets sparkling in the light shafts, faint golden sparkles in the mist.
+
+NO ARMOR ANYWHERE ON THE FIGURE — strictly no helmet, no breastplate, no gauntlets, no chainmail, no pauldrons, no metal plates, no knight costume pieces; she wears only the soaking-wet swimwear described above.
 
 At the bottom, centered: the title "SEVEN OF WANDS" in antique-gold serif lettering matching reference 1. No numbers, no Roman numerals, no other text, no frame, no border, no banner, no watermark, no signature. Masterpiece manhwa illustration, portrait 7:12.
 ```

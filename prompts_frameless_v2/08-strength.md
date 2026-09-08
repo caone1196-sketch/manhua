@@ -1,12 +1,13 @@
-# STRENGTH (VIII) — Frameless Wet-Manhwa v2 · mode bathroom
+# STRENGTH (VIII) — Frameless Wet-Manhwa v2.2 · mode bathroom
 
 - **Slug:** `08-strength` | **Group:** major
 - **Emblem:** a red rose
+- **Phong cách phòng tắm:** Safari-lodge stone bath
 - **Reference style/contour/lettering:** `major_08_strength.png`
 - **Reference wet fabric/swimwear:** `test_card_17_the_star.png`
 - **Outfit:** soaking-wet aqua-teal micro string bikini with side-tie ribbons (opaque swimwear, no see-through)
-- **Pose nghệ thuật:** mermaid sit on the marble ledge — knees together tilted to one side, torso upright with a gentle twist, one arm extended along the ledge
-- **Background mode:** bathroom
+- **Pose gợi cảm:** rising on tiptoe in a full-body stretch, arms overhead and intertwined, back arched, her whole figure one long alluring arc of light and water
+- **Background mode:** bathroom · **Giáp:** đã loại bỏ hoàn toàn (strip + negative)
 
 ## Prompt
 
@@ -21,11 +22,13 @@ GARMENT-TO-BODY DETAIL: thin strap tension lines pressing gently into shoulders 
 
 WET FABRIC (match reference 2): soaking-wet aqua-teal micro string bikini with side-tie ribbons — waterlogged darkened tone with a glossy wet sheen, fabric fully opaque, clinging like a second skin with zero loose folds, plastered wet wrinkles, water droplets beading on the fabric surface, tiny drips falling from the fabric edges; whole body wet with droplets and thin rivulets, wet gleaming hair strands; she is mid-shower under the rainfall head or just stepped out of the tub, so the soaked look reads naturally indoors.
 
-FIGURE: 23 years old, build: **B** mảnh mà khỏe, lưng cơ mềm, cong tự nhiên, hair: burnished copper-red long wavy hair flowing down like a lion's mane, eyes: amber-gold như mắt sư tử, almond, rực và ôn hòa, skin: warm tan with glossy wet highlights, signature: tàn nhang li ti khắp sống mũi và má, aura: nắng chiều, lông sư tử, hơi thở ấm. Pose (artistic figure study): mermaid sit on the marble ledge — knees together tilted to one side, torso upright with a gentle twist, one arm extended along the ledge; barefoot; blushing cheeks, cat eyeliner, softly parted lips with a confident gentle smile.
+FIGURE: 23 years old, build: **B** mảnh mà khỏe, lưng cơ mềm, cong tự nhiên, hair: burnished copper-red long wavy hair flowing down like a lion's mane, eyes: amber-gold như mắt sư tử, almond, rực và ôn hòa, skin: warm tan with glossy wet highlights, signature: tàn nhang li ti khắp sống mũi và má, aura: nắng chiều, lông sư tử, hơi thở ấm. Alluring pose: rising on tiptoe in a full-body stretch, arms overhead and intertwined, back arched, her whole figure one long alluring arc of light and water. Barefoot; blushing cheeks, cat eyeliner, softly parted lips.
 
-SCENE & SYMBOLISM: the card's symbolism re-staged in a modern luxury bathroom: a red rose rendered as a glowing mirror hologram, suit objects arranged on the marble vanity, rainfall shower steam and warm LED accents, night city glow through frosted glass. Tarot emblem integrated naturally: a red rose. COUNT LOCK: This card contains NO loose suit objects in the scene. Do not add random floating or decorative cups, swords, wands, or pentacles.
+SCENE & SYMBOLISM (Safari-lodge stone bath): a warm-hearted 20-year-old streamer in a safari-lodge bathroom: rough stone walls and dark teak, a brass lion-head waterfall faucet filling a copper tub, red rose petals floating on the water, a garland of red roses laid across the tub tray, warm lantern glow. Tarot emblem integrated naturally: a red rose. COUNT LOCK: This card contains NO loose suit objects in the scene. Do not add random floating or decorative cups, swords, wands, or pentacles.
 
-DEPTH & LIGHT: soft steam layers diffusing warm LED and neon accents, wet marble and mirror reflections on soaked skin, cinematic warm-cool contrast, water droplets sparkling in the light shafts, faint golden sparkles in the mist.
+DEPTH & LIGHT: soft steam and light-shaft layers diffusing the bathroom's accent lighting (LED, neon, candle or skylight), wet tile and mirror reflections on soaked skin, cinematic warm-cool contrast, water droplets sparkling in the light shafts, faint golden sparkles in the mist.
+
+NO ARMOR ANYWHERE ON THE FIGURE — strictly no helmet, no breastplate, no gauntlets, no chainmail, no pauldrons, no metal plates, no knight costume pieces; she wears only the soaking-wet swimwear described above.
 
 At the bottom, centered: the title "STRENGTH" in antique-gold serif lettering matching reference 1. No numbers, no Roman numerals, no other text, no frame, no border, no banner, no watermark, no signature. Masterpiece manhwa illustration, portrait 7:12.
 ```

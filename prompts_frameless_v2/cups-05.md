@@ -1,12 +1,13 @@
-# FIVE OF CUPS (5) — Frameless Wet-Manhwa v2 · mode bathroom
+# FIVE OF CUPS (5) — Frameless Wet-Manhwa v2.2 · mode bathroom
 
 - **Slug:** `cups-05` | **Group:** cups
 - **Emblem:** three spilled, two standing
+- **Phong cách phòng tắm:** Rain-window melancholy
 - **Reference style/contour/lettering:** `major_08_strength.png`
 - **Reference wet fabric/swimwear:** `test_card_17_the_star.png`
 - **Outfit:** soaking-wet metallic gold micro string bikini with opaque lace-trim edges (opaque swimwear, no see-through)
-- **Pose nghệ thuật:** seated cross-knee figure study — back straight, one arm resting on the knee, the other extended along the seat, chin slightly lifted
-- **Background mode:** bathroom
+- **Pose gợi cảm:** reclining along the tub edge on one hip, propped on one elbow, legs stacked in one long elegant line, chin tilted up, lips softly parted
+- **Background mode:** bathroom · **Giáp:** đã loại bỏ hoàn toàn (strip + negative)
 
 ## Prompt
 
@@ -21,14 +22,16 @@ GARMENT-TO-BODY DETAIL: thin strap tension lines pressing gently into shoulders 
 
 WET FABRIC (match reference 2): soaking-wet metallic gold micro string bikini with opaque lace-trim edges — waterlogged darkened tone with a glossy wet sheen, fabric fully opaque, clinging like a second skin with zero loose folds, plastered wet wrinkles, water droplets beading on the fabric surface, tiny drips falling from the fabric edges; whole body wet with droplets and thin rivulets, wet gleaming hair strands; she is mid-shower under the rainfall head or just stepped out of the tub, so the soaked look reads naturally indoors.
 
-FIGURE: 22 years old, build: **A** mảnh, dáng cúi cổ thanh mảnh buồn, hair: long mahogany hair unbound and draping over cloaked shoulders, eyes: watery hazel, downturned, khóe mắt ướt, skin: porcelain with glossy wet highlights, signature: tàn nhang như hạt mưa trên mu bàn tay, aura: mưa phùn, áo choàng ướt. Pose (artistic figure study): seated cross-knee figure study — back straight, one arm resting on the knee, the other extended along the seat, chin slightly lifted; barefoot; blushing cheeks, cat eyeliner, softly parted lips with a confident gentle smile.
+FIGURE: 22 years old, build: **A** mảnh, dáng cúi cổ thanh mảnh buồn, hair: long mahogany hair unbound and draping over cloaked shoulders, eyes: watery hazel, downturned, khóe mắt ướt, skin: porcelain with glossy wet highlights, signature: tàn nhang như hạt mưa trên mu bàn tay, aura: mưa phùn, áo choàng ướt. Alluring pose: reclining along the tub edge on one hip, propped on one elbow, legs stacked in one long elegant line, chin tilted up, lips softly parted. Barefoot; blushing cheeks, cat eyeliner, softly parted lips.
 
-SCENE & SYMBOLISM: the card's symbolism re-staged in a modern luxury bathroom: three spilled, two standing rendered as a glowing mirror hologram, suit objects arranged on the marble vanity, rainfall shower steam and warm LED accents, night city glow through frosted glass. Tarot emblem integrated naturally: three spilled, two standing. COUNT LOCK — EXACTLY 5 CHALICES (hard constraint; count before you draw).
+SCENE & SYMBOLISM (Rain-window melancholy): in a rain-window bathroom: dark elegant tile, a tall rain-streaked window with melancholy blue light, three chalices tipped and spilled on the ledge and two still standing full behind them. Tarot emblem integrated naturally: three spilled, two standing. COUNT LOCK — EXACTLY 5 CHALICES (hard constraint; count before you draw).
 The scene contains exactly 5 chalices — not 4, not 6.
-Placement is locked: exactly five chalices: three spilled and empty lying in the foreground plus two still upright and full standing on the bank behind him — 3 + 2 = 5; all five bowls countable, none hidden behind his cloak.
-Every one of the 5 must be fully visible: nothing occluded by a body, limb, cloth, cloud or another object, nothing fused, broken, cropped by the golden frame, or half-hidden behind a figure. Keep them at one consistent size, shape, material and color so they read as a single countable set, with a clear gap of background between each one. Place no other chalices anywhere else on the card — not in the frame, not in the background, not held by a figure, not as decoration. The emblem in the top medallion is a separate heraldic motif and does NOT count toward the 5. Before finishing, count them: 1 to 5. If the total is not 5, redraw.
+Placement is locked: exactly five chalices: three tipped and spilled on the ledge plus two still standing full behind them — 3 + 2 = 5; all five bowls countable
+Every one of the 5 must be fully visible: nothing occluded by a body, limb, cloth, steam or another object, nothing fused, broken, cropped or half-hidden behind a figure. Keep them at one consistent size, shape, material and color so they read as a single countable set, with a clear gap of background between each one. Place no other chalices anywhere else on the card — not in the frame, not in the background, not as decoration. The emblem is a separate heraldic motif and does NOT count toward the 5. Before finishing, count them: 1 to 5. If the total is not 5, redraw.
 
-DEPTH & LIGHT: soft steam layers diffusing warm LED and neon accents, wet marble and mirror reflections on soaked skin, cinematic warm-cool contrast, water droplets sparkling in the light shafts, faint golden sparkles in the mist.
+DEPTH & LIGHT: soft steam and light-shaft layers diffusing the bathroom's accent lighting (LED, neon, candle or skylight), wet tile and mirror reflections on soaked skin, cinematic warm-cool contrast, water droplets sparkling in the light shafts, faint golden sparkles in the mist.
+
+NO ARMOR ANYWHERE ON THE FIGURE — strictly no helmet, no breastplate, no gauntlets, no chainmail, no pauldrons, no metal plates, no knight costume pieces; she wears only the soaking-wet swimwear described above.
 
 At the bottom, centered: the title "FIVE OF CUPS" in antique-gold serif lettering matching reference 1. No numbers, no Roman numerals, no other text, no frame, no border, no banner, no watermark, no signature. Masterpiece manhwa illustration, portrait 7:12.
 ```

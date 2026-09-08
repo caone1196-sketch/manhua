@@ -1,12 +1,13 @@
-# EIGHT OF SWORDS (8) — Frameless Wet-Manhwa v2 · mode bathroom
+# EIGHT OF SWORDS (8) — Frameless Wet-Manhwa v2.2 · mode bathroom
 
 - **Slug:** `swords-08` | **Group:** swords
 - **Emblem:** eight swords in a ring
+- **Phong cách phòng tắm:** Ribbon ring
 - **Reference style/contour/lettering:** `major_08_strength.png`
 - **Reference wet fabric/swimwear:** `test_card_17_the_star.png`
 - **Outfit:** soaking-wet rose-pink micro string bikini with small satin bow accents (opaque swimwear, no see-through)
-- **Pose nghệ thuật:** reclining diagonal across the tub edge — hip line lifted, one leg extended in a long elegant line, one arm arched overhead
-- **Background mode:** bathroom
+- **Pose gợi cảm:** leaning forward over the vanity on both hands, weight low, looking into the lit mirror with a teasing smile, hips pushed back
+- **Background mode:** bathroom · **Giáp:** đã loại bỏ hoàn toàn (strip + negative)
 
 ## Prompt
 
@@ -21,14 +22,16 @@ GARMENT-TO-BODY DETAIL: thin strap tension lines pressing gently into shoulders 
 
 WET FABRIC (match reference 2): soaking-wet rose-pink micro string bikini with small satin bow accents — waterlogged darkened tone with a glossy wet sheen, fabric fully opaque, clinging like a second skin with zero loose folds, plastered wet wrinkles, water droplets beading on the fabric surface, tiny drips falling from the fabric edges; whole body wet with droplets and thin rivulets, wet gleaming hair strands; she is mid-shower under the rainfall head or just stepped out of the tub, so the soaked look reads naturally indoors.
 
-FIGURE: 20 years old, build: **A** mảnh mong manh, dáng co lại, hair: dark brown hair bound loosely with a crimson ribbon, eyes: fear-bright hazel, doe, viền nước mắt, skin: fair with glossy wet highlights, signature: vết bớt đỏ nhạt hình dải lụa trên mắt cá phải, aura: hoàng hôn, dây thắt, lưỡi kiếm. Pose (artistic figure study): reclining diagonal across the tub edge — hip line lifted, one leg extended in a long elegant line, one arm arched overhead; barefoot; blushing cheeks, cat eyeliner, softly parted lips with a confident gentle smile.
+FIGURE: 20 years old, build: **A** mảnh mong manh, dáng co lại, hair: dark brown hair bound loosely with a crimson ribbon, eyes: fear-bright hazel, doe, viền nước mắt, skin: fair with glossy wet highlights, signature: vết bớt đỏ nhạt hình dải lụa trên mắt cá phải, aura: hoàng hôn, dây thắt, lưỡi kiếm. Alluring pose: leaning forward over the vanity on both hands, weight low, looking into the lit mirror with a teasing smile, hips pushed back. Barefoot; blushing cheeks, cat eyeliner, softly parted lips.
 
-SCENE & SYMBOLISM: the card's symbolism re-staged in a modern luxury bathroom: eight swords in a ring rendered as a glowing mirror hologram, suit objects arranged on the marble vanity, rainfall shower steam and warm LED accents, night city glow through frosted glass. Tarot emblem integrated naturally: eight swords in a ring. COUNT LOCK — EXACTLY 8 SWORDS (hard constraint; count before you draw).
+SCENE & SYMBOLISM (Ribbon ring): in a ribbon-ring bathroom: dusk light, soft gold ribbon motifs on the tile, eight slim crystal blades planted in one open ring around the freestanding tub — three in front of her, one at her left side, one at her right side, three behind her. Tarot emblem integrated naturally: eight swords in a ring. COUNT LOCK — EXACTLY 8 SWORDS (hard constraint; count before you draw).
 The scene contains exactly 8 swords — not 7, not 9.
-Placement is locked: eight swords planted in one open ring around her — THREE in front of her with two gaps between them, ONE at her left side, ONE at her right side, THREE behind her with two gaps between them; 3 + 1 + 1 + 3 = 8. Walk the ring and count the eight gaps of bare ground between neighbours: 1, 2, 3, 4, 5, 6, 7, 8. THIS CARD HAS ALREADY FAILED ONCE BY SHOWING NINE SWORDS: the usual mistake is adding one extra sword to the group behind her. Keep the group behind her at exactly THREE.
-Every one of the 8 must be fully visible: nothing occluded by a body, limb, cloth, cloud or another object, nothing fused, broken, cropped by the golden frame, or half-hidden behind a figure. Keep them at one consistent size, shape, material and color so they read as a single countable set, with a clear gap of background between each one. Place no other swords anywhere else on the card — not in the frame, not in the background, not held by a figure, not as decoration. The emblem in the top medallion is a separate heraldic motif and does NOT count toward the 8. Before finishing, count them: 1 to 8. If the total is not 8, redraw.
+Placement is locked: exactly eight crystal blades planted in one open ring around the freestanding tub — three in front of her, one at her left side, one at her right side, three behind her; keep the group behind her at exactly THREE, never four; 3 + 1 + 1 + 3 = 8
+Every one of the 8 must be fully visible: nothing occluded by a body, limb, cloth, steam or another object, nothing fused, broken, cropped or half-hidden behind a figure. Keep them at one consistent size, shape, material and color so they read as a single countable set, with a clear gap of background between each one. Place no other swords anywhere else on the card — not in the frame, not in the background, not as decoration. The emblem is a separate heraldic motif and does NOT count toward the 8. Before finishing, count them: 1 to 8. If the total is not 8, redraw.
 
-DEPTH & LIGHT: soft steam layers diffusing warm LED and neon accents, wet marble and mirror reflections on soaked skin, cinematic warm-cool contrast, water droplets sparkling in the light shafts, faint golden sparkles in the mist.
+DEPTH & LIGHT: soft steam and light-shaft layers diffusing the bathroom's accent lighting (LED, neon, candle or skylight), wet tile and mirror reflections on soaked skin, cinematic warm-cool contrast, water droplets sparkling in the light shafts, faint golden sparkles in the mist.
+
+NO ARMOR ANYWHERE ON THE FIGURE — strictly no helmet, no breastplate, no gauntlets, no chainmail, no pauldrons, no metal plates, no knight costume pieces; she wears only the soaking-wet swimwear described above.
 
 At the bottom, centered: the title "EIGHT OF SWORDS" in antique-gold serif lettering matching reference 1. No numbers, no Roman numerals, no other text, no frame, no border, no banner, no watermark, no signature. Masterpiece manhwa illustration, portrait 7:12.
 ```

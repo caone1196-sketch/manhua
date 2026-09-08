@@ -1,12 +1,13 @@
-# KING OF SWORDS (K) — Frameless Wet-Manhwa v2 · mode bathroom
+# KING OF SWORDS (K) — Frameless Wet-Manhwa v2.2 · mode bathroom
 
 - **Slug:** `swords-king` | **Group:** swords
 - **Emblem:** a sword between two wings
+- **Phong cách phòng tắm:** Twin-wing hall
 - **Reference style/contour/lettering:** `major_08_strength.png`
 - **Reference wet fabric/swimwear:** `test_card_17_the_star.png`
 - **Outfit:** soaking-wet rose-pink micro string bikini with small satin bow accents (opaque swimwear, no see-through)
-- **Pose nghệ thuật:** reclining diagonal across the tub edge — hip line lifted, one leg extended in a long elegant line, one arm arched overhead
-- **Background mode:** bathroom
+- **Pose gợi cảm:** kneeling upright on the bath mat, thighs close together, torso arched gracefully back, both arms lifting her wet hair, spine curved like a drawn bow, eyes closed in a soft sigh
+- **Background mode:** bathroom · **Giáp:** đã loại bỏ hoàn toàn (strip + negative)
 
 ## Prompt
 
@@ -21,14 +22,16 @@ GARMENT-TO-BODY DETAIL: thin strap tension lines pressing gently into shoulders 
 
 WET FABRIC (match reference 2): soaking-wet rose-pink micro string bikini with small satin bow accents — waterlogged darkened tone with a glossy wet sheen, fabric fully opaque, clinging like a second skin with zero loose folds, plastered wet wrinkles, water droplets beading on the fabric surface, tiny drips falling from the fabric edges; whole body wet with droplets and thin rivulets, wet gleaming hair strands; she is mid-shower under the rainfall head or just stepped out of the tub, so the soaked look reads naturally indoors.
 
-FIGURE: 25 years old, build: **B** cao, dáng thẩm phán uy nghi, hair: clean-cut raven hair crowned with sharp golden circlet, eyes: steel-grey, narrow, xét xử, skin: light olive with glossy wet highlights, signature: sẹo trắng mảnh trên ngón cái phải, aura: tòa án, ánh thép, công lý. Pose (artistic figure study): reclining diagonal across the tub edge — hip line lifted, one leg extended in a long elegant line, one arm arched overhead; barefoot; blushing cheeks, cat eyeliner, softly parted lips with a confident gentle smile.
+FIGURE: 25 years old, build: **B** cao, dáng thẩm phán uy nghi, hair: clean-cut raven hair crowned with sharp golden circlet, eyes: steel-grey, narrow, xét xử, skin: light olive with glossy wet highlights, signature: sẹo trắng mảnh trên ngón cái phải, aura: tòa án, ánh thép, công lý. Alluring pose: kneeling upright on the bath mat, thighs close together, torso arched gracefully back, both arms lifting her wet hair, spine curved like a drawn bow, eyes closed in a soft sigh. Barefoot; blushing cheeks, cat eyeliner, softly parted lips.
 
-SCENE & SYMBOLISM: the card's symbolism re-staged in a modern luxury bathroom: a sword between two wings rendered as a glowing mirror hologram, suit objects arranged on the marble vanity, rainfall shower steam and warm LED accents, night city glow through frosted glass. Tarot emblem integrated naturally: a sword between two wings. COUNT LOCK — EXACTLY 1 SWORD (hard constraint; count before you draw).
+SCENE & SYMBOLISM (Twin-wing hall): in a twin-wing bathroom: a high-ceilinged airy hall of white and gold, two wing-shaped gold wall sculptures flanking a tall throne chair beside the tub, one upright crystal blade standing between them. Tarot emblem integrated naturally: a sword between two wings. COUNT LOCK — EXACTLY 1 sword (hard constraint; count before you draw).
 The scene contains exactly 1 sword — not 0, not 2.
-Placement is locked: exactly one upright sword; no other blade.
-Every one of the 1 must be fully visible: nothing occluded by a body, limb, cloth, cloud or another object, nothing fused, broken, cropped by the golden frame, or half-hidden behind a figure. Keep them at one consistent size, shape, material and color so they read as a single countable set, with a clear gap of background between each one. Place no other sword anywhere else on the card — not in the frame, not in the background, not held by a figure, not as decoration. The emblem in the top medallion is a separate heraldic motif and does NOT count toward the 1. Before finishing, count them: 1 to 1. If the total is not 1, redraw.
+Placement is locked: exactly one upright crystal blade standing between the twin wing sculptures; no other blade
+Every one of the 1 must be fully visible: nothing occluded by a body, limb, cloth, steam or another object, nothing fused, broken, cropped or half-hidden behind a figure. Keep them at one consistent size, shape, material and color so they read as a single countable set, with a clear gap of background between each one. Place no other sword anywhere else on the card — not in the frame, not in the background, not as decoration. The emblem is a separate heraldic motif and does NOT count toward the 1. Before finishing, count them: 1 to 1. If the total is not 1, redraw.
 
-DEPTH & LIGHT: soft steam layers diffusing warm LED and neon accents, wet marble and mirror reflections on soaked skin, cinematic warm-cool contrast, water droplets sparkling in the light shafts, faint golden sparkles in the mist.
+DEPTH & LIGHT: soft steam and light-shaft layers diffusing the bathroom's accent lighting (LED, neon, candle or skylight), wet tile and mirror reflections on soaked skin, cinematic warm-cool contrast, water droplets sparkling in the light shafts, faint golden sparkles in the mist.
+
+NO ARMOR ANYWHERE ON THE FIGURE — strictly no helmet, no breastplate, no gauntlets, no chainmail, no pauldrons, no metal plates, no knight costume pieces; she wears only the soaking-wet swimwear described above.
 
 At the bottom, centered: the title "KING OF SWORDS" in antique-gold serif lettering matching reference 1. No numbers, no Roman numerals, no other text, no frame, no border, no banner, no watermark, no signature. Masterpiece manhwa illustration, portrait 7:12.
 ```

@@ -1,12 +1,13 @@
-# THE SUN (XIX) — Frameless Wet-Manhwa v2 · mode bathroom
+# THE SUN (XIX) — Frameless Wet-Manhwa v2.2 · mode bathroom
 
 - **Slug:** `19-sun` | **Group:** major
 - **Emblem:** a radiant sun face
+- **Phong cách phòng tắm:** Golden solarium
 - **Reference style/contour/lettering:** `major_08_strength.png`
 - **Reference wet fabric/swimwear:** `test_card_17_the_star.png`
 - **Outfit:** soaking-wet midnight-black micro string bikini with fine gold chain straps (opaque swimwear, no see-through)
-- **Pose nghệ thuật:** standing arabesque-like balance — weight on one leg, the other extended back resting on the tub rim, arms held in a high-low axis line like a dancer
-- **Background mode:** bathroom
+- **Pose gợi cảm:** seated in the shallow water facing the viewer, knees together tilted to one side, arms loosely crossed beneath her chest, shoulders glistening with droplets
+- **Background mode:** bathroom · **Giáp:** đã loại bỏ hoàn toàn (strip + negative)
 
 ## Prompt
 
@@ -21,11 +22,13 @@ GARMENT-TO-BODY DETAIL: thin strap tension lines pressing gently into shoulders 
 
 WET FABRIC (match reference 2): soaking-wet midnight-black micro string bikini with fine gold chain straps — waterlogged darkened tone with a glossy wet sheen, fabric fully opaque, clinging like a second skin with zero loose folds, plastered wet wrinkles, water droplets beading on the fabric surface, tiny drips falling from the fabric edges; whole body wet with droplets and thin rivulets, wet gleaming hair strands; she is mid-shower under the rainfall head or just stepped out of the tub, so the soaked look reads naturally indoors.
 
-FIGURE: 19 years old, build: **A** trẻ trung, gầy nhẹ, cong mềm vui vẻ, hair: radiant sunflower-blonde hair, bouncing loose curls garlanded in red blossoms, eyes: gold-green (moss-gold), round, cười long lanh, skin: honey with glossy wet highlights, signature: vệt tàn nhang vàng trên sống mũi, aura: hoa hướng dương, mùa hè. Pose (artistic figure study): standing arabesque-like balance — weight on one leg, the other extended back resting on the tub rim, arms held in a high-low axis line like a dancer; barefoot; blushing cheeks, cat eyeliner, softly parted lips with a confident gentle smile.
+FIGURE: 19 years old, build: **A** trẻ trung, gầy nhẹ, cong mềm vui vẻ, hair: radiant sunflower-blonde hair, bouncing loose curls garlanded in red blossoms, eyes: gold-green (moss-gold), round, cười long lanh, skin: honey with glossy wet highlights, signature: vệt tàn nhang vàng trên sống mũi, aura: hoa hướng dương, mùa hè. Alluring pose: seated in the shallow water facing the viewer, knees together tilted to one side, arms loosely crossed beneath her chest, shoulders glistening with droplets. Barefoot; blushing cheeks, cat eyeliner, softly parted lips.
 
-SCENE & SYMBOLISM: the card's symbolism re-staged in a modern luxury bathroom: a radiant sun face rendered as a glowing mirror hologram, suit objects arranged on the marble vanity, rainfall shower steam and warm LED accents, night city glow through frosted glass. Tarot emblem integrated naturally: a radiant sun face. COUNT LOCK: This card contains NO loose suit objects in the scene. Do not add random floating or decorative cups, swords, wands, or pentacles.
+SCENE & SYMBOLISM (Golden solarium): a radiant 20-year-old streamer in a golden solarium bathroom: a sun-face gold medallion above the tub, sunflower-yellow zellige tiles, fresh sunflowers in a vase, radiant perpetual-golden-hour light, sheer white curtains glowing. Tarot emblem integrated naturally: a radiant sun face. COUNT LOCK: This card contains NO loose suit objects in the scene. Do not add random floating or decorative cups, swords, wands, or pentacles.
 
-DEPTH & LIGHT: soft steam layers diffusing warm LED and neon accents, wet marble and mirror reflections on soaked skin, cinematic warm-cool contrast, water droplets sparkling in the light shafts, faint golden sparkles in the mist.
+DEPTH & LIGHT: soft steam and light-shaft layers diffusing the bathroom's accent lighting (LED, neon, candle or skylight), wet tile and mirror reflections on soaked skin, cinematic warm-cool contrast, water droplets sparkling in the light shafts, faint golden sparkles in the mist.
+
+NO ARMOR ANYWHERE ON THE FIGURE — strictly no helmet, no breastplate, no gauntlets, no chainmail, no pauldrons, no metal plates, no knight costume pieces; she wears only the soaking-wet swimwear described above.
 
 At the bottom, centered: the title "THE SUN" in antique-gold serif lettering matching reference 1. No numbers, no Roman numerals, no other text, no frame, no border, no banner, no watermark, no signature. Masterpiece manhwa illustration, portrait 7:12.
 ```
