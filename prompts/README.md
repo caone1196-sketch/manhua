@@ -15,14 +15,15 @@ Tất cả prompt được viết **dựa trên bức ảnh The Star thực tế
 | Nhân vật | Gái trẻ, tóc thẳng dài, gương mặt tinh tế trầm tĩnh, trang phục voan mỏng |
 | Bố cục | Dọc full-bleed, **chữ gold serif trang trí ở trên cùng giữa trời**, KHÔNG khung viền, KHÔNG chữ khác |
 
-## Quy tắc viết lại 78 lá
+## Quy tắc viết 78 lá
 
-1. **Style block cuối mỗi prompt là như nhau 100%** — trích từ ảnh mẫu (kỹ thuật + bầu trời + bố cục + chữ). Không thay đổi.
-2. **Thế giới chung**: đêm sao, suối, bờ cỏ, hoa dại trắng-tím, trăng — đúng như ảnh mẫu. Không còn hoàng hôn/rạng đông/giờ vàng tự bịa.
-3. **Biểu tượng từng lá**: Major = đúng icon cổ điển (sao, trăng tròn, tháp, bánh xe, mặt trời...) đặt trong thế giới trên. Minor = **số lượng vật của bộ** (gậy nở hoa, chén, kiếm, đồng xu vàng) xuất hiện đúng số của bậc bài, nằm tự nhiên trong cảnh.
-4. **Nhân vật**: mỗi lá một nhân vật riêng (tóc, tuổi, vóc dáng, phụ kiện, khí chất). Court cards (Page/Knight/Queen/King) mỗi bộ là 4 nhân vật cố định.
-5. **Trang phục**: cùng chất liệu/gia (voan mỏng, lụa, vải dệt hoa văn, điểm gold) nhưng **khác màu & kiểu dáng** từng lá.
-6. **6 lá đã sinh** (The Star, Fool, Magician, High Priestess, Empress, Emperor) — prompt mô tả **đúng ảnh thực tế** đã tạo, dùng làm chuẩn đối chiếu.
+1. **Style block cuối mỗi prompt giống hệt nhau 100%** — trích từ ảnh mẫu (kỹ thuật + bầu trời + bố cục + chữ). Không thay đổi.
+2. **Thế giới chung**: đêm sao, suối, bờ cỏ, hoa dại trắng-tím, trăng — đúng như ảnh mẫu.
+3. **⚠️ Chủ đề trang phục bắt buộc: bikini voan trong suốt** — mọi nhân vật đều mặc *"ultra-sheer see-through chiffon bikini in <màu>, glistening water droplets"*. Màu theo bộ: Major = trắng/xanh ngọc & pastel; Wands = cam/hồng ấm; Cups = xanh/tím mát; Swords = bạc/cyan; Pentacles = xanh lá/vàng gold. Kiểu dáng có thể kèm veil/cape mỏng, họa tiết thêu tùy lá.
+4. **⚠️ Toàn bộ 78 nhân vật là NỮ** — không có nam. Court cards mỗi bộ là 4 nhân vật nữ cố định: Page (trẻ), Knight (mạnh mẽ, cưỡi ngựa), Queen (sang trọng), King (nữ trưởng giả lớn tuổi, vương miện, khí chất quyền lực).
+5. **Nhân vật**: mỗi lá một nhân vật riêng (tóc, tuổi, vóc dáng, phụ kiện, khí chất).
+6. **Biểu tượng từng lá**: Major = icon cổ điển; Minor = số vật của bộ đúng số bậc bài, nằm tự nhiên trong cảnh.
+7. **Lá chuẩn đối chiếu**: `images/the-star.png` (mẫu) và `images/the-fool.png` (đã tạo lại đúng chủ đề).
 
 ## Cấu trúc
 
