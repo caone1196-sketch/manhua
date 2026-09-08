@@ -1,11 +1,12 @@
-# NINE OF SWORDS (9) — Frameless Wet-Manhwa v2 · mode modern
+# NINE OF SWORDS (9) — Frameless Wet-Manhwa v2 · mode bathroom
 
 - **Slug:** `swords-09` | **Group:** swords
 - **Emblem:** nine swords on a wall
 - **Reference style/contour/lettering:** `major_08_strength.png`
 - **Reference wet fabric/swimwear:** `test_card_17_the_star.png`
-- **Outfit:** soaking-wet silver-white micro string bikini (opaque swimwear, no see-through)
-- **Background mode:** modern
+- **Outfit:** soaking-wet metallic gold micro string bikini with opaque lace-trim edges (opaque swimwear, no see-through)
+- **Pose nghệ thuật:** seated cross-knee figure study — back straight, one arm resting on the knee, the other extended along the seat, chin slightly lifted
+- **Background mode:** bathroom
 
 ## Prompt
 
@@ -18,16 +19,16 @@ ART STYLE (match reference 1): Korean manhwa webtoon rendering — crisp clean l
 
 GARMENT-TO-BODY DETAIL: thin strap tension lines pressing gently into shoulders and hips, fabric edges precisely tracing the underbust curve and hip crest, subtle soft skin swell over each bikini edge, delicate cast-shadow lines under the fabric rims, small tension folds in the wet fabric following the body topography, side-tie ribbon knots pulling the hip line with tiny gathers, specular highlights along every seam and strap.
 
-WET FABRIC (match reference 2): soaking-wet silver-white micro string bikini — waterlogged darkened tone with a glossy wet sheen, fabric fully opaque, clinging like a second skin with zero loose folds, plastered wet wrinkles, water droplets beading on the fabric surface, tiny drips falling from the fabric edges; whole body wet with droplets and thin rivulets, wet gleaming hair strands; she has just stepped out of the penthouse jacuzzi so the wet look reads naturally in the modern interior.
+WET FABRIC (match reference 2): soaking-wet metallic gold micro string bikini with opaque lace-trim edges — waterlogged darkened tone with a glossy wet sheen, fabric fully opaque, clinging like a second skin with zero loose folds, plastered wet wrinkles, water droplets beading on the fabric surface, tiny drips falling from the fabric edges; whole body wet with droplets and thin rivulets, wet gleaming hair strands; she is mid-shower under the rainfall head or just stepped out of the tub, so the soaked look reads naturally indoors.
 
-FIGURE: 22 years old, build: **A** mảnh, dáng ngồi trong váy ngủ, gầy, hair: long black hair falling in sorrowful waves over her weeping hands, eyes: grey-brown buồn, downturned, ướt, skin: porcelain with glossy wet highlights, signature: nốt ruồi hình giọt nước trên má phải, aura: đêm trằn trọc, tiếng khóc, gió. Pose: graceful S-curve contrapposto where the scene allows (hip popped, back slightly arched, one knee softly bent, barefoot); blushing cheeks, cat eyeliner, softly parted lips with a confident gentle smile.
+FIGURE: 22 years old, build: **A** mảnh, dáng ngồi trong váy ngủ, gầy, hair: long black hair falling in sorrowful waves over her weeping hands, eyes: grey-brown buồn, downturned, ướt, skin: porcelain with glossy wet highlights, signature: nốt ruồi hình giọt nước trên má phải, aura: đêm trằn trọc, tiếng khóc, gió. Pose (artistic figure study): seated cross-knee figure study — back straight, one arm resting on the knee, the other extended along the seat, chin slightly lifted; barefoot; blushing cheeks, cat eyeliner, softly parted lips with a confident gentle smile.
 
-SCENE & SYMBOLISM: the card's symbolism re-staged in a modern luxury penthouse streamer studio: nine swords on a wall rendered as a glowing holographic emblem above her, PC monitors and RGB neon ambient lighting, the suit objects arranged on her streaming desk, night city skyline bokeh through floor-to-ceiling windows. Tarot emblem integrated naturally: nine swords on a wall. COUNT LOCK — EXACTLY 9 SWORDS (hard constraint; count before you draw).
+SCENE & SYMBOLISM: the card's symbolism re-staged in a modern luxury bathroom: nine swords on a wall rendered as a glowing mirror hologram, suit objects arranged on the marble vanity, rainfall shower steam and warm LED accents, night city glow through frosted glass. Tarot emblem integrated naturally: nine swords on a wall. COUNT LOCK — EXACTLY 9 SWORDS (hard constraint; count before you draw).
 The scene contains exactly 9 swords — not 8, not 10.
 Placement is locked: exactly nine swords mounted on the dark wall in three rows of three — 3 + 3 + 3 = 9; a neat 3 x 3 grid of horizontal blades, all nine countable, none hidden behind her head or hands.
 Every one of the 9 must be fully visible: nothing occluded by a body, limb, cloth, cloud or another object, nothing fused, broken, cropped by the golden frame, or half-hidden behind a figure. Keep them at one consistent size, shape, material and color so they read as a single countable set, with a clear gap of background between each one. Place no other swords anywhere else on the card — not in the frame, not in the background, not held by a figure, not as decoration. The emblem in the top medallion is a separate heraldic motif and does NOT count toward the 9. Before finishing, count them: 1 to 9. If the total is not 9, redraw.
 
-DEPTH & LIGHT: layered neon RGB ambient lighting, glowing monitor and hologram reflections on wet skin, cinematic warm-cool contrast, night city bokeh through floor-to-ceiling windows, faint golden sparkles in the air.
+DEPTH & LIGHT: soft steam layers diffusing warm LED and neon accents, wet marble and mirror reflections on soaked skin, cinematic warm-cool contrast, water droplets sparkling in the light shafts, faint golden sparkles in the mist.
 
 At the bottom, centered: the title "NINE OF SWORDS" in antique-gold serif lettering matching reference 1. No numbers, no Roman numerals, no other text, no frame, no border, no banner, no watermark, no signature. Masterpiece manhwa illustration, portrait 7:12.
 ```

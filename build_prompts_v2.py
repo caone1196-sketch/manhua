@@ -22,7 +22,63 @@ import os
 import re
 
 OUT_DIR = "prompts_frameless_v2"
-BACKGROUND_MODE = "modern"  # "modern" | "classic"
+BACKGROUND_MODE = "bathroom"  # "bathroom" | "modern" | "classic"
+
+# Tùy chọn bikini (xoay vòng theo thứ tự lá): (màu, chi tiết accent) — luôn opaque + soaked
+BIKINI_OPTIONS = [
+    ("pearl-white", "with tiny gold star charms"),
+    ("midnight-black", "with fine gold chain straps"),
+    ("aqua-teal", "with side-tie ribbons"),
+    ("rose-pink", "with small satin bow accents"),
+    ("metallic gold", "with opaque lace-trim edges"),
+    ("cherry-red", "with tiny pearl beads"),
+]
+
+# Tư thế nghệ thuật (figure-study / dance) xoay vòng theo thứ tự lá
+ARTISTIC_POSES = [
+    "seated on the tub edge in a figure-study diagonal — one knee drawn up, the other leg extended "
+    "toe-deep in the water, arms forming a soft diagonal line",
+    "standing arabesque-like balance — weight on one leg, the other extended back resting on the tub "
+    "rim, arms held in a high-low axis line like a dancer",
+    "mermaid sit on the marble ledge — knees together tilted to one side, torso upright with a gentle "
+    "twist, one arm extended along the ledge",
+    "reclining diagonal across the tub edge — hip line lifted, one leg extended in a long elegant line, "
+    "one arm arched overhead",
+    "seated cross-knee figure study — back straight, one arm resting on the knee, the other extended "
+    "along the seat, chin slightly lifted",
+    "kneeling stretch pose — one knee on the bath mat, torso arched back gracefully, both arms curving "
+    "overhead like a dancer",
+]
+
+# Bối cảnh nhà tắm hiện đại (symbolism từng lá được re-stage)
+BATHROOM_SCENES = {
+    "00-fool": "a playful 19-year-old streamer in a modern luxury bathroom at sunrise: a glowing digital "
+               "white rose in one hand, a cute white Pomeranian puppy on the fluffy bath mat beside her, "
+               "steam curling off the water, floor-to-ceiling frosted glass with a cyberpunk city glow beyond",
+    "01-magician": "a charismatic 22-year-old streamer in a modern luxury bathroom: beside a long marble "
+                   "vanity with a lit mirror wall, one hand raising a glowing wand-shaped stream mic, the "
+                   "other pointing to the vanity where exactly four objects rest: one flaming wand diffuser, "
+                   "one glowing water cup, one crystal cyber-blade perfume bottle, one golden crypto coin "
+                   "paperweight, black roses in an LED vase behind",
+    "02-priestess": "a serene 23-year-old streamer in a modern luxury bathroom: between two tall rainfall "
+                    "shower columns (one black stone, one white marble), a glowing holographic crescent moon "
+                    "projected on the wet floor beneath her feet, a waterproof digital tablet of secret lore "
+                    "resting in her lap, a pomegranate hologram shimmering in the steam",
+    "03-empress": "a luxurious 24-year-old streamer in a sunlit modern bathroom garden: amid potted plants "
+                  "and fresh fruit trays, golden morning light through frosted skylights, holding a golden "
+                  "smartphone scepter, a heart-shaped Venus neon emblem glowing on the tiled wall",
+    "04-emperor": "a poised 25-year-old streamer in a modern luxury steam bathroom: on a stone bench throne "
+                  "beneath a bronze ram-head shower fixture, volcanic-red LED backlighting along the marble, "
+                  "holding a golden ankh stylus, two ram-head sculptures on the vanity shelf, a barren "
+                  "mountain tile mural behind, steam rolling low",
+}
+BATHROOM_FALLBACK = ("the card's symbolism re-staged in a modern luxury bathroom: {emblem} rendered as a "
+                     "glowing mirror hologram, suit objects arranged on the marble vanity, rainfall shower "
+                     "steam and warm LED accents, night city glow through frosted glass")
+
+DEPTH_BATHROOM = ("DEPTH & LIGHT: soft steam layers diffusing warm LED and neon accents, wet marble and "
+                  "mirror reflections on soaked skin, cinematic warm-cool contrast, water droplets sparkling "
+                  "in the light shafts, faint golden sparkles in the mist.")
 
 GROUP_OUTFIT = {
     "major": "pearl-white",
@@ -153,9 +209,9 @@ ART STYLE (match reference 1): Korean manhwa webtoon rendering — crisp clean l
 
 GARMENT-TO-BODY DETAIL: thin strap tension lines pressing gently into shoulders and hips, fabric edges precisely tracing the underbust curve and hip crest, subtle soft skin swell over each bikini edge, delicate cast-shadow lines under the fabric rims, small tension folds in the wet fabric following the body topography, side-tie ribbon knots pulling the hip line with tiny gathers, specular highlights along every seam and strap.
 
-WET FABRIC (match reference 2): soaking-wet {outfit} micro string bikini — waterlogged darkened tone with a glossy wet sheen, fabric fully opaque, clinging like a second skin with zero loose folds, plastered wet wrinkles, water droplets beading on the fabric surface, tiny drips falling from the fabric edges; whole body wet with droplets and thin rivulets, wet gleaming hair strands; she has just stepped out of the penthouse jacuzzi so the wet look reads naturally in the modern interior.
+WET FABRIC (match reference 2): soaking-wet {outfit} micro string bikini {accent} — waterlogged darkened tone with a glossy wet sheen, fabric fully opaque, clinging like a second skin with zero loose folds, plastered wet wrinkles, water droplets beading on the fabric surface, tiny drips falling from the fabric edges; whole body wet with droplets and thin rivulets, wet gleaming hair strands; she is mid-shower under the rainfall head or just stepped out of the tub, so the soaked look reads naturally indoors.
 
-FIGURE: {char_spec} Pose: graceful S-curve contrapposto where the scene allows (hip popped, back slightly arched, one knee softly bent, barefoot); blushing cheeks, cat eyeliner, softly parted lips with a confident gentle smile.
+FIGURE: {char_spec} Pose (artistic figure study): {pose}; barefoot; blushing cheeks, cat eyeliner, softly parted lips with a confident gentle smile.
 
 SCENE & SYMBOLISM: {scene}. Tarot emblem integrated naturally: {emblem}. {count_lock}
 
@@ -169,7 +225,8 @@ MD_TEMPLATE = """# {title} ({n}) — Frameless Wet-Manhwa v2 · mode {mode}
 - **Emblem:** {emblem}
 - **Reference style/contour/lettering:** `major_08_strength.png`
 - **Reference wet fabric/swimwear:** `test_card_17_the_star.png`
-- **Outfit:** soaking-wet {outfit} micro string bikini (opaque swimwear, no see-through)
+- **Outfit:** soaking-wet {outfit} micro string bikini {accent} (opaque swimwear, no see-through)
+- **Pose nghệ thuật:** {pose}
 - **Background mode:** {mode}
 
 ## Prompt
@@ -257,12 +314,19 @@ def main():
         slug = c["slug"]
         title = c["title"]
         outfit = GROUP_OUTFIT.get(c["group"], "pearl-white")
+        idx = data["cards"].index(c)
+        bikini_color, bikini_accent = BIKINI_OPTIONS[idx % len(BIKINI_OPTIONS)]
+        pose = ARTISTIC_POSES[idx % len(ARTISTIC_POSES)]
         if BACKGROUND_MODE == "modern":
             scene = MODERN_SCENES.get(slug, MODERN_FALLBACK.format(emblem=c["emblem"]))
             depth = DEPTH_MODERN
+        elif BACKGROUND_MODE == "bathroom":
+            scene = BATHROOM_SCENES.get(slug, BATHROOM_FALLBACK.format(emblem=c["emblem"]))
+            depth = DEPTH_BATHROOM
         else:
             scene = sanitize_scene(c["scene"])
             depth = DEPTH_CLASSIC
+        outfit = bikini_color
         prompt = PROMPT_TEMPLATE.format(
             title=title,
             outfit=outfit,
@@ -271,6 +335,8 @@ def main():
             emblem=c["emblem"],
             count_lock=c.get("count_lock", ""),
             depth=depth,
+            accent=bikini_accent,
+            pose=pose,
         )
         all_prompts[slug] = prompt
         md = MD_TEMPLATE.format(
@@ -280,6 +346,8 @@ def main():
             group=c["group"],
             emblem=c["emblem"],
             outfit=outfit,
+            accent=bikini_accent,
+            pose=pose,
             mode=BACKGROUND_MODE,
             prompt=prompt,
         )
