@@ -140,17 +140,24 @@ POSE_OVERRIDES = {
                "through the air into the second golden chalice held low in her other hand, "
                "elbows forming one flowing diagonal line, head turned back over her shoulder "
                "with a serene smoldering half-smile, hair floating weightless in the steam",
-    # Death: nằm trong bồn nước đen giữa hoa hồng trắng — tự nhiên gợi cảm, 1 bên dây tuột
-    "13-death": "lying back in the still black water of the marble tub among the floating "
-               "five-petaled white roses, body a natural languid S-line — head tipped back "
-               "against the rolled marble rim, ice-blue eyes half-open in a cold distant "
-               "gaze, lips softly parted; both arms raised languidly above her head and "
-               "crossed on the rim, water streaming down her forearms; one knee lifted clear "
-               "of the black surface, the other leg stretched long beneath the roses; the "
-               "fine gold chain strap on one shoulder has slipped down off her shoulder, the "
-               "soaked black fabric sitting slightly askew yet still fully covering and "
-               "opaque; bone-platinum hair fanning out across the black water like spilled "
-               "silver ink, a single white petal resting on her collarbone",
+    # Death: nằm trong bồn nước đen — ngập nước THẬT: trên nước bóng ướt, dưới nước chìm mờ
+    "13-death": "lying back in the marble tub among the floating five-petaled white roses, "
+               "REALISTICALLY HALF-SUBMERGED: the ink-black waterline crosses her body just "
+               "under her chest — ABOVE the waterline her shoulders, collarbones and lifted "
+               "knee glisten with wet skin and clinging droplets, while BELOW the waterline "
+               "her torso, hips and one stretched leg sink out of sight into the black "
+               "water, readable only as a faint pale refracted blur beneath the surface; "
+               "her head tips back against the rolled marble rim above the water, ice-blue "
+               "eyes half-open in a cold distant gaze, lips softly parted; one arm rests on "
+               "the rim above the water, the other is submerged to the elbow with only the "
+               "forearm and dripping hand above; one knee breaks the surface with a thin "
+               "sheet of water sliding off it, small ripples lapping where the water meets "
+               "her skin; her bone-platinum hair clings to the water surface in natural "
+               "separate strands — half floating ON the black water, half draped wet over "
+               "the rim — not an impossible fan; the fine gold chain strap on one shoulder "
+               "has slipped down off her shoulder, the soaked black fabric sitting slightly "
+               "askew yet still fully covering and opaque; a single white petal resting on "
+               "her collarbone above the waterline",
 }
 
 # ---------------------------------------------------------------------------
