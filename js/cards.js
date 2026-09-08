@@ -9,6 +9,11 @@ const ARTWORK = [
   { src: "images/capture4.png", label: "Artwork 03" },
   { src: "images/capture5.png", label: "Artwork 04" },
   { src: "images/the-star.png", label: "The Star (XVII)" },
+  { src: "images/the-fool.png", label: "The Fool (0)" },
+  { src: "images/the-magician.png", label: "The Magician (I)" },
+  { src: "images/the-high-priestess.png", label: "The High Priestess (II)" },
+  { src: "images/the-empress.png", label: "The Empress (III)" },
+  { src: "images/the-emperor.png", label: "The Emperor (IV)" },
 ];
 
 /** Khung bài: nền, màu viền, màu chữ, màu nền khi ảnh không lấp đầy */
