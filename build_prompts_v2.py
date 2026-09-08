@@ -120,13 +120,15 @@ POSE_OVERRIDES = {
                "relaxed hand cradles its flaming mane — the beast's eyes half-closed in total "
                "docile trust, mouth softly closed, completely tamed by her tenderness, "
                "exactly one lion and no other animals in the scene",
-    # Justice: tư thế cân bằng — kiếm pha lê dựng đứng bên trái như trượng nghi thức
-    "11-justice": "standing in poised sensual contrapposto on the wet striped marble, weight "
-               "on one leg, hip popped, spine tall and straight; her LEFT hand holds the slim "
-               "crystal blade perfectly UPRIGHT at her side like a ceremonial staff, and her "
-               "RIGHT hand slowly gathers a white towel low around her hips, one shoulder "
-               "bare, water still streaming down her collarbones, her gaze level and "
-               "unblinking straight at the viewer",
+    # Justice: góc 3/4, mặt hơi ngửa sau, kiếm dựng trước mặt, tay kia buông sau cầm cán cân
+    "11-justice": "posed in a three-quarter body angle on the wet striped marble, weight on "
+               "one leg, hip softly popped; her chin lifted and face tilted slightly back, "
+               "gazing level and unblinking at the viewer down the line of the slim crystal "
+               "blade she raises UPRIGHT in front of her face in one hand — the blade held "
+               "vertical at eye level, parallel to her cheek, water droplets sliding down its "
+               "edge; her other arm hangs loose and relaxed behind her, fingers casually "
+               "holding a small golden balance scale whose two pans hang perfectly level, "
+               "shoulders bare, water still streaming down her collarbones",
     # Temperance: hai chalice rót dòng nước mỏng — nhìn lại qua vai
     "14-temperance": "standing in graceful contrapposto between the two basins, one arm raised "
                "high tipping a golden chalice so a single THIN unbroken stream of water pours "
@@ -209,8 +211,9 @@ BATHROOM_STYLES = {
     "11-justice": ("Monochrome scales bath",
         "a composed 23-year-old streamer in a monochrome justice bathroom: stark black-and-white "
         "striped marble, two gold balance-scale towel racks perfectly level, a vertical sheet of "
-        "falling water splitting evenly between twin basins, one slim crystal blade held upright in "
-        "her left hand"),
+        "falling water splitting evenly between twin basins, one slim crystal blade raised upright "
+        "before her face in one hand and a small golden balance scale hanging level from her "
+        "other hand behind her"),
     "12-hanged": ("Inversion silk studio",
         "a dreamy 22-year-old streamer in an inversion-studio bathroom: a mirrored ceiling, a soft "
         "champagne silk aerial hammock hanging beside the tub, a living green branch suspended "
