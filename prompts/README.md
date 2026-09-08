@@ -20,8 +20,8 @@ Tất cả prompt được viết **dựa trên bức ảnh The Star thực tế
 1. **Style block cuối mỗi prompt giống hệt nhau 100%** — trích từ ảnh mẫu (kỹ thuật + bầu trời + bố cục + chữ). Không thay đổi.
 2. **Thế giới chung**: đêm sao, suối, bờ cỏ, hoa dại trắng-tím, trăng — đúng như ảnh mẫu.
 3. **⚠️ Chủ đề trang phục bắt buộc: bikini voan trong suốt** — mọi nhân vật đều mặc *"ultra-sheer see-through chiffon bikini in <màu>, glistening water droplets"*. Màu theo bộ: Major = trắng/xanh ngọc & pastel; Wands = cam/hồng ấm; Cups = xanh/tím mát; Swords = bạc/cyan; Pentacles = xanh lá/vàng gold. Kiểu dáng có thể kèm veil/cape mỏng, họa tiết thêu tùy lá.
-4. **⚠️ Toàn bộ 78 nhân vật là NỮ** — không có nam. Court cards mỗi bộ là 4 nhân vật nữ cố định: Page (trẻ), Knight (mạnh mẽ, cưỡi ngựa), Queen (sang trọng), King (nữ trưởng giả lớn tuổi, vương miện, khí chất quyền lực).
-5. **Nhân vật**: mỗi lá một nhân vật riêng (tóc, tuổi, vóc dáng, phụ kiện, khí chất).
+4. **⚠️ Toàn bộ 78 nhân vật là NỮ, tuổi từ 20 đến 23** — không có nam, không có nhân vật ngoài khoảng 20–23 tuổi (không có trẻ em, không có người già). Court cards mỗi bộ là 4 nhân vật nữ cố định trong độ tuổi này: Page (20–21, trẻ trung), Knight (21–22, mạnh mẽ, cưỡi ngựa), Queen (22–23, sang trọng), King (23, trưởng thành quyền lực, vương miện, khí chất uy nghi — không mô tả lớn tuổi).
+5. **Nhân vật**: mỗi lá một nhân vật riêng (tóc, tuổi 20–23 ghi rõ trong prompt, vóc dáng, phụ kiện, khí chất).
 6. **Biểu tượng từng lá**: Major = icon cổ điển; Minor = số vật của bộ đúng số bậc bài, nằm tự nhiên trong cảnh.
 7. **Lá chuẩn đối chiếu**: `images/the-star.png` (mẫu) và `images/the-fool.png` (đã tạo lại đúng chủ đề).
 
