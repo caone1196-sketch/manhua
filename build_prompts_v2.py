@@ -140,6 +140,17 @@ POSE_OVERRIDES = {
                "through the air into the second golden chalice held low in her other hand, "
                "elbows forming one flowing diagonal line, head turned back over her shoulder "
                "with a serene smoldering half-smile, hair floating weightless in the steam",
+    # Death: nằm trong bồn nước đen giữa hoa hồng trắng — tự nhiên gợi cảm, 1 bên dây tuột
+    "13-death": "lying back in the still black water of the marble tub among the floating "
+               "five-petaled white roses, body a natural languid S-line — head tipped back "
+               "against the rolled marble rim, ice-blue eyes half-open in a cold distant "
+               "gaze, lips softly parted; both arms raised languidly above her head and "
+               "crossed on the rim, water streaming down her forearms; one knee lifted clear "
+               "of the black surface, the other leg stretched long beneath the roses; the "
+               "fine gold chain strap on one shoulder has slipped down off her shoulder, the "
+               "soaked black fabric sitting slightly askew yet still fully covering and "
+               "opaque; bone-platinum hair fanning out across the black water like spilled "
+               "silver ink, a single white petal resting on her collarbone",
 }
 
 # ---------------------------------------------------------------------------
@@ -224,10 +235,12 @@ BATHROOM_STYLES = {
         "champagne silk aerial hammock hanging beside the tub, a living green branch suspended "
         "upside-down overhead dripping dew into the bath, morning light through a high slot window"),
     "13-death": ("Gothic onyx & lilies",
-        "a transformative 23-year-old streamer in a gothic onyx bathroom: black onyx walls, a white "
-        "marble tub ringed with white lilies, five-petaled white roses floating on still black "
-        "water, a faint silver skull motif etched in the fogged mirror, pale moonlight through a "
-        "gothic arched window"),
+        "a transformative 22-year-old streamer in a haunting gothic onyx bathroom: black onyx "
+        "walls drinking the light, a white marble tub ringed with wilting white lilies whose "
+        "petal tips curl brown, five-petaled white roses drifting on still ink-black water, thin "
+        "cold mist crawling low across the water surface, one single white rose petal falling "
+        "through a pale moonbeam from the gothic arched window, drifting fog outside the glass, "
+        "and a faint silver skull motif glowing softly in the fogged mirror"),
     "14-temperance": ("Zen ryokan ofuro",
         "a balanced 22-year-old streamer in a zen ryokan bathroom: a hinoki cypress ofuro tub, one "
         "stone waterfall basin pouring in an endless cycle into a second lower basin, irises in a "
@@ -632,6 +645,15 @@ DEPTH_BATHROOM = ("DEPTH & LIGHT: soft steam and light-shaft layers diffusing th
                   "reflections on soaked skin, cinematic warm-cool contrast, water droplets "
                   "sparkling in the light shafts, faint golden sparkles in the mist.")
 
+# Ánh sáng ghi đè theo từng lá (ưu tiên hơn DEPTH_BATHROOM)
+DEPTH_OVERRIDES = {
+    "13-death": ("DEPTH & LIGHT: layered cold moonlight and crawling mist, thin fog drifting low "
+                 "over the black water, silver-blue rim light tracing her wet skin and the "
+                 "floating white roses, wet onyx and mirror reflections, muted cinematic cold "
+                 "palette, a single rose petal falling through the moonbeam, faint ghost-light "
+                 "wisps curling in the steam"),
+}
+
 # ---------------------------------------------------------------------------
 # LOẠI BỎ TOÀN BỘ GIÁP — thay thế cụm từ giáp trong spec cũ bằng mô tả không giáp
 # ---------------------------------------------------------------------------
@@ -1011,7 +1033,7 @@ def main():
 
         if BACKGROUND_MODE == "bathroom":
             style_name, scene = BATHROOM_STYLES[slug]
-            depth = DEPTH_BATHROOM
+            depth = DEPTH_OVERRIDES.get(slug, DEPTH_BATHROOM)
             count_lock = bathroom_count_lock(c, slug)
         elif BACKGROUND_MODE == "modern":
             style_name = "modern penthouse"
