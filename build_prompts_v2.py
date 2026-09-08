@@ -76,6 +76,17 @@ ALLURING_POSES = [
     "one shoulder bare, towel still trailing in the water",
 ]
 
+# Pose ghi đè theo yêu cầu riêng cho từng lá (ưu tiên hơn xoay vòng)
+POSE_OVERRIDES = {
+    # The Fool: đi trên mép bể bơi vô cực sân thượng, cầm hoa hồng trắng, chó theo sau
+    "00-fool": "walking barefoot along the infinity pool's wet stone coping like a dancer on a "
+               "wire, one foot precisely before the other, hips swaying in a soft alluring "
+               "S-curve, torso lightly arched, one hand raised gracefully holding the single "
+               "white rose, glancing back over her shoulder at the viewer with a carefree "
+               "inviting smile while her white Pomeranian puppy trots faithfully behind her "
+               "along the pool rim",
+}
+
 # ---------------------------------------------------------------------------
 # 78 PHONG CÁCH PHÒNG TẮM RIÊNG BIỆT — slug: (tên style, mô tả bối cảnh)
 # Biểu tượng tarot của từng lá (emblem + suit objects) được tái dựng trong
@@ -83,11 +94,12 @@ ALLURING_POSES = [
 # ---------------------------------------------------------------------------
 BATHROOM_STYLES = {
     # ------------------------- MAJOR ARCANA (22) -------------------------
-    "00-fool": ("Scandi sunrise spa",
-        "a playful 19-year-old streamer in a Scandinavian sunrise spa bathroom: pale birch-slat "
-        "walls, a round white freestanding tub, floor-to-ceiling frosted glass glowing with a "
-        "cyberpunk sunrise city beyond, steam curling off the water, a cute white Pomeranian "
-        "puppy waiting on the fluffy bath mat, a single glowing digital white rose in her hand"),
+    "00-fool": ("Rooftop infinity pool sunrise",
+        "a playful 19-year-old streamer on a high-rise rooftop infinity pool at sunrise: the pool "
+        "water merging seamlessly with the glowing cyberpunk sunrise skyline beyond the edge, a "
+        "long wet stone pool coping stretching in a clean line, steam curling off the warm water, "
+        "skyline lights reflecting in the calm pool surface, a cute white Pomeranian puppy "
+        "trotting faithfully behind her along the pool rim, a single fresh white rose in her hand"),
     "01-magician": ("Marble vanity mirror wall",
         "a charismatic 22-year-old streamer in a marble magician's bathroom: a long double "
         "vanity beneath a floor-to-ceiling backlit mirror wall, warm brass fixtures, exactly "
@@ -547,10 +559,10 @@ BATHROOM_LAYOUTS = {
     "pentacles-king": "exactly one coin glowing above the bull's horns; no other coin",
 }
 
-DEPTH_BATHROOM = ("DEPTH & LIGHT: soft steam and light-shaft layers diffusing the bathroom's accent "
-                  "lighting (LED, neon, candle or skylight), wet tile and mirror reflections on "
-                  "soaked skin, cinematic warm-cool contrast, water droplets sparkling in the light "
-                  "shafts, faint golden sparkles in the mist.")
+DEPTH_BATHROOM = ("DEPTH & LIGHT: soft steam and light-shaft layers diffusing the scene's accent "
+                  "lighting (LED, neon, candle, skylight or sunrise glow), wet tile and mirror "
+                  "reflections on soaked skin, cinematic warm-cool contrast, water droplets "
+                  "sparkling in the light shafts, faint golden sparkles in the mist.")
 
 # ---------------------------------------------------------------------------
 # LOẠI BỎ TOÀN BỘ GIÁP — thay thế cụm từ giáp trong spec cũ bằng mô tả không giáp
@@ -748,7 +760,7 @@ ART STYLE (match reference 1): Korean manhwa webtoon rendering — crisp clean l
 
 GARMENT-TO-BODY DETAIL: thin strap tension lines pressing gently into shoulders and hips, fabric edges precisely tracing the underbust curve and hip crest, subtle soft skin swell over each bikini edge, delicate cast-shadow lines under the fabric rims, small tension folds in the wet fabric following the body topography, side-tie ribbon knots pulling the hip line with tiny gathers, specular highlights along every seam and strap.
 
-WET FABRIC (match reference 2): soaking-wet {outfit} micro string bikini {accent} — waterlogged darkened tone with a glossy wet sheen, fabric fully opaque, clinging like a second skin with zero loose folds, plastered wet wrinkles, water droplets beading on the fabric surface, tiny drips falling from the fabric edges; whole body wet with droplets and thin rivulets, wet gleaming hair strands; she is mid-shower under the rainfall head or just stepped out of the tub, so the soaked look reads naturally indoors.
+WET FABRIC (match reference 2): soaking-wet {outfit} micro string bikini {accent} — waterlogged darkened tone with a glossy wet sheen, fabric fully opaque, clinging like a second skin with zero loose folds, plastered wet wrinkles, water droplets beading on the fabric surface, tiny drips falling from the fabric edges; whole body wet with droplets and thin rivulets, wet gleaming hair strands; she just rose out of the water or stepped out of the shower, so the drenched look reads naturally.
 
 FIGURE: {char_spec} Alluring pose: {pose}. Barefoot; blushing cheeks, cat eyeliner, softly parted lips.
 
@@ -857,7 +869,7 @@ từ `cards.json`, KHÔNG ghi đè dữ liệu gốc.
   (tựa lưng vào tường ướt, ngả người trên thành bồn, nhìn lại qua vai, ưỡn cong như cung,
   nằm nghiêng mermaid, đang bước ra khỏi vòi sen, căng người kiễng chân, ...).
 - **Phong cách phòng tắm KHÁC NHAU từng lá**: 78 phong cách riêng biệt, không lá nào lặp
-  (xem bảng dưới) — từ Scandi sunrise spa, Byzantine gilded chapel, volcanic hot spring,
+  (xem bảng dưới) — từ rooftop infinity pool sunrise, Byzantine gilded chapel, volcanic hot spring,
   casino-noir roulette, storm skyscraper glass, midnight lagoon... đến aquarium throne.
 - **Đặc điểm nổi bật của từng lá được giữ nguyên**: FIGURE spec (tuổi/ body type / tóc /
   mắt / da / signature / aura), emblem tarot, và COUNT LOCK số lượng vật phẩm suit
@@ -927,7 +939,7 @@ def main():
         slug = c["slug"]
         title = c["title"]
         bikini_color, bikini_accent = BIKINI_OPTIONS[idx % len(BIKINI_OPTIONS)]
-        pose = ALLURING_POSES[idx % len(ALLURING_POSES)]
+        pose = POSE_OVERRIDES.get(slug, ALLURING_POSES[idx % len(ALLURING_POSES)])
 
         if BACKGROUND_MODE == "bathroom":
             style_name, scene = BATHROOM_STYLES[slug]

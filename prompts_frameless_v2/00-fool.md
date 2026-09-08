@@ -2,11 +2,11 @@
 
 - **Slug:** `00-fool` | **Group:** major
 - **Emblem:** a white rose
-- **Phong cách phòng tắm:** Scandi sunrise spa
+- **Phong cách phòng tắm:** Rooftop infinity pool sunrise
 - **Reference style/contour/lettering:** `major_08_strength.png`
 - **Reference wet fabric/swimwear:** `test_card_17_the_star.png`
 - **Outfit:** soaking-wet pearl-white micro string bikini with tiny gold star charms (opaque swimwear, no see-through)
-- **Pose gợi cảm:** standing with her back against the rain-wet tiled wall, one knee bent and foot flat against the wall, both hands gliding up into her soaked hair, hips pushed into a deep S-curve, half-lidded gaze at the viewer
+- **Pose gợi cảm:** walking barefoot along the infinity pool's wet stone coping like a dancer on a wire, one foot precisely before the other, hips swaying in a soft alluring S-curve, torso lightly arched, one hand raised gracefully holding the single white rose, glancing back over her shoulder at the viewer with a carefree inviting smile while her white Pomeranian puppy trots faithfully behind her along the pool rim
 - **Background mode:** bathroom · **Giáp:** đã loại bỏ hoàn toàn (strip + negative)
 
 ## Prompt
@@ -20,13 +20,13 @@ ART STYLE (match reference 1): Korean manhwa webtoon rendering — crisp clean l
 
 GARMENT-TO-BODY DETAIL: thin strap tension lines pressing gently into shoulders and hips, fabric edges precisely tracing the underbust curve and hip crest, subtle soft skin swell over each bikini edge, delicate cast-shadow lines under the fabric rims, small tension folds in the wet fabric following the body topography, side-tie ribbon knots pulling the hip line with tiny gathers, specular highlights along every seam and strap.
 
-WET FABRIC (match reference 2): soaking-wet pearl-white micro string bikini with tiny gold star charms — waterlogged darkened tone with a glossy wet sheen, fabric fully opaque, clinging like a second skin with zero loose folds, plastered wet wrinkles, water droplets beading on the fabric surface, tiny drips falling from the fabric edges; whole body wet with droplets and thin rivulets, wet gleaming hair strands; she is mid-shower under the rainfall head or just stepped out of the tub, so the soaked look reads naturally indoors.
+WET FABRIC (match reference 2): soaking-wet pearl-white micro string bikini with tiny gold star charms — waterlogged darkened tone with a glossy wet sheen, fabric fully opaque, clinging like a second skin with zero loose folds, plastered wet wrinkles, water droplets beading on the fabric surface, tiny drips falling from the fabric edges; whole body wet with droplets and thin rivulets, wet gleaming hair strands; she just rose out of the water or stepped out of the shower, so the drenched look reads naturally.
 
-FIGURE: 19 years old, build: **A** petite & lithe, eo nhỏ, bước chân nhẹ như gió, hair: loose wind-tossed honey-blonde waves down to her shoulder blades, sunlit and carefree, eyes: honey-amber, doe, tròn long lanh, ngây thơ không phòng bị, skin: warm peach with glossy wet highlights, signature: 3 tàn nhang vàng nhỏ dưới mắt trái, aura: gió mai, mật ong, vực thẳm mời gọi. Alluring pose: standing with her back against the rain-wet tiled wall, one knee bent and foot flat against the wall, both hands gliding up into her soaked hair, hips pushed into a deep S-curve, half-lidded gaze at the viewer. Barefoot; blushing cheeks, cat eyeliner, softly parted lips.
+FIGURE: 19 years old, build: **A** petite & lithe, eo nhỏ, bước chân nhẹ như gió, hair: loose wind-tossed honey-blonde waves down to her shoulder blades, sunlit and carefree, eyes: honey-amber, doe, tròn long lanh, ngây thơ không phòng bị, skin: warm peach with glossy wet highlights, signature: 3 tàn nhang vàng nhỏ dưới mắt trái, aura: gió mai, mật ong, vực thẳm mời gọi. Alluring pose: walking barefoot along the infinity pool's wet stone coping like a dancer on a wire, one foot precisely before the other, hips swaying in a soft alluring S-curve, torso lightly arched, one hand raised gracefully holding the single white rose, glancing back over her shoulder at the viewer with a carefree inviting smile while her white Pomeranian puppy trots faithfully behind her along the pool rim. Barefoot; blushing cheeks, cat eyeliner, softly parted lips.
 
-SCENE & SYMBOLISM (Scandi sunrise spa): a playful 19-year-old streamer in a Scandinavian sunrise spa bathroom: pale birch-slat walls, a round white freestanding tub, floor-to-ceiling frosted glass glowing with a cyberpunk sunrise city beyond, steam curling off the water, a cute white Pomeranian puppy waiting on the fluffy bath mat, a single glowing digital white rose in her hand. Tarot emblem integrated naturally: a white rose. COUNT LOCK: This card contains NO loose suit objects in the scene. Do not add random floating or decorative cups, swords, wands, or pentacles.
+SCENE & SYMBOLISM (Rooftop infinity pool sunrise): a playful 19-year-old streamer on a high-rise rooftop infinity pool at sunrise: the pool water merging seamlessly with the glowing cyberpunk sunrise skyline beyond the edge, a long wet stone pool coping stretching in a clean line, steam curling off the warm water, skyline lights reflecting in the calm pool surface, a cute white Pomeranian puppy trotting faithfully behind her along the pool rim, a single fresh white rose in her hand. Tarot emblem integrated naturally: a white rose. COUNT LOCK: This card contains NO loose suit objects in the scene. Do not add random floating or decorative cups, swords, wands, or pentacles.
 
-DEPTH & LIGHT: soft steam and light-shaft layers diffusing the bathroom's accent lighting (LED, neon, candle or skylight), wet tile and mirror reflections on soaked skin, cinematic warm-cool contrast, water droplets sparkling in the light shafts, faint golden sparkles in the mist.
+DEPTH & LIGHT: soft steam and light-shaft layers diffusing the scene's accent lighting (LED, neon, candle, skylight or sunrise glow), wet tile and mirror reflections on soaked skin, cinematic warm-cool contrast, water droplets sparkling in the light shafts, faint golden sparkles in the mist.
 
 NO ARMOR ANYWHERE ON THE FIGURE — strictly no helmet, no breastplate, no gauntlets, no chainmail, no pauldrons, no metal plates, no knight costume pieces; she wears only the soaking-wet swimwear described above.
 

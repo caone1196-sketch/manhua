@@ -27,7 +27,7 @@ từ `cards.json`, KHÔNG ghi đè dữ liệu gốc.
   (tựa lưng vào tường ướt, ngả người trên thành bồn, nhìn lại qua vai, ưỡn cong như cung,
   nằm nghiêng mermaid, đang bước ra khỏi vòi sen, căng người kiễng chân, ...).
 - **Phong cách phòng tắm KHÁC NHAU từng lá**: 78 phong cách riêng biệt, không lá nào lặp
-  (xem bảng dưới) — từ Scandi sunrise spa, Byzantine gilded chapel, volcanic hot spring,
+  (xem bảng dưới) — từ rooftop infinity pool sunrise, Byzantine gilded chapel, volcanic hot spring,
   casino-noir roulette, storm skyscraper glass, midnight lagoon... đến aquarium throne.
 - **Đặc điểm nổi bật của từng lá được giữ nguyên**: FIGURE spec (tuổi/ body type / tóc /
   mắt / da / signature / aura), emblem tarot, và COUNT LOCK số lượng vật phẩm suit
@@ -42,7 +42,7 @@ từ `cards.json`, KHÔNG ghi đè dữ liệu gốc.
 
 | # | Slug | Lá | Phong cách phòng tắm |
 |---|---|---|---|
-| 0 | 00-fool | THE FOOL | Scandi sunrise spa |
+| 0 | 00-fool | THE FOOL | Rooftop infinity pool sunrise |
 | I | 01-magician | THE MAGICIAN | Marble vanity mirror wall |
 | II | 02-priestess | THE HIGH PRIESTESS | Twin-column temple bath |
 | III | 03-empress | THE EMPRESS | Sunlit garden sunroom bath |
