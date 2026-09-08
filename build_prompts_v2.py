@@ -79,12 +79,13 @@ ALLURING_POSES = [
 # Pose ghi đè theo yêu cầu riêng cho từng lá (ưu tiên hơn xoay vòng)
 POSE_OVERRIDES = {
     # The Fool: đi trên mép bể bơi vô cực sân thượng, cầm hoa hồng trắng, chó theo sau
-    "00-fool": "walking barefoot along the infinity pool's wet stone coping like a dancer on a "
-               "wire, one foot precisely before the other, hips swaying in a soft alluring "
-               "S-curve, torso lightly arched, one hand raised gracefully holding the single "
-               "white rose, glancing back over her shoulder at the viewer with a carefree "
-               "inviting smile while her white Pomeranian puppy trots faithfully behind her "
-               "along the pool rim",
+    "00-fool": "walking barefoot along the wet stone coping of the rooftop infinity pool, near "
+               "the very END of the pool edge without noticing — her eyes fixed dreamily on the "
+               "white rose cupped in both hands before her chest, chin dipped, a soft absorbed "
+               "smile, completely unaware how close the stone coping is to running out; one heel "
+               "hovering mid-step over the last stretch of stone, hips swaying in a soft "
+               "alluring S-curve, water droplets still dripping from her fingertips and wet hair, "
+               "while her white Pomeranian puppy trots faithfully behind her along the pool rim",
 }
 
 # ---------------------------------------------------------------------------
@@ -96,10 +97,12 @@ BATHROOM_STYLES = {
     # ------------------------- MAJOR ARCANA (22) -------------------------
     "00-fool": ("Rooftop infinity pool sunrise",
         "a playful 19-year-old streamer on a high-rise rooftop infinity pool at sunrise: the pool "
-        "water merging seamlessly with the glowing cyberpunk sunrise skyline beyond the edge, a "
-        "long wet stone pool coping stretching in a clean line, steam curling off the warm water, "
-        "skyline lights reflecting in the calm pool surface, a cute white Pomeranian puppy "
-        "trotting faithfully behind her along the pool rim, a single fresh white rose in her hand"),
+        "water merging seamlessly with the glowing cyberpunk sunrise skyline beyond the edge, the "
+        "long wet stone pool coping reaching its FINAL stretch — only a few steps of stone left "
+        "before the infinity edge spills into open air above the city, steam curling off the warm "
+        "water, skyline lights reflecting in the calm pool surface, a cute white Pomeranian puppy "
+        "trotting faithfully behind her along the pool rim, a single fresh white rose cupped in "
+        "her hands as she gazes at it, oblivious"),
     "01-magician": ("Marble vanity mirror wall",
         "a charismatic 22-year-old streamer in a marble magician's bathroom: a long double "
         "vanity beneath a floor-to-ceiling backlit mirror wall, warm brass fixtures, exactly "
