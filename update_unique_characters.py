@@ -3,7 +3,6 @@ import json
 with open('cards.json', 'r', encoding='utf-8') as f:
     cards_data = json.load(f)
 
-# Design palette and styling variations for suits and individual cards
 suit_styles = {
     "major": {
         "00-fool": {
@@ -101,6 +100,14 @@ suit_styles = {
             "bikini_color": "sheer emerald-green translucent wet chiffon",
             "bikini_style": "clean geometric micro-triangle bikini with gold ring connectors",
             "theme": "minimalist high-tech glass bath with floating laser-scale lights"
+        },
+        "12-the-hanged": {
+            "hair": "light ash-blonde flowing hair floating upward around head",
+            "eyes": "dreamy sky-blue upside-down gaze, euphoric trance",
+            "expression": "blissful surrendered smile, completely relaxed",
+            "bikini_color": "sheer seafoam-mint translucent chiffon",
+            "bikini_style": "wraparound micro-string bikini with suspended sheer ribbons",
+            "theme": "underwater zero-gravity glass flotation tank with glowing cyan aura"
         },
         "12-hanged": {
             "hair": "light ash-blonde flowing hair floating upward around head",
@@ -205,55 +212,31 @@ suit_styles = {
     }
 }
 
-# Update all 78 cards in cards_data
 for c in cards_data['cards']:
     slug = c['slug']
     group = c['group']
-    title = c['title']
     
-    # Determine custom style for card
+    # Handle THE HANGED title and file
+    if 'hanged' in slug:
+        c['title'] = 'THE HANGED'
+        c['file'] = 'major_12_the_hanged.png'
+
     if group == 'major' and slug in suit_styles['major']:
         custom = suit_styles['major'][slug]
-        hair_desc = custom['hair']
-        eyes_desc = custom['eyes']
-        expr_desc = custom['expression']
-        bikini_color = custom['bikini_color']
-        bikini_style = custom['bikini_style']
-        scene_theme = custom['theme']
-    else:
-        # Minor arcana styling based on suit
-        suit_info = suit_styles.get(group, suit_styles['wands'])
-        bikini_color = suit_info['color']
-        bikini_style = suit_info['style']
-        hair_desc = c.get('hair') or f"stylish {suit_info['hair_theme']}"
-        eyes_desc = c.get('eyes') or "alluring cat eyes, winged eyeliner"
-        expr_desc = "seductive charming smile, blushing rosy cheeks, parted lips"
-        scene_theme = c.get('scene')
-    
-    # Save attributes into card object
-    c['hair_style'] = hair_desc
-    c['eyes_style'] = eyes_desc
-    c['expression_style'] = expr_desc
-    c['bikini_color'] = bikini_color
-    c['bikini_style'] = bikini_style
-    
-    # Construct exact frameless prompt
-    c['master_prompt'] = f"""A vertical Korean adult webtoon illustration in manhwa art style matching Capture3.PNG.
-COMPLETELY FRAMELESS: no decorative borders, no card frames, no banner ribbon, edge-to-edge illustration. Only the clean title text '{title}' in elegant antique gold lettering centered at the bottom (NO numbers, NO Roman numerals).
+        c['hair_style'] = custom['hair']
+        c['eyes_style'] = custom['eyes']
+        c['expression_style'] = custom['expression']
+        c['bikini_color'] = custom['bikini_color']
+        c['bikini_style'] = custom['bikini_style']
+    elif group in suit_styles:
+        suit_info = suit_styles[group]
+        c['bikini_color'] = suit_info['color']
+        c['bikini_style'] = suit_info['style']
+        c['hair_style'] = c.get('hair') or f"stylish {suit_info['hair_theme']}"
+        c['eyes_style'] = c.get('eyes') or "alluring cat eyes, winged eyeliner"
+        c['expression_style'] = "seductive charming smile, blushing rosy cheeks, parted lips"
 
-Character & Face: An alluring, voluptuous young woman ({c.get('age', '20 years old')}), {c.get('build', 'slender waist with curvy feminine silhouette')}, with {hair_desc}, {eyes_desc}, {expr_desc}, and glowing porcelain skin with glossy specular highlights and water droplets.
-Outfit: Wearing a form-fitting wet {bikini_color} {bikini_style} hugging her figure tightly, emphasizing bust contours, narrow waist, and rosy glowing skin highlights through the wet translucent fabric, barefoot with completely bare feet and legs.
-
-Scene & Atmosphere: {scene_theme}.
-Tarot Symbolism: {c['emblem']} integrated naturally into the modern luxury environment with glowing ambient lighting.
-{c['count_lock']}
-
-High-gloss specular wet skin highlights, crisp webtoon lineart, cinematic ambient lighting, masterpiece manhwa illustration.
-
-NEGATIVE: numbers, roman numerals, borders, frames, banner, ribbon, margin, outer box, shoes, boots, sandals, socks, heavy clothes, casual street clothes, deformed hands, extra limbs, bad anatomy, low quality, watermark, signature."""
-
-# Save updated cards.json
 with open('cards.json', 'w', encoding='utf-8') as f:
     json.dump(cards_data, f, ensure_ascii=False, indent=2)
 
-print("Updated cards.json with unique character faces, hair colors, hairstyles, and bikini palettes for all 78 cards!")
+print("cards.json updated successfully!")
