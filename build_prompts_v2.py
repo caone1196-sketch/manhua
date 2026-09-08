@@ -120,17 +120,15 @@ POSE_OVERRIDES = {
                "relaxed hand cradles its flaming mane — the beast's eyes half-closed in total "
                "docile trust, mouth softly closed, completely tamed by her tenderness, "
                "exactly one lion and no other animals in the scene",
-    # Justice: góc 3/4, mặt hơi ngửa sau, MŨI KIẾM HƯỚNG LÊN TRÊN, mắt đăm chiêu nhìn vào kiếm
-    "11-justice": "posed in a three-quarter body angle on the wet striped marble, weight on "
-               "one leg, hip softly popped; her chin lifted and face tilted slightly back as "
-               "she GAZES INTO the slim crystal blade she raises in front of her face in one "
-               "hand — eyes fixed on the blade itself, absorbed, watching a single water "
-               "droplet slide down its edge; the blade held VERTICAL with its TIP POINTING "
-               "STRAIGHT UP toward the ceiling, hilt at her collarbone level, the flat of "
-               "the blade catching her reflection; her other arm hangs loose and relaxed "
-               "behind her, fingers casually holding a small golden balance scale whose two "
-               "pans hang perfectly level, shoulders bare, water still streaming down her "
-               "collarbones",
+    # Justice (phương án 4 — Cold Water Verdict): nằm nửa chìm trong bồn đôi dưới tường nước
+    "11-justice": "reclining back inside one of the shallow twin basins, half-submerged, the "
+               "vertical sheet of falling water cascading in a glowing curtain just behind "
+               "her head; her wet dark hair fans out over the basin rim, one arm draped "
+               "along the rim behind her head, the other resting the slim crystal blade FLAT "
+               "along the basin edge beside her hip; her knees break the water surface in a "
+               "bent alluring line, water rivulets and foam tracing her body; a small golden "
+               "balance scale rests balanced on the marble edge above her head, two pans "
+               "level, her gaze level and unblinking up at the viewer",
     # Temperance: hai chalice rót dòng nước mỏng — nhìn lại qua vai
     "14-temperance": "standing in graceful contrapposto between the two basins, one arm raised "
                "high tipping a golden chalice so a single THIN unbroken stream of water pours "
@@ -213,9 +211,9 @@ BATHROOM_STYLES = {
     "11-justice": ("Monochrome scales bath",
         "a composed 23-year-old streamer in a monochrome justice bathroom: stark black-and-white "
         "striped marble, two gold balance-scale towel racks perfectly level, a vertical sheet of "
-        "falling water splitting evenly between twin basins, one slim crystal blade raised upright "
-        "before her face in one hand and a small golden balance scale hanging level from her "
-        "other hand behind her"),
+        "falling water splitting evenly between twin basins, one slim crystal blade lying flat on "
+        "the basin edge beside her hip and a small golden balance scale resting level on the "
+        "marble above her head"),
     "12-hanged": ("Inversion silk studio",
         "a dreamy 22-year-old streamer in an inversion-studio bathroom: a mirrored ceiling, a soft "
         "champagne silk aerial hammock hanging beside the tub, a living green branch suspended "
@@ -499,8 +497,8 @@ BATHROOM_LAYOUTS = {
         "paperweight; one of each, no duplicates, nothing else on the vanity",
     "10-wheel": "exactly one slim crystal blade, held upright by the small sphinx figurine atop the "
         "roulette mirror; no other blade anywhere",
-    "11-justice": "exactly one slim crystal blade, held upright in her left hand; no other blade on "
-        "the card",
+    "11-justice": "exactly one slim crystal blade, lying flat along the basin edge beside her hip; "
+        "the golden balance scale is NOT a sword; no other blade on the card",
     "14-temperance": "exactly two chalices, one in each hand, trading one thin stream of water "
         "between them; both bowls fully visible and un-occluded",
     "17-the-star": "exactly two golden decanters, one in each hand, both fully visible",
