@@ -3,38 +3,115 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Manhua Gallery</title>
+  <title>Tarot Studio — Xưởng thiết kế lá bài</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@300;400;600;800&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700&family=Playfair+Display:wght@500;600;700&family=Be+Vietnam+Pro:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="css/style.css" />
-  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>📖</text></svg>" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🔮</text></svg>" />
 </head>
 <body>
   <header class="site-header">
-    <div class="header-inner">
-      <h1 class="logo">MANHUA<span>·</span>GALLERY</h1>
-      <p class="tagline">Bộ sưu tập truyện &amp; artwork</p>
-    </div>
+    <h1 class="logo">TAROT <span class="spark">✦</span> STUDIO</h1>
+    <p class="tagline">Xưởng thiết kế lá bài Tarot — ghép khung, đặt tên, xuất file</p>
   </header>
 
+  <nav class="tabs" aria-label="Chức năng chính">
+    <button class="tab is-active" data-tab="artwork">Artwork</button>
+    <button class="tab" data-tab="design">✦ Thiết kế bài</button>
+    <button class="tab" data-tab="deck">Bộ bài <span class="badge" id="deckCount">0</span></button>
+    <button class="tab" data-tab="spread">Trải bài</button>
+  </nav>
+
   <main class="container">
-    <div class="toolbar">
-      <div class="filter-group" role="tablist" aria-label="Lọc ảnh">
-        <button class="chip is-active" data-filter="all" role="tab">Tất cả</button>
-        <button class="chip" data-filter="portrait" role="tab">Dọc</button>
-        <button class="chip" data-filter="landscape" role="tab">Ngang</button>
+    <!-- ARTWORK -->
+    <section id="tab-artwork" class="tab-panel is-active">
+      <div class="toolbar">
+        <span class="hint">Nguyên liệu vẽ — bấm để xem chi tiết</span>
+        <span class="count-label" id="artCount"></span>
       </div>
-      <span class="count-label" id="countLabel"></span>
-    </div>
+      <div class="art-grid" id="artGrid"></div>
+    </section>
 
-    <section class="grid" id="gallery" aria-label="Danh sách ảnh"></section>
+    <!-- COMPOSER -->
+    <section id="tab-design" class="tab-panel">
+      <div class="composer">
+        <div class="composer-controls">
+          <div class="ctrl-group">
+            <label>1 · Chọn artwork</label>
+            <div class="art-pick" id="artPick"></div>
+          </div>
 
-    <p class="empty-note" id="emptyNote" hidden>Không có ảnh nào phù hợp bộ lọc.</p>
+          <div class="ctrl-group">
+            <label for="cName">2 · Tên bài</label>
+            <input type="text" id="cName" placeholder="VD: Hoàng Hậu" maxlength="40" />
+          </div>
+
+          <div class="ctrl-row">
+            <div class="ctrl-group">
+              <label for="cNumeral">Số La Mã</label>
+              <input type="text" id="cNumeral" placeholder="VD: III" maxlength="12" />
+            </div>
+            <div class="ctrl-group">
+              <label for="cArcana">Chọn nhanh (Major Arcana)</label>
+              <select id="cArcana">
+                <option value="">— 22 Major Arcana —</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="ctrl-group">
+            <label>3 · Khung bài</label>
+            <div class="frame-pick" id="framePick"></div>
+          </div>
+
+          <div class="ctrl-group">
+            <label>4 · Cách đặt ảnh</label>
+            <div class="chip-row">
+              <button class="chip fit-chip is-active" data-fit="cover">Cắt vừa khung</button>
+              <button class="chip fit-chip" data-fit="contain">Giữ nguyên tỉ lệ</button>
+            </div>
+          </div>
+
+          <div class="composer-actions">
+            <button id="btnDownload" class="btn btn-gold">⬇ Tải PNG (1050 × 1800)</button>
+            <button id="btnSave" class="btn">💾 Lưu vào bộ bài</button>
+          </div>
+        </div>
+
+        <div class="composer-preview">
+          <canvas id="previewCanvas" width="1050" height="1800"></canvas>
+          <p class="hint">Tỉ lệ chuẩn tarot 70 × 120 mm · xuất PNG 1050 × 1800 px</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- DECK -->
+    <section id="tab-deck" class="tab-panel">
+      <div class="toolbar">
+        <span class="hint">Các lá bài đã hoàn thiện — bấm vào lá để mở lại trong xưởng</span>
+      </div>
+      <div class="deck-grid" id="deckGrid"></div>
+      <div class="empty-state" id="deckEmpty" hidden>
+        <div class="icon">🔮</div>
+        <h3>Bộ bài đang trống</h3>
+        <p>Chưa có lá bài nào được lưu. Hãy vào tab <b>Thiết kế bài</b> để ghép khung cho artwork đầu tiên.</p>
+        <button class="btn btn-gold" id="btnGotoDesign">✦ Thiết kế lá đầu tiên</button>
+      </div>
+    </section>
+
+    <!-- SPREAD -->
+    <section id="tab-spread" class="tab-panel">
+      <div class="spread-toolbar">
+        <button id="btnSpread" class="btn btn-gold">✦ Trải 3 lá</button>
+        <span class="hint" id="spreadHint">Chọn 3 lá ngẫu nhiên từ bộ bài · bấm lá để lật</span>
+      </div>
+      <div class="spread" id="spread"></div>
+    </section>
   </main>
 
   <footer class="site-footer">
-    <p>Manhua Gallery — xem ảnh trực tiếp, bấm để phóng to.</p>
+    <p>Tarot Studio — bộ bài được lưu trong trình duyệt (localStorage).</p>
   </footer>
 
   <!-- Lightbox -->
@@ -49,6 +126,11 @@
     <div class="lb-counter" id="lbCounter"></div>
   </div>
 
+  <div class="toast" id="toast" role="status"></div>
+
+  <script src="js/cards.js"></script>
+  <script src="js/card-render.js"></script>
+  <script src="js/composer.js"></script>
   <script src="js/app.js"></script>
 </body>
 </html>

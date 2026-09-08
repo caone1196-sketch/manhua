@@ -1,50 +1,52 @@
-# Manhua Gallery
+# Tarot Studio — Xưởng thiết kế lá bài Tarot
 
-Trang web gallery xem bộ sưu tập manhua/artwork — dark theme, grid responsive, lightbox xem ảnh phóng to với điều khiển bàn phím.
+Trang web quản lý & xuất lá bài tarot từ các artwork đã vẽ:
+
+- **Artwork** — thư viện ảnh gốc (xem chi tiết trong lightbox)
+- **Thiết kế bài** — ghép khung cho artwork:
+  - 4 khung: Kinh điển, Huyền bí, Hoàng gia, Tối giản
+  - Đặt tên + số La Mã (có sẵn 22 Major Arcana để chọn nhanh)
+  - Ảnh "cắt vừa khung" hoặc "giữ nguyên tỉ lệ"
+  - Preview canvas thời gian thực, tỉ lệ chuẩn tarot 70 × 120 mm
+  - **Xuất PNG 1050 × 1800 px** · **Lưu vào bộ bài**
+- **Bộ bài** — các lá đã hoàn thiện (lưu localStorage, bấm để mở lại, xóa được)
+- **Trải bài** — trải ngẫu nhiên 3 lá (Quá khứ / Hiện tại / Tương lai) với hiệu ứng lật 3D
 
 ## Chạy local
 
-Không cần build. Chọn 1 trong 2 cách:
+Không cần build:
 
 ```bash
-# Cách 1: Python
 python3 -m http.server 8080
 # mở http://localhost:8080
-
-# Cách 2: Node
-npx serve .
 ```
 
-Hoặc mở trực tiếp `index.html` bằng trình duyệt.
+## Thêm artwork mới
 
-## Thêm ảnh mới
-
-1. Đặt file ảnh vào thư mục `images/`.
-2. Thêm 1 dòng vào mảng `IMAGES` trong `js/app.js`:
+1. Đặt file vào `images/`.
+2. Thêm 1 dòng vào `ARTWORK` trong `js/cards.js`:
 
 ```js
-{ src: "images/ten-anh.png", title: "Manhua #5", tag: "portrait", note: "Ghi chú tùy ý" },
+{ src: "images/anh-moi.png", label: "Artwork 05" },
 ```
 
-`tag` dùng cho bộ lọc: `portrait` (dọc) hoặc `landscape` (ngang).
+## Thêm khung bài mới
+
+Thêm vào `FRAMES` trong `js/cards.js`:
+
+```js
+newframe: { name: "Tên khung", bg: "#0f1420", border: "#d4af37", text: "#ead9a6" },
+```
 
 ## Cấu trúc
 
 ```
 manhua/
-├── index.html      # Trang chủ
-├── css/style.css   # Giao diện (dark theme, grid, lightbox)
-├── js/app.js       # Logic: render gallery, lọc, lightbox, phím tắt
-└── images/         # Ảnh gốc
-    ├── capture2.png
-    ├── capture3.png
-    ├── capture4.png
-    └── capture5.png
+├── index.html          # Bố cục 4 tab + lightbox
+├── css/style.css       # Giao diện (dark theme, vàng gold, hiệu ứng lật)
+├── js/cards.js         # Dữ liệu: artwork, khung bài, Major Arcana
+├── js/card-render.js   # Engine vẽ lá bài lên canvas (dùng chung)
+├── js/composer.js      # Tab Thiết kế: preview, xuất PNG, lưu bộ bài
+├── js/app.js           # Tabs, artwork, lightbox, bộ bài, spread
+└── images/             # Artwork gốc (capture2-5.png)
 ```
-
-## Tính năng
-
-- Grid responsive, hiệu ứng hover
-- Lọc theo tỉ lệ ảnh (dọc/ngang)
-- Lightbox: phóng to, ảnh trước/sau, phím `←` `→` `Esc`
-- Hỗ trợ keyboard access (Tab + Enter trên từng card)
