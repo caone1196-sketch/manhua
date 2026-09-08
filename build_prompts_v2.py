@@ -588,14 +588,25 @@ ARMOR_REGEXPS = [
 
 
 def strip_armor(text: str) -> str:
-    """Xóa mọi mô tả giáp / mũ giáp khỏi text (yêu cầu: loại bỏ toàn bộ giáp)."""
+    """Xóa mọi mô tả giáp / mũ giáp / trang phục lạ khỏi text (yêu cầu: chỉ swimwear ướt)."""
     s = text
     for old, new in ARMOR_PHRASES:
+        s = s.replace(old, new)
+    for old, new in GARMENT_PHRASES:
         s = s.replace(old, new)
     for rx, new in ARMOR_REGEXPS:
         s = rx.sub(new, s)
     return s.strip()
 
+
+# Trang phục lạ trong spec (cloak/vestment/cowl...) — thay bằng mô tả tóc/da thuần túy
+GARMENT_PHRASES = [
+    ("falling over embroidered ceremonial vestments", "falling loose over one bare shoulder"),
+    ("veiled beneath sheer white cowl gauze", "with a thin white ribbon woven through the strands"),
+    ("unbound and draping over cloaked shoulders", "unbound and draping over her bare shoulders"),
+    ("deep brown hair tucked under a travel cloak", "deep brown hair tucked behind her ears with a small brass pin"),
+    ("gathered softly in a misty veil", "gathered softly with a thin pearl hairpin"),
+]
 
 # Bối cảnh streamer hiện đại (kế thừa update_modern_manhwa.py, đã sanitize)
 MODERN_SCENES = {
