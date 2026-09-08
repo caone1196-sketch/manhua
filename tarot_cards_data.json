@@ -21,7 +21,8 @@
     "meaning": "Ý chí, sức mạnh sáng tạo, sự tự tin, làm chủ 4 nguyên tố để biến ước mơ thành hiện thực.",
     "concept": "Nữ pháp sư kiêm streamer quyền lực đứng trước bàn tế lễ công nghệ ma thuật, một tay chỉ lên bầu trời đầy sao, một tay hướng xuống mặt đất. Phía trước trôi nổi 4 bảo vật phát sáng: Cây trượng lửa, Chiếc cốc nước thánh, Thanh gươm lôi điện và Đồng tiền vàng. Vòng vô cực (Infinity) phát sáng vàng rực trên đầu.",
     "prompt_mj": "Tarot card of 'The Magician', Korean manhwa adult webtoon aesthetic, alluring blonde sorceress with confident smirking expression, winged eyeliner, wearing a crimson silk robe over a delicate white bondage harness lingerie, glowing infinity halo hovering above her head, standing before an altar with floating glowing elemental relics: flaming wand, glowing chalice, electric sword, golden pentacle, one hand raised to the cosmos and one pointing to the earth, mystical rune circles, dynamic volumetric lighting, glossy finish, intricate gold filigree card frame --ar 2:3 --v 6.1 --style raw",
-    "prompt_sd": "masterpiece, best quality, manhwa art, korean webtoon style, 1girl, the magician tarot card, seductive blonde, smirking, infinity symbol glowing over head, crimson robe, white strappy harness lingerie, choker, floating glowing elemental items, flaming wand, holy grail cup, crystal sword, gold pentacle, magical circle, neon arcane lighting, tarot card framing, glossy specular skin, high detail"
+    "prompt_sd": "masterpiece, best quality, manhwa art, korean webtoon style, 1girl, the magician tarot card, seductive blonde, smirking, infinity symbol glowing over head, crimson robe, white strappy harness lingerie, choker, floating glowing elemental items, flaming wand, holy grail cup, crystal sword, gold pentacle, magical circle, neon arcane lighting, tarot card framing, glossy specular skin, high detail",
+    "sample_img": "card_01_the_magician.png"
   },
   {
     "id": "MA-02",
@@ -33,7 +34,8 @@
     "meaning": "Trực giác, bí mật huyền bí, tiềm thức, sự thông thái tĩnh lặng.",
     "concept": "Nữ tư tế huyền bí ngồi giữa hai cột trụ Boaz (đen) và Jachin (trắng). Khăn voan mỏng manh che hờ hững gương mặt kiêu kỳ quyến rũ, vương miện sừng mặt trăng, tà áo lụa xanh biển xẻ cao để lộ đường cong cơ thể, chân đạp lên vầng trăng khuyết phát sáng, tay ôm cuốn cuộn bí thuật TORA rực sáng.",
     "prompt_mj": "Tarot card of 'The High Priestess', top-tier Korean webtoon manhwa style, mysterious voluptuous priestess seated between two massive marble pillars (one obsidian black, one pure ivory white), wearing translucent sapphire silk veil and revealing white strappy ritual vestment, lunar horned crown on her head, crescent moon glowing beneath her bare feet, holding a glowing arcane parchment scroll on her lap, pomegranate pattern tapestry background, mystical bioluminescent mist, dreamy soft glow, ornate gothic tarot border --ar 2:3 --v 6.1 --style raw",
-    "prompt_sd": "masterpiece, best quality, manhwa art, korean webtoon style, 1girl, the high priestess tarot card, beautiful mystical blonde, veil, lunar crown, seated between black and white pillars, crescent moon under feet, sheer blue and white ritual lingerie dress, straps, holding glowing secret scroll, pomegranates, ethereal misty atmosphere, soft neon glow, tarot card border, detailed eyes, glossy skin"
+    "prompt_sd": "masterpiece, best quality, manhwa art, korean webtoon style, 1girl, the high priestess tarot card, beautiful mystical blonde, veil, lunar crown, seated between black and white pillars, crescent moon under feet, sheer blue and white ritual lingerie dress, straps, holding glowing secret scroll, pomegranates, ethereal misty atmosphere, soft neon glow, tarot card border, detailed eyes, glossy skin",
+    "sample_img": "card_02_the_high_priestess.png"
   },
   {
     "id": "MA-03",
@@ -45,7 +47,8 @@
     "meaning": "Sự sinh sôi, dồi dào, sắc đẹp, khoái lạc trần thế và tình mẫu tử thiên nhiên.",
     "concept": "Nữ hoàng tuyệt mỹ đầy đặn lộng lẫy ngả người thư thái trên ngai vàng phủ nhung đỏ giữa khu vườn hoa trái sum sê và cánh đồng lúa mì vàng óng. Nàng đội vương miện 12 ngôi sao, khoác áo choàng lụa hồng phấn đính ngọc trai, tay cầm quyền trượng quả cầu vàng, thần thái kiêu hãnh và ngập tràn khoái lạc quyến rũ.",
     "prompt_mj": "Tarot card of 'The Empress', Korean adult manhwa art style, hyper-alluring voluptuous queen reclining sensually on plush crimson velvet cushions in a lush paradisiacal garden, wearing an opulent pearl-draped translucent silk robe, crown of twelve sparkling stars, holding a golden orb scepter, golden wheat field and flowing waterfall in background, ripe pomegranates and blooming roses around her, warm sunbeam lighting, glossy specular highlights, ornate golden tarot border --ar 2:3 --v 6.1 --style raw",
-    "prompt_sd": "masterpiece, best quality, manhwa art, korean webtoon style, 1girl, the empress tarot card, voluptuous blonde queen, seductive expression, crown of 12 stars, pearl necklace, translucent silk robe, lounging on velvet cushions, golden wheat field, blooming roses, flowing water, golden scepter, warm heavenly lighting, lush abundance, tarot frame, glossy skin, ultra detailed"
+    "prompt_sd": "masterpiece, best quality, manhwa art, korean webtoon style, 1girl, the empress tarot card, voluptuous blonde queen, seductive expression, crown of 12 stars, pearl necklace, translucent silk robe, lounging on velvet cushions, golden wheat field, blooming roses, flowing water, golden scepter, warm heavenly lighting, lush abundance, tarot frame, glossy skin, ultra detailed",
+    "sample_img": "card_03_the_empress.png"
   },
   {
     "id": "MA-04",
@@ -189,7 +192,8 @@
     "meaning": "Sự cám dỗ, dục vọng thể xác, sự giam cầm tự nguyện trong khoái lạc và vật chất.",
     "concept": "Nữ chúa quỷ quyến rũ bậc nhất với đôi sừng cong hắc ám và đôi cánh dơi gai góc ngồi trên bệ đá tế lễ. Trên trán nàng có ngôi sao năm cánh ngược phát sáng đỏ rực. Nàng giữ hai sợi dây xích vàng lỏng lẻo trói vào cổ hai người nô lệ tuân phục dưới chân. Nàng cầm ngọn đuốc lửa địa ngục, nở nụ cười quyến rũ đầy mê hoặc.",
     "prompt_mj": "Tarot card of 'The Devil', adult Korean manhwa style, hyper-seductive succubus demon queen with curved obsidian horns and bat wings, seated on a stone altar, wearing black leather bondage harness and choker collar, an inverted pentagram glowing crimson on her forehead, holding a burning upside-down torch, loose golden chains in her hands leading to kneeling human devotees, seductive smirk, hypnotic glowing red eyes, smoky dark underworld ambience, ornate gold tarot border --ar 2:3 --v 6.1 --style raw",
-    "prompt_sd": "masterpiece, best quality, manhwa art, korean webtoon style, 1girl, the devil tarot card, succubus demon queen, curved horns, bat wings, inverted pentagram, black leather harness lingerie, choker, holding flaming torch, holding chains, dark sensual underworld, glowing embers, seductive smirk, intense red eyes, tarot frame, masterpiece"
+    "prompt_sd": "masterpiece, best quality, manhwa art, korean webtoon style, 1girl, the devil tarot card, succubus demon queen, curved horns, bat wings, inverted pentagram, black leather harness lingerie, choker, holding flaming torch, holding chains, dark sensual underworld, glowing embers, seductive smirk, intense red eyes, tarot frame, masterpiece",
+    "sample_img": "card_05_the_devil.png"
   },
   {
     "id": "MA-16",
@@ -213,7 +217,8 @@
     "meaning": "Niềm hy vọng rực rỡ, sự chữa lành, cảm hứng sáng tạo và vẻ đẹp tinh khôi.",
     "concept": "Thiếu nữ tóc vàng manhwa tuyệt trần với làn da tỏa sáng quỳ bên hồ nước tĩnh lặng dưới bầu trời đêm ngập tràn sao. Nàng cầm hai bình gốm vàng, một bình rót vào làn nước làm dâng lên những làn sóng ánh sáng, một bình rót xuống bãi cỏ xanh tươi. Trên bầu trời là một ngôi sao tám cánh khổng lồ lấp lánh cùng bảy ngôi sao nhỏ.",
     "prompt_mj": "Tarot card of 'The Star', Korean adult manhwa art style, breathtaking radiant blonde maiden kneeling beside a luminous pool at night, draped in sheer sparkling chiffon ribbons, pouring shimmering water from two golden urns into the pool and onto lush fertile grass, a giant glowing eight-pointed star flanked by seven smaller stars illuminating the tranquil starry sky, sacred ibis bird on a tree branch, serene peaceful euphoric expression, bioluminescent reflections, ornate gold tarot border --ar 2:3 --v 6.1 --style raw",
-    "prompt_sd": "masterpiece, best quality, manhwa art, korean webtoon style, 1girl, the star tarot card, gorgeous nude blonde maiden, sheer translucent ribbons, pouring water from two golden urns, glowing crystal lake, starry night sky with giant 8-pointed star, sacred bird in background, serene blissful expression, bioluminescence, glossy skin, tarot frame, ultra detailed"
+    "prompt_sd": "masterpiece, best quality, manhwa art, korean webtoon style, 1girl, the star tarot card, gorgeous nude blonde maiden, sheer translucent ribbons, pouring water from two golden urns, glowing crystal lake, starry night sky with giant 8-pointed star, sacred bird in background, serene blissful expression, bioluminescence, glossy skin, tarot frame, ultra detailed",
+    "sample_img": "card_04_the_star.png"
   },
   {
     "id": "MA-18",
