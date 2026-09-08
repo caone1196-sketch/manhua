@@ -158,6 +158,17 @@ POSE_OVERRIDES = {
                "has slipped down off her shoulder, the soaked black fabric sitting slightly "
                "askew yet still fully covering and opaque; a single white petal resting on "
                "her collarbone above the waterline",
+    # Magician: dây chuyền vàng tuột 1 bên — vải trượt thấp sát mép, tay che vừa đủ cuối cùng
+    "01-magician": "seated sideways on the tub rim leaning back on one straight arm, chest "
+               "lifted toward the viewer, one knee drawn up while the other leg trails "
+               "toe-deep in the water — small real ripples and a clear waterline where "
+               "skin meets the surface, droplets sliding off her ankle; the fine gold "
+               "chain strap on the viewer-facing side has slipped down off her shoulder, "
+               "the soaked fabric cup sagging LOW and askew, baring the pale side-curve "
+               "of her breast almost to the edge — while her free forearm rests casually "
+               "across, holding the last sliver of coverage in one precarious teasing "
+               "line; the hanging strap swings against her ribs, wet hair cascading down "
+               "her back, water rivulets tracing her lifted collarbones",
 }
 
 # ---------------------------------------------------------------------------
