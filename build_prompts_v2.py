@@ -169,16 +169,15 @@ POSE_OVERRIDES = {
                "across, holding the last sliver of coverage in one precarious teasing "
                "line; the hanging strap swings against her ribs, wet hair cascading down "
                "her back, water rivulets tracing her lifted collarbones",
-    # High Priestess: bố cục kinh điển — ngự giữa 2 cột, trăng dưới chân, kinh trên đùi
-    "02-priestess": "seated enthroned in near-perfect symmetry between the two rainfall "
-               "columns on a low altar-like stone bench — spine tall and regal yet softly "
-               "arched, chest lifted, chin high; knees together tilted gracefully to one "
-               "side, bare soles resting on the glowing crescent moon projected on the wet "
-               "floor; she cradles the tablet of secret lore half-concealed in her lap, one "
-               "palm resting flat upon its screen, the other hand raised in a slow priestess "
-               "blessing at her collarbone; a thin silver crescent diadem set into her auburn "
-               "hair, sea-green eyes half-lidded and mystical, gazing level at the viewer "
-               "through the veil of steam, water droplets beading on her collarbones",
+    # High Priestess (phương án 5 — Silhouette Throne): nghiêng full profile, silhouette rim-light
+    "02-priestess": "seated on the low altar-like stone bench in FULL PROFILE side view "
+               "between the two pillars, her body a dramatic backlit silhouette against the "
+               "glowing twin water veils; one leg tucked beneath her, the other extended in "
+               "a long line, toes touching the edge of the glowing crescent moon projection "
+               "on the wet floor; the tablet of secret lore held flat against her chest "
+               "with both arms, chin high, heavy-lidded sea-green eyes catching a sliver of "
+               "rim light, silver crescent diadem glinting through her wet auburn waves, a "
+               "pomegranate hologram glowing on the bench beside her hip",
 }
 
 # ---------------------------------------------------------------------------
@@ -680,11 +679,11 @@ DEPTH_OVERRIDES = {
                  "floating white roses, wet onyx and mirror reflections, muted cinematic cold "
                  "palette, a single rose petal falling through the moonbeam, faint ghost-light "
                  "wisps curling in the steam"),
-    "02-priestess": ("DEPTH & LIGHT: ceremonial moonlit temple lighting — the twin water veils "
-                 "glowing silver behind her, cool blue-violet moonlight mixing with warm "
-                 "candle-gold at the column bases, wet stone and mirror reflections on her "
-                 "soaked skin, the crescent moon at her feet casting soft light upward into "
-                 "the mist, cinematic mystical atmosphere"),
+    "02-priestess": ("DEPTH & LIGHT: ceremonial moonlit temple lighting — the veils glowing "
+                 "bright silver-white behind her turning her into an elegant rim-lit "
+                 "silhouette, cool blue-violet moonlight, warm candle-gold at the column "
+                 "bases, wet stone reflections, the crescent moon projection glowing at her "
+                 "toes, cinematic mystical atmosphere"),
 }
 
 # ---------------------------------------------------------------------------
