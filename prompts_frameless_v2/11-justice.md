@@ -6,7 +6,7 @@
 - **Reference style/contour/lettering:** `major_08_strength.png`
 - **Reference wet fabric/swimwear:** `test_card_17_the_star.png`
 - **Outfit:** soaking-wet cherry-red micro string bikini with tiny pearl beads (opaque swimwear, no see-through)
-- **Pose gợi cảm:** wrapping a towel around her hips mid-motion, spine arched, head thrown back, eyes closed, one shoulder bare, towel still trailing in the water
+- **Pose gợi cảm:** standing in poised sensual contrapposto on the wet striped marble, weight on one leg, hip popped, spine tall and straight; her LEFT hand holds the slim crystal blade perfectly UPRIGHT at her side like a ceremonial staff, and her RIGHT hand slowly gathers a white towel low around her hips, one shoulder bare, water still streaming down her collarbones, her gaze level and unblinking straight at the viewer
 - **Background mode:** bathroom · **Giáp:** đã loại bỏ hoàn toàn (strip + negative)
 
 ## Prompt
@@ -22,7 +22,7 @@ GARMENT-TO-BODY DETAIL: thin strap tension lines pressing gently into shoulders 
 
 WET FABRIC (match reference 2): soaking-wet cherry-red micro string bikini with tiny pearl beads — waterlogged darkened tone with a glossy wet sheen, fabric fully opaque, clinging like a second skin with zero loose folds, plastered wet wrinkles, water droplets beading on the fabric surface, tiny drips falling from the fabric edges; whole body wet with droplets and thin rivulets, wet gleaming hair strands; she just rose out of the water or stepped out of the shower, so the drenched look reads naturally.
 
-FIGURE: 24 years old, build: **B** cao, thanh thoát, xương đòn nổi, lưng thẳng, hair: sleek raven-black hair drawn back sharply into a high polished half-ponytail, eyes: grey-green, wide-set, nhìn thẳng không chớp, skin: ivory with glossy wet highlights, signature: sẹo mảnh dọc hàm trái, aura: cán cân, đá cẩm thạch, im lặng. Alluring pose: wrapping a towel around her hips mid-motion, spine arched, head thrown back, eyes closed, one shoulder bare, towel still trailing in the water. Barefoot; blushing cheeks, cat eyeliner, softly parted lips.
+FIGURE: 24 years old, build: **B** cao, thanh thoát, xương đòn nổi, lưng thẳng, hair: sleek raven-black hair drawn back sharply into a high polished half-ponytail, eyes: grey-green, wide-set, nhìn thẳng không chớp, skin: ivory with glossy wet highlights, signature: sẹo mảnh dọc hàm trái, aura: cán cân, đá cẩm thạch, im lặng. Alluring pose: standing in poised sensual contrapposto on the wet striped marble, weight on one leg, hip popped, spine tall and straight; her LEFT hand holds the slim crystal blade perfectly UPRIGHT at her side like a ceremonial staff, and her RIGHT hand slowly gathers a white towel low around her hips, one shoulder bare, water still streaming down her collarbones, her gaze level and unblinking straight at the viewer. Barefoot; blushing cheeks, cat eyeliner, softly parted lips.
 
 SCENE & SYMBOLISM (Monochrome scales bath): a composed 23-year-old streamer in a monochrome justice bathroom: stark black-and-white striped marble, two gold balance-scale towel racks perfectly level, a vertical sheet of falling water splitting evenly between twin basins, one slim crystal blade held upright in her left hand. Tarot emblem integrated naturally: balanced golden scales. COUNT LOCK — EXACTLY 1 SWORD (hard constraint; count before you draw).
 The scene contains exactly 1 sword — not 0, not 2.

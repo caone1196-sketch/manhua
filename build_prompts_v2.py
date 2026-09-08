@@ -120,6 +120,19 @@ POSE_OVERRIDES = {
                "relaxed hand cradles its flaming mane — the beast's eyes half-closed in total "
                "docile trust, mouth softly closed, completely tamed by her tenderness, "
                "exactly one lion and no other animals in the scene",
+    # Justice: tư thế cân bằng — kiếm pha lê dựng đứng bên trái như trượng nghi thức
+    "11-justice": "standing in poised sensual contrapposto on the wet striped marble, weight "
+               "on one leg, hip popped, spine tall and straight; her LEFT hand holds the slim "
+               "crystal blade perfectly UPRIGHT at her side like a ceremonial staff, and her "
+               "RIGHT hand slowly gathers a white towel low around her hips, one shoulder "
+               "bare, water still streaming down her collarbones, her gaze level and "
+               "unblinking straight at the viewer",
+    # Temperance: hai chalice rót dòng nước mỏng — nhìn lại qua vai
+    "14-temperance": "standing in graceful contrapposto between the two basins, one arm raised "
+               "high tipping a golden chalice so a single THIN unbroken stream of water pours "
+               "through the air into the second golden chalice held low in her other hand, "
+               "elbows forming one flowing diagonal line, head turned back over her shoulder "
+               "with a serene smoldering half-smile, hair floating weightless in the steam",
 }
 
 # ---------------------------------------------------------------------------

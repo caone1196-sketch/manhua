@@ -6,7 +6,7 @@
 - **Reference style/contour/lettering:** `major_08_strength.png`
 - **Reference wet fabric/swimwear:** `test_card_17_the_star.png`
 - **Outfit:** soaking-wet aqua-teal micro string bikini with side-tie ribbons (opaque swimwear, no see-through)
-- **Pose gợi cảm:** standing in sensual contrapposto, one hand resting on a popped hip, the other trailing water slowly down her collarbone, looking back over her shoulder with a smoldering half-smile
+- **Pose gợi cảm:** standing in graceful contrapposto between the two basins, one arm raised high tipping a golden chalice so a single THIN unbroken stream of water pours through the air into the second golden chalice held low in her other hand, elbows forming one flowing diagonal line, head turned back over her shoulder with a serene smoldering half-smile, hair floating weightless in the steam
 - **Background mode:** bathroom · **Giáp:** đã loại bỏ hoàn toàn (strip + negative)
 
 ## Prompt
@@ -22,7 +22,7 @@ GARMENT-TO-BODY DETAIL: thin strap tension lines pressing gently into shoulders 
 
 WET FABRIC (match reference 2): soaking-wet aqua-teal micro string bikini with side-tie ribbons — waterlogged darkened tone with a glossy wet sheen, fabric fully opaque, clinging like a second skin with zero loose folds, plastered wet wrinkles, water droplets beading on the fabric surface, tiny drips falling from the fabric edges; whole body wet with droplets and thin rivulets, wet gleaming hair strands; she just rose out of the water or stepped out of the shower, so the drenched look reads naturally.
 
-FIGURE: 22 years old, build: **A** sẽ gầy mảnh, tay chân dài, lưng cong mềm, hair: pale fine ash-blonde hair floating weightlessly in the air, eyes: aquamarine, upturned nhẹ, sáng trong như nước, skin: fair with glossy wet highlights, signature: sẹo bạc hình lưỡi liềm trên lòng bàn tay phải, aura: nước chảy, ánh sáng xuyên, sự cân bằng. Alluring pose: standing in sensual contrapposto, one hand resting on a popped hip, the other trailing water slowly down her collarbone, looking back over her shoulder with a smoldering half-smile. Barefoot; blushing cheeks, cat eyeliner, softly parted lips.
+FIGURE: 22 years old, build: **A** sẽ gầy mảnh, tay chân dài, lưng cong mềm, hair: pale fine ash-blonde hair floating weightlessly in the air, eyes: aquamarine, upturned nhẹ, sáng trong như nước, skin: fair with glossy wet highlights, signature: sẹo bạc hình lưỡi liềm trên lòng bàn tay phải, aura: nước chảy, ánh sáng xuyên, sự cân bằng. Alluring pose: standing in graceful contrapposto between the two basins, one arm raised high tipping a golden chalice so a single THIN unbroken stream of water pours through the air into the second golden chalice held low in her other hand, elbows forming one flowing diagonal line, head turned back over her shoulder with a serene smoldering half-smile, hair floating weightless in the steam. Barefoot; blushing cheeks, cat eyeliner, softly parted lips.
 
 SCENE & SYMBOLISM (Zen ryokan ofuro): a balanced 22-year-old streamer in a zen ryokan bathroom: a hinoki cypress ofuro tub, one stone waterfall basin pouring in an endless cycle into a second lower basin, irises in a stone vase, a triangle-within-a-square motif carved on the wooden screen, soft grey-green light, one golden chalice in each hand trading a thin stream of water between them. Tarot emblem integrated naturally: a triangle within a square. COUNT LOCK — EXACTLY 2 CHALICES (hard constraint; count before you draw).
 The scene contains exactly 2 chalices — not 1, not 3.
