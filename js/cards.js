@@ -8,6 +8,7 @@ const ARTWORK = [
   { src: "images/capture3.png", label: "Artwork 02" },
   { src: "images/capture4.png", label: "Artwork 03" },
   { src: "images/capture5.png", label: "Artwork 04" },
+  { src: "images/the-star.png", label: "The Star (XVII)" },
 ];
 
 /** Khung bài: nền, màu viền, màu chữ, màu nền khi ảnh không lấp đầy */

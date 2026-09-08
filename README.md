@@ -48,5 +48,5 @@ manhua/
 ├── js/card-render.js   # Engine vẽ lá bài lên canvas (dùng chung)
 ├── js/composer.js      # Tab Thiết kế: preview, xuất PNG, lưu bộ bài
 ├── js/app.js           # Tabs, artwork, lightbox, bộ bài, spread
-└── images/             # Artwork gốc (capture2-5.png)
+└── images/             # Artwork gốc (capture2-5.png, the-star.png)
 ```
