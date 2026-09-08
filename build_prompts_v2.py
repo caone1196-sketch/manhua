@@ -120,15 +120,17 @@ POSE_OVERRIDES = {
                "relaxed hand cradles its flaming mane — the beast's eyes half-closed in total "
                "docile trust, mouth softly closed, completely tamed by her tenderness, "
                "exactly one lion and no other animals in the scene",
-    # Justice: góc 3/4, mặt hơi ngửa sau, kiếm dựng trước mặt, tay kia buông sau cầm cán cân
+    # Justice: góc 3/4, mặt hơi ngửa sau, MŨI KIẾM HƯỚNG LÊN TRÊN, mắt đăm chiêu nhìn vào kiếm
     "11-justice": "posed in a three-quarter body angle on the wet striped marble, weight on "
-               "one leg, hip softly popped; her chin lifted and face tilted slightly back, "
-               "gazing level and unblinking at the viewer down the line of the slim crystal "
-               "blade she raises UPRIGHT in front of her face in one hand — the blade held "
-               "vertical at eye level, parallel to her cheek, water droplets sliding down its "
-               "edge; her other arm hangs loose and relaxed behind her, fingers casually "
-               "holding a small golden balance scale whose two pans hang perfectly level, "
-               "shoulders bare, water still streaming down her collarbones",
+               "one leg, hip softly popped; her chin lifted and face tilted slightly back as "
+               "she GAZES INTO the slim crystal blade she raises in front of her face in one "
+               "hand — eyes fixed on the blade itself, absorbed, watching a single water "
+               "droplet slide down its edge; the blade held VERTICAL with its TIP POINTING "
+               "STRAIGHT UP toward the ceiling, hilt at her collarbone level, the flat of "
+               "the blade catching her reflection; her other arm hangs loose and relaxed "
+               "behind her, fingers casually holding a small golden balance scale whose two "
+               "pans hang perfectly level, shoulders bare, water still streaming down her "
+               "collarbones",
     # Temperance: hai chalice rót dòng nước mỏng — nhìn lại qua vai
     "14-temperance": "standing in graceful contrapposto between the two basins, one arm raised "
                "high tipping a golden chalice so a single THIN unbroken stream of water pours "
