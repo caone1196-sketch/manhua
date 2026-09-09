@@ -45,6 +45,11 @@ BIKINI_OPTIONS = [
     ("cherry-red", "with tiny pearl beads"),
 ]
 
+# Ghi đè màu bikini theo lá (The Star: trắng)
+BIKINI_OVERRIDES = {
+    "17-the-star": ("pure-white", "with tiny pearl beads"),
+}
+
 # ---------------------------------------------------------------------------
 # TƯ THẾ GỢI CẢM (xoay vòng 12 pose — gợi cảm, S-curve, không lộ liễu)
 # ---------------------------------------------------------------------------
@@ -77,6 +82,12 @@ ALLURING_POSES = [
 ]
 
 # Pose ghi đè theo yêu cầu riêng cho từng lá (ưu tiên hơn xoay vòng)
+# Ghi đè màu tóc theo lá (The Star: bạch kim)
+HAIR_OVERRIDES = {
+    "17-the-star": "very long platinum-white hair, wet and silky, gleaming like liquid silver, "
+                   "cascading down past one bare shoulder",
+}
+
 POSE_OVERRIDES = {
     # The Fool: đi trên mép bể bơi vô cực sân thượng, cầm hoa hồng trắng, chó theo sau
     "00-fool": "walking barefoot along the wet stone coping of the rooftop infinity pool, near "
@@ -179,18 +190,18 @@ POSE_OVERRIDES = {
                "rim light, silver crescent diadem glinting through her wet auburn waves, a "
                "pomegranate hologram glowing on the bench beside her hip",
     # The Star (self-pour cascade): 1 tay nâng bình đổ lên người, 1 tay buông sau cầm bình
-    "17-the-star": "kneeling upright back on her heels in the shallow circular tub beneath the "
-               "glass-dome skylight, her whole body one graceful pouring arc: ONE arm stretched "
-               "straight up HIGH overhead, hand holding the first golden decanter tipped fully "
-               "over so a thin unbroken stream of glittering water falls onto her own crown, face "
-               "and bare shoulder — the stream breaks over her wet hair and cheeks, splits into "
-               "bright rivulets that trace her throat, collarbones and her micro "
-               "bikini, following her skin in glistening trails down her ribs, waist and hips "
-               "before rejoining the tub water; her OTHER arm hangs loose and relaxed BEHIND her, "
-               "extended low past her hip with the shoulder rolling open, hand holding the second "
-               "golden decanter tipped so its own thin stream spills quietly into the tub behind "
-               "her; head tipped back under the falling water, starlight grey-blue eyes blissfully "
-               "half-closed, lips softly parted, water beading off her lashes",
+"17-the-star": "kneeling upright back on her heels in the shallow circular tub beneath the "
+               "glass-dome skylight, her whole body one graceful pouring arc: ONE arm raised in "
+               "a soft bent arc, hand holding the first golden decanter tipped out just above "
+               "her own chest, so a thin unbroken stream of glittering water falls directly onto "
+               "her chest and collarbones — the stream breaks against her skin and the soaked "
+               "white fabric, splits into bright rivulets that trace her throat, ribs, waist and "
+               "hips, following her body in glistening trails before rejoining the tub water; "
+               "her OTHER arm hangs loose and relaxed BEHIND her, extended low past her hip with "
+               "the shoulder rolling open, hand holding the second golden decanter tipped so its "
+               "own thin stream spills quietly into the tub behind her; spine tall, head tipped "
+               "slightly back, starlight grey-blue eyes blissfully half-closed, lips softly "
+               "parted, water beading on her lashes",
 }
 
 # ---------------------------------------------------------------------------
@@ -297,9 +308,8 @@ BATHROOM_STYLES = {
     "17-the-star": ("Open-sky stargazer",
         "a serene 21-year-old streamer in an open-sky stargazer bathroom: a circular tub beneath a "
         "glass-dome skylight revealing a star constellation, an eight-pointed star glowing softly "
-        "above her, two golden decanters — one held HIGH in her raised hand pouring its thin "
-        "stream down onto her, the other held low in her trailing hand behind her pouring into "
-        "the tub"),
+        "above her, two golden decanters — one tipped above her, pouring its thin stream down "
+        "onto her chest, the other pouring its own stream into the tub"),
     "18-moon": ("Midnight lagoon",
         "a mysterious 22-year-old streamer in a midnight lagoon bathroom: a deep-blue lagoon-pool "
         "tub, a crescent-moon lamp dripping silver dew, moonflowers blooming along the wet tile, two "
@@ -934,10 +944,10 @@ def nz(value, default):
     return default if value in (None, "", "N/A", "n/a") else value
 
 
-def build_char_spec(c):
+def build_char_spec(c, slug=None):
     age = nz(c.get("age"), "20 years old")
     build = nz(c.get("build"), "slender waist with curvy feminine silhouette")
-    hair = nz(c.get("hair"), "flowing golden hair")
+    hair = HAIR_OVERRIDES.get(slug) or nz(c.get("hair"), "flowing golden hair")
     eyes = nz(c.get("eyes"), "alluring eyes")
     skin = nz(c.get("skin"), "porcelain")
     signature = nz(c.get("signature"), "a tiny gold star mark behind her ear")
@@ -1074,7 +1084,7 @@ def main():
     for idx, c in enumerate(cards):
         slug = c["slug"]
         title = c["title"]
-        bikini_color, bikini_accent = BIKINI_OPTIONS[idx % len(BIKINI_OPTIONS)]
+        bikini_color, bikini_accent = BIKINI_OVERRIDES.get(slug, BIKINI_OPTIONS[idx % len(BIKINI_OPTIONS)])
         pose = POSE_OVERRIDES.get(slug, ALLURING_POSES[idx % len(ALLURING_POSES)])
 
         if BACKGROUND_MODE == "bathroom":
@@ -1093,7 +1103,7 @@ def main():
             count_lock = c.get("count_lock", "")
 
         scene = strip_armor(scene)
-        char_spec = build_char_spec(c)  # đã strip_armor bên trong
+        char_spec = build_char_spec(c, slug)  # đã strip_armor bên trong
         prompt = PROMPT_TEMPLATE.format(
             title=title,
             outfit=bikini_color,
