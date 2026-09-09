@@ -50,15 +50,16 @@ BIKINI_OVERRIDES = {
     "17-the-star": ("pure-white", "with tiny pearl beads"),
 }
 
-# Ghi đè đoạn WET FABRIC theo lá (The Star: top tuột xuống bồn, chỉ còn bottom)
+# Ghi đè đoạn WET FABRIC theo lá (The Star: top trượt xuống eo, vướng dây hông)
 WET_FABRIC_OVERRIDES = {
     "17-the-star": "she wears only the soaking-wet pure-white micro string bikini BOTTOM with "
                    "tiny pearl beads — waterlogged darkened tone with a glossy wet sheen, fully "
                    "opaque, clinging like a second skin with zero loose folds, plastered wet "
                    "wrinkles, water droplets beading on the fabric, tiny drips falling from its "
-                   "edges; her matching little bikini TOP has slipped entirely down off her body "
-                   "and floats in the shallow tub water, its fine straps drifting loose around "
-                   "it; whole body wet with droplets and thin rivulets, wet gleaming hair "
+                   "edges; her matching little bikini TOP has slid all the way down off her "
+                   "chest and hangs bunched low around her waist, its tiny cups and fine "
+                   "strings tangled around the hip-tie knots like a slipped garland; whole "
+                   "body wet with droplets and thin rivulets, wet gleaming hair "
                    "strands; water is being poured over her right now, so the drenched look "
                    "reads naturally.",
 }
@@ -212,10 +213,10 @@ POSE_OVERRIDES = {
                "glass-dome skylight, her whole body one graceful pouring arc: ONE arm raised in "
                "a soft bent arc, hand holding the first golden decanter tipped out just above "
                "her own chest, so a thin unbroken stream of glittering water falls onto her "
-               "chest and spreads across it in a bright glittering veil of falling water — the "
-               "pouring water her only covering above the waist, streaming down her throat, "
-               "ribs, waist and hips in glistening trails before rejoining the tub water, her "
-               "little bikini top floating in the shallow water beside her knee; her OTHER arm "
+               "chest and spreads across it in a bright glittering veil of falling water, "
+               "streaming down her throat, ribs, waist and hips in glistening trails before "
+               "rejoining the tub water, her little bikini top slid down and bunched low "
+               "around her waist; her OTHER arm "
                "hangs loose and relaxed BEHIND her, extended low past her hip with the shoulder "
                "rolling open, hand holding the second golden decanter tipped so its own thin "
                "stream spills quietly into the tub behind her; her head tipped gently BACK and "
