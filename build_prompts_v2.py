@@ -82,6 +82,11 @@ ALLURING_POSES = [
 ]
 
 # Pose ghi đè theo yêu cầu riêng cho từng lá (ưu tiên hơn xoay vòng)
+# Ghi đè dấu đặc trưng theo lá (The Star: bỏ tàn nhang/vàng vai)
+SIGNATURE_OVERRIDES = {
+    "17-the-star": "những giọt nước lấp lánh như sao đọng trên đôi vai trần",
+}
+
 # Ghi đè màu tóc theo lá (The Star: bạch kim)
 HAIR_OVERRIDES = {
     "17-the-star": "very long platinum-white hair, wet and silky, gleaming like liquid silver, "
@@ -199,9 +204,12 @@ POSE_OVERRIDES = {
                "hips, following her body in glistening trails before rejoining the tub water; "
                "her OTHER arm hangs loose and relaxed BEHIND her, extended low past her hip with "
                "the shoulder rolling open, hand holding the second golden decanter tipped so its "
-               "own thin stream spills quietly into the tub behind her; spine tall, head tipped "
-               "slightly back, starlight grey-blue eyes blissfully half-closed, lips softly "
-               "parted, water beading on her lashes",
+               "own thin stream spills quietly into the tub behind her; BOTH fine straps of the "
+               "white bikini have slipped off BOTH shoulders, hanging loose and dripping at her "
+               "elbows, the soaked cups sagging low and askew on both sides yet the plastered "
+               "fabric clings in a precarious last line of coverage, still fully covering and "
+               "opaque; spine tall, head tipped slightly back, starlight grey-blue eyes "
+               "blissfully half-closed, lips softly parted, water beading on her lashes",
 }
 
 # ---------------------------------------------------------------------------
@@ -950,7 +958,7 @@ def build_char_spec(c, slug=None):
     hair = HAIR_OVERRIDES.get(slug) or nz(c.get("hair"), "flowing golden hair")
     eyes = nz(c.get("eyes"), "alluring eyes")
     skin = nz(c.get("skin"), "porcelain")
-    signature = nz(c.get("signature"), "a tiny gold star mark behind her ear")
+    signature = SIGNATURE_OVERRIDES.get(slug) or nz(c.get("signature"), "a tiny gold star mark behind her ear")
     aura = nz(c.get("aura"), "warm steam and soft light")
     spec = (
         f"{age}, build: {build}, hair: {hair}, eyes: {eyes}, "
