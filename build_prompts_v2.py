@@ -222,6 +222,16 @@ POSE_OVERRIDES = {
                "stream spills quietly into the tub behind her; her head tipped gently BACK and "
                "up, chin lifted, starlight grey-blue eyes drooping blissfully HALF-CLOSED "
                "behind low lashes, lips softly parted, water beading on her lashes",
+    # The Emperor (Rainfall Coronation): ngồi dạng chân dưới mưa đầu cừu, 2 tay ôm đỉnh lưng ngai
+    "04-emperor": "seated on the stone throne directly beneath the bronze ram-head rainfall, "
+               "KNEES SPREAD WIDE AND LAZY; both arms raised back to grip the top edge of the "
+               "high stone backrest on either side of her head, elbows flared like wings, chest "
+               "lifted into the falling water — thin streams sheeting off her collarbones, the "
+               "golden ram-horn circlet and her warrior braid streaming wet; the golden ankh "
+               "stylus upright in one iron grip on the backrest top; head tipped back a breath, "
+               "storm-grey eyes half-closed under falling water, lips parted in a quiet "
+               "victorious sigh, red backlight glowing through the falling water around her "
+               "spread silhouette",
 }
 
 # ---------------------------------------------------------------------------
