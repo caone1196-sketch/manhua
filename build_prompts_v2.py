@@ -178,6 +178,19 @@ POSE_OVERRIDES = {
                "with both arms, chin high, heavy-lidded sea-green eyes catching a sliver of "
                "rim light, silver crescent diadem glinting through her wet auburn waves, a "
                "pomegranate hologram glowing on the bench beside her hip",
+    # The Star (self-pour cascade): 1 tay nâng bình đổ lên người, 1 tay buông sau cầm bình
+    "17-the-star": "kneeling upright back on her heels in the shallow circular tub beneath the "
+               "glass-dome skylight, her whole body one graceful pouring arc: ONE arm stretched "
+               "straight up HIGH overhead, hand holding the first golden decanter tipped fully "
+               "over so a thin unbroken stream of glittering water falls onto her own crown, face "
+               "and bare shoulder — the stream breaks over her wet hair and cheeks, splits into "
+               "bright rivulets that trace her throat, collarbones and her micro "
+               "bikini, following her skin in glistening trails down her ribs, waist and hips "
+               "before rejoining the tub water; her OTHER arm hangs loose and relaxed BEHIND her, "
+               "extended low past her hip with the shoulder rolling open, hand holding the second "
+               "golden decanter tipped so its own thin stream spills quietly into the tub behind "
+               "her; head tipped back under the falling water, starlight grey-blue eyes blissfully "
+               "half-closed, lips softly parted, water beading off her lashes",
 }
 
 # ---------------------------------------------------------------------------
@@ -284,8 +297,9 @@ BATHROOM_STYLES = {
     "17-the-star": ("Open-sky stargazer",
         "a serene 21-year-old streamer in an open-sky stargazer bathroom: a circular tub beneath a "
         "glass-dome skylight revealing a star constellation, an eight-pointed star glowing softly "
-        "above her, two golden decanters — one in each hand — pouring two thin streams of water, one "
-        "into the tub and one across the stone floor"),
+        "above her, two golden decanters — one held HIGH in her raised hand pouring its thin "
+        "stream down onto her, the other held low in her trailing hand behind her pouring into "
+        "the tub"),
     "18-moon": ("Midnight lagoon",
         "a mysterious 22-year-old streamer in a midnight lagoon bathroom: a deep-blue lagoon-pool "
         "tub, a crescent-moon lamp dripping silver dew, moonflowers blooming along the wet tile, two "
