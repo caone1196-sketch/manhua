@@ -50,6 +50,19 @@ BIKINI_OVERRIDES = {
     "17-the-star": ("pure-white", "with tiny pearl beads"),
 }
 
+# Ghi đè đoạn WET FABRIC theo lá (The Star: top tuột xuống bồn, chỉ còn bottom)
+WET_FABRIC_OVERRIDES = {
+    "17-the-star": "she wears only the soaking-wet pure-white micro string bikini BOTTOM with "
+                   "tiny pearl beads — waterlogged darkened tone with a glossy wet sheen, fully "
+                   "opaque, clinging like a second skin with zero loose folds, plastered wet "
+                   "wrinkles, water droplets beading on the fabric, tiny drips falling from its "
+                   "edges; her matching little bikini TOP has slipped entirely down off her body "
+                   "and floats in the shallow tub water, its fine straps drifting loose around "
+                   "it; whole body wet with droplets and thin rivulets, wet gleaming hair "
+                   "strands; water is being poured over her right now, so the drenched look "
+                   "reads naturally.",
+}
+
 # ---------------------------------------------------------------------------
 # TƯ THẾ GỢI CẢM (xoay vòng 12 pose — gợi cảm, S-curve, không lộ liễu)
 # ---------------------------------------------------------------------------
@@ -198,18 +211,16 @@ POSE_OVERRIDES = {
 "17-the-star": "kneeling upright back on her heels in the shallow circular tub beneath the "
                "glass-dome skylight, her whole body one graceful pouring arc: ONE arm raised in "
                "a soft bent arc, hand holding the first golden decanter tipped out just above "
-               "her own chest, so a thin unbroken stream of glittering water falls directly onto "
-               "her chest and collarbones — the stream breaks against her skin and the soaked "
-               "white fabric, splits into bright rivulets that trace her throat, ribs, waist and "
-               "hips, following her body in glistening trails before rejoining the tub water; "
-               "her OTHER arm hangs loose and relaxed BEHIND her, extended low past her hip with "
-               "the shoulder rolling open, hand holding the second golden decanter tipped so its "
-               "own thin stream spills quietly into the tub behind her; BOTH fine straps of the "
-               "white bikini have slipped off BOTH shoulders, hanging loose and dripping at her "
-               "elbows, the soaked cups sagging low and askew on both sides yet the plastered "
-               "fabric clings in a precarious last line of coverage, still fully covering and "
-               "opaque; spine tall, head tipped slightly back, starlight grey-blue eyes "
-               "blissfully half-closed, lips softly parted, water beading on her lashes",
+               "her own chest, so a thin unbroken stream of glittering water falls onto her "
+               "chest and spreads across it in a bright glittering veil of falling water — the "
+               "pouring water her only covering above the waist, streaming down her throat, "
+               "ribs, waist and hips in glistening trails before rejoining the tub water, her "
+               "little bikini top floating in the shallow water beside her knee; her OTHER arm "
+               "hangs loose and relaxed BEHIND her, extended low past her hip with the shoulder "
+               "rolling open, hand holding the second golden decanter tipped so its own thin "
+               "stream spills quietly into the tub behind her; her head tipped gently BACK and "
+               "up, chin lifted, starlight grey-blue eyes drooping blissfully HALF-CLOSED "
+               "behind low lashes, lips softly parted, water beading on her lashes",
 }
 
 # ---------------------------------------------------------------------------
@@ -1124,6 +1135,19 @@ def main():
             pose=pose,
             style=style_name,
         )
+        wf = WET_FABRIC_OVERRIDES.get(slug)
+        if wf:
+            default_wf = (
+                "WET FABRIC (match reference 2): soaking-wet {o} micro string bikini {a} — "
+                "waterlogged darkened tone with a glossy wet sheen, fabric fully opaque, "
+                "clinging like a second skin with zero loose folds, plastered wet wrinkles, "
+                "water droplets beading on the fabric surface, tiny drips falling from the "
+                "fabric edges; whole body wet with droplets and thin rivulets, wet gleaming "
+                "hair strands; she just rose out of the water or stepped out of the shower, "
+                "so the drenched look reads naturally."
+            ).format(o=bikini_color, a=bikini_accent)
+            assert default_wf in prompt, "WET FABRIC default not found: " + slug
+            prompt = prompt.replace(default_wf, wf)
         # Kiểm tra giáp: chỉ quét phần mô tả (bỏ qua câu NO ARMOR chủ đích trong template)
         ban = "NO ARMOR ANYWHERE ON THE FIGURE"
         scan = prompt.split(ban)[0] + prompt.split(ban)[-1][prompt.split(ban)[-1].find("\n"):]
