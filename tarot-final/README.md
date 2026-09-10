@@ -12,7 +12,7 @@ Thư mục riêng chứa **ảnh final từng lá** (bản chốt, không phải
 
 | File | Lá bài | Trạng thái |
 |---|---|---|
-| `00-the-fool.jpg` | THE FOOL (tông hồng nhạt, nóc nhà, chó trắng) | ✅ final |
+| `00-the-fool.png` | THE FOOL (tông hồng nhạt, nóc nhà, chó trắng) | ✅ final |
 | `01-the-magician.jpg` | THE MAGICIAN | ⏳ chưa tạo |
 | ... | ... | ⏳ |
 
