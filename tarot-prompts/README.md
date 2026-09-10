@@ -36,7 +36,7 @@ mỗi lá chỉ khác **màu/kiểu tóc, màu/ánh mắt, tư thế, đạo c�
 | IX | THE HERMIT | xám bạc + mũ trùm | xanh nhạt, khôn ngoan |
 | X | WHEEL OF FORTUNE | nâu hạt dẻ + trâm bánh xe | tím-xanh, tiên tri |
 | XI | JUSTICE | đen rẽ ngôi + vương miện cân | xám-xanh, sắc lạnh |
-| XII | THE HANGED MAN | vàng nhạt buông ngược + hào quang | nhắm thiền an nhiên |
+| XII | THE HANGED | vàng nhạt buông ngược + hào quang | nhắm thiền an nhiên |
 | XIII | DEATH | trắng tuyết + vương miện xương + mạng đen | tím-băng phát sáng |
 | XIV | TEMPERANCE | vàng mềm + vòng nhật-nguyệt | xanh-xám, nhìn dòng nước |
 | XV | THE DEVIL | đen-tím hoang dại + sừng cừu | đỏ ruby rực cháy |

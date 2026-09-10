@@ -33,7 +33,7 @@
 
 ## 3. Quy tắc nhân vật nữ thống nhất
 
-- Mọi lá đều là **adult ethereal woman** (kể cả THE EMPEROR, THE HIEROPHANT, THE HANGED MAN,
+- Mọi lá đều là **adult ethereal woman** (kể cả THE EMPEROR, THE HIEROPHANT, THE HANGED,
   THE DEVIL... đều vẽ thành **phiên bản nữ tính hóa** nhưng giữ nguyên biểu tượng gốc).
 - Không vẽ nam giới, không vẽ trẻ em, không vẽ thêm nhân vật phụ (ngoại lệ: thiên thần,
   bóng ma mờ, tượng đá, sư tử, nhân sư... làm phông nền/biểu tượng, không phải nhân vật chính).

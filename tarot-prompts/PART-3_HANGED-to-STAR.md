@@ -1,12 +1,12 @@
 # MAJOR ARCANA — Phần 3/4 (XII → XVII)
 
-## XII — THE HANGED MAN (Người Treo Ngược — phiên bản nữ)
+## XII — THE HANGED (Người Treo Ngược — phiên bản nữ)
 
 **Biến đổi riêng:** tóc vàng nhạt buông ngược + hào quang đầu | mắt nhắm thiền an nhiên |
 treo ngược bằng 1 chân trên cành vàng, phản chiếu trong nước | vầng hào quang: vòng thánh vàng quanh đầu.
 
 ```text
-THE HANGED MAN — premium semi-realistic gothic fantasy tarot card illustration,
+THE HANGED — premium semi-realistic gothic fantasy tarot card illustration,
 semi-realistic digital painting, high-end fantasy card art, painterly realism,
 classical fantasy illustration, elegant idealized human beauty, realistic but
 stylized anatomy, realistic proportions with subtle fantasy beautification,
@@ -72,7 +72,7 @@ centered, halo perfectly centered behind her head, matching vines and pillars on
 both sides, distant Gothic city forming a horizontal background layer, large
 reflective foreground, strong vertical hierarchy, clean readable silhouette, elegant
 negative space, majestic sacred atmosphere,
-tarot card presentation: full-bleed artwork, vertical portrait card, absolutely no frame, no border, no edge vignette, no title panel, no text box, no plaque, no dark banner, artwork bleeding fully to all edges, only the card name floating directly over the artwork at the bottom: large centered antique-gold serif typography reading: THE HANGED MAN, elegant classical Roman capitals, engraved metallic gold appearance,
+tarot card presentation: full-bleed artwork, vertical portrait card, absolutely no frame, no border, no edge vignette, no title panel, no text box, no plaque, no dark banner, artwork bleeding fully to all edges, only the card name floating directly over the artwork at the bottom: large centered antique-gold serif typography reading: THE HANGED, elegant classical Roman capitals, engraved metallic gold appearance,
 clean readable lettering,
 overall impression: mystical, surrendered, enlightened, patient, inverted wisdom,
 tranquil, sacrificial, luminous, semi-realistic, painterly, masterpiece tarot
