@@ -24,7 +24,7 @@ mỗi lá chỉ khác **màu/kiểu tóc, màu/ánh mắt, tư thế, đạo c�
 
 | # | Lá | Tóc | Mắt |
 |---|---|---|---|
-| 0 | THE FOOL | vàng mật ong gợn sóng + hoa trắng | xanh hạt dẻ, vui tươi ngước lên |
+| 0 | THE FOOL | vàng mật ong gợn sóng + hoa trắng | xanh hạt dẻ, nhìn chăm chú hoa hồng (đi trên nóc nhà, chó trắng theo sau, tông hồng nhạt) |
 | I | THE MAGICIAN | đen huyền thẳng + băng ouroboros | hổ phách, sắc sảo nhìn thẳng |
 | II | THE HIGH PRIESTESS | đen xanh midnight + mạng bạc | xám bạc, khép hờ bí ẩn |
 | III | THE EMPRESS | nâu đỏ đồng xoăn + hoa hồng/lúa | xanh lục bảo, hiền từ |

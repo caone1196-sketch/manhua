@@ -72,10 +72,7 @@ centered, angel and sun perfectly centered behind her, matching trees and doves 
 both sides, matching Gothic pillars, distant Gothic city forming a horizontal
 background layer, large reflective foreground, strong vertical hierarchy, clean
 readable silhouette, elegant negative space, majestic sacred atmosphere,
-tarot card presentation: full-bleed artwork, vertical portrait card, no white margin,
-no parchment border, no thick black frame, subtle dark antique lower title panel
-integrated into the artwork, large centered antique-gold serif typography reading:
-THE LOVERS, elegant classical Roman capitals, engraved metallic gold appearance,
+tarot card presentation: full-bleed artwork, vertical portrait card, absolutely no frame, no border, no edge vignette, no title panel, no text box, no plaque, no dark banner, artwork bleeding fully to all edges, only the card name floating directly over the artwork at the bottom: large centered antique-gold serif typography reading: THE LOVERS, elegant classical Roman capitals, engraved metallic gold appearance,
 clean readable lettering,
 overall impression: mystical, romantic, tender, blessed union, heartfelt choice,
 dreamlike, elegant, luminous, semi-realistic, painterly, masterpiece tarot
@@ -156,10 +153,7 @@ centered, canopy halo perfectly centered behind her, matching sphinxes and wheel
 both sides, matching Gothic pillars, distant Gothic city forming a horizontal
 background layer, large reflective foreground, strong vertical hierarchy, clean
 readable silhouette, elegant negative space, majestic sacred atmosphere,
-tarot card presentation: full-bleed artwork, vertical portrait card, no white margin,
-no parchment border, no thick black frame, subtle dark antique lower title panel
-integrated into the artwork, large centered antique-gold serif typography reading:
-THE CHARIOT, elegant classical Roman capitals, engraved metallic gold appearance,
+tarot card presentation: full-bleed artwork, vertical portrait card, absolutely no frame, no border, no edge vignette, no title panel, no text box, no plaque, no dark banner, artwork bleeding fully to all edges, only the card name floating directly over the artwork at the bottom: large centered antique-gold serif typography reading: THE CHARIOT, elegant classical Roman capitals, engraved metallic gold appearance,
 clean readable lettering,
 overall impression: mystical, victorious, driven, disciplined, unstoppable,
 triumphant, monumental, luxurious, semi-realistic, painterly, masterpiece tarot
@@ -240,10 +234,7 @@ exactly centered, halo perfectly centered behind her, matching hands on both sid
 of the mane, matching Gothic pillars, distant Gothic city forming a horizontal
 background layer, large reflective foreground, strong vertical hierarchy, clean
 readable silhouette, elegant negative space, majestic sacred atmosphere,
-tarot card presentation: full-bleed artwork, vertical portrait card, no white margin,
-no parchment border, no thick black frame, subtle dark antique lower title panel
-integrated into the artwork, large centered antique-gold serif typography reading:
-STRENGTH, elegant classical Roman capitals, engraved metallic gold appearance, clean
+tarot card presentation: full-bleed artwork, vertical portrait card, absolutely no frame, no border, no edge vignette, no title panel, no text box, no plaque, no dark banner, artwork bleeding fully to all edges, only the card name floating directly over the artwork at the bottom: large centered antique-gold serif typography reading: STRENGTH, elegant classical Roman capitals, engraved metallic gold appearance, clean
 readable lettering,
 overall impression: mystical, gentle power, courageous, patient, tender dominance,
 serene, noble, luxurious, semi-realistic, painterly, masterpiece tarot illustration
@@ -320,10 +311,7 @@ centered, star halo perfectly centered behind her, matching lantern hands and
 mantle folds on both sides, matching Gothic pillars, distant Gothic city forming a
 horizontal background layer, large reflective foreground, strong vertical hierarchy,
 clean readable silhouette, elegant negative space, majestic sacred atmosphere,
-tarot card presentation: full-bleed artwork, vertical portrait card, no white margin,
-no parchment border, no thick black frame, subtle dark antique lower title panel
-integrated into the artwork, large centered antique-gold serif typography reading:
-THE HERMIT, elegant classical Roman capitals, engraved metallic gold appearance,
+tarot card presentation: full-bleed artwork, vertical portrait card, absolutely no frame, no border, no edge vignette, no title panel, no text box, no plaque, no dark banner, artwork bleeding fully to all edges, only the card name floating directly over the artwork at the bottom: large centered antique-gold serif typography reading: THE HERMIT, elegant classical Roman capitals, engraved metallic gold appearance,
 clean readable lettering,
 overall impression: mystical, solitary, wise, introspective, guiding light, quiet,
 melancholic, luminous, semi-realistic, painterly, masterpiece tarot illustration
@@ -401,10 +389,7 @@ centered, wheel halo perfectly centered behind her, matching guardian statues on
 both sides, matching Gothic pillars, distant Gothic city forming a horizontal
 background layer, large reflective foreground, strong vertical hierarchy, clean
 readable silhouette, elegant negative space, majestic sacred atmosphere,
-tarot card presentation: full-bleed artwork, vertical portrait card, no white margin,
-no parchment border, no thick black frame, subtle dark antique lower title panel
-integrated into the artwork, large centered antique-gold serif typography reading:
-WHEEL OF FORTUNE, elegant classical Roman capitals, engraved metallic gold
+tarot card presentation: full-bleed artwork, vertical portrait card, absolutely no frame, no border, no edge vignette, no title panel, no text box, no plaque, no dark banner, artwork bleeding fully to all edges, only the card name floating directly over the artwork at the bottom: large centered antique-gold serif typography reading: WHEEL OF FORTUNE, elegant classical Roman capitals, engraved metallic gold
 appearance, clean readable lettering,
 overall impression: mystical, fated, cyclical, cosmic, turning destiny, oracular,
 grand, luxurious, semi-realistic, painterly, masterpiece tarot illustration
@@ -482,10 +467,7 @@ centered, scale halo perfectly centered behind her, matching pans and throne pos
 on both sides, matching Gothic pillars, distant Gothic city forming a horizontal
 background layer, large reflective foreground, strong vertical hierarchy, clean
 readable silhouette, elegant negative space, majestic sacred atmosphere,
-tarot card presentation: full-bleed artwork, vertical portrait card, no white margin,
-no parchment border, no thick black frame, subtle dark antique lower title panel
-integrated into the artwork, large centered antique-gold serif typography reading:
-JUSTICE, elegant classical Roman capitals, engraved metallic gold appearance, clean
+tarot card presentation: full-bleed artwork, vertical portrait card, absolutely no frame, no border, no edge vignette, no title panel, no text box, no plaque, no dark banner, artwork bleeding fully to all edges, only the card name floating directly over the artwork at the bottom: large centered antique-gold serif typography reading: JUSTICE, elegant classical Roman capitals, engraved metallic gold appearance, clean
 readable lettering,
 overall impression: mystical, impartial, truthful, exact, solemn, severe, sacred,
 majestic, semi-realistic, painterly, masterpiece tarot illustration

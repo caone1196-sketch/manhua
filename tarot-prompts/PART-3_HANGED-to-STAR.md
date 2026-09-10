@@ -72,10 +72,7 @@ centered, halo perfectly centered behind her head, matching vines and pillars on
 both sides, distant Gothic city forming a horizontal background layer, large
 reflective foreground, strong vertical hierarchy, clean readable silhouette, elegant
 negative space, majestic sacred atmosphere,
-tarot card presentation: full-bleed artwork, vertical portrait card, no white margin,
-no parchment border, no thick black frame, subtle dark antique lower title panel
-integrated into the artwork, large centered antique-gold serif typography reading:
-THE HANGED MAN, elegant classical Roman capitals, engraved metallic gold appearance,
+tarot card presentation: full-bleed artwork, vertical portrait card, absolutely no frame, no border, no edge vignette, no title panel, no text box, no plaque, no dark banner, artwork bleeding fully to all edges, only the card name floating directly over the artwork at the bottom: large centered antique-gold serif typography reading: THE HANGED MAN, elegant classical Roman capitals, engraved metallic gold appearance,
 clean readable lettering,
 overall impression: mystical, surrendered, enlightened, patient, inverted wisdom,
 tranquil, sacrificial, luminous, semi-realistic, painterly, masterpiece tarot
@@ -155,10 +152,7 @@ centered, pale disc perfectly centered behind her, matching crowns and towers on
 both sides, matching Gothic pillars, distant Gothic city forming a horizontal
 background layer, large reflective foreground, strong vertical hierarchy, clean
 readable silhouette, elegant negative space, majestic sacred atmosphere,
-tarot card presentation: full-bleed artwork, vertical portrait card, no white margin,
-no parchment border, no thick black frame, subtle dark antique lower title panel
-integrated into the artwork, large centered antique-gold serif typography reading:
-DEATH, elegant classical Roman capitals, engraved metallic gold appearance, clean
+tarot card presentation: full-bleed artwork, vertical portrait card, absolutely no frame, no border, no edge vignette, no title panel, no text box, no plaque, no dark banner, artwork bleeding fully to all edges, only the card name floating directly over the artwork at the bottom: large centered antique-gold serif typography reading: DEATH, elegant classical Roman capitals, engraved metallic gold appearance, clean
 readable lettering,
 overall impression: mystical, inevitable, transformative, solemn, beautiful ending,
 melancholic, elegant, haunting, semi-realistic, painterly, masterpiece tarot
@@ -237,10 +231,7 @@ centered, sunrise halo perfectly centered behind her, matching chalices and stre
 on both sides, matching Gothic pillars, distant Gothic city forming a horizontal
 background layer, large reflective foreground, strong vertical hierarchy, clean
 readable silhouette, elegant negative space, majestic sacred atmosphere,
-tarot card presentation: full-bleed artwork, vertical portrait card, no white margin,
-no parchment border, no thick black frame, subtle dark antique lower title panel
-integrated into the artwork, large centered antique-gold serif typography reading:
-TEMPERANCE, elegant classical Roman capitals, engraved metallic gold appearance,
+tarot card presentation: full-bleed artwork, vertical portrait card, absolutely no frame, no border, no edge vignette, no title panel, no text box, no plaque, no dark banner, artwork bleeding fully to all edges, only the card name floating directly over the artwork at the bottom: large centered antique-gold serif typography reading: TEMPERANCE, elegant classical Roman capitals, engraved metallic gold appearance,
 clean readable lettering,
 overall impression: mystical, balanced, healing, alchemical, serene, harmonious,
 gentle, luminous, semi-realistic, painterly, masterpiece tarot illustration
@@ -320,10 +311,7 @@ centered, ember halo perfectly centered behind her, matching wings and chains on
 both sides, matching Gothic pillars, distant Gothic city forming a horizontal
 background layer, large reflective foreground, strong vertical hierarchy, clean
 readable silhouette, elegant negative space, majestic sacred atmosphere,
-tarot card presentation: full-bleed artwork, vertical portrait card, no white margin,
-no parchment border, no thick black frame, subtle dark antique lower title panel
-integrated into the artwork, large centered antique-gold serif typography reading:
-THE DEVIL, elegant classical Roman capitals, engraved metallic gold appearance, clean
+tarot card presentation: full-bleed artwork, vertical portrait card, absolutely no frame, no border, no edge vignette, no title panel, no text box, no plaque, no dark banner, artwork bleeding fully to all edges, only the card name floating directly over the artwork at the bottom: large centered antique-gold serif typography reading: THE DEVIL, elegant classical Roman capitals, engraved metallic gold appearance, clean
 readable lettering,
 overall impression: mystical, tempting, dark, magnetic, dangerous elegance,
 smoldering, powerful, seductive yet modest, semi-realistic, painterly, masterpiece
@@ -404,10 +392,7 @@ centered, exploding tower perfectly centered behind her, matching falling debris
 both sides, matching Gothic pillars, distant Gothic city forming a horizontal
 background layer, large reflective foreground, strong vertical hierarchy, clean
 readable silhouette, elegant negative space, majestic sacred atmosphere,
-tarot card presentation: full-bleed artwork, vertical portrait card, no white margin,
-no parchment border, no thick black frame, subtle dark antique lower title panel
-integrated into the artwork, large centered antique-gold serif typography reading:
-THE TOWER, elegant classical Roman capitals, engraved metallic gold appearance, clean
+tarot card presentation: full-bleed artwork, vertical portrait card, absolutely no frame, no border, no edge vignette, no title panel, no text box, no plaque, no dark banner, artwork bleeding fully to all edges, only the card name floating directly over the artwork at the bottom: large centered antique-gold serif typography reading: THE TOWER, elegant classical Roman capitals, engraved metallic gold appearance, clean
 readable lettering,
 overall impression: mystical, catastrophic, sudden, revelatory, shattering,
 dramatic, electrifying, apocalyptic yet beautiful, semi-realistic, painterly,
@@ -534,9 +519,7 @@ distant Gothic city forming a horizontal background layer, large reflective fore
 strong vertical hierarchy, clean readable silhouette, elegant negative space,
 majestic sacred atmosphere,
 tarot card presentation: full-bleed artwork, vertical portrait card,
-no white margin, no parchment border, no thick black frame,
-subtle dark antique lower title panel integrated into the artwork,
-large centered antique-gold serif typography reading: THE STAR,
+absolutely no frame, no border, no edge vignette, no title panel, no text box, no plaque, no dark banner, artwork bleeding fully to all edges, only the card name floating directly over the artwork at the bottom: large centered antique-gold serif typography reading: THE STAR,
 elegant classical Roman capitals, engraved metallic gold appearance,
 clean readable lettering,
 overall impression: mystical, celestial, elegant, melancholic, sacred,

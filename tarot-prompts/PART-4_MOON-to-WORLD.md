@@ -72,10 +72,7 @@ centered, great moon perfectly centered behind her, matching towers and beasts o
 both sides, matching Gothic pillars, distant Gothic city forming a horizontal
 background layer, large reflective foreground, strong vertical hierarchy, clean
 readable silhouette, elegant negative space, majestic sacred atmosphere,
-tarot card presentation: full-bleed artwork, vertical portrait card, no white margin,
-no parchment border, no thick black frame, subtle dark antique lower title panel
-integrated into the artwork, large centered antique-gold serif typography reading:
-THE MOON, elegant classical Roman capitals, engraved metallic gold appearance, clean
+tarot card presentation: full-bleed artwork, vertical portrait card, absolutely no frame, no border, no edge vignette, no title panel, no text box, no plaque, no dark banner, artwork bleeding fully to all edges, only the card name floating directly over the artwork at the bottom: large centered antique-gold serif typography reading: THE MOON, elegant classical Roman capitals, engraved metallic gold appearance, clean
 readable lettering,
 overall impression: mystical, illusory, dreamlike, subconscious, tidal, nocturnal,
 haunting, beautiful, semi-realistic, painterly, masterpiece tarot illustration
@@ -154,10 +151,7 @@ centered, great sun perfectly centered behind her, matching sunflowers on both
 sides, matching Gothic pillars, distant Gothic city forming a horizontal background
 layer, large reflective foreground, strong vertical hierarchy, clean readable
 silhouette, elegant negative space, majestic sacred atmosphere,
-tarot card presentation: full-bleed artwork, vertical portrait card, no white margin,
-no parchment border, no thick black frame, subtle dark antique lower title panel
-integrated into the artwork, large centered antique-gold serif typography reading:
-THE SUN, elegant classical Roman capitals, engraved metallic gold appearance, clean
+tarot card presentation: full-bleed artwork, vertical portrait card, absolutely no frame, no border, no edge vignette, no title panel, no text box, no plaque, no dark banner, artwork bleeding fully to all edges, only the card name floating directly over the artwork at the bottom: large centered antique-gold serif typography reading: THE SUN, elegant classical Roman capitals, engraved metallic gold appearance, clean
 readable lettering,
 overall impression: mystical, joyful, vital, triumphant, warm clarity, radiant,
 celebrating, luminous, semi-realistic, painterly, masterpiece tarot illustration
@@ -237,10 +231,7 @@ centered, angel perfectly centered above her, matching doves and coffin lids on 
 sides, matching Gothic pillars, distant Gothic city forming a horizontal background
 layer, large reflective foreground, strong vertical hierarchy, clean readable
 silhouette, elegant negative space, majestic sacred atmosphere,
-tarot card presentation: full-bleed artwork, vertical portrait card, no white margin,
-no parchment border, no thick black frame, subtle dark antique lower title panel
-integrated into the artwork, large centered antique-gold serif typography reading:
-JUDGEMENT, elegant classical Roman capitals, engraved metallic gold appearance, clean
+tarot card presentation: full-bleed artwork, vertical portrait card, absolutely no frame, no border, no edge vignette, no title panel, no text box, no plaque, no dark banner, artwork bleeding fully to all edges, only the card name floating directly over the artwork at the bottom: large centered antique-gold serif typography reading: JUDGEMENT, elegant classical Roman capitals, engraved metallic gold appearance, clean
 readable lettering,
 overall impression: mystical, awakening, called, absolved, transcendent, apocalyptic
 yet hopeful, sublime, luminous, semi-realistic, painterly, masterpiece tarot
@@ -321,10 +312,7 @@ centered, laurel wreath perfectly centered around her, matching wands and ribbon
 both sides, matching Gothic pillars, distant Gothic city forming a horizontal
 background layer, large reflective foreground, strong vertical hierarchy, clean
 readable silhouette, elegant negative space, majestic sacred atmosphere,
-tarot card presentation: full-bleed artwork, vertical portrait card, no white margin,
-no parchment border, no thick black frame, subtle dark antique lower title panel
-integrated into the artwork, large centered antique-gold serif typography reading:
-THE WORLD, elegant classical Roman capitals, engraved metallic gold appearance, clean
+tarot card presentation: full-bleed artwork, vertical portrait card, absolutely no frame, no border, no edge vignette, no title panel, no text box, no plaque, no dark banner, artwork bleeding fully to all edges, only the card name floating directly over the artwork at the bottom: large centered antique-gold serif typography reading: THE WORLD, elegant classical Roman capitals, engraved metallic gold appearance, clean
 readable lettering,
 overall impression: mystical, complete, cosmic, harmonious, eternal, celebratory,
 wholeness, sublime, semi-realistic, painterly, masterpiece tarot illustration

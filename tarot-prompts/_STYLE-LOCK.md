@@ -17,7 +17,7 @@
 | Ánh sáng | `semi-realistic fantasy cinematic lighting, warm golden backlight, cool midnight-blue ambient light, soft violet reflected light, gentle rim light around hair and shoulders, soft highlights on wet skin and silk, subtle bloom, volumetric golden rays, deep cinematic shadows, soft painterly transitions, luminous atmosphere` |
 | Palette nền | `deep midnight blue, indigo, dark violet, royal purple, antique gold, bronze, ivory white, champagne, soft silver highlights, warm celestial gold` |
 | Bố cục | `strict central symmetry, perfect bilateral balance, woman exactly centered, matching props on both sides, matching Gothic pillars, large reflective foreground, strong vertical hierarchy, clean readable silhouette, elegant negative space, majestic sacred atmosphere` |
-| Trình bày lá bài | `full-bleed artwork, vertical portrait card, no white margin, no parchment border, no thick black frame, subtle dark antique lower title panel integrated into the artwork, large centered antique-gold serif typography, elegant classical Roman capitals, engraved metallic gold appearance, clean readable lettering` |
+| Trình bày lá bài | `full-bleed artwork, vertical portrait card, absolutely no frame, no border, no edge vignette, no title panel, no text box, no plaque, no dark banner, artwork bleeding fully to all edges, only the card name floating directly over the artwork at the bottom, large centered antique-gold serif typography, elegant classical Roman capitals, engraved metallic gold appearance, clean readable lettering` — **KHÔNG khung viền, KHÔNG khung chữ, chỉ giữ tên lá bài** |
 
 ## 2. VARIABLE — Được phép thay đổi theo từng lá
 
