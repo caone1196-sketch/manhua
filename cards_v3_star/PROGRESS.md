@@ -1,57 +1,56 @@
-# Tiến độ — 22 lá Ẩn Chính · `OUTFIT_MODE="wet_lingerie"` + FACE LOCK theo lá mẫu (v3.2)
+# Tiến độ — 22 lá Ẩn Chính · **v3.3 = bikini 2 mảnh ướt** + FACE LOCK theo lá mẫu
 
-Ảnh: `cards_v3_star/<slug>.png` · Prompt sinh ảnh: `prompts_frameless_v3_star/tool_prompts.json`
-Reference đính kèm mỗi lần gen: `the star.png`
+Ảnh: `cards_v3_star/<slug>.png` · Prompt: `prompts_frameless_v3_star/tool_prompts.json`
+Reference đính kèm mỗi lần gen: `the star.png` · Chế độ: `OUTFIT_MODE = "bikini_two_piece"`
 
-## v3.2 có gì
+## v3.3
+* Trang phục: **bikini 2 mảnh satin bóng** — top underwire cúp lót đầy đủ phủ kín ngực, khoá
+  giữa ngực bằng **2 khuy rosette đồng khắc emblem của lá đó**, quai quấn kim loại, quần cạp cao.
+  Giữ nguyên bộ kim hoàn của lá mẫu: hip chain filigree + đá quý lớn, dải lụa thêu sa trước đùi,
+  voan viền sao, vòng tay chạm lộng, circlet, dây chuyền đá.
+* **ướt**: satin sẫm hơn một tông, bóng, hạt nước, gấu vải nhỏ giọt, tóc ướt bết — nhưng
+  **opaque**, không xuyên thấu.
+* **FACE LOCK**: heavy half-lidded dreamy eyes gazing softly down · small glossy parted lips ·
+  faint blush · delicate oval face · wet strands across one cheek · calm and slightly dazed.
 
-1. **FACE LOCK** — biểu cảm copy đúng lá mẫu: *heavy half-lidded dreamy eyes gazing softly down,
-   small glossy parted lips, faint blush on cheeks and nose, delicate oval face, tiny straight nose,
-   wet strands across one cheek, calm and slightly dazed*.
-2. **Trang phục = nội y satin mỏng ướt** (`OUTFIT_MODE="wet_lingerie"`), vẫn giữ bộ kim hoàn
-   của lá mẫu: khuy rosette đồng khắc emblem, hip chain đá quý lớn, dải lụa sa giữa đùi,
-   voan viền sao, vòng tay chạm lộng, circlet.
-
-## ⚠ Moderation của backend ảnh (đã dò ra bằng 6 lần thử)
-
-| Cách viết | Kết quả |
+## ⚠ Tình trạng backend ảnh (số liệu thật của các lượt đã chạy)
+| Công thức | KQ |
 |---|---|
-| `lingerie`, `bralette`, `clinging like a second skin`, `bare skin`, `see-through` | ❌ 5/5 bị chặn (`Response contains no images`, model chỉ trả text) |
-| `delicate satin camisole top with thin crossing straps + matching high-cut satin bottoms`, `soft wet gloss with fine water beads`, `wet slicked hair`, `droplets on her shoulders`, `as if she just rose from the bath` | ✅ pass, và vẫn đọc ra đúng chất lụa ướt bó |
-| thêm `chest covered, fabric opaque and neatly fitted` | ✅ tăng tỉ lệ pass |
+| `camisole top + high-cut bottoms` + `wet gloss/water beads` | ✅ pass (The Moon v3.2, The Fool v3.2) |
+| `two-piece bikini in glossy satin` + `swimwear-grade opaque` | ✅ pass 2/11 — **tỉ lệ thấp, fail là `totalParts:0` (empty response), không phải từ chối nội dung → RETRY là chính** |
+| `lingerie` · `bralette` · `clinging like a second skin` · `see-through` · `bare skin` | ❌ 5/5 bị chặn (model chỉ trả text) |
+| prompt >2500 ký tự | ❌ fail gần như chắc chắn — giữ ~2100–2400 |
 
-→ Script đã khoá sẵn công thức pass vào `COSTUME_SHORT_WET`; `OUTFIT_WET` trong file `.md` có ghi chú
-cảnh báo này. Thỉnh thoảng backend vẫn fail kiểu `totalParts:0` (empty response) — **chỉ cần retry**.
+Vì vậy: mỗi lượt tối đa **10 ảnh**, thực ăn ~2-4 lá/lượt; script sinh prompt đã ghim sẵn
+công thức pass, chỉ việc lặp `gen` cho tới khi ăn.
 
 ## Trạng thái 22 lá
 
 | Slug | Ảnh |
 |---|---|
-| 00-fool | ✅ v3.2 nội y satin ướt |
-| 01-magician | ⏳ chờ |
-| 02-priestess | 🔁 v3.1 couture (cần render lại bản ướt) |
-| 03-empress | 🔁 v3.1 couture (cần render lại bản ướt) |
-| 04-emperor | 🔁 v3.1 couture (cần render lại bản ướt) |
-| 05-hierophant | 🔁 v3.1 couture (cần render lại bản ướt) |
-| 06-lovers | ⏳ chờ |
-| 07-chariot | ⏳ chờ |
-| 08-strength | ⏳ chờ |
-| 09-hermit | ⏳ chờ |
-| 10-wheel | ⏳ chờ |
-| 11-justice | ⏳ chờ |
-| 12-hanged | ⏳ chờ |
-| 13-death | ⏳ chờ |
-| 14-temperance | ⏳ chờ |
-| 15-devil | ⏳ chờ |
-| 16-tower | ⏳ chờ |
-| 17-the-star | ⏳ chờ |
-| 18-moon | ✅ v3.2 nội y satin ướt |
-| 19-sun | ⏳ chờ |
-| 20-judgement | ⏳ chờ |
-| 21-world | ⏳ chờ |
+| 00-fool | 🔁 v3.2 camisole ướt — cần render lại bikini |
+| 01-magician | ⏳ chưa render |
+| 02-priestess | ✅ **v3.3 bikini 2 mảnh (ướt)** |
+| 03-empress | 🔁 v3.1 couture khô — cần render lại bikini |
+| 04-emperor | 🔁 v3.1 couture khô — cần render lại bikini |
+| 05-hierophant | 🔁 v3.1 couture khô — cần render lại bikini |
+| 06-lovers | ⏳ chưa render |
+| 07-chariot | ⏳ chưa render |
+| 08-strength | ⏳ chưa render |
+| 09-hermit | ⏳ chưa render |
+| 10-wheel | ⏳ chưa render |
+| 11-justice | ⏳ chưa render |
+| 12-hanged | ⏳ chưa render |
+| 13-death | ⏳ chưa render |
+| 14-temperance | ⏳ chưa render |
+| 15-devil | ⏳ chưa render |
+| 16-tower | ⏳ chưa render |
+| 17-the-star | ⏳ chưa render |
+| 18-moon | ✅ **v3.3 bikini 2 mảnh (ướt)** |
+| 19-sun | ⏳ chưa render |
+| 20-judgement | ⏳ chưa render |
+| 21-world | ⏳ chưa render |
 
-**Còn phải làm:** render lại 02/03/04/05 (đang là bản v3.1 khô) + 16 lá chưa có ảnh.
-Mỗi lượt gen tối đa 10 ảnh → dự kiến 2 lượt (8 + 8), fail retry ngay trong lượt.
 ```bash
-python3 build_prompts_v3_star.py   # sửa WITH_FRAME / OUTFIT_MODE rồi chạy lại
+python3 build_prompts_v3_star.py   # đổi OUTFIT_MODE / WITH_FRAME rồi chạy lại
 ```

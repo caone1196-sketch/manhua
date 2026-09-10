@@ -36,8 +36,9 @@ WITH_FRAME = True
 
 # OUTFIT_MODE:
 #   "couture"      = phục trang nhiều lớp như lá mẫu (bandeau + dải chéo + panel lụa)
-#   "wet_lingerie" = nội y satin MỎNG ƯỚT bám sát da (yêu cầu v3.2), vẫn opaque & kín ngực
-OUTFIT_MODE = "wet_lingerie"
+#   "wet_lingerie"    = nội y satin mỏng ướt (v3.2)
+#   "bikini_two_piece" = bikini 2 mảnh (v3.3, yêu cầu hiện tại)
+OUTFIT_MODE = "bikini_two_piece"
 
 # --------------------------------------------------------------------------
 # Dữ liệu 22 lá Ẩn Chính: tên, biểu tượng, sàn cảnh, đá quý/accent phục trang,
@@ -532,7 +533,22 @@ OUTFIT_WET = ("Costume — v3.2 'nội y mỏng ướt': a delicate {cloth} sati
               "the generation prompt — the image backend refuses them (verified: 5/5 refusals). "
               "'camisole top + high-cut satin bottoms + wet gloss + water beads' passes and reads the same.")
 
-OUTFIT = OUTFIT_WET if OUTFIT_MODE == "wet_lingerie" else OUTFIT_COUTURE
+BIKINI_TERMS = ("two-piece bikini", "bikini", "swimwear")
+
+OUTFIT_BIKINI = ("Costume — v3.3 bikini 2 mảnh: a {cloth} two-piece bikini in a satin finish — a structured "
+                 "underwired top with fully lined cups that cover the bust completely, closed at centre front by "
+                 "two round {metal} rosette clasps engraved with {emblem_n}, thin {metal}-wrapped shoulder and "
+                 "back straps; matching high-cut {cloth} bikini bottoms edged in fine {metal} wire; over the hips "
+                 "the reference's ornate {metal} filigree hip chain set with a large faceted {gem_n}, holding a "
+                 "long embroidered silk panel that falls from the hip down the front of the thighs; a "
+                 "floor-length sheer veil hemmed with {metal} stars; openwork {metal} armbands, {metal} wrist "
+                 "bangles and a jewelled forehead circlet with a teardrop gem; a {metal} chain necklace with a "
+                 "matching gemstone at the throat. Wet from the water: fabric darkened a shade with a glossy "
+                 "satin sheen, plastered-smooth with tiny water beads, droplets falling from the hems, hair wet "
+                 "and slicked. Swimwear-grade opacity: fully opaque, never transparent, the top covers the whole "
+                 "bust — exactly how much skin the reference costume shows, no more.")
+
+OUTFIT = {"bikini_two_piece": OUTFIT_BIKINI, "wet_lingerie": OUTFIT_WET}.get(OUTFIT_MODE, OUTFIT_COUTURE)
 
 STYLECORE = ("soft airbrushed semi-realistic Korean manhwa digital painting, gentle bloom, edges separated by rim "
              "light instead of ink outlines, satin skin highlights, hyper-detailed antique-gold filigree "
@@ -570,7 +586,18 @@ COSTUME_SHORT_WET = ("Costume: a delicate {cloth} satin camisole top with thin c
                      "floor-length sheer veil hemmed with gold stars, openwork {metal} armbands, a jewelled "
                      "circlet. The satin carries a soft wet gloss with fine water beads, her hair is wet and "
                      "slicked and droplets sit on her shoulders, as if she just rose from the bath")
-COSTUME_SHORT = COSTUME_SHORT_WET if OUTFIT_MODE == "wet_lingerie" else COSTUME_SHORT_COUTURE
+COSTUME_SHORT_BIKINI = ("Costume: a {cloth} two-piece bikini in a glossy satin finish — structured underwired "
+                        "top with fully lined cups covering the bust completely, closed at centre front by two "
+                        "round {metal} rosette clasps engraved with {emblem_n}, thin {metal}-wrapped straps, "
+                        "matching high-cut bikini bottoms, plus the reference's ornate {metal} jewellery: a "
+                        "{metal} filigree hip chain with a large faceted {gem_n} holding a long embroidered silk "
+                        "panel falling down the front of the thighs, a floor-length sheer veil hemmed with gold "
+                        "stars, openwork {metal} armbands and a jewelled circlet. Wet from the water: satin "
+                        "darkened a shade with a glossy sheen and tiny water beads, droplets off the hems, hair "
+                        "wet and slicked; swimwear-grade opaque fabric, top covering the whole bust")
+
+COSTUME_SHORT = {"bikini_two_piece": COSTUME_SHORT_BIKINI,
+                 "wet_lingerie": COSTUME_SHORT_WET}.get(OUTFIT_MODE, COSTUME_SHORT_COUTURE)
 
 TOOL_PROVEN = ('Vertical tarot card \"{title}\" ' + STYLE_SHORT + ". " + FACE_SHORT + ". " +
                'Same ' + FRAME_SHORT + '. One adult woman in her twenties, tasteful. ' + COSTUME_SHORT + ". "
