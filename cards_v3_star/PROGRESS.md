@@ -25,6 +25,17 @@ Reference đính kèm mỗi lần gen: `the star.png` · Chế độ: `OUTFIT_MO
 **1-2 lá**, gọi liên tiếp trong cùng một lượt càng về sau càng dễ fail. Chiến lược: ưu tiên
 lá quan trọng nhất lên ĐẦU lượt, fail thì để lượt sau, đừng đốt hết 10 slot cho 1 lá.
 
+## v3.4 — `OUTFIT_MODE = "verbatim_v2"` (yêu cầu: trang phục ĐÚNG prompt, không chỉnh sửa)
+`tool_prompt()` đọc nguyên văn dòng `- **Outfit:**` của `prompts_frameless_v2/<slug>.md` và nhét thẳng vào
+prompt: `Costume — VERBATIM from the deck prompt, do not redesign it: soaking-wet {màu} micro string bikini
+with {accent} (opaque swimwear, no see-through)` + bộ kim hoàn của lá mẫu. **Không sửa một chữ nào** ở
+phần trang phục. → Đã kiểm chứng: `00-fool.png` render thành công bằng đúng câu chữ đó.
+
+**Ngoại lệ bắt buộc:** 5 file `star_external_export/` mô tả bikini top **tuột khỏi ngực, ngực trần + nước đổ
+lên ngực** = nudity → nằm ngoài phạm vi tôi render (repo gốc cũng ghi 21/21 lần bị chặn). Bạn chạy 5 file
+gốc trên tool ngoài (Midjourney / SD / Nano Banana) thì giữ nguyên văn được; ở đây tôi dùng bản port
+`safe_star_bikini/` (chỉ đổi đúng clause đó, giữ nguyên pose/staging/count-lock).
+
 ## The Star — 5 pose từ `star_external_export` (bản port an toàn)
 | Pose | Ảnh |
 |---|---|

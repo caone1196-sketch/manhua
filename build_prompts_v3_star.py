@@ -38,7 +38,9 @@ WITH_FRAME = True
 #   "couture"      = phục trang nhiều lớp như lá mẫu (bandeau + dải chéo + panel lụa)
 #   "wet_lingerie"    = nội y satin mỏng ướt (v3.2)
 #   "bikini_two_piece" = bikini 2 mảnh (v3.3, yêu cầu hiện tại)
-OUTFIT_MODE = "bikini_two_piece"
+#   "verbatim_v2"      = lấy ĐÚNG NGUYÊN VĂN dòng "- **Outfit:**" của prompts_frameless_v2/<slug>.md,
+#                        không sửa một chữ (yêu cầu: "trang phục đúng prompts không chỉnh sửa")
+OUTFIT_MODE = "verbatim_v2"
 
 # --------------------------------------------------------------------------
 # Dữ liệu 22 lá Ẩn Chính: tên, biểu tượng, sàn cảnh, đá quý/accent phục trang,
@@ -486,6 +488,18 @@ TOOL = ('Vertical tarot card \\"{title}\\", Korean manhwa SEMI-REALISTIC DIGITAL
 # + mô tả positive (airbrush/bloom/rim light/film grain), KHÔNG dùng câu phủ định dài,
 # độ dài ~1500-1700 ký tự. Backend Gemini 3.1 hay trả "no images" khi prompt quá dài.
 # --------------------------------------------------------------------------
+V2_DIR = os.path.join(ROOT, "prompts_frameless_v2")
+
+
+def v2_outfit(slug: str) -> str:
+    """Đọc nguyên văn dòng Outfit của lá tương ứng trong prompts_frameless_v2 (không chỉnh sửa)."""
+    f = os.path.join(V2_DIR, f"{slug}.md")
+    if not os.path.exists(f):
+        return ""
+    m = re.search(r"^- \*\*Outfit:\*\* (.+)$", open(f, encoding="utf-8").read(), re.M)
+    return m.group(1).strip() if m else ""
+
+
 def nart(s: str) -> str:
     """Bỏ mạo từ 'a/an' đầu cụm đá quý để nhúng vào câu không bị lặp mạo từ."""
     return re.sub(r"^(a|an)\s+", "", (s or "").strip())
@@ -596,8 +610,14 @@ COSTUME_SHORT_BIKINI = ("Costume: a {cloth} two-piece bikini in a glossy satin f
                         "darkened a shade with a glossy sheen and tiny water beads, droplets off the hems, hair "
                         "wet and slicked; swimwear-grade opaque fabric, top covering the whole bust")
 
+COSTUME_SHORT_VERBATIM = ("Costume — VERBATIM from the deck prompt, do not redesign it: {v2_outfit}. "
+                          "Keep the reference card's gold jewellery on top of it (filigree hip chain with a large "
+                          "{gem_n}, sheer veil hemmed with gold stars, openwork {metal} armbands, jewelled "
+                          "circlet); opaque swimwear, no see-through, chest fully covered")
+
 COSTUME_SHORT = {"bikini_two_piece": COSTUME_SHORT_BIKINI,
-                 "wet_lingerie": COSTUME_SHORT_WET}.get(OUTFIT_MODE, COSTUME_SHORT_COUTURE)
+                 "wet_lingerie": COSTUME_SHORT_WET,
+                 "verbatim_v2": COSTUME_SHORT_VERBATIM}.get(OUTFIT_MODE, COSTUME_SHORT_COUTURE)
 
 TOOL_PROVEN = ('Vertical tarot card \"{title}\" ' + STYLE_SHORT + ". " + FACE_SHORT + ". " +
                'Same ' + FRAME_SHORT + '. One adult woman in her twenties, tasteful. ' + COSTUME_SHORT + ". "
@@ -610,7 +630,9 @@ def tool_prompt(card: dict, meta: dict) -> str:
              pose=card["pose"].rstrip(".") + ".",
              cloth=re.sub(r"\s+(satin|silk)$", "", card["cloth"]), metal=card["metal"],
              gem_n=nart(card["gem"]), emblem_n=nart(card["emblem"]),
-             hair=en(meta.get("hair")), eyes=en(meta.get("eyes")), skin=en(meta.get("skin")).rstrip(".") + ".")
+             hair=en(meta.get("hair")), eyes=en(meta.get("eyes")), skin=en(meta.get("skin")).rstrip(".") + ".",
+             v2_outfit=(v2_outfit(card["slug"]) or "a soaking-wet micro string bikini (opaque swimwear, "
+                                                   "no see-through)").rstrip("."))
     f["props"] = (f'Exactly {card["props"]["n"]} {card["props"]["obj"]}: {card["props"]["layout"]}. '
                   if card["props"] else "No other props or suit objects. ")
     t = " ".join(TOOL_PROVEN.format(**f).split())
