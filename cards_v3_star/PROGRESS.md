@@ -25,6 +25,24 @@ Reference đính kèm mỗi lần gen: `the star.png` · Chế độ: `OUTFIT_MO
 **1-2 lá**, gọi liên tiếp trong cùng một lượt càng về sau càng dễ fail. Chiến lược: ưu tiên
 lá quan trọng nhất lên ĐẦU lượt, fail thì để lượt sau, đừng đốt hết 10 slot cho 1 lá.
 
+## v3.6 — WET-SILK FX (hiệu ứng lụa ướt của trang phục)
+`WET_SILK_FX` (5 mục, trong file `.md`) + `WET_SILK_FX_SHORT/MINI` (trong `tool_prompts.json`, chọn bằng
+`FX_LEVEL = "mini" | "full" | "off"`):
+1. **WATER DARKENING** — lụa sẫm 1-2 stop chỗ ngậm nước, vệt loang mềm, mép viền sáng hơn.
+2. **SPECULAR** — dải highlight sữa rộng theo từng nếp + vệt sáng sắc trên sống nếp, **đường nước sáng**
+   chạy dọc mỗi gấu vải/quai/mắt xích; khuy đồng & đá nhá sao.
+3. **CLING & WEIGHT** — vải bết sát, nếp căng toả ra từ mỗi nút buộc, bóng đổ tiếp xúc mảnh dưới mép vải.
+4. **WATER ITSELF** — hạt nước tròn nổi trên mặt dệt (surface tension), dòng chảy ngoằn ngoèo xuống người,
+   giọt kéo dài rồi rời gấu vải, gợn + vương miện nước khi chạm bồn, 2 dòng từ bình là **cột thuỷ tinh**
+   vỡ thành bụi nước gần mặt nước.
+5. **LIGHT ON WATER** — tia sáng xuyên tiêu (caustics) hắt lên da và gạch, phản chiếu sao kéo dài trên lụa
+   ướt, hơi nước đóng hạt trên vai/đồi vĩ.
+
+**Chẩn đoán fail lượt này:** đã gửi lại **đúng nguyên văn** prompt từng ăn ảnh ở lượt trước
+(`verified/00-WINNER-17-the-star.txt`) → vẫn `totalParts: 0/3`. Vậy 8/8 fail là **backend sập theo cơn**,
+không phải do FX hay độ dài. Đã hạ `FX_LEVEL="mini"` để tool prompt về **2062-2259 ký tự**
+(ngưỡng an toàn), bản 5 mục vẫn nằm trong `.md` cho tool ngoài.
+
 ## v3.5 — 3 sửa đổi theo yêu cầu (đã kiểm chứng bằng lá The Star ✅ `17-the-star.png`)
 * **Bỏ miếng vải treo giữa hai chân**: `strip_panel()` cắt mọi mệnh đề "silk panel/loincloth/tabard"
   khỏi 22/22 prompt; hip chain giờ kết bằng **một mặt dây chuyền đá** ở bụng dưới, `nothing draping down`.

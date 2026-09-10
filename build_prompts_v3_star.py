@@ -42,6 +42,11 @@ WITH_FRAME = True
 #                        không sửa một chữ (yêu cầu: "trang phục đúng prompts không chỉnh sửa")
 OUTFIT_MODE = "verbatim_v2"
 
+# Mức hiệu ứng lụa ướt trong prompt tool (bản .md luôn có bản đầy đủ 5 mục):
+#   "mini" = 1 câu (~330 ký tự) — an toàn nhất cho backend
+#   "full" = 5 mục chi tiết — dễ làm prompt vượt 2.6k ký tự
+FX_LEVEL = "mini"
+
 # --------------------------------------------------------------------------
 # Dữ liệu 22 lá Ẩn Chính: tên, biểu tượng, sàn cảnh, đá quý/accent phục trang,
 # tư thế, mô tả bối cảnh + props.
@@ -528,13 +533,9 @@ SEMI_REAL = (
 
 # bản RÚT GỌN cho tool (prompt >2500 ký tự làm backend Gemini trả rỗng)
 # KHÔNG dùng từ giải phẫu (nipples/groin/bare) — chúng kích hoạt filter và làm model trả rỗng
-WARDROBE_TWEAK_SHORT = ("WARDROBE OVERRIDE: no hanging fabric (no cloth panel, no loincloth, no tabard) — the "
-                        "jewelled hip chain ends in one pendant gem; cut: minimal micro string bikini, small fully "
-                        "lined triangles, double hairline straps, ultra high-cut leg lines, thin side-tie strings; "
-                        "swimwear-grade opaque lining, never sheer.")
-SEMI_REAL_SHORT = ("RENDER LOCK: semi-realistic like the reference card — believable anatomy, soft skin "
-                   "subsurface sheen, individual wet hair strands, real fabric weight and specular, airbrushed "
-                   "painterly gradients with gentle bloom, not anime-flat, not cel-shaded.")
+WARDROBE_TWEAK_SHORT = ("WARDROBE OVERRIDE: no hanging cloth panel or loincloth — the hip chain ends in one "
+                        "pendant gem with nothing draping down; wet fabric fully opaque with a swimwear-grade "
+                        "lining.")
 
 
 def strip_panel(text: str) -> str:
@@ -548,6 +549,45 @@ def strip_panel(text: str) -> str:
     out = re.sub(r"(hip chain[^.]*?),\s*(,|and)\s", r"\1 ", out)
     out = re.sub(r"\s{2,}", " ", out)
     return out.strip()
+
+
+# --------------------------------------------------------------------------
+# v3.6 — WET-SILK FX: cách làM CHẤT LƯA ƯỚT của trang phục "đọc ra" trong ảnh
+# (đổ bộ vào mọi prompt; bản tool dùng bản rút gọn vì prompt >2500 ký tự làm backend trả rỗng)
+# --------------------------------------------------------------------------
+WET_SILK_FX = (
+    "WET-SILK FX — render the soaked fabric physically, not just shiny:\n"
+    "1. WATER DARKENING: the silk deepens one to two stops where it is saturated, with soft-edged mottled damp "
+    "patches and slightly paler piped edges where the weave stays drier; the lining keeps a lighter core so the "
+    "garment reads wet but solid.\n"
+    "2. SPECULAR BEHAVIOUR: broad milky highlight fields along every bulge of the fold, cut by thin sharp "
+    "highlight streaks riding the crests of the folds; a bright wet line of light along each hem, each strap and "
+    "each chain link; the metal clasps and gems throw small star-shaped glints into the same light.\n"
+    "3. CLING & WEIGHT: the fabric is pressed flush against the figure, following the underbust curve, the rib "
+    "cage, the hip crest and the inner thigh with zero air gaps; tiny tension wrinkles radiate from every knot "
+    "and clasp, the fabric edge casts a crisp thin contact shadow onto the wet skin, and where the silk runs "
+    "thin over a curve the shadow beneath deepens.\n"
+    "4. WATER ITSELF: round beads sitting high on the weave with visible surface tension, rivulets gathering and "
+    "running down the body in winding trails, droplets stretching and releasing from each hem and from the tips "
+    "of the veil, a couple of falling drops caught mid-air with slight motion blur, ripples and small crowns "
+    "where they hit the tub water, and the poured streams rendered as glassy coherent columns that break into "
+    "spray near the bottom.\n"
+    "5. LIGHT ON WATER: caustic sparkles thrown by the falling streams onto the skin and the tile, the starlight "
+    "reflected as elongated smears on the wet satin, faint steam beading on the shoulders and collarbones.")
+
+WET_SILK_FX_MINI = ("WET-SILK FX: the silk reads one to two stops darker where soaked, with soft mottled damp "
+                   "patches and paler piped edges, broad milky highlights broken by thin sharp streaks along each "
+                   "fold, a bright wet line on every hem and strap, tiny tension wrinkles at each knot, round "
+                   "beads riding the weave and drops falling from the hems.")
+
+
+WET_SILK_FX_SHORT = ("WET-SILK FX: silk darkens 1-2 stops where saturated, soft mottled damp patches with paler "
+                   "piped edges; broad milky highlight fields along each fold cut by thin sharp streaks on the "
+                   "crests, a bright wet line along every hem, strap and chain link; fabric pressed flush with "
+                   "tiny tension wrinkles radiating from each knot and a crisp contact shadow under each edge; "
+                   "round water beads riding the weave, rivulets winding down, drops releasing from the hems, "
+                   "ripples on the tub water, poured streams as glassy columns breaking into spray, caustic "
+                   "sparkles on skin and tile.")
 
 
 def nart(s: str) -> str:
@@ -626,11 +666,10 @@ FRAMECORE_NO = ("Frameless like the v2 deck: no border, only the antique-gold se
 # Bản v3.2 gọn (mục tiêu <2100 ký tự: prompt dài >2500 làm backend Gemini trả "no images")
 STYLE_SHORT = ("painted exactly like the attached reference image, same brushwork and same face rendering: "
                "soft airbrushed semi-realistic Korean manhwa painting, gentle bloom, rim-light edges instead of "
-               "ink outlines, satin skin highlights, richly painted hazy background with water reflections, "
-               "film grain")
-FACE_SHORT = ("FACE = the reference expression: heavy half-lidded dreamy eyes gazing softly down, small glossy "
-              "parted lips, faint blush on cheeks and nose, delicate oval face, tiny straight nose, wet strands "
-              "across one cheek, calm and slightly dazed")
+               "ink outlines, satin skin highlights, richly painted hazy background with water reflections, film "
+               "grain, not anime-flat and not cel-shaded")
+FACE_SHORT = ("FACE = the reference expression: heavy half-lidded dreamy eyes, small glossy parted lips, faint "
+              "blush, wet strands across one cheek, calm and slightly dazed")
 # "no other text" là bản vá lỗi model tự vẽ thêm tít phụ trên đầu (gặp ở 00-fool v3.2)
 FRAME_SHORT = ("thin antique-gold ornamental border with filigree corners and the serif gold title in a bottom "
                "band, like the reference card — that title is the only text on the card" if WITH_FRAME else
@@ -659,10 +698,9 @@ COSTUME_SHORT_BIKINI = ("Costume: a {cloth} two-piece bikini in a glossy satin f
                         "darkened a shade with a glossy sheen and tiny water beads, droplets off the hems, hair "
                         "wet and slicked; swimwear-grade opaque fabric, top covering the whole bust")
 
-COSTUME_SHORT_VERBATIM = ("Costume — VERBATIM from the deck prompt, do not redesign it: {v2_outfit}. "
-                          "Keep the reference card's gold jewellery on top of it (filigree hip chain with a large "
-                          "{gem_n}, sheer veil hemmed with gold stars, openwork {metal} armbands, jewelled "
-                          "circlet); opaque swimwear, no see-through, chest fully covered")
+COSTUME_SHORT_VERBATIM = ("Costume (verbatim from the deck prompt): {v2_outfit}, minimal micro cut — small fully "
+                          "lined triangles, double hairline straps, ultra high-cut legs, side-tie strings — plus "
+                          "the reference's gold jewellery on top")
 
 COSTUME_SHORT = {"bikini_two_piece": COSTUME_SHORT_BIKINI,
                  "wet_lingerie": COSTUME_SHORT_WET,
@@ -670,7 +708,7 @@ COSTUME_SHORT = {"bikini_two_piece": COSTUME_SHORT_BIKINI,
 
 TOOL_PROVEN = ('Vertical tarot card \"{title}\" ' + STYLE_SHORT + ". " + FACE_SHORT + ". " +
                'Same ' + FRAME_SHORT + '. One adult woman in her twenties, tasteful. ' + COSTUME_SHORT + ". "
-               'Hair: {hair}. Eyes: {eyes}. Skin: {skin}. Pose: {pose}. Setting: {scene}, {extra} {props}'
+               'Hair: {hair}. Eyes: {eyes}. Skin: {skin}. Pose: {pose}. Setting: {scene}, {extra} {props}{fx} '
                "Tall 7:12 portrait, whole body visible, perfect anatomy.")
 
 
@@ -684,6 +722,7 @@ def tool_prompt(card: dict, meta: dict) -> str:
                                                    "no see-through)").rstrip("."))
     f["props"] = (f'Exactly {card["props"]["n"]} {card["props"]["obj"]}: {card["props"]["layout"]}. '
                   if card["props"] else "No other props or suit objects. ")
+    f["fx"] = WET_SILK_FX_MINI if FX_LEVEL == "mini" else ("" if FX_LEVEL == "off" else WET_SILK_FX_SHORT)
     def clip(txt, n):
         txt = txt.strip()
         if len(txt) <= n:
@@ -694,11 +733,10 @@ def tool_prompt(card: dict, meta: dict) -> str:
             if i > n * 0.55:
                 return cut[:i].rstrip(" ,;") + (". " if sep != " " else ". ")
         return cut
-    f["pose"] = clip(f["pose"], 210)
-    f["extra"] = clip(f["extra"], 150)
+    f["pose"] = clip(f["pose"], 185)
+    f["extra"] = clip(f["extra"], 115)
     t = " ".join(TOOL_PROVEN.format(**f).split())
-    t = t.replace("Tall 7:12 portrait,",
-                  WARDROBE_TWEAK_SHORT + " " + SEMI_REAL_SHORT + " Tall 7:12 portrait,")
+    t = t.replace("Tall 7:12 portrait,", WARDROBE_TWEAK_SHORT + " Tall 7:12 portrait,")
     t = re.sub(r"\.\.", ".", strip_panel(t))
     return t.replace('\\"', '"')
 
@@ -731,7 +769,8 @@ def build_prompt(card: dict, meta: dict) -> str:
             nminus=n - 1, nplus=n + 1, count_up=cp))
     else:
         blocks.append(COUNT_LOCK_NONE)
-    blocks += [LIGHT, "OUTFIT LOCKS (v3.5)\n\n" + WARDROBE_TWEAK + "\n\n" + SEMI_REAL, SAFETY,
+    blocks += [LIGHT, "WET-SILK FX\n\n" + WET_SILK_FX,
+               "OUTFIT LOCKS (v3.5)\n\n" + WARDROBE_TWEAK + "\n\n" + SEMI_REAL, SAFETY,
                QUALITY.format(**fmt)]
     return "\n\n".join(strip_panel(b) for b in blocks)
 
