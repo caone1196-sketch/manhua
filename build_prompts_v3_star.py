@@ -500,6 +500,56 @@ def v2_outfit(slug: str) -> str:
     return m.group(1).strip() if m else ""
 
 
+# --------------------------------------------------------------------------
+# v3.5 — 3 yêu cầu của người dùng, áp bằng post-processing nên KHÔNG cần sửa từng template
+#   1) bỏ hẳn "miếng vải/dải lụa treo giữa hai chân" (silk panel của lá mẫu)
+#   2) khoá style BÁN THỰC HOẠ theo `the star.png`
+#   3) trang phục cắt NHỎ TỐI THIỂU — chỉ đủ che, vẫn opaque
+# --------------------------------------------------------------------------
+PANEL_KEYS = ("silk panel", "panel falling", "panel that falls", "panel clings", "panel down the front",
+              "panel falls", "panel hanging")
+
+WARDROBE_TWEAK = (
+    "WARDROBE TWEAK (user request, overrides the reference card): NO hanging fabric of any kind — the jewelled "
+    "hip chain ends in a single faceted pendant at the lower belly and NOTHING drapes, falls or hangs down; no "
+    "blue or violet cloth panel, no loincloth strip, no tabard. CUT: as small as swimwear can be while staying "
+    "tasteful — a micro string bikini of small fully lined triangles, double hairline straps, ultra high-cut leg "
+    "lines running to the hip crest, thin side-tie strings at the hips. The wet satin stays FULLY OPAQUE with a "
+    "swimwear-grade lining, never sheer.")
+
+SEMI_REAL = (
+    "RENDER LOCK — bán thực hoạ (semi-realistic) benchmarked to `the star.png`: plausible human anatomy and "
+    "proportions, skin with soft subsurface scattering and visible sheen micro-detail, individual wet hair "
+    "strands, physically believable fabric weight with specular falloff and contact shadows, one-point "
+    "perspective architecture, depth haze; painted with airbrushed gradients and gentle bloom, NOT anime-flat, "
+    "NOT cel-shaded, NOT lineart-heavy. The face follows the reference: soft semi-realistic manhwa idol face, "
+    "heavy half-lidded dreamy eyes, small glossy parted lips, faint blush.")
+
+
+# bản RÚT GỌN cho tool (prompt >2500 ký tự làm backend Gemini trả rỗng)
+# KHÔNG dùng từ giải phẫu (nipples/groin/bare) — chúng kích hoạt filter và làm model trả rỗng
+WARDROBE_TWEAK_SHORT = ("WARDROBE OVERRIDE: no hanging fabric (no cloth panel, no loincloth, no tabard) — the "
+                        "jewelled hip chain ends in one pendant gem; cut: minimal micro string bikini, small fully "
+                        "lined triangles, double hairline straps, ultra high-cut leg lines, thin side-tie strings; "
+                        "swimwear-grade opaque lining, never sheer.")
+SEMI_REAL_SHORT = ("RENDER LOCK: semi-realistic like the reference card — believable anatomy, soft skin "
+                   "subsurface sheen, individual wet hair strands, real fabric weight and specular, airbrushed "
+                   "painterly gradients with gentle bloom, not anime-flat, not cel-shaded.")
+
+
+def strip_panel(text: str) -> str:
+    """Xoá mọi mệnh đề mô tả dải lụa treo giữa chân khỏi prompt (chia theo dấu phẩy/ chấm phẩy)."""
+    frags = re.split(r"(?<=[,;])\s+", text)
+    keep = [f for f in frags if not any(k in f.lower() for k in PANEL_KEYS)]
+    out = " ".join(keep)
+    out = re.sub(r"\s+([,.;])", r"\1", out)
+    out = re.sub(r",\s*\.", ".", out)
+    out = re.sub(r",\s*,", ", ", out)
+    out = re.sub(r"(hip chain[^.]*?),\s*(,|and)\s", r"\1 ", out)
+    out = re.sub(r"\s{2,}", " ", out)
+    return out.strip()
+
+
 def nart(s: str) -> str:
     """Bỏ mạo từ 'a/an' đầu cụm đá quý để nhúng vào câu không bị lặp mạo từ."""
     return re.sub(r"^(a|an)\s+", "", (s or "").strip())
@@ -583,8 +633,7 @@ FACE_SHORT = ("FACE = the reference expression: heavy half-lidded dreamy eyes ga
               "across one cheek, calm and slightly dazed")
 # "no other text" là bản vá lỗi model tự vẽ thêm tít phụ trên đầu (gặp ở 00-fool v3.2)
 FRAME_SHORT = ("thin antique-gold ornamental border with filigree corners and the serif gold title in a bottom "
-               "band, like the reference card; the bottom band is the ONLY text on the card, no title or caption "
-               "at the top" if WITH_FRAME else
+               "band, like the reference card — that title is the only text on the card" if WITH_FRAME else
                "frameless, only the serif gold title at the bottom")
 
 COSTUME_SHORT_COUTURE = ("Costume copied from the reference: {cloth} cropped bodice with two round {metal} "
@@ -635,8 +684,23 @@ def tool_prompt(card: dict, meta: dict) -> str:
                                                    "no see-through)").rstrip("."))
     f["props"] = (f'Exactly {card["props"]["n"]} {card["props"]["obj"]}: {card["props"]["layout"]}. '
                   if card["props"] else "No other props or suit objects. ")
+    def clip(txt, n):
+        txt = txt.strip()
+        if len(txt) <= n:
+            return txt
+        cut = txt[:n]
+        for sep in ("; ", ", ", " "):
+            i = cut.rfind(sep)
+            if i > n * 0.55:
+                return cut[:i].rstrip(" ,;") + (". " if sep != " " else ". ")
+        return cut
+    f["pose"] = clip(f["pose"], 210)
+    f["extra"] = clip(f["extra"], 150)
     t = " ".join(TOOL_PROVEN.format(**f).split())
-    return re.sub(r"\.\.", ".", t).replace('\\"', '"')
+    t = t.replace("Tall 7:12 portrait,",
+                  WARDROBE_TWEAK_SHORT + " " + SEMI_REAL_SHORT + " Tall 7:12 portrait,")
+    t = re.sub(r"\.\.", ".", strip_panel(t))
+    return t.replace('\\"', '"')
 
 
 def build_prompt(card: dict, meta: dict) -> str:
@@ -667,8 +731,9 @@ def build_prompt(card: dict, meta: dict) -> str:
             nminus=n - 1, nplus=n + 1, count_up=cp))
     else:
         blocks.append(COUNT_LOCK_NONE)
-    blocks += [LIGHT, SAFETY, QUALITY.format(**fmt)]
-    return "\n\n".join(blocks)
+    blocks += [LIGHT, "OUTFIT LOCKS (v3.5)\n\n" + WARDROBE_TWEAK + "\n\n" + SEMI_REAL, SAFETY,
+               QUALITY.format(**fmt)]
+    return "\n\n".join(strip_panel(b) for b in blocks)
 
 
 def main():

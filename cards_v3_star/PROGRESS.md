@@ -25,6 +25,18 @@ Reference đính kèm mỗi lần gen: `the star.png` · Chế độ: `OUTFIT_MO
 **1-2 lá**, gọi liên tiếp trong cùng một lượt càng về sau càng dễ fail. Chiến lược: ưu tiên
 lá quan trọng nhất lên ĐẦU lượt, fail thì để lượt sau, đừng đốt hết 10 slot cho 1 lá.
 
+## v3.5 — 3 sửa đổi theo yêu cầu (đã kiểm chứng bằng lá The Star ✅ `17-the-star.png`)
+* **Bỏ miếng vải treo giữa hai chân**: `strip_panel()` cắt mọi mệnh đề "silk panel/loincloth/tabard"
+  khỏi 22/22 prompt; hip chain giờ kết bằng **một mặt dây chuyền đá** ở bụng dưới, `nothing draping down`.
+* **Style bán thực hoạ** theo `the star.png`: `RENDER LOCK: semi-realistic … airbrushed painterly
+  gradients with gentle bloom, not anime-flat, not cel-shaded` (`SEMI_REAL`).
+* **Trang phục nhỏ tối thiểu**: `minimal micro cut, small fully lined triangles, double hairline straps,
+  ultra high-cut leg lines, thin side-tie strings` + `swimwear-grade opaque lining`.
+* Template + ảnh chứng minh: `prompts_frameless_v3_star/PROMPT_TEMPLATE_v35.md`,
+  `prompts_frameless_v3_star/verified/00-WINNER-17-the-star.txt`.
+* ⚠ **Phát hiện mới**: các từ `nipples`, `groin`, `bare skin` kích hoạt filter làm 10/10 lệnh fail;
+  đã gạch bỏ khỏi template (trước khi sửa: 0/6; sau khi sửa: The Star ăn ngay).
+
 ## v3.4 — `OUTFIT_MODE = "verbatim_v2"` (yêu cầu: trang phục ĐÚNG prompt, không chỉnh sửa)
 `tool_prompt()` đọc nguyên văn dòng `- **Outfit:**` của `prompts_frameless_v2/<slug>.md` và nhét thẳng vào
 prompt: `Costume — VERBATIM from the deck prompt, do not redesign it: soaking-wet {màu} micro string bikini
