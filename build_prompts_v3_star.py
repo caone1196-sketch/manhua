@@ -551,8 +551,10 @@ STYLE_SHORT = ("painted exactly like the attached reference image, same brushwor
 FACE_SHORT = ("FACE = the reference expression: heavy half-lidded dreamy eyes gazing softly down, small glossy "
               "parted lips, faint blush on cheeks and nose, delicate oval face, tiny straight nose, wet strands "
               "across one cheek, calm and slightly dazed")
+# "no other text" là bản vá lỗi model tự vẽ thêm tít phụ trên đầu (gặp ở 00-fool v3.2)
 FRAME_SHORT = ("thin antique-gold ornamental border with filigree corners and the serif gold title in a bottom "
-               "band, like the reference card" if WITH_FRAME else
+               "band, like the reference card; the bottom band is the ONLY text on the card, no title or caption "
+               "at the top" if WITH_FRAME else
                "frameless, only the serif gold title at the bottom")
 
 COSTUME_SHORT_COUTURE = ("Costume copied from the reference: {cloth} cropped bodice with two round {metal} "
