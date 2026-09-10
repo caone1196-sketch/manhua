@@ -16,6 +16,9 @@ mỗi lá chỉ khác **màu/kiểu tóc, màu/ánh mắt, tư thế, đạo c�
 | `PART-4_MOON-to-WORLD.md` | Lá XVIII → XXI |
 | `cards/*.txt` | 22 file prompt thuần, mỗi lá 1 file, copy-paste trực tiếp |
 | `prompts.json` | Toàn bộ 22 prompt dạng JSON (chạy batch / gọi API) |
+| `MIDJOURNEY-GUIDE.md` | **Dùng ảnh THE STAR làm reference trong Midjourney (`--cref/--sref`)** |
+| `midjourney/*.txt` | 22 lệnh `/imagine` build sẵn (bản kèm chữ + bản art sạch) |
+| `ref/2.png` + `ref/2-mj-clean.png` | Ảnh reference gốc + bản đã cắt khung/chữ để nạp vào MJ |
 
 ## Danh sách 22 lá (biến đổi riêng)
 
