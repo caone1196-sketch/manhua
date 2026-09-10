@@ -29,6 +29,11 @@ CARDS_JSON = os.path.join(ROOT, "cards.json")
 OUT_DIR = os.path.join(ROOT, "prompts_frameless_v3_star")
 STYLE_REF = "the star.png"
 
+# `the star.png` CÓ khung vàng ornamental mỏng + corner filigree + band chữ serif dưới đáy.
+# WITH_FRAME = True  -> đúng y như lá tham chiếu (mặc định của v3.1)
+# WITH_FRAME = False -> giữ quy ước frameless của prompts_frameless_v2
+WITH_FRAME = True
+
 # --------------------------------------------------------------------------
 # Dữ liệu 22 lá Ẩn Chính: tên, biểu tượng, sàn cảnh, đá quý/accent phục trang,
 # tư thế, mô tả bối cảnh + props.
@@ -249,19 +254,36 @@ MAJORS = [
 # Khối prompt tái sử dụng
 # --------------------------------------------------------------------------
 
-FRAME = ("A completely frameless vertical tarot card \"{title}\", edge-to-edge illustration: no decorative "
-         "borders, no card frame, no banner ribbon, no numbers, no Roman numerals. The only text is the title "
-         "\"{title}\" centered at the very bottom in the same antique-gold serif lettering as the style reference "
-         "card.\n\n"
-         "REFERENCE IMAGE: {ref} — copy EXACTLY its costume construction, its gold filigree jewellery language, "
-         "its folded-fabric rendering, its manhwa lineart and rim light, and its gold serif bottom lettering.")
+# Block mô tả STYLE chung (dùng lại cho cả bản đầy đủ lẫn bản tool)
+STYLE_PAINT = (
+    "ART STYLE — copy the attached reference image's RENDERING exactly; do NOT fall back to flat webtoon "
+    "cel-shading or bold ink outlines: it is a semi-realistic Korean manhwa digital PAINTING. Smooth airbrushed "
+    "gradient shading, soft blooming highlights, no hard-edged colour zones; silhouettes separated by rim light "
+    "and reflected light rather than by black lineart. Luminous porcelain skin with satin specular on shoulders, "
+    "collarbones, belly and thighs and cool blue-violet shadow fill. Hyper-detailed antique-gold filigree "
+    "metalwork: openwork armbands, chain drapes, faceted gemstones that each catch a bright specular point. "
+    "Pearl-satin fabric with real weight — soft double-fold creasing, sheen bands along the folds, hand-sewn gold "
+    "embroidery on the hems; layered translucent tulle veil thin enough to see through at the edges. A richly "
+    "PAINTED atmospheric background with haze, volumetric light shafts, correct reflections on water and polished "
+    "stone. Palette: desaturated cool indigo-violet-teal scene glowing against warm antique-gold accents on the "
+    "figure; slight film grain; painterly masterpiece finish. Face: soft oval, small nose, full glossy lips "
+    "parted, large detailed irises with catch-lights, thin brows, subtle blush — delicate, not chibi, not anime-flat.")
 
-ART_STYLE = (
-    "ART STYLE (match the reference image): Korean manhwa webtoon rendering — crisp clean lineart, soft cell "
-    "shading, porcelain skin with a satin-gloss sheen and delicate blue-tinted subsurface shadows, fine ink "
-    "hatching on the collarbones and abdomen, thin luminous rim light tracing the silhouette, warm golden "
-    "highlight on every metal edge, painted background at slightly lower saturation than the figure, "
-    "large soft eyes with cat-eye liner, blushing cheeks, softly parted lips.")
+FRAME = (("A vertical tarot card \"{title}\" that fills the whole image edge to edge, framed EXACTLY like the "
+          "reference card: a thin antique-gold ornamental border with fine filigree flourishes in the four "
+          "corners and a small centered bottom band holding the title \"{title}\" in antique-gold serif lettering "
+          "with a faint inner glow; the artwork bleeds to the inner edge of that frame; no numbers and no Roman "
+          "numerals anywhere.\n\n"
+          if WITH_FRAME else
+          "A completely frameless vertical tarot card \"{title}\", edge-to-edge illustration: no decorative "
+          "borders, no card frame, no banner ribbon, no numbers, no Roman numerals. The only text is the title "
+          "\"{title}\" centered at the very bottom in the same antique-gold serif lettering as the style "
+          "reference card.\n\n")
+         + "REFERENCE IMAGE: {ref} — copy EXACTLY its painting style (airbrushed shading, bloom, light-defined "
+           "edges, richly painted background), its costume construction, its gold filigree jewellery, its "
+           "folded-fabric rendering and its gold serif bottom lettering.")
+
+ART_STYLE = STYLE_PAINT
 
 COSTUME = (
     "COSTUME — drawn with the SAME construction logic as the reference image, only the accent stone and fabric "
@@ -318,28 +340,39 @@ SAFETY = (
 
 QUALITY = (
     "ANATOMY & QUALITY LOCK: perfect anatomy — exactly two arms and two legs, exactly five fingers on each "
-    "hand, natural joint bends, symmetrical face, no extra or fused limbs, no deformed hands, clean crisp "
-    "lineart; the pose is drawn like a master manhwa figure study.\n\n"
-    "At the bottom, centered: the title \"{title}\" in antique-gold serif lettering matching the reference image. "
-    "No numbers, no Roman numerals, no other text, no frame, no border, no banner, no watermark, no signature. "
-    "Masterpiece manhwa illustration, portrait 7:12, tall vertical composition with the figure's whole body "
-    "visible inside the frame."
+    "hand, natural joint bends, symmetrical face, no extra or fused limbs, no deformed hands; the pose is drawn "
+    "like a master manhwa figure study.\n\n"
+    + ("At the bottom, centered in the title band: the title \"{title}\" in antique-gold serif lettering matching "
+       "the reference image, inside the same thin gold ornamental border with corner filigree as the reference. "
+       if WITH_FRAME else
+       "At the bottom, centered: the title \"{title}\" in antique-gold serif lettering matching the reference "
+       "image. No frame, no border, no banner. ")
+    + "No numbers, no Roman numerals, no other text, no watermark, no signature. "
+      "Masterpiece manhwa painting, portrait 7:12, tall vertical composition with the figure's whole body "
+      "visible inside the frame."
 )
 
 
 # --------------------------------------------------------------------------
 # BẢN RÚT GỌN cho tool sinh ảnh (md giữ bản đầy đủ, gen dùng bản ngắn)
 # --------------------------------------------------------------------------
-GEN_FRAME = ('Vertical frameless tarot card "{title}", edge-to-edge illustration: no borders, no card frame, '
-             'no banner, no numbers, no Roman numerals; the ONLY text is "{title}" in antique-gold serif '
-             'centered at the bottom.')
+GEN_FRAME = (('Vertical tarot card "{title}" filling the image edge to edge, with a thin antique-gold ornamental '
+              'border, filigree corner flourishes and the title "{title}" in antique-gold serif in a bottom band '
+              'exactly like the reference card; no numbers, no Roman numerals.')
+             if WITH_FRAME else
+             ('Vertical frameless tarot card "{title}", edge-to-edge illustration: no borders, no card frame, '
+              'no banner, no numbers, no Roman numerals; the ONLY text is "{title}" in antique-gold serif '
+              'centered at the bottom.'))
 GEN_REF = ("Match the attached reference image exactly for costume construction and rendering: folded-fabric "
            "bandeau top with two round metal clasps at centre bust, fabric strips crossing in an X over the "
            "midriff, high-cut briefs, an ornate filigree hip-chain with a large faceted gemstone and a long "
            "embroidered silk panel falling down the front of the thighs, a floor-length white tulle veil edged "
            "in gold star embroidery, openwork gold armbands, a jewelled forehead circlet, gemstone pendant. "
-           "Korean manhwa webtoon style: crisp lineart, soft cell shading, porcelain skin with satin-gloss "
-           "sheen, warm golden rim light, glowing metal edges, blushing cheeks, cat-eye liner, parted lips.")
+           "Korean manhwa SEMI-REALISTIC PAINTING style (not flat webtoon cel-shading): smooth airbrushed "
+           "gradient shading, soft bloom, edges separated by rim light instead of ink outlines, satin specular on "
+           "skin, cool blue-violet shadow fill, richly painted hazy background with volumetric light and "
+           "reflections, desaturated cool scene palette against warm gold, soft oval face with full glossy parted "
+           "lips and large detailed eyes.")
 GEN_COSTUME = ("This card's costume keeps that construction but in {cloth}, with {gem_n} as the centre stone, "
                "{metal} filigree, and {emblem_n} engraved on the bust clasps and hem charms. Fabric is opaque "
                "and dry-to-slightly-damp with visible fold shadows; the chest is fully covered — no nudity, "
@@ -413,8 +446,23 @@ def en(s: str) -> str:
     return out
 
 
-TOOL = ('Frameless vertical tarot card, Korean manhwa webtoon illustration. One adult woman in her twenties in a '
-        'tasteful editorial fantasy costume, fully clothed, all fabric opaque. '
+TOOL_FRAME = ('Thin antique-gold ornamental card border with fine filigree flourishes in the four corners and the '
+              'title \\"{title}\\" in antique-gold serif inside a small bottom band, exactly like the reference '
+              'card; the artwork bleeds to the inner edge of that border; no numbers, no Roman numerals. '
+              if WITH_FRAME else
+              'Frameless: no border, no frame. Only text: \\"{title}\\" in antique-gold serif centered at the very '
+              'bottom; no numbers. ')
+
+TOOL = ('Vertical tarot card \\"{title}\\", Korean manhwa SEMI-REALISTIC DIGITAL PAINTING — smooth airbrushed '
+        'gradient shading and soft bloom, NO flat cel colours and NO bold ink outlines (silhouettes separated by '
+        'rim light), luminous porcelain skin with satin specular and cool blue-violet shadow fill, '
+        'hyper-detailed antique-gold filigree jewellery whose gems each catch a specular point, pearl-satin '
+        'fabric with real weight, double-fold creasing and gold embroidery, translucent layered tulle veil, '
+        'a richly painted atmospheric background with haze, volumetric light shafts and reflections on water and '
+        'polished stone, desaturated cool indigo-violet scene against warm antique-gold accents, slight film '
+        'grain, soft oval face, small nose, full glossy parted lips, large detailed irises with catch-lights, '
+        'subtle blush. ' + TOOL_FRAME +
+        'One adult woman in her twenties in a tasteful editorial fantasy costume, fully clothed, all fabric opaque. '
         "COSTUME — reproduce the attached reference image's outfit design exactly, changing only the fabric "
         'colour and centre stone: folded {cloth} cropped bodice with two round {metal} rosette clasps at centre '
         'front, thin crossed {metal}-trimmed bands over the waist, high-cut matching bottoms, an ornate {metal} '
@@ -422,27 +470,16 @@ TOOL = ('Frameless vertical tarot card, Korean manhwa webtoon illustration. One 
         'thighs, floor-length sheer white veil hemmed with gold star embroidery, openwork {metal} armbands, a '
         'jewelled forehead circlet, {emblem_n} engraved on the clasps. '
         'Hair: {hair}. Eyes: {eyes}. Skin: {skin}. '
-        'Crisp lineart, soft cell shading, satin-gloss skin, warm golden rim light, blushing cheeks, cat-eye liner. '
         'Pose: {pose}. Setting — {scene}: {extra} '
-        '{props}Only text: \"{title}\" in antique-gold serif centered at the very bottom; no frame, no border, '
-        'no numbers. Tall 7:12 portrait, whole body visible, perfect anatomy, five fingers per hand.')
+        '{props}Tall 7:12 portrait, whole body visible, perfect anatomy, five fingers per hand.')
 
 
-def tool_prompt(card: dict, meta: dict) -> str:
-    f = dict(title=card["title"], scene=card["scene"], extra=card["extra"].rstrip(".") + ". ",
-             pose=card["pose"].rstrip(".") + ".", cloth=card["cloth"], metal=card["metal"],
-             gem_n=nart(card["gem"]), emblem_n=nart(card["emblem"]),
-             hair=en(meta.get("hair")), eyes=en(meta.get("eyes")).split(",")[0:2] and en(meta.get("eyes")),
-             skin=en(meta.get("skin")))
-    if card["props"]:
-        f["props"] = (f'HARD PROP COUNT: exactly {card["props"]["n"]} {card["props"]["obj"]} — '
-                      f'{card["props"]["layout"]}. ')
-    else:
-        f["props"] = "No loose suit objects anywhere. "
-    t = " ".join(TOOL.format(**f).split())
-    return re.sub(r"\.\.", ".", t)
-
-
+# --------------------------------------------------------------------------
+# TOOL_PROVEN — bản ĐÃ KIỂM CHỨNG thực tế (lá The Moon render ra đúng style reference)
+# Công thức: câu "painted in exactly the same style as the attached reference image"
+# + mô tả positive (airbrush/bloom/rim light/film grain), KHÔNG dùng câu phủ định dài,
+# độ dài ~1500-1700 ký tự. Backend Gemini 3.1 hay trả "no images" khi prompt quá dài.
+# --------------------------------------------------------------------------
 def nart(s: str) -> str:
     """Bỏ mạo từ 'a/an' đầu cụm đá quý để nhúng vào câu không bị lặp mạo từ."""
     return re.sub(r"^(a|an)\s+", "", (s or "").strip())
@@ -461,8 +498,42 @@ def clean(s: str) -> str:
     s = s.replace("**", "").replace("A ", "") if s else s
     return s
 
+STYLECORE = ("soft airbrushed semi-realistic Korean manhwa digital painting, gentle bloom, edges separated by rim "
+             "light instead of ink outlines, satin skin highlights, hyper-detailed antique-gold filigree "
+             "jewellery, pearl-satin fabric with realistic folds and gold embroidery, translucent tulle veil, "
+             "richly painted hazy background with volumetric light and reflections on water and polished stone, "
+             "film grain")
+FRAMECORE_YES = ("Same thin antique-gold ornamental border with filigree corners and an antique-gold serif title "
+                 "in the bottom band, like the reference card.")
+FRAMECORE_NO = ("Frameless like the v2 deck: no border, only the antique-gold serif title centered at the bottom.")
+
+TOOL_PROVEN = ('Vertical tarot card "{title}" painted in exactly the same style as the attached reference image: '
+               + STYLECORE + ". " + (FRAMECORE_YES if WITH_FRAME else FRAMECORE_NO) +
+               " One adult woman in her twenties, tasteful and fully clothed. Costume copied from the reference: "
+               "{cloth} cropped bodice with two round {metal} rosette clasps, thin {metal} bands crossing over the "
+               "waist, high-cut matching bottoms, {metal} filigree hip chain set with a large {gem_n} and a long "
+               "embroidered silk panel falling between the thighs, floor-length sheer white veil hemmed with gold "
+               "stars, openwork {metal} armbands, a jewelled forehead circlet, {emblem_n} engraved on the clasps. "
+               "Hair: {hair}. Eyes: {eyes}. Skin: {skin}. Pose: {pose}. Setting: {scene}, {extra} {props}"
+               "Tall 7:12 portrait, whole body visible, perfect anatomy.")
+
+
+def tool_prompt(card: dict, meta: dict) -> str:
+    f = dict(title=card["title"], scene=card["scene"].rstrip(".").lower(), extra=card["extra"].rstrip(".") + ". ",
+             pose=card["pose"].rstrip(".") + ".", cloth=card["cloth"], metal=card["metal"],
+             gem_n=nart(card["gem"]), emblem_n=nart(card["emblem"]),
+             hair=en(meta.get("hair")), eyes=en(meta.get("eyes")), skin=en(meta.get("skin")).rstrip(".") + ".")
+    if card["props"]:
+        f["props"] = (f'Exactly {card["props"]["n"]} {card["props"]["obj"]}: {card["props"]["layout"]}. ')
+    else:
+        f["props"] = "No other props or suit objects. "
+    t = " ".join(TOOL_PROVEN.format(**f).split())
+    t = re.sub(r"\.\.", ".", t)
+    return t.replace('\\"', '"')
+
 
 def build_prompt(card: dict, meta: dict) -> str:
+    """Bản prompt ĐẦY ĐỦ (lưu trong .md) — đủ mọi lock, dành cho người dùng kỹ tính."""
     fmt = dict(
         title=card["title"], ref=STYLE_REF, scene=card["scene"], extra=card["extra"],
         emblem=card["emblem"], gem=nart(card["gem"]), metal=card["metal"], cloth=card["cloth"],

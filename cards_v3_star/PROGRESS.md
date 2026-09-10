@@ -1,21 +1,62 @@
-# Tiến độ sinh ảnh — 22 lá Ẩn Chính, phục trang theo `the star.png`
+# Tiến độ — 22 lá Ẩn Chính, style + phục trang theo `the star.png`
 
-Ảnh lưu tại `cards_v3_star/<slug>.png`, prompt sinh ảnh thật: `prompts_frameless_v3_star/tool_prompts.json`.
+**v3.1 (STYLE FIX):** ảnh render phải theo đúng cách **VẼ** của lá tham chiếu, không phải
+flat webtoon cel-shading. Backend chỉ nhận bản prompt `TOOL_PROVEN` (xem dưới).
 
-| # | Slug | Ảnh | Ghi chú |
-|---|---|---|---|
-| 0 | 00-fool | ✅ | phục trang copy đúng reference, voan viền sao, cũi Pomeranian, mép hồ |
-| I | 01-magician | ⏳ retry | backend trả "no images" 2 lần (lỗi may rủi, không phải từ khoá) |
-| II | 02-priestess | ✅ | |
-| III | 03-empress | ✅ | |
-| IV | 04-emperor | ⏳ retry | |
-| V–XXI | 05 → 21 | ⏳ chờ lượt sau | 17 lá còn lại |
+## Công thức style đã kiểm chứng (lá The Moon ra ảnh khớp reference nhất)
 
-## Lưu ý vận hành (đã kiểm chứng)
+1. Mở đầu: `Vertical tarot card "<TITLE>" painted in exactly the same style as the attached
+   reference image:` rồi **mô tả positive** — `soft airbrushed semi-realistic Korean manhwa
+   digital painting, gentle bloom, edges separated by rim light instead of ink outlines,
+   satin skin highlights, hyper-detailed antique-gold filigree jewellery, pearl-satin fabric
+   with realistic folds and gold embroidery, translucent tulle veil, richly painted hazy
+   background with volumetric light and reflections, film grain`.
+2. **Khung vàng ornamental + band chữ serif dưới đáy = CÓ** (`WITH_FRAME = True`), vì
+   `the star.png` có khung; bật `False` nếu muốn frameless như v2.
+3. Độ dài prompt **~1500–1900 ký tự**. Bản >2500 ký tự có cụm phủ định dài
+   ("NO flat cel colours and NO bold ink outlines") bị backend trả `no images`.
+4. Phục trang: `Costume copied from the reference:` + 8 thành phần lõi (bodice gấp nếp +
+   2 khuy rosette, dải băng chéo eo, quần cut cao, hip chain đá quý lớn + dải lụa sa giữa
+   đùi, voan viền sao, vòng tay chạm lộng, circlet, emblem khắc trên khuy).
+5. Không dùng từ `bikini / bandeau / chest / wet micro` (dễ bị moderation chặn).
 
-* Backend `gemini-3.1-flash-image` **giới hạn 10 ảnh / lượt** → chia 6 batch (4+4+4+4+4+2).
-* Đôi khi trả `Response contains no images` — đây là **lỗi transient**, chỉ cần retry nguyên prompt.
-* Bản prompt `tool_prompts.json` là bản an toàn nhất: tránh các chữ `bikini / bandeau / chest /
-  wet micro string` (những chữ này + ảnh reference dễ bị moderation chặn như ghi chú trong
-  `prompts_frameless_v2/star_external_export/README.md`).
-* Luôn đính kèm reference: `the star.png`.
+## Ảnh
+
+`cards_v3_star/<slug>.png` — file `.png` đã có là bản v3.1.
+
+| Slug | Trạng thái |
+|---|---|
+| 00-fool | ✅ done (v3.1 style) |
+| 01-magician | ⏳ chờ lượt sau |
+| 02-priestess | ✅ done (v3.1 style) |
+| 03-empress | ✅ done (v3.1 style) |
+| 04-emperor | ✅ done (v3.1 style) |
+| 05-hierophant | ✅ done (v3.1 style) |
+| 06-lovers | ⏳ chờ lượt sau |
+| 07-chariot | ⏳ chờ lượt sau |
+| 08-strength | ⏳ chờ lượt sau |
+| 09-hermit | ⏳ chờ lượt sau |
+| 10-wheel | ⏳ chờ lượt sau |
+| 11-justice | ⏳ chờ lượt sau |
+| 12-hanged | ⏳ chờ lượt sau |
+| 13-death | ⏳ chờ lượt sau |
+| 14-temperance | ⏳ chờ lượt sau |
+| 15-devil | ⏳ chờ lượt sau |
+| 16-tower | ⏳ chờ lượt sau |
+| 17-the-star | ⏳ chờ lượt sau |
+| 18-moon | ✅ done (v3.1 style) |
+| 19-sun | ⏳ chờ lượt sau |
+| 20-judgement | ⏳ chờ lượt sau |
+| 21-world | ⏳ chờ lượt sau |
+
+## Còn lại
+
+16 lá: `", ".join(s for s in all_slugs if s not in done)`.
+Mỗi lượt sinh tối đa 10 ảnh, prompt lấy nguyên văn từ `prompts_frameless_v3_star/tool_prompts.json`,
+đính kèm reference `the star.png`. Lỗi `Response contains no images` là transient → retry.
+
+## Tái sinh prompt
+
+```bash
+python3 build_prompts_v3_star.py   # -> prompts_frameless_v3_star/
+```
