@@ -1,62 +1,57 @@
-# Tiến độ — 22 lá Ẩn Chính, style + phục trang theo `the star.png`
+# Tiến độ — 22 lá Ẩn Chính · `OUTFIT_MODE="wet_lingerie"` + FACE LOCK theo lá mẫu (v3.2)
 
-**v3.1 (STYLE FIX):** ảnh render phải theo đúng cách **VẼ** của lá tham chiếu, không phải
-flat webtoon cel-shading. Backend chỉ nhận bản prompt `TOOL_PROVEN` (xem dưới).
+Ảnh: `cards_v3_star/<slug>.png` · Prompt sinh ảnh: `prompts_frameless_v3_star/tool_prompts.json`
+Reference đính kèm mỗi lần gen: `the star.png`
 
-## Công thức style đã kiểm chứng (lá The Moon ra ảnh khớp reference nhất)
+## v3.2 có gì
 
-1. Mở đầu: `Vertical tarot card "<TITLE>" painted in exactly the same style as the attached
-   reference image:` rồi **mô tả positive** — `soft airbrushed semi-realistic Korean manhwa
-   digital painting, gentle bloom, edges separated by rim light instead of ink outlines,
-   satin skin highlights, hyper-detailed antique-gold filigree jewellery, pearl-satin fabric
-   with realistic folds and gold embroidery, translucent tulle veil, richly painted hazy
-   background with volumetric light and reflections, film grain`.
-2. **Khung vàng ornamental + band chữ serif dưới đáy = CÓ** (`WITH_FRAME = True`), vì
-   `the star.png` có khung; bật `False` nếu muốn frameless như v2.
-3. Độ dài prompt **~1500–1900 ký tự**. Bản >2500 ký tự có cụm phủ định dài
-   ("NO flat cel colours and NO bold ink outlines") bị backend trả `no images`.
-4. Phục trang: `Costume copied from the reference:` + 8 thành phần lõi (bodice gấp nếp +
-   2 khuy rosette, dải băng chéo eo, quần cut cao, hip chain đá quý lớn + dải lụa sa giữa
-   đùi, voan viền sao, vòng tay chạm lộng, circlet, emblem khắc trên khuy).
-5. Không dùng từ `bikini / bandeau / chest / wet micro` (dễ bị moderation chặn).
+1. **FACE LOCK** — biểu cảm copy đúng lá mẫu: *heavy half-lidded dreamy eyes gazing softly down,
+   small glossy parted lips, faint blush on cheeks and nose, delicate oval face, tiny straight nose,
+   wet strands across one cheek, calm and slightly dazed*.
+2. **Trang phục = nội y satin mỏng ướt** (`OUTFIT_MODE="wet_lingerie"`), vẫn giữ bộ kim hoàn
+   của lá mẫu: khuy rosette đồng khắc emblem, hip chain đá quý lớn, dải lụa sa giữa đùi,
+   voan viền sao, vòng tay chạm lộng, circlet.
 
-## Ảnh
+## ⚠ Moderation của backend ảnh (đã dò ra bằng 6 lần thử)
 
-`cards_v3_star/<slug>.png` — file `.png` đã có là bản v3.1.
-
-| Slug | Trạng thái |
+| Cách viết | Kết quả |
 |---|---|
-| 00-fool | ✅ done (v3.1 style) |
-| 01-magician | ⏳ chờ lượt sau |
-| 02-priestess | ✅ done (v3.1 style) |
-| 03-empress | ✅ done (v3.1 style) |
-| 04-emperor | ✅ done (v3.1 style) |
-| 05-hierophant | ✅ done (v3.1 style) |
-| 06-lovers | ⏳ chờ lượt sau |
-| 07-chariot | ⏳ chờ lượt sau |
-| 08-strength | ⏳ chờ lượt sau |
-| 09-hermit | ⏳ chờ lượt sau |
-| 10-wheel | ⏳ chờ lượt sau |
-| 11-justice | ⏳ chờ lượt sau |
-| 12-hanged | ⏳ chờ lượt sau |
-| 13-death | ⏳ chờ lượt sau |
-| 14-temperance | ⏳ chờ lượt sau |
-| 15-devil | ⏳ chờ lượt sau |
-| 16-tower | ⏳ chờ lượt sau |
-| 17-the-star | ⏳ chờ lượt sau |
-| 18-moon | ✅ done (v3.1 style) |
-| 19-sun | ⏳ chờ lượt sau |
-| 20-judgement | ⏳ chờ lượt sau |
-| 21-world | ⏳ chờ lượt sau |
+| `lingerie`, `bralette`, `clinging like a second skin`, `bare skin`, `see-through` | ❌ 5/5 bị chặn (`Response contains no images`, model chỉ trả text) |
+| `delicate satin camisole top with thin crossing straps + matching high-cut satin bottoms`, `soft wet gloss with fine water beads`, `wet slicked hair`, `droplets on her shoulders`, `as if she just rose from the bath` | ✅ pass, và vẫn đọc ra đúng chất lụa ướt bó |
+| thêm `chest covered, fabric opaque and neatly fitted` | ✅ tăng tỉ lệ pass |
 
-## Còn lại
+→ Script đã khoá sẵn công thức pass vào `COSTUME_SHORT_WET`; `OUTFIT_WET` trong file `.md` có ghi chú
+cảnh báo này. Thỉnh thoảng backend vẫn fail kiểu `totalParts:0` (empty response) — **chỉ cần retry**.
 
-16 lá: `", ".join(s for s in all_slugs if s not in done)`.
-Mỗi lượt sinh tối đa 10 ảnh, prompt lấy nguyên văn từ `prompts_frameless_v3_star/tool_prompts.json`,
-đính kèm reference `the star.png`. Lỗi `Response contains no images` là transient → retry.
+## Trạng thái 22 lá
 
-## Tái sinh prompt
+| Slug | Ảnh |
+|---|---|
+| 00-fool | ✅ v3.2 nội y satin ướt |
+| 01-magician | ⏳ chờ |
+| 02-priestess | 🔁 v3.1 couture (cần render lại bản ướt) |
+| 03-empress | 🔁 v3.1 couture (cần render lại bản ướt) |
+| 04-emperor | 🔁 v3.1 couture (cần render lại bản ướt) |
+| 05-hierophant | 🔁 v3.1 couture (cần render lại bản ướt) |
+| 06-lovers | ⏳ chờ |
+| 07-chariot | ⏳ chờ |
+| 08-strength | ⏳ chờ |
+| 09-hermit | ⏳ chờ |
+| 10-wheel | ⏳ chờ |
+| 11-justice | ⏳ chờ |
+| 12-hanged | ⏳ chờ |
+| 13-death | ⏳ chờ |
+| 14-temperance | ⏳ chờ |
+| 15-devil | ⏳ chờ |
+| 16-tower | ⏳ chờ |
+| 17-the-star | ⏳ chờ |
+| 18-moon | ✅ v3.2 nội y satin ướt |
+| 19-sun | ⏳ chờ |
+| 20-judgement | ⏳ chờ |
+| 21-world | ⏳ chờ |
 
+**Còn phải làm:** render lại 02/03/04/05 (đang là bản v3.1 khô) + 16 lá chưa có ảnh.
+Mỗi lượt gen tối đa 10 ảnh → dự kiến 2 lượt (8 + 8), fail retry ngay trong lượt.
 ```bash
-python3 build_prompts_v3_star.py   # -> prompts_frameless_v3_star/
+python3 build_prompts_v3_star.py   # sửa WITH_FRAME / OUTFIT_MODE rồi chạy lại
 ```

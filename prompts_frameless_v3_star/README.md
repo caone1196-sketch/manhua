@@ -1,13 +1,5 @@
 # prompts_frameless_v3_star — 22 lá Ẩn Chính, phục trang theo `the star.png`
 
-> **v3.1 — STYLE FIX.** Yêu cầu của người dùng: "phong cách vẽ không đúng lá tham chiếu".
-> Backend từ chối render đúng nếu prompt dùng `crisp lineart + soft cell shading` (ra ảnh
-> flat kiểu vector). Bản **chuẩn** là `tool_prompts.json`: mở đầu bằng
-> *"painted in exactly the same style as the attached reference image"* + mô tả
-> **airbrushed semi-realistic painting, bloom, rim-light edges, film grain**, và **có khung
-> vàng ornamental** (`the star.png` có khung — `WITH_FRAME=True` trong script; đặt `False`
-> để frameless). Chi tiết: `cards_v3_star/PROGRESS.md`.
-
 Thư mục này sinh bởi `build_prompts_v3_star.py`. **KHÔNG** ghi đè `prompts_frameless_v2/`.
 
 ## Khác biệt cốt lõi so với v2

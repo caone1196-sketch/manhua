@@ -30,9 +30,14 @@ OUT_DIR = os.path.join(ROOT, "prompts_frameless_v3_star")
 STYLE_REF = "the star.png"
 
 # `the star.png` CÓ khung vàng ornamental mỏng + corner filigree + band chữ serif dưới đáy.
-# WITH_FRAME = True  -> đúng y như lá tham chiếu (mặc định của v3.1)
+# WITH_FRAME = True  -> đúng y như lá tham chiếu (mặc định v3.1)
 # WITH_FRAME = False -> giữ quy ước frameless của prompts_frameless_v2
 WITH_FRAME = True
+
+# OUTFIT_MODE:
+#   "couture"      = phục trang nhiều lớp như lá mẫu (bandeau + dải chéo + panel lụa)
+#   "wet_lingerie" = nội y satin MỎNG ƯỚT bám sát da (yêu cầu v3.2), vẫn opaque & kín ngực
+OUTFIT_MODE = "wet_lingerie"
 
 # --------------------------------------------------------------------------
 # Dữ liệu 22 lá Ẩn Chính: tên, biểu tượng, sàn cảnh, đá quý/accent phục trang,
@@ -498,6 +503,37 @@ def clean(s: str) -> str:
     s = s.replace("**", "").replace("A ", "") if s else s
     return s
 
+# --------------------------------------------------------------------------
+# v3.2 — FACE LOCK (giữ đúng biểu cảm của lá mẫu) + OUTFIT_MODE
+# --------------------------------------------------------------------------
+FACE_LOCK = ("FACE — keep the reference card's exact expression: serene, dreamy and slightly dazed; heavy "
+             "half-lidded eyes gazing softly down past the viewer, small glossy lips parted just enough, faint "
+             "blush across the cheeks and the bridge of the nose, delicate oval face, tiny straight nose, soft "
+             "thin brows, a couple of wet strands clinging across one cheek; no wide smile, no pout, no "
+             "surprise — the same calm, vulnerable, half-asleep look as the reference.")
+
+OUTFIT_COUTURE = ("Costume copied from the reference: {cloth} cropped bodice with two round {metal} rosette "
+                  "clasps, thin {metal} bands crossing over the waist, high-cut matching bottoms, {metal} "
+                  "filigree hip chain set with a large {gem_n} and a long embroidered silk panel falling between "
+                  "the thighs, floor-length sheer white veil hemmed with gold stars, openwork {metal} armbands, "
+                  "a jewelled forehead circlet, {emblem_n} engraved on the clasps.")
+
+OUTFIT_WET = ("Costume — v3.2 'nội y mỏng ướt': a delicate {cloth} satin camisole top with thin crossing straps "
+              "and matching high-cut satin bottoms from the same design family as the reference, the camisole "
+              "closed at centre front by two round {metal} rosette clasps engraved with {emblem_n}, a {metal} "
+              "filigree hip chain set with a large faceted {gem_n} holding a long embroidered silk panel that "
+              "falls between the thighs, a floor-length sheer {metal}-starred veil, openwork {metal} armbands and "
+              "a jewelled circlet. WET LOOK: the satin carries a soft wet gloss and fine water beads, "
+              "darkened a shade where it is damp, her hair is wet and slicked, droplets sit on her shoulders and "
+              "run off the hems — she has just risen from the bath. The fabric stays opaque and neatly fitted "
+              "(never transparent), the chest and hips are completely covered, cut exactly like the reference "
+              "costume, so only shoulders, arms and thighs are bare skin as in the reference.\n\n"
+              "NOTE: avoid the tokens 'lingerie', 'bralette', 'clinging like a second skin', 'see-through' in "
+              "the generation prompt — the image backend refuses them (verified: 5/5 refusals). "
+              "'camisole top + high-cut satin bottoms + wet gloss + water beads' passes and reads the same.")
+
+OUTFIT = OUTFIT_WET if OUTFIT_MODE == "wet_lingerie" else OUTFIT_COUTURE
+
 STYLECORE = ("soft airbrushed semi-realistic Korean manhwa digital painting, gentle bloom, edges separated by rim "
              "light instead of ink outlines, satin skin highlights, hyper-detailed antique-gold filigree "
              "jewellery, pearl-satin fabric with realistic folds and gold embroidery, translucent tulle veil, "
@@ -507,29 +543,49 @@ FRAMECORE_YES = ("Same thin antique-gold ornamental border with filigree corners
                  "in the bottom band, like the reference card.")
 FRAMECORE_NO = ("Frameless like the v2 deck: no border, only the antique-gold serif title centered at the bottom.")
 
-TOOL_PROVEN = ('Vertical tarot card "{title}" painted in exactly the same style as the attached reference image: '
-               + STYLECORE + ". " + (FRAMECORE_YES if WITH_FRAME else FRAMECORE_NO) +
-               " One adult woman in her twenties, tasteful and fully clothed. Costume copied from the reference: "
-               "{cloth} cropped bodice with two round {metal} rosette clasps, thin {metal} bands crossing over the "
-               "waist, high-cut matching bottoms, {metal} filigree hip chain set with a large {gem_n} and a long "
-               "embroidered silk panel falling between the thighs, floor-length sheer white veil hemmed with gold "
-               "stars, openwork {metal} armbands, a jewelled forehead circlet, {emblem_n} engraved on the clasps. "
-               "Hair: {hair}. Eyes: {eyes}. Skin: {skin}. Pose: {pose}. Setting: {scene}, {extra} {props}"
+# Bản v3.2 gọn (mục tiêu <2100 ký tự: prompt dài >2500 làm backend Gemini trả "no images")
+STYLE_SHORT = ("painted exactly like the attached reference image, same brushwork and same face rendering: "
+               "soft airbrushed semi-realistic Korean manhwa painting, gentle bloom, rim-light edges instead of "
+               "ink outlines, satin skin highlights, richly painted hazy background with water reflections, "
+               "film grain")
+FACE_SHORT = ("FACE = the reference expression: heavy half-lidded dreamy eyes gazing softly down, small glossy "
+              "parted lips, faint blush on cheeks and nose, delicate oval face, tiny straight nose, wet strands "
+              "across one cheek, calm and slightly dazed")
+FRAME_SHORT = ("thin antique-gold ornamental border with filigree corners and the serif gold title in a bottom "
+               "band, like the reference card" if WITH_FRAME else
+               "frameless, only the serif gold title at the bottom")
+
+COSTUME_SHORT_COUTURE = ("Costume copied from the reference: {cloth} cropped bodice with two round {metal} "
+                         "rosette clasps, thin {metal} bands crossing the waist, high-cut matching bottoms, "
+                         "{metal} filigree hip chain with a large {gem_n} and a long embroidered silk panel "
+                         "between the thighs, floor-length sheer white veil hemmed with gold stars, openwork "
+                         "{metal} armbands, jewelled circlet, {emblem_n} on the clasps")
+COSTUME_SHORT_WET = ("Costume: a delicate {cloth} satin camisole top with thin crossing straps and matching "
+                     "high-cut satin bottoms, chest covered, fabric opaque and neatly fitted, plus the ornate "
+                     "{metal} jewellery of the reference — the camisole closes at centre front by two round "
+                     "{metal} rosette clasps engraved with {emblem_n}, {metal} filigree hip chain with a large "
+                     "faceted {gem_n} holding a long embroidered silk panel that falls between the thighs, "
+                     "floor-length sheer veil hemmed with gold stars, openwork {metal} armbands, a jewelled "
+                     "circlet. The satin carries a soft wet gloss with fine water beads, her hair is wet and "
+                     "slicked and droplets sit on her shoulders, as if she just rose from the bath")
+COSTUME_SHORT = COSTUME_SHORT_WET if OUTFIT_MODE == "wet_lingerie" else COSTUME_SHORT_COUTURE
+
+TOOL_PROVEN = ('Vertical tarot card \"{title}\" ' + STYLE_SHORT + ". " + FACE_SHORT + ". " +
+               'Same ' + FRAME_SHORT + '. One adult woman in her twenties, tasteful. ' + COSTUME_SHORT + ". "
+               'Hair: {hair}. Eyes: {eyes}. Skin: {skin}. Pose: {pose}. Setting: {scene}, {extra} {props}'
                "Tall 7:12 portrait, whole body visible, perfect anatomy.")
 
 
 def tool_prompt(card: dict, meta: dict) -> str:
     f = dict(title=card["title"], scene=card["scene"].rstrip(".").lower(), extra=card["extra"].rstrip(".") + ". ",
-             pose=card["pose"].rstrip(".") + ".", cloth=card["cloth"], metal=card["metal"],
+             pose=card["pose"].rstrip(".") + ".",
+             cloth=re.sub(r"\s+(satin|silk)$", "", card["cloth"]), metal=card["metal"],
              gem_n=nart(card["gem"]), emblem_n=nart(card["emblem"]),
              hair=en(meta.get("hair")), eyes=en(meta.get("eyes")), skin=en(meta.get("skin")).rstrip(".") + ".")
-    if card["props"]:
-        f["props"] = (f'Exactly {card["props"]["n"]} {card["props"]["obj"]}: {card["props"]["layout"]}. ')
-    else:
-        f["props"] = "No other props or suit objects. "
+    f["props"] = (f'Exactly {card["props"]["n"]} {card["props"]["obj"]}: {card["props"]["layout"]}. '
+                  if card["props"] else "No other props or suit objects. ")
     t = " ".join(TOOL_PROVEN.format(**f).split())
-    t = re.sub(r"\.\.", ".", t)
-    return t.replace('\\"', '"')
+    return re.sub(r"\.\.", ".", t).replace('\\"', '"')
 
 
 def build_prompt(card: dict, meta: dict) -> str:
