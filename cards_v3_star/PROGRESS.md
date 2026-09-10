@@ -13,6 +13,29 @@ Reference đính kèm mỗi lần gen: `the star.png` · Chế độ: `OUTFIT_MO
 * **FACE LOCK**: heavy half-lidded dreamy eyes gazing softly down · small glossy parted lips ·
   faint blush · delicate oval face · wet strands across one cheek · calm and slightly dazed.
 
+## ⚠ Situational: backend ảnh đang fail theo CƠN (số liệu đo được)
+| Lượt | Lệnh gen | Ăn |
+|---|---|---|
+| v3.2 | 10 | 4 |
+| v3.3 | 10 | 2 |
+| port poses (lượt 1) | 10 | 1 (pose09) |
+| port poses (lượt 2) | 10 | 1 (pose08) — 6 lệnh liên tiếp cuối lượt fail 100% |
+
+`totalParts:0` = model trả về rỗng (KHÔNG phải chặn nội dung). → Thực tế mỗi lượt chỉ ăn
+**1-2 lá**, gọi liên tiếp trong cùng một lượt càng về sau càng dễ fail. Chiến lược: ưu tiên
+lá quan trọng nhất lên ĐẦU lượt, fail thì để lượt sau, đừng đốt hết 10 slot cho 1 lá.
+
+## The Star — 5 pose từ `star_external_export` (bản port an toàn)
+| Pose | Ảnh |
+|---|---|
+| 06 twin overhead (2 tay chữ V) | ⏳ fail 4/4 lượt gần nhất |
+| 07 profile pour | ⏳ fail 3/3 |
+| 08 waterline recline | ✅ `17-the-star_pose08_waterline_recline.png` |
+| 09 shoulder pour (3/4 sau) | ✅ `17-the-star_pose09_shoulder_pour.png` |
+| 10 rim lean | ⏳ fail 3/3 |
+
+Prompt: `prompts_frameless_v2/star_external_export/safe_star_bikini/` (`gen_prompts.json` = bản gọn)
+
 ## ⚠ Tình trạng backend ảnh (số liệu thật của các lượt đã chạy)
 | Công thức | KQ |
 |---|---|
