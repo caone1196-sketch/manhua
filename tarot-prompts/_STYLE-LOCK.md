@@ -57,39 +57,41 @@ misspelled text, double title, daytime, bright sky
 - SDXL: sampler DPM++ 2M Karras, steps 40, CFG 6.5, Denoise…. tuỳ
 - Luôn giữ seed/style-reference từ lá THE STAR đầu tiên cho cả bộ.
 
-## 6. EXPORT LOCK — Chuẩn xuất bản in final (🔒 ĐÃ CHỐT 2026-09-11)
+## 6. EXPORT LOCK — Chuẩn xuất bản in final (🔒 ĐÃ CHỐT 2026-09-11, v2: 9:16 + AI upscale)
 
 > Mọi lá khi chốt vào `tarot-final/` đều xuất kèm bản in theo chuẩn này.
 
 | Thông số | Giá trị LOCKED |
 |---|---|
-| Kích thước | **3072 × 5266 px** |
-| Tỉ lệ | **7:12 dọc** |
+| Kích thước | **3072 × 5461 px** |
+| Tỉ lệ | **9:16 dọc** |
 | DPI | **300** (118.11 px/cm, `PixelsPerInch`) |
 | Định dạng | PNG lossless, sRGB |
+| Sharpen | **max chi tiết**: `-unsharp 0x0.8+1.5+0.003` |
 
-### 6.1 Pipeline 2 bước (ĐÃ KIỂM CHỨNG)
+### 6.1 Pipeline (ĐÃ KIỂM CHỨNG — chạy bằng script trong repo)
 
-**Bước 1 — Gen ở tỉ lệ 7:12 ngay từ prompt** (model re-compose vừa khung hẹp, KHÔNG bị crop):
-mọi prompt final phải mở đầu bằng câu:
+**Bước 1 — Gen ở tỉ lệ 9:16 ngay từ prompt**: mọi prompt final mở đầu bằng:
 
 ```
-OUTPUT FORMAT REQUIREMENT: render this image on a TALL NARROW vertical 7:12
-aspect ratio canvas (width:height = 7:12, a slim tall portrait like 9:16),
-NOT a wide canvas; compose everything to fit the narrow vertical frame.
+OUTPUT FORMAT REQUIREMENT: render this image in a vertical 9:16 PORTRAIT
+aspect ratio (width:height = 9:16, tall narrow phone-wallpaper shape);
+absolutely NOT a square, NOT wide; compose everything to fit the tall 9:16 frame.
 ```
 
-→ Output thật: **784×1360 px** (tỉ lệ 0.576 ≈ 7:12). Kiểm tra bằng `identify` sau mỗi lần gen,
-nếu tỉ lệ sai (ra ~848×1264) thì gen lại với câu nhấn mạnh hơn.
+→ Output thật: **768×1376 px** (tỉ lệ 0.558 ≈ 9:16). Kiểm tra `identify` mỗi lần gen, sai tỉ lệ thì gen lại.
 
-**Bước 2 — Upscale 784×1360 → 3072×5266 @300DPI** (đồng nhất ~3.9x, stretch 1.2% không thấy, KHÔNG crop):
+**Bước 2 — AI upscale + xuất in (một lệnh, script có sẵn trong repo):**
 
 ```bash
-convert <src>.png -filter Lanczos -resize 3072x5266! \
-  -unsharp 0x0.75+0.75+0.008 \
-  -units PixelsPerInch -density 300 \
-  <final-name>-3072x5266-300dpi.png
+python3 tarot-final/tools/upscale-print.py INPUT.png tarot-final/NN-ten-la-3072x5461-300dpi.png
 ```
 
-- Tên file: `NN-ten-la-3072x5266-300dpi.png` đặt trong `tarot-final/`.
-- Mẫu đã xuất: `tarot-final/00-the-fool-B-3072x5266-300dpi.png` (v1: crop từ nguồn 2:3; từ nay các lá mới dùng pipeline 6.1 không mất chữ).
+Script tự: LapSRN x4 AI (chia tile 2×3 overlap 32 chống seam) → 3072×5504 → resize chính xác
+**3072×5461** + unsharp `0x0.8+1.5+0.003` (MAX CHI TIẾT) + metadata 300 DPI.
+Model `LapSRN_x4.pb` đã lưu sẵn tại `tarot-final/tools/models/` (nguồn: fannymonori/TF-LapSRN).
+Cần `pip install opencv-contrib-python-headless` (kèm `--break-system-packages` nếu pip chặn).
+
+- Tên file: `NN-ten-la-3072x5461-300dpi.png` trong `tarot-final/`.
+- Mẫu kiểm chứng: `tarot-prompts/preview/print-9x16-maxdetail-3072x5461-300dpi.png` (+ sheet so sánh `compare-9x16-detail.png`).
+- Bản cũ (7:12 crop 2 bên) KHÔNG dùng nữa; THE FOOL sẽ xuất lại khi chuyển 9:16.

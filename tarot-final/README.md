@@ -7,7 +7,7 @@ Thư mục riêng chứa **ảnh final từng lá** (bản chốt, không phải
 - Full-bleed 2:3, **KHÔNG khung viền, KHÔNG khung chữ/panel**
 - Chỉ giữ **tên lá bài** chữ vàng serif Roman nổi trực tiếp trên tranh ở cạnh dưới
 - Cùng mặt mẫu + màu da + chất vẽ với ảnh reference `tarot-prompts/ref/2-mj-clean.png`
-- 🔒 **Bản in LOCKED: 3072×5266 px — tỉ lệ 7:12 — 300 DPI — PNG** (xem chi tiết `tarot-prompts/_STYLE-LOCK.md` mục 6). Mỗi lá chốt final đều xuất kèm 1 bản in chuẩn này.
+- 🔒 **Bản in LOCKED (v2): 3072×5461 px — tỉ lệ 9:16 — 300 DPI — PNG — AI upscale LapSRN max chi tiết** (xem chi tiết `tarot-prompts/_STYLE-LOCK.md` mục 6; chạy bằng `tarot-final/tools/upscale-print.py`). Mỗi lá chốt final đều xuất kèm 1 bản in chuẩn này.
 
 ## Danh sách
 
