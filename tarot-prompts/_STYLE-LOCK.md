@@ -57,42 +57,45 @@ misspelled text, double title, daytime, bright sky
 - SDXL: sampler DPM++ 2M Karras, steps 40, CFG 6.5, Denoise…. tuỳ
 - Luôn giữ seed/style-reference từ lá THE STAR đầu tiên cho cả bộ.
 
-## 6. EXPORT LOCK — Chuẩn xuất bản in final (🔒 ĐÃ CHỐT 2026-09-11, v2: 9:16 + AI upscale)
+## 6. EXPORT LOCK — Chuẩn xuất bản in final (🔒 ĐÃ CHỐT 2026-09-11, v4: 3:4 + AI upscale)
 
 > Mọi lá khi chốt vào `tarot-final/` đều xuất kèm bản in theo chuẩn này.
 
 | Thông số | Giá trị LOCKED |
 |---|---|
-| Tỉ lệ | **9:16 dọc** |
-| Kích thước chuẩn (mặc định) | **1536 × 2752 px — PNG ~5.4MB** (AI x2, siêu lấy mẫu từ LapSRN x4) |
-| Kích thước master (tùy chọn) | 3072 × 5461 px — PNG ~20MB (thêm `--width 3072 --height 5461`) |
-| DPI | **300** (118.11 px/cm) → 1536×2752 in ~13×23 cm; 3072×5461 in ~26×46 cm |
-| Định dạng | PNG lossless, sRGB (JPEG q90 ~2.4MB nếu ưu tiên dung lượng tối đa) |
+| Tỉ lệ | **3:4 dọc** |
+| Kích thước chuẩn | **3072 × 4096 px — PNG ~15MB** (AI x4 LapSRN từ gen native 896×1200) |
+| DPI | **300** (118.11 px/cm) → in ~26×34.7 cm |
+| Định dạng | PNG lossless, sRGB (JPEG q90 ~2-3MB nếu ưu tiên dung lượng tối đa) |
 | Sharpen | **max chi tiết**: `-unsharp 0x0.8+1.5+0.003` |
 
 ### 6.1 Pipeline (ĐÃ KIỂM CHỨNG — chạy bằng script trong repo)
 
-**Bước 1 — Gen ở tỉ lệ 9:16 ngay từ prompt**: mọi prompt final mở đầu bằng:
+**Bước 1 — Gen ở tỉ lệ 3:4 ngay từ prompt**: mọi prompt final mở đầu bằng:
 
 ```
-OUTPUT FORMAT REQUIREMENT: render this image in a vertical 9:16 PORTRAIT
-aspect ratio (width:height = 9:16, tall narrow phone-wallpaper shape);
-absolutely NOT a square, NOT wide; compose everything to fit the tall 9:16 frame.
+OUTPUT FORMAT REQUIREMENT: render this image in a vertical 3:4 PORTRAIT
+aspect ratio (width:height = 3:4); absolutely NOT a square, NOT ultra-tall
+like 9:16; compose everything to fit the 3:4 frame.
 ```
 
-→ Output thật: **768×1376 px** (tỉ lệ 0.558 ≈ 9:16). Kiểm tra `identify` mỗi lần gen, sai tỉ lệ thì gen lại.
+→ Output thật: **896×1200 px** (tỉ lệ 0.747 ≈ 3:4 — native lớn hơn khung 9:16 cũ, upscale sạch hơn).
+Kiểm tra `identify` mỗi lần gen, sai tỉ lệ thì gen lại.
 
 **Bước 2 — AI upscale + xuất in (một lệnh, script có sẵn trong repo):**
 
 ```bash
-python3 tarot-final/tools/upscale-print.py INPUT.png tarot-final/NN-ten-la-1536x2752-300dpi.png
+python3 tarot-final/tools/upscale-print.py INPUT.png tarot-final/NN-ten-la-3072x4096-300dpi.png
 ```
 
-Script tự: LapSRN x4 AI (chia tile 2×3 overlap 32 chống seam) → resize chính xác kích thước đích
-(mặc định **1536×2752**) + unsharp `0x0.8+1.5+0.003` (MAX CHI TIẾT) + metadata 300 DPI.
-Bản master 3072×5461: thêm `--width 3072 --height 5461`.
+Script tự: LapSRN x4 AI (chia tile 2×3 overlap 32 chống seam) → 3584×4800 → resize chính xác
+**3072×4096** + unsharp `0x0.8+1.5+0.003` (MAX CHI TIẾT) + metadata 300 DPI.
 Model `LapSRN_x4.pb` đã lưu sẵn tại `tarot-final/tools/models/` (nguồn: fannymonori/TF-LapSRN).
 Cần `pip install opencv-contrib-python-headless` (kèm `--break-system-packages` nếu pip chặn).
+
+- Tên file: `NN-ten-la-3072x4096-300dpi.png` trong `tarot-final/`.
+- Mẫu kiểm chứng: `tarot-prompts/preview/18-the-moon-v7-print-3072x4096-300dpi.png`.
+- Các giai đoạn thí nghiệm 7:12 / 9:16 đã dọn dẹp; chỉ chuẩn 3:4 này được dùng.
 
 - Tên file: `NN-ten-la-3072x5461-300dpi.png` trong `tarot-final/`.
 - Mẫu kiểm chứng: `tarot-prompts/preview/print-9x16-maxdetail-3072x5461-300dpi.png` (+ sheet so sánh `compare-9x16-detail.png`).

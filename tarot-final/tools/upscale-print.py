@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-upscale-print.py — AI upscale pipeline cho bản in Tarot (locked 9:16, 3072x5461 @300DPI)
+upscale-print.py — AI upscale pipeline cho bản in Tarot (locked 3:4, 3072x4096 @300DPI)
 
 Quy trình:
   1. LapSRN x4 AI (chia tile 2x3, overlap 32px chống seam) -> gấp 4 độ phân giải thật
@@ -13,7 +13,7 @@ Yêu cầu:
 Model .pb nằm cạnh script trong ./models/ (LapSRN_x4.pb từ github.com/fannymonori/TF-LapSRN)
 
 Dùng:
-  python3 upscale-print.py INPUT.png OUTPUT.png [--width 3072] [--height 5461] [--sharp 0x0.8+1.5+0.003]
+  python3 upscale-print.py INPUT.png OUTPUT.png [--width 3072] [--height 4096] [--sharp 0x0.8+1.5+0.003]
 """
 import sys, os, argparse, subprocess
 import cv2, numpy as np
@@ -46,7 +46,7 @@ def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("input"); ap.add_argument("output")
     ap.add_argument("--width", type=int, default=3072)
-    ap.add_argument("--height", type=int, default=5461)
+    ap.add_argument("--height", type=int, default=4096)
     ap.add_argument("--sharp", default="0x0.8+1.5+0.003",
                     help="unsharp kích thước in: 0x0.8+1.5+0.003 = max chi tiết; 0x0.6+0.9+0.005 = mịn sạch")
     a = ap.parse_args()
