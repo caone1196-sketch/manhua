@@ -63,10 +63,11 @@ misspelled text, double title, daytime, bright sky
 
 | Thông số | Giá trị LOCKED |
 |---|---|
-| Kích thước | **3072 × 5461 px** |
 | Tỉ lệ | **9:16 dọc** |
-| DPI | **300** (118.11 px/cm, `PixelsPerInch`) |
-| Định dạng | PNG lossless, sRGB |
+| Kích thước chuẩn (mặc định) | **1536 × 2752 px — PNG ~5.4MB** (AI x2, siêu lấy mẫu từ LapSRN x4) |
+| Kích thước master (tùy chọn) | 3072 × 5461 px — PNG ~20MB (thêm `--width 3072 --height 5461`) |
+| DPI | **300** (118.11 px/cm) → 1536×2752 in ~13×23 cm; 3072×5461 in ~26×46 cm |
+| Định dạng | PNG lossless, sRGB (JPEG q90 ~2.4MB nếu ưu tiên dung lượng tối đa) |
 | Sharpen | **max chi tiết**: `-unsharp 0x0.8+1.5+0.003` |
 
 ### 6.1 Pipeline (ĐÃ KIỂM CHỨNG — chạy bằng script trong repo)
@@ -84,11 +85,12 @@ absolutely NOT a square, NOT wide; compose everything to fit the tall 9:16 frame
 **Bước 2 — AI upscale + xuất in (một lệnh, script có sẵn trong repo):**
 
 ```bash
-python3 tarot-final/tools/upscale-print.py INPUT.png tarot-final/NN-ten-la-3072x5461-300dpi.png
+python3 tarot-final/tools/upscale-print.py INPUT.png tarot-final/NN-ten-la-1536x2752-300dpi.png
 ```
 
-Script tự: LapSRN x4 AI (chia tile 2×3 overlap 32 chống seam) → 3072×5504 → resize chính xác
-**3072×5461** + unsharp `0x0.8+1.5+0.003` (MAX CHI TIẾT) + metadata 300 DPI.
+Script tự: LapSRN x4 AI (chia tile 2×3 overlap 32 chống seam) → resize chính xác kích thước đích
+(mặc định **1536×2752**) + unsharp `0x0.8+1.5+0.003` (MAX CHI TIẾT) + metadata 300 DPI.
+Bản master 3072×5461: thêm `--width 3072 --height 5461`.
 Model `LapSRN_x4.pb` đã lưu sẵn tại `tarot-final/tools/models/` (nguồn: fannymonori/TF-LapSRN).
 Cần `pip install opencv-contrib-python-headless` (kèm `--break-system-packages` nếu pip chặn).
 
