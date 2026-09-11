@@ -15,6 +15,10 @@ Thư mục chứa **các lá bài tạo theo chuẩn 3:4 mới** (khóa tại `t
 | `00-the-fool-v3.png` | THE FOOL — xoay múa tự do, một chân nâng, chó nhảy bên (896×1200, 3:4) |
 | `sheet-00-fool-v1v2v3.jpg` | Sheet so sánh 3 phiên bản THE FOOL |
 | `00-the-fool-v1-print-3072x4096-300dpi.png` | Bản in mẫu từ v1 (LapSRN x4, 15MB) |
+| `04-the-emperor-v14.png` | THE EMPEROR — ngồi ngai kinh điển, ankh+orb, đầu cừu 2 bên (896×1200, 3:4) |
+| `04-the-emperor-v15.png` | THE EMPEROR — đứng trước ngai, giơ quyền trượng + orb (896×1200, 3:4) |
+| `04-the-emperor-v16.png` | THE EMPEROR — 3/4 cạnh ngai, tay trên đầu cừu, ngoái vai (896×1200, 3:4) |
+| `sheet-04-emperor-v14-16.jpg` | Sheet so sánh 3 phiên bản THE EMPEROR (v14–v16) |
 | `06-the-lovers-v8.png` | THE LOVERS — chính diện, nâng ly giữa hồ gương, thành phố gothic hoàng hôn (896×1200, 3:4) |
 | `06-the-lovers-v9.png` | THE LOVERS — góc hông đối mặt, lan can hoa hồng, chạm ly cao (896×1200, 3:4) |
 | `06-the-lovers-v10.png` | THE LOVERS — góc 3/4, rót rượu hồng trên đài mây (896×1200, 3:4) |
