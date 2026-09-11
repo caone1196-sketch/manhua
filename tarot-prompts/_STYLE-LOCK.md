@@ -56,3 +56,28 @@ misspelled text, double title, daytime, bright sky
 - Midjourney: `--style raw --stylize 250 --v 6.1`
 - SDXL: sampler DPM++ 2M Karras, steps 40, CFG 6.5, Denoise…. tuỳ
 - Luôn giữ seed/style-reference từ lá THE STAR đầu tiên cho cả bộ.
+
+## 6. EXPORT LOCK — Chuẩn xuất bản in final (🔒 ĐÃ CHỐT 2026-09-11)
+
+> Mọi lá khi chốt vào `tarot-final/` đều xuất kèm bản in theo chuẩn này.
+
+| Thông số | Giá trị LOCKED |
+|---|---|
+| Kích thước | **3072 × 5266 px** |
+| Tỉ lệ | **7:12 dọc** |
+| DPI | **300** (118.11 px/cm, `PixelsPerInch`) |
+| Định dạng | PNG lossless, sRGB |
+
+**Quy tắc xuất** (nguồn preview ~848×1264, tỉ lệ ~2:3):
+
+```bash
+convert <src>.png -filter Lanczos -resize x5266 \
+  -gravity center -crop 3072x5266+0+0 +repage \
+  -unsharp 0x0.75+0.75+0.008 \
+  -units PixelsPerInch -density 300 \
+  <final-name>-3072x5266-300dpi.png
+```
+
+- Crop **đều 2 bên** ~230px mỗi bên (bớt trụ cột), giữ nguyên full chiều cao + tên lá.
+- Tên file: `NN-ten-la-3072x5266-300dpi.png` đặt trong `tarot-final/`.
+- Mẫu đã xuất: `tarot-final/00-the-fool-B-3072x5266-300dpi.png`.
