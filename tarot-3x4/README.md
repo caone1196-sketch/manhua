@@ -10,6 +10,11 @@ Thư mục chứa **các lá bài tạo theo chuẩn 3:4 mới** (khóa tại `t
 
 | File | Nội dung |
 |---|---|
+| `00-the-fool-v1.png` | THE FOOL — bước dọc gờ mái, hoa hồng trắng, chó nhỏ theo sau (896×1200, 3:4) |
+| `00-the-fool-v2.png` | THE FOOL — đứng dang tay vui sướng, chim bồ câu hai bên (896×1200, 3:4) |
+| `00-the-fool-v3.png` | THE FOOL — xoay múa tự do, một chân nâng, chó nhảy bên (896×1200, 3:4) |
+| `sheet-00-fool-v1v2v3.jpg` | Sheet so sánh 3 phiên bản THE FOOL |
+| `00-the-fool-v1-print-3072x4096-300dpi.png` | Bản in mẫu từ v1 (LapSRN x4, 15MB) |
 | `18-the-moon-v7.png` | THE MOON — quỳ nâng quả cầu trăng (896×1200, 3:4) |
 | `18-the-moon-v8.png` | THE MOON — đứng giữa hồ, tay với lên trăng (896×1200, 3:4) |
 | `18-the-moon-v9.png` | THE MOON — trồi lên, tóc xoáy, sói đen + chó trắng (896×1200, 3:4) |
