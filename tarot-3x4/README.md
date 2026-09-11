@@ -15,6 +15,12 @@ Thư mục chứa **các lá bài tạo theo chuẩn 3:4 mới** (khóa tại `t
 | `00-the-fool-v3.png` | THE FOOL — xoay múa tự do, một chân nâng, chó nhảy bên (896×1200, 3:4) |
 | `sheet-00-fool-v1v2v3.jpg` | Sheet so sánh 3 phiên bản THE FOOL |
 | `00-the-fool-v1-print-3072x4096-300dpi.png` | Bản in mẫu từ v1 (LapSRN x4, 15MB) |
+| `06-the-lovers-v8.png` | THE LOVERS — chính diện, nâng ly giữa hồ gương, thành phố gothic hoàng hôn (896×1200, 3:4) |
+| `06-the-lovers-v9.png` | THE LOVERS — góc hông đối mặt, lan can hoa hồng, chạm ly cao (896×1200, 3:4) |
+| `06-the-lovers-v10.png` | THE LOVERS — góc 3/4, rót rượu hồng trên đài mây (896×1200, 3:4) |
+| `06-the-lovers-v11.png` | THE LOVERS — góc ngửa thấp, tựa lưng nâng ly, trăng khuyết hồng và đèn trứng (896×1200, 3:4) |
+| `06-the-lovers-v12.png` | THE LOVERS — góc nhìn xuống, khiêu vũ chung một ly, mặt trờ trái tim, vườn hồng (896×1200, 3:4) |
+| `sheet-06-lovers-v8-12.jpg` | Sheet so sánh 5 phiên bản THE LOVERS |
 | `18-the-moon-v7.png` | THE MOON — quỳ nâng quả cầu trăng (896×1200, 3:4) |
 | `18-the-moon-v8.png` | THE MOON — đứng giữa hồ, tay với lên trăng (896×1200, 3:4) |
 | `18-the-moon-v9.png` | THE MOON — trồi lên, tóc xoáy, sói đen + chó trắng (896×1200, 3:4) |
