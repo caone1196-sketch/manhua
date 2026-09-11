@@ -68,16 +68,28 @@ misspelled text, double title, daytime, bright sky
 | DPI | **300** (118.11 px/cm, `PixelsPerInch`) |
 | Định dạng | PNG lossless, sRGB |
 
-**Quy tắc xuất** (nguồn preview ~848×1264, tỉ lệ ~2:3):
+### 6.1 Pipeline 2 bước (ĐÃ KIỂM CHỨNG)
+
+**Bước 1 — Gen ở tỉ lệ 7:12 ngay từ prompt** (model re-compose vừa khung hẹp, KHÔNG bị crop):
+mọi prompt final phải mở đầu bằng câu:
+
+```
+OUTPUT FORMAT REQUIREMENT: render this image on a TALL NARROW vertical 7:12
+aspect ratio canvas (width:height = 7:12, a slim tall portrait like 9:16),
+NOT a wide canvas; compose everything to fit the narrow vertical frame.
+```
+
+→ Output thật: **784×1360 px** (tỉ lệ 0.576 ≈ 7:12). Kiểm tra bằng `identify` sau mỗi lần gen,
+nếu tỉ lệ sai (ra ~848×1264) thì gen lại với câu nhấn mạnh hơn.
+
+**Bước 2 — Upscale 784×1360 → 3072×5266 @300DPI** (đồng nhất ~3.9x, stretch 1.2% không thấy, KHÔNG crop):
 
 ```bash
-convert <src>.png -filter Lanczos -resize x5266 \
-  -gravity center -crop 3072x5266+0+0 +repage \
+convert <src>.png -filter Lanczos -resize 3072x5266! \
   -unsharp 0x0.75+0.75+0.008 \
   -units PixelsPerInch -density 300 \
   <final-name>-3072x5266-300dpi.png
 ```
 
-- Crop **đều 2 bên** ~230px mỗi bên (bớt trụ cột), giữ nguyên full chiều cao + tên lá.
 - Tên file: `NN-ten-la-3072x5266-300dpi.png` đặt trong `tarot-final/`.
-- Mẫu đã xuất: `tarot-final/00-the-fool-B-3072x5266-300dpi.png`.
+- Mẫu đã xuất: `tarot-final/00-the-fool-B-3072x5266-300dpi.png` (v1: crop từ nguồn 2:3; từ nay các lá mới dùng pipeline 6.1 không mất chữ).
