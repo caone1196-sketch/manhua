@@ -19,6 +19,12 @@ Thư mục chứa **các lá bài tạo theo chuẩn 3:4 mới** (khóa tại `t
 | `04-the-emperor-v15.png` | THE EMPEROR — đứng trước ngai, giơ quyền trượng + orb (896×1200, 3:4) |
 | `04-the-emperor-v16.png` | THE EMPEROR — 3/4 cạnh ngai, tay trên đầu cừu, ngoái vai (896×1200, 3:4) |
 | `sheet-04-emperor-v14-16.jpg` | Sheet so sánh 3 phiên bản THE EMPEROR (v14–v16) |
+| `19-the-sun-v4.png` | THE SUN — chính diện múa mở tay, banner trắng (896×1200, 3:4) |
+| `19-the-sun-v5.png` | THE SUN — profile chạy nhảy qua cánh đồng hướng dương (896×1200, 3:4) |
+| `19-the-sun-v6.png` | THE SUN — ngồi mép hồ, xoáy tia nắng giữa hai tay (896×1200, 3:4) |
+| `19-the-sun-v7.png` | THE SUN — sau lưng bước về mặt trờ, banner như đôi cánh (896×1200, 3:4) |
+| `19-the-sun-v8.png` | THE SUN — nhìn xuống từ trên, xoay trong cơn bão cánh hoa (896×1200, 3:4) |
+| `sheet-19-sun-v4-8.jpg` | Sheet so sánh 5 phiên bản THE SUN (v4–v8) |
 | `06-the-lovers-v8.png` | THE LOVERS — chính diện, nâng ly giữa hồ gương, thành phố gothic hoàng hôn (896×1200, 3:4) |
 | `06-the-lovers-v9.png` | THE LOVERS — góc hông đối mặt, lan can hoa hồng, chạm ly cao (896×1200, 3:4) |
 | `06-the-lovers-v10.png` | THE LOVERS — góc 3/4, rót rượu hồng trên đài mây (896×1200, 3:4) |
