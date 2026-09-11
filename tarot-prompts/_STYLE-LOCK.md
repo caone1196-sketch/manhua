@@ -82,6 +82,10 @@ like 9:16; compose everything to fit the 3:4 frame.
 → Output thật: **896×1200 px** (tỉ lệ 0.747 ≈ 3:4 — native lớn hơn khung 9:16 cũ, upscale sạch hơn).
 Kiểm tra `identify` mỗi lần gen, sai tỉ lệ thì gen lại.
 
+> 📌 **Trần độ phân giải của trình gen (đã đo thực tế): ~1.075 megapixel** cho MỌI tỉ lệ —
+> 3:4 = 896×1200, 2:3 = 848×1264, 9:16 = 768×1376, 1:1 = 1024×1024.
+> Không từ khóa nào ("2K/4K/max resolution") vượt được trần này → mọi bản lớn hơn đều phải qua AI upscale (Bước 2).
+
 **Bước 2 — AI upscale + xuất in (một lệnh, script có sẵn trong repo):**
 
 ```bash
