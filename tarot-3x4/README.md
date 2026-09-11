@@ -20,7 +20,13 @@ Thư mục chứa **các lá bài tạo theo chuẩn 3:4 mới** (khóa tại `t
 | `06-the-lovers-v10.png` | THE LOVERS — góc 3/4, rót rượu hồng trên đài mây (896×1200, 3:4) |
 | `06-the-lovers-v11.png` | THE LOVERS — góc ngửa thấp, tựa lưng nâng ly, trăng khuyết hồng và đèn trứng (896×1200, 3:4) |
 | `06-the-lovers-v12.png` | THE LOVERS — góc nhìn xuống, khiêu vũ chung một ly, mặt trờ trái tim, vườn hồng (896×1200, 3:4) |
-| `sheet-06-lovers-v8-12.jpg` | Sheet so sánh 5 phiên bản THE LOVERS |
+| `sheet-06-lovers-v8-12.jpg` | Sheet so sánh 5 phiên bản THE LOVERS (v8–v12) |
+| `06-the-lovers-v13.png` | THE LOVERS — chính diện nâng ly, dây lễ đỏ-vàng buộc 2 cổ tay, nhẫn+vòng cụm đối xứng (896×1200, 3:4) |
+| `06-the-lovers-v14.png` | THE LOVERS — profile trán chạm, dây ánh sáng hồng quấn 2 ngườî, vòng trăng chung (896×1200, 3:4) |
+| `06-the-lovers-v15.png` | THE LOVERS — 3/4 rót rượu vào ly chung, ruy-băng sáng quấn cổ tay (896×1200, 3:4) |
+| `06-the-lovers-v16.png` | THE LOVERS — ngửa, tựa lưng nâng ly, 2 luồng sáng hợp 1 vòng trăng (896×1200, 3:4) |
+| `06-the-lovers-v17.png` | THE LOVERS — nhìn xuống, khiêu vũ ly chung, handfasting buộc cánh tay, mặt trờ trái tim (896×1200, 3:4) |
+| `sheet-06-lovers-v13-17.jpg` | Sheet so sánh 5 phiên bản THE LOVERS (v13–v17, 2 nhân vật khác biệt cam kết) |
 | `18-the-moon-v7.png` | THE MOON — quỳ nâng quả cầu trăng (896×1200, 3:4) |
 | `18-the-moon-v8.png` | THE MOON — đứng giữa hồ, tay với lên trăng (896×1200, 3:4) |
 | `18-the-moon-v9.png` | THE MOON — trồi lên, tóc xoáy, sói đen + chó trắng (896×1200, 3:4) |
